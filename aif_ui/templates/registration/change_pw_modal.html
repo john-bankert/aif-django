@@ -1,0 +1,15 @@
+<div id="modal_popup" class="modal" style="display: block">
+	<div class="modal_content">
+		<div class="modal_header">
+			<span class="close">&times;</span>
+			<h3>Change Password</h3>
+		</div>
+		<div class="modal_body">
+			<form action="{% url 'index' %}" method="post">
+				{% csrf_token %}
+				{{form.as_p}}
+				<input type="submit" value="Change Password">
+			</form>
+		</div>
+	</div>
+</div>

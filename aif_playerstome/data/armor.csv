@@ -1,0 +1,23 @@
+armor, Banded mail, 150sp, M, 2, 3, 2, 3, 5, 10, 225
+armor, Chain mail, 100sp, M, 3, 1, 2, 3, 5, 10, 255
+armor, Full plate, 1000sp, H, 6, 5, 6, 5, 10, 20, 400
+armor, Leather, 20sp, L, 1, 1, 2, 2, 3, 6, 120
+armor, Padded, 15sp, L, 1, 1, 3, 1, 2, 4, 80
+armor, Plate mail, 650sp, H, 5, 4, 5, 4, 8, 16, 345
+armor, Scale mail, 200sp, M, 4, 3, 2, 3, 7, 14, 210
+armor, Splint mail, 215sp, H, 4, 2, 4, 3, 6, 12, 300
+armor, Studded Leather, 30sp, L, 2, 1, 2, 2, 4, 8, 165
+armor, Wool Robe, 10sp, -, 1, 1, 1, 1, 1, 2, 60
+shield, Buckler, 2sp, L, 1, 1, 2, 1, 1, 2, 60
+shield, Small Metal, 6sp, L, 2, 1, 2, 1, 1, 2, 80
+shield, Medium Metal, 14sp, M, 2, 1, 2, 1, 2, 4, 100
+shield, Large Metal, 20sp, H, 2, 1, 2, 1, 3, 6, 120
+shield, Small Wooden, 4sp, L, 1, 1, 1, 1, 1, 2, 40
+shield, Medium Wooden, 8sp, L, 1, 1, 1, 1, 2, 4, 60
+shield, Large Wooden, 12sp, M, 1, 1, 1, 1, 3, 6, 80
+helmet, Wizard Hat, 1sp, -, 0, 0, 1, 1, 1, 1, 20
+helmet, Cap, 4sp, L, 2, 1, 2, 1, 1, 2, 60
+helmet, Leather, 2sp, L, 1, 1, 1, 1, 1, 2, 40
+helmet, Open-faced, 22sp, M, 2, 2, 2, 2, 2, 4, 100
+helmet, Mail coif, 18sp, M, 2, 1, 1, 1, 2, 4, 80
+helmet, Great helm, 60sp, H, 3, 3, 3, 3, 3, 6, 120

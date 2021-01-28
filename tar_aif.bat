@@ -1,0 +1,1 @@
+"C:\Program Files\7-Zip\7z.exe" a -ttar aif.tar aif\aif_character aif\aif_campaign aif\aif_gmstome aif\aif_monstertome aif\aif_playerstome aif\aif_ui aif\db.sqlite3 aif\aif\constants.py aif\aif\urls.py

@@ -1,0 +1,11 @@
+:root {
+    --navbar-bg-color: black;
+    --navbar-fg-color: white;
+    --navbar-button-fg-color: black;
+    --navbar-button-border-color: white;
+    --navbar-button-bg-color: #e7e7e7;
+    --dropdown-fg-color: black;
+    --dropdown-bg-color: #f9f9f9;
+    --dropdown-hover-color: #ddd;
+    --menubar-bg-color: white;
+}

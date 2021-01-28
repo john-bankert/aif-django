@@ -1,0 +1,506 @@
+[
+    {
+        "model": "aif_character.spellskills",
+        "pk": 1,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 1 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 2,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 2 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 3,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 3 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 4,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 4 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 5,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 5 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 6,
+        "fields": {
+            "character": 2,
+            "item_name": "Circle 6 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 7,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 1 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 8,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 2 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 9,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 3 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 10,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 4 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 11,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 5 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 12,
+        "fields": {
+            "character": 4,
+            "item_name": "Circle 6 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 13,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 1 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 14,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 2 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 15,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 3 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 16,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 4 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 17,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 5 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 18,
+        "fields": {
+            "character": 5,
+            "item_name": "Circle 6 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 19,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 1 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 20,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 2 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 21,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 3 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 22,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 4 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 23,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 5 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 24,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 6 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 25,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 1 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 26,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 2 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 27,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 3 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 28,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 4 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 29,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 5 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 30,
+        "fields": {
+            "character": 6,
+            "item_name": "Circle 6 Affinity",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 31,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 1 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 32,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 2 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 33,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 3 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 34,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 4 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 35,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 5 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spellskills",
+        "pk": 36,
+        "fields": {
+            "character": 9,
+            "item_name": "Circle 6 Spell Group",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    }
+]

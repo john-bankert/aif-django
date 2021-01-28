@@ -1,0 +1,69 @@
+S, Axe Hand/Throwing, 2sp, S, C, 1d6+1, (s), 1, 80
+S, Small Club, -, S, B, 1d6, (s), 1, 120
+S, Dagger, 2sp, S, P, 1d6, (s)/2, 1, 80
+S, Dart, 5cp, S, P, 1d6, (s), 10/1, 20
+S, Fist, -, S, B, 1d6, -, -, -
+S, Foot, -, S, B, 1d6+1, -, -, -
+S, Knife, 5cp, S, S, 1d6, (s), 1, 80
+S, Short Sword, 12sp, S, P, 1d6+2, -, 2, 120
+S, War Hammer, 3sp, S, B, 1d6+1, (s), 2, 120
+M, Battle Axe, 12sp, M, C, 2d6, -, 3, 160
+M, Battle Hammer, 10sp, M, B, 2d6, -, 4, 160
+M, Broad Sword, 20sp, M, C, 2d6+1, -, 4, 180
+M, Medium Club, -, M, B, 2d6-2, -, 2, 120
+M, Flail, 15sp, M, B, 2d6-1, -, 2, 100
+M, Javelin, 2sp, M, P, 2d6-2, (s)*2, 2, 40
+M, Light Lance, 18sp, M, P, 2d6+1, (s)/2, 4, 60
+M, Long Sword, 30sp, M, S, 2d6, -, 3, 160
+M, Mace, 14sp, M, B, 2d6, (s), 3, 140
+M, Morningstar, 20sp, M, B, 2d6+1, -, 4, 120
+M, Normal Spear, 3sp, M, P, 2d6, (s), 2, 100
+M, Pickaxe, 19sp, M, P, 2d6, -, 4, 120
+M, Quarter Staff, -, M, B, 2d6-1, -, 2, 100
+M, Rapier, 28sp, M, P, 2d6, -, 1, 75
+M, Sabre, 18sp, M, C, 2d6-1, -, 3, 130
+M, Scimitar, 25sp, M, S, 2d6-1, (s), 2, 120
+L, Bastard Sword, 65sp, L, S, -, -, 5, 200
+L, One-handed, -, -, -, 2d6, -, -, -
+L, Two-handed(a), -, -, -, 3d6, -, -, -
+L, Great Spear(a), 8sp, L, P, 3d6-2, -, 4, 120
+L, Medium Lance (a), 25sp, L, P, 3d6-1, -, 5, 80
+L, Heavy Lance (a), 40sp, L, P, 3d6, -, 6, 100
+L, Maul, 35sp, L, B, 3d6, -, 7, 180
+L, Polearm(a), , , , , , , 
+L, Bardiche, 27sp, L, C, 3d6-1, -, 5, 100
+L, Glaive, 26sp, L, S, 3d6-2, -, 4, 80
+L, Halberd, 40sp, L, C, 3d6, -, 5, 120
+L, Pike, 12sp, L, P, 3d6-2, -, 3, 80
+L, Ranseur, 16sp, L, P, 3d6-1, -, 4, 60
+L, Spetum, 35sp, L, P, 3d6, -, 4, 80
+L, Voulge, 15sp, L, S, 3d6-2, -, 4, 80
+L, Ironshod Staff (a), 20sp, L, B, 3d6-1, -, 4, 140
+L, Trident(a), 20sp, L, P, 3d6-1, (s)/2, 3, 140
+L, Two-Handed Axe(a), 60sp, L, C, 3d6, -, 5, 170
+L, Two-Handed Sword(a), 80sp, L, C, 3d6, -, 6, 240
+T, Axe Hand/Throwing, 2sp, S, C, 1d6+1, (s), 1, 80
+T, Bow(a), , , , , , , 
+T, Long(c), 70sp, M, -, 1d6, -, 3, 100
+T, Blunt Arrows, 1cp, S, B, 1d6, 80, 10/1, 10
+T, Flight Arrow, 1cp, S, P, 1d6, 75, 10/1, 10
+T, Frog Crotch Arrow, 1cp, S, S, 1d6, 105, 10/1, 10
+T, Short, 35sp, S, -, -, -, 2, 80
+T, Small Club, -, S, B, 1d6, (s), 1, 120
+T, Crossbow(a), , , , , , , 
+T, Light, 75sp, S, -, -, -, 2, 120
+T, Light Quarrel, 2cp, S, P, 1d6+1, 120, 10/1, 30
+T, Medium, 90sp, M, -, -, -, 3, 140
+T, Medium Quarrel, 2cp, S, P, 2d6, 135, 10/1, 30
+T, Heavy(b), 110sp, M, -, -, -, 4, 160
+T, Heavy Quarrel, 3cp, S, P, 3d6, 150, 10/1, 30
+T, Dagger, 2sp, S, P, 1d6, (s)/2, 1, 80
+T, Dart, 5cp, S, P, 1d6, (s), 10/1, 20
+T, Knife, 5cp, S, S, 1d6, (s), 1, 80
+T, Mace, 14sp, M, B, 2d6, (s), 3, 140
+T, Normal Spear, 3sp, M, P, 2d6, (s), 2, 100
+T, Javelin, 2sp, M, P, 2d6-2, (s)*2, 2, 40
+T, Sling(a), 2cp, S, -, -, -, 10/1, 20
+T, Bullet, 2ip, S, B, 1d6+1, 105, 10/1, 20
+T, Stone, -, S, B, 1d6, 75, 10/1, -
+T, War Hammer, 3sp, S, B, 1d6+1, (s), 2, 120

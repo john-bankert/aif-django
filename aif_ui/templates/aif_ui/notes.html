@@ -1,0 +1,9 @@
+<div>
+	<div class="sheet">
+		<!--form action="{% url 'save' character.name %}" method="post"-->
+			{% csrf_token %}
+			<h2>Notes</h2>
+			<textarea id="notes" name="notes" rows="10" cols="80">{{character.notes}}</textarea>
+		<!--/form-->
+	</div>
+</div>

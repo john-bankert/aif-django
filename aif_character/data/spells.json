@@ -1,0 +1,354 @@
+[
+    {
+        "model": "aif_character.spells",
+        "pk": 1,
+        "fields": {
+            "character": 5,
+            "name": " Arcane Blade",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 2,
+        "fields": {
+            "character": 5,
+            "name": " Arcane Nimbus",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 3,
+        "fields": {
+            "character": 5,
+            "name": " Arcane Pulse",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 4,
+        "fields": {
+            "character": 5,
+            "name": " Arcane Radiation",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 5,
+        "fields": {
+            "character": 5,
+            "name": " Barrier Nimbus",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 6,
+        "fields": {
+            "character": 5,
+            "name": " Beguile",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 7,
+        "fields": {
+            "character": 5,
+            "name": " Blink",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 8,
+        "fields": {
+            "character": 5,
+            "name": " Consider",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 9,
+        "fields": {
+            "character": 5,
+            "name": " Copious Capacity",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 10,
+        "fields": {
+            "character": 5,
+            "name": " Elemental Nimbus",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 11,
+        "fields": {
+            "character": 5,
+            "name": " Extension",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 12,
+        "fields": {
+            "character": 5,
+            "name": " Glimmer",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 13,
+        "fields": {
+            "character": 5,
+            "name": " Incite",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 14,
+        "fields": {
+            "character": 5,
+            "name": " Light Manipulation",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 15,
+        "fields": {
+            "character": 5,
+            "name": " Mitigate",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 16,
+        "fields": {
+            "character": 5,
+            "name": " Song of Grandeur",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 17,
+        "fields": {
+            "character": 5,
+            "name": " Song of Reduction",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 18,
+        "fields": {
+            "character": 5,
+            "name": " Sonic Blast",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 19,
+        "fields": {
+            "character": 5,
+            "name": " Sorrow",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 20,
+        "fields": {
+            "character": 5,
+            "name": " Soothe",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 21,
+        "fields": {
+            "character": 5,
+            "name": " Vermin Jig",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.spells",
+        "pk": 22,
+        "fields": {
+            "character": 5,
+            "name": " Visualization",
+            "circle": 0,
+            "rank": 0,
+            "order": 0,
+            "adjusted": 0,
+            "buff": 0,
+            "vessel": false,
+            "vessel_power": 0,
+            "mastered": false
+        }
+    }
+]

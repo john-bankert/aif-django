@@ -1,0 +1,65 @@
+miscellaneous, Backpack, 2sp, 6, 16, , , , , 90
+miscellaneous, Bandoleer, 8sp, 2, , , , , , 80
+miscellaneous, Bedroll, 4sp, 3, , , , , , 50
+miscellaneous, Belt, 1cp, 10/1, , , , , , 60
+miscellaneous, Blanket, 12cp, 2, , , , , , 30
+miscellaneous, Bolt Case, 15cp, 1, 1, , , , , 120
+miscellaneous, Leather Book, 10sp, 2, , , , , , 150
+miscellaneous, Boots, 3sp, 1, , , , , , 40
+miscellaneous, Bow string, 5sp, 15/1, , , , , , 30
+miscellaneous, Small Chest, 10sp, 15, 20, , , , , 120
+miscellaneous, Medium Chest, 20sp, 20, 30, , , , , 180
+miscellaneous, Large Chest, 30sp, 25, 40, , , , , 240
+miscellaneous, Cloak, 8cp, 1, , , , , , 30
+miscellaneous, Flask, 2cp, 1, , , , , , 10
+miscellaneous, Flint & Tinder, 5cp, 10/1, , , , , , 40
+miscellaneous, Gloves, 8cp, 10/1, , , , , , 20
+miscellaneous, Hat, 1cp, 5/1, , , , , , 30
+miscellaneous, Holy Symbol, 25sp, 10/1, , , , , , 80
+miscellaneous, Holy Water, 20sp, 1, , , , , , 10
+miscellaneous, Horse Tackle, 100sp, 20, , , , , , 200
+miscellaneous, Bottle of Ink, 9sp, 1, , , , , , 10
+miscellaneous, Iron Spike, 6cp, 5/1, , , , , , 90
+miscellaneous, Lantern, 8sp, 3, , , , , , 40
+miscellaneous, Mallet, 2sp, 1, , , , , , 40
+miscellaneous, Small Mirror, 8sp, 1, , , , , , 20
+miscellaneous, Flask of Oil, 1cp, 1, , , , , , 10
+miscellaneous, Pants, 1cp, 1, , , , , , 40
+miscellaneous, Paper, 2cp, 20/1, , , , , , 6
+miscellaneous, Small Belt Pouch, 5cp, 1, 4, , , , , 60
+miscellaneous, Large Belt Pouch, 1sp, 2, 6, , , , , 60
+miscellaneous, Pry Bar, 3cp, 3, , , , , , 150
+miscellaneous, Quill, 1sp, 10/1, , , , , , 10
+miscellaneous, Quiver, 8cp, 1, , , , , , 120
+miscellaneous, 50ft Rope, 1sp, 4, , , , , , 40
+miscellaneous, Small Sack, 1cp, 2, 8, , , , , 60
+miscellaneous, Large Sack, 3cp, 3, 10, , , , , 60
+miscellaneous, Scabbard, 5cp, 10/1, , , , , , 80
+miscellaneous, Scroll Case, 12cp, 10/1, , , , , , 60
+miscellaneous, Torch, 2ip, 5/1, , , , , , 40
+miscellaneous, Tunic, 1cp, 1, , , , , , 40
+miscellaneous, Waterskin, 7cp, 2/1, , , , , , 30
+tools, Crafting Kit, 25sp, 2, , , , , , 30
+tools, Enchanting Kit, 100sp, 2, , , , , , 30
+tools, Repair Kit, 25sp, 3, , , , , , 30
+tools, Rogue's Tools, 25sp, 1, , , , , , 120
+food, 1 day Rations, 2sp, 3/1, , , , , , -
+food, 1 week Rations, 10sp, 2, , , , , , -
+war_horse_barding, Light, 100sp, 10, , 2, 1, 2, 1, 100
+war_horse_barding, Medium, 200sp, 15, , 4, 3, 4, 3, 225
+war_horse_barding, Heavy, 300sp, 20, , 5, 4, 5, 4, 300
+war_dog_barding, Light, 75sp, 5, , 1, 0, 1, 0, 50
+war_dog_barding, Medium, 150sp, 10, , 2, 1, 2, 1, 175
+war_dog_barding, Heavy, 250sp, 15, , 3, 2, 3, 2, 250
+animals, Bull, 120sp, 190, , , , , , 
+animals, Cow, 80sp, 120, , , , , , 
+animals, Hunting Dog, 38sp, 5, , , , , , 
+animals, War Dog, 100sp, 15, , , , , , 
+animals, Donkey, 100sp, 150, , , , , , 
+animals, Draft Horse, 120sp, 165, , , , , , 
+animals, Riding Horse, 250sp, 75, , , , , , 
+animals, War Horse, 600sp, 130, , , , , , 
+vehicle, Cart, 150sp, 80, 180, , , , , 200
+vehicle, Raft, 280sp, 70, 120, , , , , 150
+vehicle, Rowboat, 400sp, 90, 180, , , , , 300
+vehicle, Wagon, 450sp, 150, 550, , , , , 400

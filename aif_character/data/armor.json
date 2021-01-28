@@ -1,0 +1,1082 @@
+[
+    {
+        "model": "aif_character.armor",
+        "pk": 1,
+        "fields": {
+            "character": 1,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 2,
+        "fields": {
+            "character": 1,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 3,
+        "fields": {
+            "character": 1,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 4,
+        "fields": {
+            "character": 1,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 5,
+        "fields": {
+            "character": 1,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 6,
+        "fields": {
+            "character": 1,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 7,
+        "fields": {
+            "character": 2,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 8,
+        "fields": {
+            "character": 2,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 9,
+        "fields": {
+            "character": 2,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 10,
+        "fields": {
+            "character": 2,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 11,
+        "fields": {
+            "character": 2,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 12,
+        "fields": {
+            "character": 2,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 13,
+        "fields": {
+            "character": 3,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 14,
+        "fields": {
+            "character": 3,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 15,
+        "fields": {
+            "character": 3,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 16,
+        "fields": {
+            "character": 3,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 17,
+        "fields": {
+            "character": 3,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 18,
+        "fields": {
+            "character": 3,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 19,
+        "fields": {
+            "character": 4,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 20,
+        "fields": {
+            "character": 4,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 21,
+        "fields": {
+            "character": 4,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 22,
+        "fields": {
+            "character": 4,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 23,
+        "fields": {
+            "character": 4,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 24,
+        "fields": {
+            "character": 4,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 25,
+        "fields": {
+            "character": 5,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 26,
+        "fields": {
+            "character": 5,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 27,
+        "fields": {
+            "character": 5,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 28,
+        "fields": {
+            "character": 5,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 29,
+        "fields": {
+            "character": 5,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 30,
+        "fields": {
+            "character": 5,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 31,
+        "fields": {
+            "character": 6,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 32,
+        "fields": {
+            "character": 6,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 33,
+        "fields": {
+            "character": 6,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 34,
+        "fields": {
+            "character": 6,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 35,
+        "fields": {
+            "character": 6,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 36,
+        "fields": {
+            "character": 6,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 37,
+        "fields": {
+            "character": 7,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 38,
+        "fields": {
+            "character": 7,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 39,
+        "fields": {
+            "character": 7,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 40,
+        "fields": {
+            "character": 7,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 41,
+        "fields": {
+            "character": 7,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 42,
+        "fields": {
+            "character": 7,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 43,
+        "fields": {
+            "character": 8,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 44,
+        "fields": {
+            "character": 8,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 45,
+        "fields": {
+            "character": 8,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 46,
+        "fields": {
+            "character": 8,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 47,
+        "fields": {
+            "character": 8,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 48,
+        "fields": {
+            "character": 8,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 49,
+        "fields": {
+            "character": 9,
+            "item_name": "Light Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 50,
+        "fields": {
+            "character": 9,
+            "item_name": "Medium Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 51,
+        "fields": {
+            "character": 9,
+            "item_name": "Heavy Armor Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 52,
+        "fields": {
+            "character": 9,
+            "item_name": "Helmet Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 53,
+        "fields": {
+            "character": 9,
+            "item_name": "Unarmed Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.armor",
+        "pk": 54,
+        "fields": {
+            "character": 9,
+            "item_name": "Shield Group",
+            "description": "",
+            "type": "",
+            "durability": "",
+            "slashing": "",
+            "piercing": "",
+            "bludgeoning": "",
+            "cleaving": "",
+            "load": "",
+            "carried": "",
+            "rank": 0,
+            "order": 0,
+            "mastered": false
+        }
+    }
+]

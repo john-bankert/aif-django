@@ -1,0 +1,22 @@
+django-admin startproject mysite - create new project/website
+python manage.py runserver - start the website locally
+python manage.py startapp myApp - create an app within the website
+python manage.py migrate - create necessary database tables
+python manage.py makemigrations myApp - create migrations (sql necessary to build tables for app) for an app
+python manage.py sqlmigrate myApp 0001 - show created migrations for an app
+python manage.py shell - run a django aware python shell to interact with the website
+python manage.py createsuperuser - create a user for the website with admin privleges
+python manage.py test myApp - run test cases created for an app
+
+setting up a django app on dreamhost
+https://help.dreamhost.com/hc/en-us/articles/360002341572-Creating-a-Django-project
+
+cd /home/bankertj531/aif.magichelmet.xyz
+source /home/bankertj531/aif.magichelmet.xyz/venv/bin/activate
+pip3 install mysqlclient
+touch tmp/restart.txt
+
+cd /home/bankertj531/aif.magichelmet.xyz/aif/
+python3 manage.py collectstatic
+
+mysql -u magichelmetxyz -p -h aif-mysql.magichelmet.xyz magichelmet_aif

@@ -1,0 +1,30 @@
+<!-- Equipment -->
+<table id="width_g">
+	<tr>
+		<td class="header">Equipment List</td>
+		<td id="width_1" class="halign_c">Qty</td>
+		<td id="width_1" class="halign_c">Load</td>
+		<td id="width_1" class="halign_c">Adj</td>
+		<td id="width_1" class="halign_c">Dur</td>
+	</tr>
+	<tr>
+		<td class="all_pl">{{character.container.name}}</td>
+		<td class="all_c">{{character.container.qty}}</td>
+		<td class="all_c">{{character.container.load}}</td>
+		<td class="all_c">{{character.container.adjusted}}</td>
+		<td class="all_c">{{character.container.durability}}</td>
+	</tr>
+	<tr>
+		<td class="all_pl">{{character.equipment.name}}</td>
+		<td class="all_c">{{character.equipment.qty}}</td>
+		<td class="all_c">{{character.equipment.load}}</td>
+		<td class="all_c">{{character.equipment.adjusted}}</td>
+		<td class="all_c">{{character.equipment.durability}}</td>
+	</tr>
+	<tr>
+		<td class="halign_rpl" colspan="2">Total Load</td>
+		<td class="all_c">{{character.equipment.total.load}}</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>

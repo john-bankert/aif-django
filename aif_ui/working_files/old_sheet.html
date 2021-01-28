@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head lang="en">
+		<meta charset="UTF-8">
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'dj_character/character.css' %}">
+	</head>
+	<body>
+		<div >
+			<div >
+
+				<table id="width_g">
+					<!-- row One -->
+					<tr>
+						<!-- Name, etc -->
+						<td id="width_e">
+							<table>
+								<tr>
+									<td id="width_4">Name</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_name}}</td>
+								</tr>
+								<tr>
+									<td id="width_4">Race</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_race}}</td>
+
+								</tr>
+							</table>
+						</td>
+						<td rowspan="2" class="hdr_1">{{character.char_class}}</td>
+						<td id="width_e" class="halign_r">
+							<table align="right">
+								<tr>
+									<td rowspan="2" id="width_4" class="hdr_2">Level</td>
+									<td rowspan="2" id="width_4" class="hdr_3">{{character.char_level}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+
+				<table id="width_g">
+					<tr>
+						<!-- Attributes -->
+						<td id="width_e">
+							<table>
+								<tr>
+									<td id="width_4">Gender</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_gender}}</td>
+								</tr>
+								<tr>
+									<td id="width_4">Age</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_age}}</td>
+								</tr>
+								<tr>
+									<td id="width_4">Height</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_height}}</td>
+								</tr>
+								<tr>
+									<td id="width_4">Weight</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_6" class="bottom">{{character.char_weight}}</td>
+								</tr>
+							</table>
+						</td>
+						<!-- Movement -->
+						<td id="width_e">
+							<table  align="center">
+								<tr>
+									<td id="width_4" class="halign_r">Movement</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_4" class="halign_c">Base</td>
+									<td id="width_4" class="halign_c">Adj</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Walking</td>
+									<td>&nbsp;</td>
+									<td class="all_c">{{character.char_walking_base}}</td>
+									<td class="all_c">{{character.char_walking_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Running</td>
+									<td>&nbsp;</td>
+									<td class="all_c">{{character.char_running_base}}</td>
+									<td class="all_c">{{character.char_running_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Swimming</td>
+									<td>&nbsp;</td>
+									<td class="all_c">{{character.char_swimming_base}}</td>
+									<td class="all_c">{{character.char_swimming_adjusted}}</td>
+								</tr>
+							</table>
+						</td>
+						<!-- Encumbrance -->
+						<td id="width_e">
+							<table  align="center">
+								<tr>
+									<td id="width_6" class="halign_r">Encumbrance</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_4" class="bottom_c">{{character.char_encumbrance}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Total Load</td>
+									<td>&nbsp;</td>
+									<td class="bottom_c">{{character.char_total_load}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Modifiers</td>
+									<td>&nbsp;</td>
+									<td class="bottom_c">{{character.char_modifiers}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Burdened</td>
+									<td>&nbsp;</td>
+									<td class="bottom_c">{{character.char_burdened}}</td>
+								</tr>
+							</table>
+						</td>
+						<!-- Experience -->
+						<td id="width_e">
+							<table align="right">
+								<tr>
+									<td id="width_6" class="halign_r">Experience</td>
+									<td id="width_0">&nbsp;</td>
+									<td id="width_4" class="bottom_c">{{character.char_experience}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Current</td>
+									<td>&nbsp;</td>
+									<td class="bottom_c">{{character.char_current}}</td>
+								</tr>
+								<tr>
+									<td class="halign_r">Next Level</td>
+									<td>&nbsp;</td>
+									<td class="bottom_c">{{character.char_next_level}}</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+
+				<br/>
+
+				<!-- Ability Scores, Saves, Combat Factors and Bonuses -->
+				<table id="width_g">
+					<tr>
+						<!-- Ability Scores -->
+						<td id="width_d">
+							<table>
+								<tr>
+									<td colspan="3" class="header">Ability Scores</td>
+								</tr>
+								<tr>
+									<td id="width_5"></td>
+									<td id="width_3"></td>
+									<td id="width_3" class="halign_c">Mods</td>
+								</tr>
+								<tr>
+									<td>STR:</td>
+									<td class="all_c">{{character.char_str_adjusted}}</td>
+									<td class="all_c">{{character.char_str_modifiers}}</td>
+								</tr>
+								<tr>
+									<td>DEX:</td>
+									<td class="all_c">{{character.char_dex_adjusted}}</td>
+									<td class="all_c">{{character.char_dex_modifiers}}</td>
+								</tr>
+								<tr>
+									<td>INT:</td>
+									<td class="all_c">{{character.char_int_adjusted}}</td>
+									<td class="all_c">{{character.char_int_modifiers}}</td>
+								</tr>
+								<tr>
+									<td>HLTH:</td>
+									<td class="all_c">{{character.char_health_adjusted}}</td>
+									<td class="all_c">{{character.char_health_modifiers}}</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</td>
+						<!-- Saves -->
+						<td id="width_e">
+							<table align="center">
+								<tr>
+									<td colspan="3" class="header">Saves</td>
+								</tr>
+								<tr>
+									<td id="width_6"></td>
+									<td id="width_3" class="halign_c">Dice</td>
+									<td id="width_3" class="halign_c">Mods</td>
+								</tr>
+								<tr>
+									<td class="all_r">Withstand</td>
+									<td class="all_c">{{character.char_withstand_adjusted}}</td>
+									<td class="all_c">{{character.char_withstand_modifiers}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">Dodge</td>
+									<td class="all_c">{{character.char_dodge_adjusted}}</td>
+									<td class="all_c">{{character.char_dodge_modifiers}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">Resist</td>
+									<td class="all_c">{{character.char_resist_adjusted}}</td>
+									<td class="all_c">{{character.char_resist_modifiers}}</td>
+								</tr>
+								<!-- need some sort of conditional here -->
+								<tr>
+									<td class="all_r">Honor Points</td>
+									<td class="all_c">{{character.char_honor_points_base}}</td>
+									<td class="all_c"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</td>
+						<!-- Combat Factors -->
+						<td id="width_e">
+							<table align="center">
+								<tr>
+									<td colspan="3" class="header">Combat Factors</td>
+								</tr>
+								<tr>
+									<td id="width_6"></td>
+									<td id="width_3" class="halign_c"></td>
+									<td id="width_3" class="halign_c">Adj</td>
+								</tr>
+								<tr>
+									<td class="all_r">Knockdown</td>
+									<td class="all_c">{{character.char_knockdown_base}}</td>
+									<td class="all_c">{{character.char_knockdown_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">Defense</td>
+									<td class="all_c">{{character.char_defense_base}}</td>
+									<td class="all_c">{{character.char_defense_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">Stun</td>
+									<td class="all_c">{{character.char_stun_base}}</td>
+									<td class="all_c">{{character.char_stun_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">Endurance</td>
+									<td class="all_c">{{character.char_endurance_base}}</td>
+									<td class="all_c">{{character.char_endurance_adjusted}}</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</td>
+						<!-- Bonuses -->
+						<td>
+							<table align="right">
+								<tr>
+									<td colspan="3" class="header">Bonuses</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class="halign_c">Adj</td>
+								</tr>
+								<tr>
+									<td id="width_6" class="all_r">To Damange</td>
+									<td class="all_c">{{character.char_damage_mods_base}}</td>
+									<td class="all_c">{{character.char_damage.mods_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="all_r">To Hit</td>
+									<td class="all_c">{{character.char_to_hit_mods_base}}</td>
+									<td class="all_c">{{character.to_hit_mods_adjusted}}</td>
+								</tr>
+								<tr>
+									<td class="all_r"># of Actions</td>
+									<td class="all_c">{{character.char_actions_base}}</td>
+									<td class="all_c">{{character.char_actions_adjusted}}</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="font_small">Underground</td>
+									<td class="font_small">Outside</td>
+								</tr>
+								<tr>
+									<td class="all_r">Search Dice</td>
+									<td class="all_c">{{character.char_underground_search_adjusted}}</td>
+									<td class="all_c">{{character.char_outside_search_adjusted}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+
+				<br/>
+
+				<!-- Skills, Weapons, Armor and Equipment -->
+				<table id="width_g">
+
+					<!-- Row One -->
+					<tr>
+						<td id="width_c" rowspan="5" class="valign_t">
+							<!-- Skills -->
+							<table id="width_g">
+								<tr>
+									<td class="header">Class Skills</td>
+									<td class="header_c">Rk</td>
+									<td class="header_c">Or</td>
+								</tr>
+								{% for skill in character.classskills_set.all %}
+									<tr>
+										<td class="all_pl">
+										{% if skill.mastered %}
+											<strong>{{skill.item_name}}</strong>
+										{% else %}
+											{{skill.item_name}}
+										{% endif %}
+										</td>
+										<td class="all_c">{{skill.rank}}</td>
+										<td class="all_c">{{skill.order}}</td>
+									</tr>
+								{% endfor %}
+								<tr>
+									<td class="header">Racial Skills</td>
+									<td class="header_c">Rk</td>
+									<td class="header_c">Or</td>
+								</tr>
+								{% for skill in character.racialskills_set.all %}
+									<tr>
+										<td class="all_pl">
+										{% if skill.mastered %}
+											<strong>{{skill.item_name}}</strong>
+										{% else %}
+											{{skill.item_name}}
+										{% endif %}
+										</td>
+										<td class="all_c">{{skill.rank}}</td>
+										<td class="all_c">{{skill.order}}</td>
+									</tr>
+								{% endfor %}
+								<tr>
+									<td class="header">Honor Skills</td>
+									<td class="header_c">Rk</td>
+									<td class="header_c">Or</td>
+								</tr>
+								{% for skill in character.honorskills_set.all %}
+									<tr>
+										<td class="all_pl">
+										{% if skill.mastered %}
+											<strong>{{skill.item_name}}</strong>
+										{% else %}
+											{{skill.item_name}}
+										{% endif %}
+										</td>
+										<td class="all_c">{{skill.rank}}</td>
+										<td class="all_c">{{skill.order}}</td>
+									</tr>
+								{% endfor %}
+							</table>
+						</td>
+						<td id="width_a">&nbsp;</td>
+						<td class="valign_t" >
+							<!-- Weapons -->
+							<table id="width_g">
+								<tr>
+									<td></td>
+									<td id="width_2"></td>
+									<td id="width_2"></td>
+									<td id="width_2"></td>
+									<td id="width_4"></td>
+									<td id="width_4"></td>
+									<td id="width_4"></td>
+									<td id="width_1"></td>
+									<td id="width_1"></td>
+									<td colspan="2" class="all_c">Dice and Adj</td>
+								</tr>
+								<tr>
+									<td class="header">Weapons List</td>
+									<td class="halign_c">Size</td>
+									<td class="halign_c">Type</td>
+									<td class="halign_c">Dam</td>
+									<td class="halign_c">Range</td>
+									<td class="halign_c">Dur</td>
+									<td class="halign_c">Load</td>
+									<td class="halign_c">Rk</td>
+									<td class="halign_c">Or</td>
+									<td id="width_3" class="all_c">To Hit</td>
+									<td id="width_3" class="all_c">Dam</td>
+								</tr>
+								{% for weapon in character.weapons_set.all %}
+									<tr>
+										<td class="all_pl">
+										{% if weapon.mastered %}
+											<strong>{{weapon.item_name}}</strong>
+										{% else %}
+											{{weapon.item_name}}
+										{% endif %}
+										</td>
+										<td class="all_pl">{{weapon.size}}</td>
+										<td class="all_pl">{{weapon.type}}</td>
+										<td class="all_pl">{{weapon.damage}}</td>
+										<td class="all_pl">{{weapon.range}}</td>
+										<td class="all_pl">{{weapon.durability}}</td>
+										<td class="all_pl">{{weapon.load}}</td>
+										<td class="all_pl">{{weapon.rank}}</td>
+										<td class="all_pl">{{weapon.order}}</td>
+										<td class="all_pl">{{weapon.to_hit}}</td>
+										<td class="all_pl">{{weapon.damage}}</td>
+									</tr>
+								{% endfor %}
+								<tr>
+									<td>&nbsp;</td>
+									<td></td>
+									<td></td>
+									<td colspan="3" class="halign_rpl">Total Weapon Load</td>
+									<td class="all_pl">{{character.weapons.total.load}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<!-- Row Two -->
+					<tr><td>&nbsp;</td></tr>
+
+					<!-- Row Three -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="valign_t">
+							<table id="width_g">
+								<tr>
+									<td class="valign_t" >
+										<!-- Armor -->
+										<table id="width_g">
+											<tr>
+												<td class="header">Armor List</td>
+												<td id="width_2" class="halign_c">Type</td>
+												<td id="width_2" class="halign_c">Dur</td>
+												<td id="width_1" class="halign_c">S</td>
+												<td id="width_1" class="halign_c">P</td>
+												<td id="width_1" class="halign_c">B</td>
+												<td id="width_1" class="halign_c">C</td>
+												<td id="width_4" class="halign_c">Load</td>
+												<td id="width_1" class="halign_c">Rk</td>
+												<td id="width_1" class="halign_c">Or</td>
+											</tr>
+											<!-- {{table.armor}} -->
+											{% for armor in character.armor_set.all %}
+												<tr>
+													<td class="all_pl">
+													{% if armor.mastered %}
+														<strong>{{armor.item_name}}</strong>
+													{% else %}
+														{{armor.item_name}}
+													{% endif %}
+													</td>
+													<td class="all_pl">{{armor.type}}</td>
+													<td class="all_pl">{{armor.durability}}</td>
+													<td class="all_pl">{{armor.slashing}}</td>
+													<td class="all_pl">{{armor.piercing}}</td>
+													<td class="all_pl">{{armor.bludgeoning}}</td>
+													<td class="all_pl">{{armor.cleaving}}</td>
+													<td class="all_pl">{{armor.load}}</td>
+													<td class="all_pl">{{armor.rank}}</td>
+													<td class="all_pl">{{armor.order}}</td>
+												</tr>
+											{% endfor %}
+											<tr>
+												<td>&nbsp;</td>
+												<td></td>
+												<td></td>
+												<td colspan="4" class="halign_rpl">Total Armor Load</td>
+												<td class="all_pl">{{character.armor.total.load}}</td>
+											</tr>
+										</table>
+									</td>
+									<td id="width_a">&nbsp;</td>
+									<td id="width_b" class="valign_t" >
+										<!-- Money -->
+										<table id="width_g">
+											<tr>
+												<td></td>
+												<td class="header">Money</td>
+												<td class="header">Load</td>
+											</tr>
+											<tr>
+												<td class="all_c">&nbsp;GP&nbsp;</td>
+												<td class="all_c">{{character.char_gold_amount}}</td>
+												<td class="all_c">{{character.char_gold_load}}</td>
+											</tr>
+											<tr>
+												<td class="all_c">SP</td>
+												<td class="all_c">{{character.char_silver_amount}}</td>
+												<td class="all_c">{{character.char_silver_load}}</td>
+											</tr>
+											<tr>
+												<td class="all_c">CP</td>
+												<td class="all_c">{{character.char_copper_amount}}</td>
+												<td class="all_c">{{character.char_copper_load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">&nbsp;</td>
+												<td class="all_c">{{character.money.other.1}}</td>
+												<td class="all_c">{{character.money.other.1.load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">O</td>
+												<td class="all_c">{{character.money.other.2}}</td>
+												<td class="all_c">{{character.money.other.2.load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">T</td>
+												<td class="all_c">{{character.money.other.3}}</td>
+												<td class="all_c">{{character.money.other.3.load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">H</td>
+												<td class="all_c">{{character.money.other.4}}</td>
+												<td class="all_c">{{character.money.other.4.load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">E</td>
+												<td class="all_c">{{character.money.other.5}}</td>
+												<td class="all_c">{{character.money.other.5.load}}</td>
+											</tr>
+											<tr>
+												<td class="left_c">R</td>
+												<td class="all_c">{{character.money.other.6}}</td>
+												<td class="all_c">{{character.money.other.6.load}}</td>
+											</tr>
+												<td class="left_c bottom">&nbsp;</td>
+												<td class="all_c">{{character.money.other.7}}</td>
+												<td class="all_c">{{character.money.other.7.load}}</td>
+											<tr>
+												<td colspan="2" class="halign_rpl">Total Load</td>
+												<td class="all_c">{{character.money.total.load}}</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<!-- Row Four -->
+					<tr><td>&nbsp;</td></tr>
+
+					<!-- Row Five -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="valign_t" >
+							<table id="width_g">
+								<tr>
+									<td class="valign_t" id="width_f">
+										<!-- Equipment Left -->
+										<table id="width_g">
+											<tr>
+												<td class="header">Equipment List</td>
+												<td id="width_1" class="halign_c">Qty</td>
+												<td id="width_1" class="halign_c">Load</td>
+												<td id="width_1" class="halign_c">Adj</td>
+												<td id="width_1" class="halign_c">Dur</td>
+											</tr>
+											<!-- {{table.equipment.left}} -->
+											<tr>
+												<td class="halign_rpl" colspan="2">Total Load</td>
+												<td class="all_c">{{character.equipment.total.load.left}}</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</td>
+									<td id="width_a">&nbsp;</td>
+									<td class="valign_t" >
+										<!-- Equipment Right -->
+										<table id="width_g">
+											<tr>
+												<td class="header">Equipment List</td>
+												<td id="width_1" class="halign_c">Qty</td>
+												<td id="width_1" class="halign_c">Load</td>
+												<td id="width_1" class="halign_c">Adj</td>
+												<td id="width_1" class="halign_c">Dur</td>
+											</tr>
+											<!-- {{table.equipment.right}} -->
+											<tr>
+												<td class="halign_rpl" colspan="2">Total Load</td>
+												<td class="all_c">{{character.equipment.total.load.right}}</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Adventures in Fantasy</title>
+		{% include "aif_ui/header.html" %}
+	</head>
+	<body>
+		{% include "aif_ui/navbar.html" %}
+		<div id='main'>
+			{% if flag == 'sheet' %}
+				{% include "aif_ui/tabbar.html" %}
+			{% else %}
+				<img class="center" src="{% static 'aif_ui/aif-splash.png' %}">
+			{% endif %}
+		</div>
+		{% include "registration/login_modal.html" %}
+	</body>
+</html>

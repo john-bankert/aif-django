@@ -1,0 +1,18 @@
+{% if request.user.is_authenticated %}
+    <div class="float_right dropdown">
+        <div class="menu_icon menu_div" onclick="show_user_menu()">
+            <button class="menu_icon text_button" >
+                Logged in as {{ request.user.username }}
+            </button>
+        </div>
+        <div class="dropdown_content" id="user_menu">
+            <a href="javascript:doesNothing('Switch User')">Switch User</a>
+            <a href="javascript:doesNothing('Change Password')">Change Password</a>
+            <a href="javascript:doesNothing('Preferences')">Preferences</a>
+			<hr/>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+{% else %}
+    <button class="float_right navbar_button" onclick="showLogin()">Login</button>
+{% endif %}

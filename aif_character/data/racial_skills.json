@@ -1,0 +1,884 @@
+[
+    {
+        "model": "aif_character.racialskills",
+        "pk": 1,
+        "fields": {
+            "character": 1,
+            "item_name": "Appraising",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 2,
+        "fields": {
+            "character": 1,
+            "item_name": "Bartering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 3,
+        "fields": {
+            "character": 1,
+            "item_name": "History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 4,
+        "fields": {
+            "character": 1,
+            "item_name": "Instinct",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 5,
+        "fields": {
+            "character": 1,
+            "item_name": "Leadership",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 6,
+        "fields": {
+            "character": 1,
+            "item_name": "Linguistics",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 7,
+        "fields": {
+            "character": 1,
+            "item_name": "Wisdom",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 8,
+        "fields": {
+            "character": 2,
+            "item_name": "Camouflage",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 9,
+        "fields": {
+            "character": 2,
+            "item_name": "Elven History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 10,
+        "fields": {
+            "character": 2,
+            "item_name": "Faerie Flare",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 11,
+        "fields": {
+            "character": 2,
+            "item_name": "Nightvision",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 12,
+        "fields": {
+            "character": 2,
+            "item_name": "Plant Empathy",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 13,
+        "fields": {
+            "character": 2,
+            "item_name": "Sense Enchantment",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 14,
+        "fields": {
+            "character": 2,
+            "item_name": "Tracking",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 15,
+        "fields": {
+            "character": 3,
+            "item_name": "Animal Friend",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 16,
+        "fields": {
+            "character": 3,
+            "item_name": "Chattering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 17,
+        "fields": {
+            "character": 3,
+            "item_name": "Escaping",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 18,
+        "fields": {
+            "character": 3,
+            "item_name": "Far Sight",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 19,
+        "fields": {
+            "character": 3,
+            "item_name": "Halfling History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 20,
+        "fields": {
+            "character": 3,
+            "item_name": "Lock",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 21,
+        "fields": {
+            "character": 3,
+            "item_name": "Map Sense",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 22,
+        "fields": {
+            "character": 4,
+            "item_name": "Direction Sense",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 23,
+        "fields": {
+            "character": 4,
+            "item_name": "Dwarven History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 24,
+        "fields": {
+            "character": 4,
+            "item_name": "Infravision",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 25,
+        "fields": {
+            "character": 4,
+            "item_name": "Mountaineering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 26,
+        "fields": {
+            "character": 4,
+            "item_name": "Stone Speak",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 27,
+        "fields": {
+            "character": 4,
+            "item_name": "Toughness",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 28,
+        "fields": {
+            "character": 4,
+            "item_name": "Yawp",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 29,
+        "fields": {
+            "character": 5,
+            "item_name": "Appraising",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 30,
+        "fields": {
+            "character": 5,
+            "item_name": "Camouflage",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 31,
+        "fields": {
+            "character": 5,
+            "item_name": "Elven History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 32,
+        "fields": {
+            "character": 5,
+            "item_name": "Instinct",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 33,
+        "fields": {
+            "character": 5,
+            "item_name": "Nightvision",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 34,
+        "fields": {
+            "character": 5,
+            "item_name": "Plant Empathy",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 35,
+        "fields": {
+            "character": 5,
+            "item_name": "Wisdom",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 36,
+        "fields": {
+            "character": 6,
+            "item_name": "Earth Light",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 37,
+        "fields": {
+            "character": 6,
+            "item_name": "Jewel Crafting",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 38,
+        "fields": {
+            "character": 6,
+            "item_name": "Petriform",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 39,
+        "fields": {
+            "character": 6,
+            "item_name": "Rockroot",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 40,
+        "fields": {
+            "character": 6,
+            "item_name": "Treasure Sense",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 41,
+        "fields": {
+            "character": 6,
+            "item_name": "Tremor Sense",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 42,
+        "fields": {
+            "character": 6,
+            "item_name": "Ultravision",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 43,
+        "fields": {
+            "character": 7,
+            "item_name": "Appraising",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 44,
+        "fields": {
+            "character": 7,
+            "item_name": "Bartering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 45,
+        "fields": {
+            "character": 7,
+            "item_name": "History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 46,
+        "fields": {
+            "character": 7,
+            "item_name": "Instinct",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 47,
+        "fields": {
+            "character": 7,
+            "item_name": "Leadership",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 48,
+        "fields": {
+            "character": 7,
+            "item_name": "Linguistics",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 49,
+        "fields": {
+            "character": 7,
+            "item_name": "Wisdom",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 50,
+        "fields": {
+            "character": 8,
+            "item_name": "Appraising",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 51,
+        "fields": {
+            "character": 8,
+            "item_name": "Bartering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 52,
+        "fields": {
+            "character": 8,
+            "item_name": "History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 53,
+        "fields": {
+            "character": 8,
+            "item_name": "Instinct",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 54,
+        "fields": {
+            "character": 8,
+            "item_name": "Leadership",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 55,
+        "fields": {
+            "character": 8,
+            "item_name": "Linguistics",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 56,
+        "fields": {
+            "character": 8,
+            "item_name": "Wisdom",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 57,
+        "fields": {
+            "character": 9,
+            "item_name": "Animal Friend",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 58,
+        "fields": {
+            "character": 9,
+            "item_name": "Chattering",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 59,
+        "fields": {
+            "character": 9,
+            "item_name": "Escaping",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 60,
+        "fields": {
+            "character": 9,
+            "item_name": "Far Sight",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 61,
+        "fields": {
+            "character": 9,
+            "item_name": "Halfling History",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 62,
+        "fields": {
+            "character": 9,
+            "item_name": "Lock",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.racialskills",
+        "pk": 63,
+        "fields": {
+            "character": 9,
+            "item_name": "Map Sense",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "adjusted": 0,
+            "mastered": false
+        }
+    }
+]

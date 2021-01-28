@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Adventures in Fantasy</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% load static %}
+		<!-- link rel="stylesheet" type="text/css" href="{% static 'dj_ui/index.css' %}" -->
+		<style>
+			.navbar {
+				overflow: hidden;
+				top: 0;
+				background-color: #000000;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.dropdown {
+				float: left;
+				overflow: hidden;
+				cursor: pointer;
+				font-size: 16px;
+				border: none;
+				outline: none;
+				color: white;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.tn_button {
+				border: solid; /* Remove borders */
+				border-color: #ffffff;
+				margin-top: 7px;
+				margin-left: 14px;
+				width: 100px;
+				height: 30px;
+				cursor: pointer; /* Add a pointer cursor on mouse-over */
+				background-color: #e7e7e7;
+				color: black;
+				border-radius: 5px;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				color: black;
+			}
+
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+
+			.dropdown-content a:hover {
+				background-color: #ddd;
+			}
+
+			.show {
+				display: block;
+			}
+
+			.menu_icon {
+				border: none;
+				outline: none;
+			}
+
+			.menu_div {
+				cursor: pointer;
+				color: black;
+				background-color: inherit;
+				font-family: inherit;
+				margin-top: 7px;
+				margin-bottom: 7px;
+				margin-left: 14px;
+				height: 30px;
+			}
+
+			.bar {
+				width: 30px;
+				height: 5px;
+				background-color: #ffffff;
+			}
+
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+			}
+
+			#main {
+				margin-top: 10px;
+			}
+
+			.float_right {
+				float: right;
+				margin-right:14px;
+			}
+
+			/* The Modal (background) */
+			.modal {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				padding-top: 100px; /* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */
+				overflow: auto; /* Enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Header */
+			.modal-header {
+				padding: 2px 8px;
+				background-color: #000000;
+				color: white;
+			}
+
+			/* Modal Body */
+			.modal-body {padding: 2px 16px;}
+
+			/* Modal Footer */
+			.modal-footer {
+				padding: 2px 16px;
+				background-color: #5cb85c;
+				color: white;
+			}
+
+			/* Modal Content */
+			.modal-content {
+				position: relative;
+				background-color: #fefefe;
+				margin: auto;
+				padding: 0;
+				border: 1px solid #888;
+				width: 80%;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+				animation-name: animatetop;
+				animation-duration: 0.4s
+			}
+
+			/* Modal Content */
+			.modal-content {
+				background-color: #fefefe;
+				margin: auto;
+				padding: 0px;
+				border: 1px solid #888;
+				width: 25%;
+			}
+
+			/* The Close Button */
+			.close {
+				color: #ffffff;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: #000000;
+				background-color: #ffffff;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			.form-row {
+				padding: 4px 0;
+				float: left;
+				width: 100%;
+				border-bottom: none;
+			}
+
+			.form-row label {
+				padding-right: 0.5em;
+				line-height: 2em;
+				font-size: 1em;
+				clear: both;
+				color: #333;
+			}
+
+			.form-row #id_username, .form-row #id_password {
+				clear: both;
+				padding: 8px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			.submit-row {
+				clear: both;
+				padding: 1em 0 0 9.4em;
+				margin-bottom: 10px;
+				border: none;
+				background: none;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<!--
+			<button class="tn_button">Button One</button>
+			<button class="tn_button">Button Two</button>
+			<button class="tn_button" onclick="location.href='{% url 'index' %}'">Index One</button>
+			-->
+			<input type="button" class="tn_button" value="Button One">
+			<input type="button" class="tn_button" value="Button Two">
+			{% if request.user.is_authenticated %}
+			<div class="float_right dropdown">
+				<!--
+				<input type="button" class="float_right dropdown" value="Logged in as {{ request.user.username }}">
+				<input type="button" class="float_right tn_button" value="Login">
+				 <p><a href="{% url 'logout' %}">Log Out</a></p>
+				-->
+				<div class="menu_icon menu_div" onclick="showUserDropdown()">
+					<button class="menu_icon" style="margin-top: 7px; background-color: black; color: white; font-size: 16px;" >Logged in as {{ request.user.username }}</button>
+				</div>
+				<div class="dropdown-content" id="userDropdown">
+					<a href="{% url 'changepw' %}">Change Password</a>
+					<a href="{% url 'logout' %}">Logout</a>
+				</div>
+			</div>
+			{% else %}
+			<button class="float_right tn_button" id="modal_button">Login</button>
+			{% endif %}
+			<div class="dropdown">
+				<div class="menu_icon menu_div" onclick="myFunction()">
+					<div class="menu_icon bar" style="margin-bottom: 6px;"></div>
+					<div class="menu_icon bar" style="margin-bottom: 6px;"></div>
+					<div class="menu_icon bar"></div>
+				</div>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">Open Character</a>
+					<a href="#">Close Character</a>
+					<a href="#">Delete Character</a>
+					<hr/>
+					<a href="#">New Character</a>
+					<a href="#">New Random Character</a>
+					<hr/>
+					<a href="#">Rename Character</a>
+					<a href="#">Multiclass</a>
+					<a href="#">Character -&gt; JSON</a>
+					<a href="#">JSON -&gt; Character</a>
+					<a href="#">Character -&gt; PDF</a>
+				</div>
+			</div>
+		</div>
+		<div id='main'>
+			<img class="center" src="{% static 'dj_ui/aif-splash.png' %}">
+		</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h3>Login</h3>
+				</div>
+				<div class="modal-body">
+					<form action="{% url 'login' %}" method="post" id="login-form">
+						{% csrf_token %}
+						<!--input type="hidden" name="csrfmiddlewaretoken" value="eAq66iviXvDdmMDwgOmqtm8vkfyEqVlE8ufDxHNVT6TlnK7LGu6hvRQndXxIki47"-->
+						<div class="form-row">
+							<label class="required" for="id_username">Username:</label>
+							<input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username">
+						</div>
+						<div class="form-row">
+							<label class="required" for="id_password">Password:</label> <input type="password" name="password" autocomplete="current-password" required id="id_password">
+							<!--input type="hidden" name="next" value="/admin/"-->
+						</div>
+						<div class="submit-row">
+							<button onclick="window.location.href='{% url 'login' %}'">Log In</button>
+							<!--input type="submit" value="Log in"-->
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("modal_button");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		<script>
+			/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+				if (!e.target.matches('.menu_icon')) {
+					var myDropdown = document.getElementById("myDropdown");
+					if (myDropdown.classList.contains('show')) {
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+		<script>
+			/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function showUserDropdown() {
+				document.getElementById("userDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+				if (!e.target.matches('.menu_icon')) {
+					var myDropdown = document.getElementById("userDropdown");
+					if (myDropdown.classList.contains('show')) {
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,4 @@
+https://aif.magichelmet.xyz
+login
+username: demo
+password: 1qaz2wsx!QAZ@WSX
