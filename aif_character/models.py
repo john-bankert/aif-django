@@ -478,7 +478,9 @@ class Character(models.Model):
         # update to hit/damage modifier display values
         # This should include dice bonuses from things like onslaught spell. Needs to be fixed.
         self.to_hit_mods_base = int(self.dex_modifiers)
+        self.to_hit_mods_adjusted = self.to_hit_mods_base
         self.damage_mods_base = int(self.str_modifiers)
+        self.damage_mods_adjusted = self.damage_mods_base
         self.to_hit_mods_buff += fatigue_penalty
         # check on this
         # self.damage_mods_buff += fatigue_penalty

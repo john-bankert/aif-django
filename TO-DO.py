@@ -21,6 +21,7 @@ https://stackoverflow.com/questions/7302889/textfield-missing-in-django-forms
  questions for Matt:
 
  can crossbows use different quarrel types: eg small cb use medium quarrel, large cb use small or medium quarrel, etc
+ crossbow skill - is using medium translatable to large or small, for example?
 
 ######################################
 

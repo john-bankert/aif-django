@@ -10,7 +10,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.adjust_character('Chauncy')
-        '''
         self.adjust_character('Zandor')
         self.adjust_character('Fredo')
         self.adjust_character('Brunie')
@@ -24,7 +23,6 @@ class Command(BaseCommand):
         self.adjust_character('Glinka')
         self.adjust_character('Horanda')
         self.adjust_character('George')
-        '''
 
     def adjust_character(self, _name):
         if Character.objects.filter(name=_name).count() != 0:
