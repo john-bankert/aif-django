@@ -36,6 +36,7 @@ https://stackoverflow.com/questions/7302889/textfield-missing-in-django-forms
  consider refactoring various skills tables into one table with skill type field
  Formulas of some sort for buffs, etc.
  normalize field names: eg item_name/name, adjusted -> display, etc.
+ *** Express all widths as percentages if possible!
 
  TODO - HIGH
  new combat/close combat need to do something to adjust buff round start/end across multiple combats

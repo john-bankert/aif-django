@@ -187,8 +187,8 @@ class Character(models.Model):
         if character_race != "":
             _race = getattr(importlib.import_module("aif_playerstome.races"), self.race.replace(" ", ""))()
             self.walking_base = _race.movement
-            self.running_base = _race.movement * 2
-            self.swimming_base = round(_race.movement / 2)
+            self.running_base = self.walking_base * 2
+            self.swimming_base = round(self.walking_base / 2)
             self.withstand_dice = _race.save_dice[aif.WITHSTAND]
             self.withstand_modifiers = _race.save_bonuses[aif.WITHSTAND]
             self.dodge_dice = _race.save_dice[aif.DODGE]
