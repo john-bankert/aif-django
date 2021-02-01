@@ -1,0 +1,396 @@
+/* want these to affect everything */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-name);
+    font-size: var(--font-size);
+}
+
+table { border-collapse: collapse; }
+tr { height: auto; }
+
+/*
+input {
+    background-color: #00ff00;
+    border: 1.0px;
+    padding: 0;
+}
+*/
+
+input, button, select {
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* classes and ids for character sheet stuff */
+.hdr_1 { text-align: center; vertical-align: center; font-size: 24pt; }
+.hdr_2 { vertical-align: bottom; font-size: 22pt; }
+.hdr_3 { border-bottom: 1.0px solid black; text-align: right; vertical-align: bottom; font-size: 22pt; }
+.hdr_4 { vertical-align: bottom; font-size: 22pt; }
+.hdr_5 { border-bottom: 1.0px solid black; text-align: center; }
+
+.valign_b { vertical-align: bottom; }
+.valign_t { vertical-align: top; }
+
+.sheet {
+    width: 9.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
+}
+
+.all { border: 1.0px solid black; }
+.all_c { border: 1.0px solid black; text-align: center; }
+.all_r { border: 1.0px solid black; text-align: right; padding-right: 5px; }
+.all_pl { border: 1.0px solid black; padding-left: 5px; }
+
+.bottom { border-bottom: 1.0px solid black; }
+.bottom_c { border-bottom: 1.0px solid black; text-align: center; }
+
+.font_small { font-size: 75%; }
+
+.halign_c { text-align: center; }
+.halign_r { text-align: right; }
+.halign_rpl { text-align: right; padding-right: 5px; }
+
+.header { border: 1.0px solid black; font-size: 105%; background-color: #cccccc;}
+.header_c { border: 1.0px solid black; font-size: 105%; background-color: #cccccc; text-align: center; }
+
+.left_c { border-left: 1.0px solid black; text-align: center; }
+
+#width_02 { width: 2%; }
+#width_03 { width: 3%; }
+#width_05 { width: 5%; }
+#width_07 { width: 7%; }
+#width_10 { width: 10%; }
+#width_15 { width: 15%; }
+#width_18 { width: 18%; }
+#width_1925 { width: 19.25%; }
+#width_235 { width: 23.5%; }
+#width_30 { width: 30%; }
+#width_32 { width: 32%; }
+#width_39 { width: 39%; }
+#width_40 { width: 40%; }
+#width_49 { width: 49%; }
+#width_59 { width: 59%; }
+#width_65 { width: 65%; }
+#width_75 { width: 75%; }
+#width_100 { width: 100%; }
+
+#width_0 { width: 5px; }
+#width_1 { width: 30px; }
+#width_2 { width: 35px; }
+#width_3 { width: 45px; }
+#width_4 { width: 50px; }
+#width_5 { width: 60px; }
+#width_6 { width: 100px; }
+
+#width_a { width: 2%; }
+#width_b { width: 15%; }
+#width_c { width: 20%; }
+#width_d { width: 22%; }
+#width_e { width: 25%; }
+#width_f { width: 49%; }
+#width_g { width: 100%; }
+#width_8 { width: 8in; }
+
+/*
+.fill { height:1300px; }
+
+
+.h1 { height: 132px; }
+.h2 { height: 132px; }
+.h3 { height: 953px; }
+.h4 { height: 220px; }
+.h5 { height: 205px; }
+.h6 { height: 205px; }
+.h7 { height: 117px; }
+.h8 { height: 117px; }
+
+*/
+
+
+
+.page {
+    page-break-after: always;
+    position: relative;
+    width: 8.5in;
+    height: 11in;
+}
+
+.page-content {
+    position: absolute;
+    width: 8.0in;
+    height: 10.5in;
+    left: 0.25in;
+    top: 0.25in;
+    bottom: 10.75in;
+    right: 8.25in;
+    background-color: #FFFF00;
+}
+
+
+	/* Style the tab */
+	.tab {
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	  background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+	  background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	  display: none;
+	  padding: 6px 12px;
+	  /* border: 1px solid #ccc;
+	  border-top: none; */
+	}
+
+
+
+/* navbar related stuff */
+.navbar {
+    color: var(--navbar-fg-color);
+    background-color: var(--navbar-bg-color);
+    top: 0;
+    overflow: hidden;
+    font-family: inherit;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.navbar_button {
+    border: solid; /* Remove borders */
+    color: var(--navbar-button-fg-color);
+    border-color: var(--navbar-button-border-color);
+    background-color: var(--navbar-button-bg-color);
+    margin-top: 7px;
+    margin-left: 14px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border-radius: 5px;
+}
+
+.navbar_select {
+    border: solid; /* Remove borders */
+    color: var(--navbar-button-fg-color);
+    border-color: var(--navbar-button-border-color);
+    background-color: var(--navbar-button-bg-color);
+    margin-top: 7px;
+    margin-left: 14px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.text_button {
+    color: inherit;
+    background-color: inherit;
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+.dropdown {
+    color: inherit;
+    background-color: inherit;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown_content {
+    color: var(--dropdown-fg-color);
+    background-color: var(--dropdown-bg-color);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: inherit;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: var(--dropdown-hover-color);
+}
+
+.show {
+    display: block;
+}
+
+.menu_icon {
+    border: none;
+    outline: none;
+}
+
+.menu_div {
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    height: 30px;
+}
+
+.bar {
+    background-color: var(--menubar-bg-color);
+    width: 30px;
+    height: 5px;
+}
+
+.float_right {
+    float: right;
+    margin-right:14px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#main {
+    margin-top: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.modal_header {
+    padding: 2px 8px;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-fg-color);
+}
+
+/* Modal Body */
+.modal_body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal_footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form_row {
+    padding: 4px 0;
+    float: left;
+    width: 100%;
+    border-bottom: none;
+}
+
+.form_row label {
+    padding-right: 0.5em;
+    line-height: 2em;
+    font-size: 1em;
+    clear: both;
+    color: #333;
+}
+
+.form_row #id_username, .form_row #id_password {
+    clear: both;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit_row {
+    clear: both;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 1em 0 0 9.4em;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    text-align: center; */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,0 +1,79 @@
+<table id="width_100">
+    <tr>
+        <td></td>
+        <td id="width_40" class="header">Money</td>
+        <td id="width_40" class="header">Load</td>
+    </tr>
+    <tr>
+        <td class="all_c">&nbsp;GP&nbsp;</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.gold_amount}}
+            {% else %}
+                <input type="text" name="gold_amount" value="{{character.gold_amount}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.gold_load}}</td>
+    </tr>
+    <tr>
+        <td class="all_c">SP</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.silver_amount}}
+            {% else %}
+                <input type="text" name="silver_amount" value="{{character.silver_amount}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.silver_load}}</td>
+    </tr>
+    <tr>
+        <td class="all_c">CP</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.copper_amount}}
+            {% else %}
+                <input type="text" name="copper_amount" value="{{character.copper_amount}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.copper_load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">&nbsp;</td>
+        <td class="all_c">{{character.money.other.1}}</td>
+        <td class="all_c">{{character.money.other.1.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">O</td>
+        <td class="all_c">{{character.money.other.2}}</td>
+        <td class="all_c">{{character.money.other.2.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">T</td>
+        <td class="all_c">{{character.money.other.3}}</td>
+        <td class="all_c">{{character.money.other.3.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">H</td>
+        <td class="all_c">{{character.money.other.4}}</td>
+        <td class="all_c">{{character.money.other.4.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">E</td>
+        <td class="all_c">{{character.money.other.5}}</td>
+        <td class="all_c">{{character.money.other.5.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c">R</td>
+        <td class="all_c">{{character.money.other.6}}</td>
+        <td class="all_c">{{character.money.other.6.load}}</td>
+    </tr>
+    <tr>
+        <td class="left_c bottom">&nbsp;</td>
+        <td class="all_c">{{character.money.other.7}}</td>
+        <td class="all_c">{{character.money.other.7.load}}</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="halign_rpl">Total Load</td>
+        <td class="all_c">{{character.money_total_load}}</td>
+    </tr>
+</table>

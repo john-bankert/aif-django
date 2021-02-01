@@ -1,0 +1,53 @@
+<table id="width_100" align="center">
+    <tr>
+        <td colspan="2" class="header">Saves</td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="all_r">Withstand</td>
+        <td id="width_30" class="all_c">{{character.withstand_adjusted}}</td>
+    </tr>
+    <tr>
+        <td class="all_r">Dodge</td>
+        <td class="all_c">{{character.dodge_adjusted}}</td>
+    </tr>
+    <tr>
+        <td class="all_r">Resist</td>
+        <td class="all_c">{{character.resist_adjusted}}</td>
+    </tr>
+    <!-- need some sort of conditional here -->
+    {% load define_showhp %}
+    {% if 'Paladin' in character.char_class %}
+        {% define True as showhp %}
+    {% else %}
+        {% define False as showhp %}
+    {% endif %}
+    <tr>
+        {% if character.is_spellcaster %}
+            <td class="all_r">Spell Points</td>
+            <td class="all_c">{{character.spell_points_base}}</td>
+        {% elif 'Bard' in character.char_class %}
+            <td class="all_r">Rhythm Points</td>
+            <td class="all_c">{{character.rhythm_points_base}}</td>
+        {% elif 'Illusionist' in character.char_class %}
+            <td class="all_r">Spell Cards</td>
+            <td class="all_c">{{character.spell_cards_base}}</td>
+        {% elif showhp %}
+            <td class="all_r">Honor Points</td>
+            <td class="all_c">{{character.honor_points_base}}</td>
+            {% define False as showhp %}
+        {% else %}
+            <td colspan="2">&nbsp;</td>
+        {% endif %}
+    </tr>
+    <tr>
+        {% if showhp %}
+            <td class="all_r">Honor Points</td>
+            <td class="all_c">{{character.honor_points_base}}</td>
+        {% else %}
+            <td colspan="2">&nbsp;</td>
+        {% endif %}
+    </tr>
+</table>

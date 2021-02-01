@@ -1,0 +1,54 @@
+<table id="width_100">
+    <tr>
+        <td colspan="3" class="header">Ability Scores</td>
+    </tr>
+    <tr>
+        <td id="width_40"></td>
+        <td id="width_30"></td>
+        <td id="width_30" class="halign_c">Mods</td>
+    </tr>
+    <tr>
+        <td>STR:</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.str_base}}
+            {% else %}
+                <input type="text" name="str_base" value="{{character.str_base}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.str_modifiers}}</td>
+    </tr>
+    <tr>
+        <td>DEX:</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.dex_base}}
+            {% else %}
+                <input type="text" name="dex_base" value="{{character.dex_base}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.dex_modifiers}}</td>
+    </tr>
+    <tr>
+        <td>INT:</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.int_base}}
+            {% else %}
+                <input type="text" name="int_base" value="{{character.int_base}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.int_modifiers}}</td>
+    </tr>
+    <tr>
+        <td>HLTH:</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.health_base}}
+            {% else %}
+                <input type="text" name="health_base" value="{{character.health_base}}">
+            {% endif %}
+        </td>
+        <td class="all_c">{{character.health_modifiers}}</td>
+    </tr>
+</table>

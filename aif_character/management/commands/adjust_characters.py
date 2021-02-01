@@ -4,10 +4,11 @@ from aif_character.models import Character
 
 class Command(BaseCommand):
 
-
     def add_arguments(self, parser):
         pass
-        
+
     def handle(self, *args, **options):
-        for row in Character.objects.all():
-            print(row.name + " (" + row.player + ") " + row.race + " " + row.char_class)
+        for char in Character.objects.all():
+            self.stdout.write("Adjusting Character " + char.name)
+            char.adjust()
+            char.save()

@@ -1,0 +1,48 @@
+<table id="width_100" align="center">
+    <tr>
+        <td colspan="2" class="header">Combat Factors</td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="all_r">Knockdown</td>
+        <td id="width_30" class="all_c">
+            {% if flag == "sheet" %}
+                {{character.knockdown_adjusted}}
+            {% else %}
+                <input type="text" name="knockdown_adjusted" value="{{character.knockdown_adjusted}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Defense</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.defense_adjusted}}
+            {% else %}
+                <input type="text" name="defense_adjusted" value="{{character.defense_adjusted}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Stun</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.stun_adjusted}}
+            {% else %}
+                <input type="text" name="stun_adjusted" value="{{character.stun_adjusted}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Endurance</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.endurance_adjusted}}
+            {% else %}
+                <input type="text" name="endurance_adjusted" value="{{character.endurance_adjusted}}">
+            {% endif %}
+        </td>
+    </tr>
+</table>

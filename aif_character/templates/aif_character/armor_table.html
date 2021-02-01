@@ -1,0 +1,173 @@
+<table id="width_100">
+    <tr>
+        <td class="valign_t" >
+            <!-- Armor -->
+            <table id="width_100">
+                <tr>
+                    <td class="header">Armor List</td>
+                    <td id="width_05" class="halign_c">Type</td>
+                    <td id="width_05" class="halign_c">Dur</td>
+                    <td id="width_05" class="halign_c">S</td>
+                    <td id="width_05" class="halign_c">P</td>
+                    <td id="width_05" class="halign_c">B</td>
+                    <td id="width_05" class="halign_c">C</td>
+                    <td id="width_07" class="halign_c">Load</td>
+                </tr>
+                {% for armor in character.armor_set.all %}
+                    {% load define_group %}
+                    {% if "Group" in armor.name or armor.load == "-" %}
+                        {% define True as group %}
+                    {% else %}
+                        {% define False as group %}
+                    {% endif %}
+                    {% load define_toughness %}
+                    {% if "Toughness" in armor.name %}
+                        {% define True as toughness %}
+                    {% else %}
+                        {% define False as toughness %}
+                    {% endif %}
+                    {% load define_protection %}
+                    {% if "Protection Spell" in armor.name %}
+                        {% define True as protection %}
+                    {% else %}
+                        {% define False as protection %}
+                    {% endif %}
+                    {% if not group %}
+                    <tr>
+                        <td class="all_pl">{{armor.description}}</td>
+                        {% if flag == "sheet" or toughness or protection %}
+                            <td class="all_c">{{armor.type}}</td>
+                        {% else %}
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_type" value="{{armor.type}}">
+                            </td>
+                        {% endif %}
+                        {% if flag == "sheet" or toughness %}
+                            <td class="all_c">{{armor.durability}}</td>
+                        {% else %}
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_durability" value="{{armor.durability}}">
+                            </td>
+                        {% endif %}
+                        {% if flag == "sheet" or protection %}
+                            <td class="all_c">{{armor.slashing}}</td>
+                            <td class="all_c">{{armor.piercing}}</td>
+                            <td class="all_c">{{armor.bludgeoning}}</td>
+                            <td class="all_c">{{armor.cleaving}}</td>
+                        {% else %}
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_slashing" value="{{armor.slashing}}">
+                            </td>
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_piercing" value="{{armor.piercing}}">
+                            </td>
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_bludgeoning" value="{{armor.bludgeoning}}">
+                            </td>
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_cleaving" value="{{armor.cleaving}}">
+                            </td>
+                        {% endif %}
+                        {% if flag == "sheet" or toughness or protection %}
+                            <td class="all_c">{{armor.load}}</td>
+                        {% else %}
+                            <td class="all_c">
+                                <input type="text" name="{{armor.name}}_load" value="{{armor.load}}">
+                            </td>
+                        {% endif %}
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td colspan="4" class="halign_rpl">Total Armor Load</td>
+                    <td class="all_pl">{{character.armor_total_load}}</td>
+                </tr>
+            </table>
+        </td>
+        <td id="width_02">&nbsp;</td>
+        <td id="width_15" class="valign_t">
+            <table id="width_100">
+                <tr>
+                    <td></td>
+                    <td id="width_40" class="header">Money</td>
+                    <td id="width_40" class="header">Load</td>
+                </tr>
+                <tr>
+                    <td class="all_c">&nbsp;GP&nbsp;</td>
+                    <td class="all_c">
+                        {% if flag == "sheet" %}
+                            {{character.gold_amount}}
+                        {% else %}
+                            <input type="text" name="gold_amount" value="{{character.gold_amount}}">
+                        {% endif %}
+                    </td>
+                    <td class="all_c">{{character.gold_load}}</td>
+                </tr>
+                <tr>
+                    <td class="all_c">SP</td>
+                    <td class="all_c">
+                        {% if flag == "sheet" %}
+                            {{character.silver_amount}}
+                        {% else %}
+                            <input type="text" name="silver_amount" value="{{character.silver_amount}}">
+                        {% endif %}
+                    </td>
+                    <td class="all_c">{{character.silver_load}}</td>
+                </tr>
+                <tr>
+                    <td class="all_c">CP</td>
+                    <td class="all_c">
+                        {% if flag == "sheet" %}
+                            {{character.copper_amount}}
+                        {% else %}
+                            <input type="text" name="copper_amount" value="{{character.copper_amount}}">
+                        {% endif %}
+                    </td>
+                    <td class="all_c">{{character.copper_load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">&nbsp;</td>
+                    <td class="all_c">{{character.money.other.1}}</td>
+                    <td class="all_c">{{character.money.other.1.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">O</td>
+                    <td class="all_c">{{character.money.other.2}}</td>
+                    <td class="all_c">{{character.money.other.2.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">T</td>
+                    <td class="all_c">{{character.money.other.3}}</td>
+                    <td class="all_c">{{character.money.other.3.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">H</td>
+                    <td class="all_c">{{character.money.other.4}}</td>
+                    <td class="all_c">{{character.money.other.4.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">E</td>
+                    <td class="all_c">{{character.money.other.5}}</td>
+                    <td class="all_c">{{character.money.other.5.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c">R</td>
+                    <td class="all_c">{{character.money.other.6}}</td>
+                    <td class="all_c">{{character.money.other.6.load}}</td>
+                </tr>
+                <tr>
+                    <td class="left_c bottom">&nbsp;</td>
+                    <td class="all_c">{{character.money.other.7}}</td>
+                    <td class="all_c">{{character.money.other.7.load}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="halign_rpl">Total Load</td>
+                    <td class="all_c">{{character.money_total_load}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

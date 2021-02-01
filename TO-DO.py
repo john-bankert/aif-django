@@ -15,6 +15,8 @@ https://stackoverflow.com/questions/2412770/good-ways-to-sort-a-queryset-django
 https://docs.djangoproject.com/en/3.1/topics/serialization/
 https://docs.djangoproject.com/en/3.1/ref/forms/widgets/
 https://stackoverflow.com/questions/7302889/textfield-missing-in-django-forms
+https://www.codingforentrepreneurs.com/blog/html-template-to-pdf-in-django
+https://stackoverflow.com/questions/1377446/render-html-to-pdf-in-django-site
 
 ######################################
 

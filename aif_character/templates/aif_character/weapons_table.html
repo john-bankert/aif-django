@@ -1,0 +1,65 @@
+<table id="width_100">
+    <tr>
+        <td></td>
+        <td id="width_05"></td>
+        <td id="width_05"></td>
+        <td id="width_10"></td>
+        <td id="width_07"></td>
+        <td id="width_07"></td>
+        <td id="width_07"></td>
+        <td colspan="2" class="all_c">Dice and Adj</td>
+    </tr>
+    <tr>
+        <td class="header">Weapons List</td>
+        <td class="halign_c">Size</td>
+        <td class="halign_c">Type</td>
+        <td class="halign_c">Dam</td>
+        <td class="halign_c">Range</td>
+        <td class="halign_c">Dur</td>
+        <td class="halign_c">Load</td>
+        <td id="width_10" class="all_c">To Hit</td>
+        <td id="width_10" class="all_c">Dam</td>
+    </tr>
+    {% for weapon in character.weapons_set.all %}
+        {% if not 'Group' in weapon.name %}
+        <tr>
+            <td class="all_pl">{{weapon.description}}</td>
+            {% if flag == "sheet" or weapon.size == "-" %}
+                <td class="all_c">{{weapon.size}}</td>
+                <td class="all_c">{{weapon.type}}</td>
+                <td class="all_c">{{weapon.damage}}</td>
+                <td class="all_c">{{weapon.range}}</td>
+                <td class="all_c">{{weapon.durability}}</td>
+                <td class="all_c">{{weapon.load}}</td>
+            {% else %}
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_size" value="{{weapon.size}}">
+                </td>
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_type" value="{{weapon.type}}">
+                </td>
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_damage" value="{{weapon.damage}}">
+                </td>
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_range" value="{{weapon.range}}">
+                </td>
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_durability" value="{{weapon.durability}}">
+                </td>
+                <td class="all_c">
+                    <input type="text" name="{{weapon.name}}_load" value="{{weapon.load}}">
+                </td>
+            {% endif %}
+            <td class="all_c">{{weapon.to_hit}}</td>
+            <td class="all_c">{{weapon.damage}}</td>
+        </tr>
+        {% endif %}
+    {% endfor %}
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="4" class="halign_rpl">Total Weapon Load</td>
+        <td class="all_c">{{character.weapons_total_load}}</td>
+    </tr>
+</table>

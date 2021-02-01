@@ -9,4 +9,4 @@ set DJANGO_SUPERUSER_EMAIL=admin@example.com
 python manage.py createsuperuser --username=admin --no-input
 python manage.py createdemodata
 python manage.py ptimport
-python manage.py createdemochars
+python manage.py create_characters

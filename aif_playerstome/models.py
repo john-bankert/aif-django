@@ -6,6 +6,7 @@ from datetime import datetime
 from django.db import models
 from django.forms import ModelForm
 from django.core.exceptions import ObjectDoesNotExist
+from aif import constants as aif
 
 
 class Armor(models.Model):
@@ -83,8 +84,19 @@ class Armor(models.Model):
     @staticmethod
     def add_to_character(character, category, name, description=""):
         try:
+            if character.skills_set.filter(name=name).count() > 0:
+                sk = character.skills_set.get(name=name)
+            else:
+                sort_order = 0
+                if character.skills_set.filter(skill_type=aif.ARMOR):
+                    sort_order = character.skills_set.filter(skill_type=aif.ARMOR).latest('sort_order').sort_order
+                    sort_order += 1
+                sk = character.skills_set.create(name=name, skill_type=aif.ARMOR, sort_order=sort_order)
+                sk.save()
+                character.save()
+
             _armor = Armor.objects.get(category=category, name=name)
-            a = character.armor_set.create(item_name=name)
+            a = character.armor_set.create(name=name, skill=sk.pk)
             a.description = description if description != "" else name
             a.type = _armor.type
             a.durability = _armor.durability
@@ -187,6 +199,42 @@ class EquipmentForm(ModelForm):
 
 
 # class Races(models.Model):
+class Skills(models.Model):
+    key = models.CharField(max_length=150, default="")
+    name = models.CharField(max_length=100, default="")
+    skill_type = models.CharField(max_length=10, default="")
+    skill_class = models.CharField(max_length=25, default="")
+    description = models.TextField()
+
+    @staticmethod
+    def serialize():
+        try:
+            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/skills.json"
+            JSONSerializer = serializers.get_serializer("json")
+            json_serializer = JSONSerializer()
+            json_serializer.serialize(Spells.objects.all())
+            with open(fn, "w") as out:
+                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
+        except FileNotFoundError:
+            print("file not found")
+
+    @staticmethod
+    def add_to_character(character, name, type, rank, mastered=False):
+        if character.skills_set.filter(name=name, skill_type=type).count() > 0:
+            sk = character.skills_set.get(name=name, skill_type=type)
+        else:
+            sort_order = 0
+            if character.skills_set.filter(skill_type=type):
+                sort_order = character.skills_set.filter(skill_type=type).latest('sort_order').sort_order
+                sort_order += 1
+            sk = character.skills_set.create(name=name, skill_type=type, sort_order=sort_order)
+            sk.save()
+            character.save()
+        sk.rank = rank
+        sk.mastered = mastered
+        sk.save()
+        character.save()
+
 
 class Spells(models.Model):
 
@@ -255,6 +303,19 @@ class Spells(models.Model):
                                         row.saves, row.upkeep, row.duration])
         except FileNotFoundError:
             print("file not found")
+
+    @staticmethod
+    def add_to_character(character, name, type, rank, mastered=False):
+        if character.skills_set.filter(name=name, skill_type=type).count() > 0:
+            sk = character.skills_set.get(name=name, skill_type=type)
+        else:
+            sk = character.skills_set.create(name=name, skill_type=type)
+            sk.save()
+            character.save()
+        sk.rank = rank
+        sk.mastered = mastered
+        sk.save()
+        character.save()
 
 
 class SpellsForm(ModelForm):
@@ -332,11 +393,22 @@ class Weapons(models.Model):
             print("file not found")
 
     @staticmethod
-    def add_to_character(character, category, name):
-        w = character.weapons_set.create(item_name=name)
+    def add_to_character(character, name, description=""):
+        if character.skills_set.filter(name=name):
+            sk = character.skills_set.get(name=name)
+        else:
+            sort_order = 0
+            if character.skills_set.filter(skill_type=aif.WEAPON):
+                sort_order = character.skills_set.filter(skill_type=aif.WEAPON).latest('sort_order').sort_order
+                sort_order += 1
+            sk = character.skills_set.create(name=name, skill_type=aif.WEAPON, sort_order=sort_order)
+            sk.save()
+            character.save()
+        w = character.weapons_set.create(name=name, skill_pk=sk.pk)
+        w.description = description if description != "" else name
         for weapon in Weapons.objects.filter(name=name):
-            w.description = name
             w.size = weapon.size
+            w.weapon_pk = weapon.pk
             w.type = weapon.type
             w.damage = weapon.damage
             w.range = weapon.range

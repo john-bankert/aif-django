@@ -202,8 +202,10 @@ class Character(models.Model):
             self.save()
 
             for skill in _race.racial_skills:
-                rs = self.racialskills_set.create(item_name=skill)
+                rs = self.racialskills_set.create(name=skill)
                 rs.save()
+                sk = self.skills_set.create(name=skill, skill_type=aif.RACIAL)
+                sk.save()
 
         self.char_class = character_class
         self.save()
@@ -218,22 +220,33 @@ class Character(models.Model):
             class_skills = sorted(class_skills)
 
             for skill in class_skills:
-                cs = self.classskills_set.create(item_name=skill)
+                cs = self.classskills_set.create(name=skill)
                 cs.save()
+                sk = self.skills_set.create(name=skill, skill_type=aif.CLASS)
+                sk.save()
 
             if aif.PALADIN in self.char_class:
                 self.honor_points_base = 2
                 self.honor_points_current = self.honor_points_base
-                _classes[aif.PALADIN].honor_skills_list
+                sort_order = 0
                 for skill in _classes[aif.PALADIN].honor_skills_list:
-                    hs = self.honorskills_set.create(item_name=skill)
+                    hs = self.honorskills_set.create(name=skill)
                     hs.save()
+                    sk = self.skills_set.create(name=skill, skill_type=aif.HONOR, sort_order=sort_order)
+                    sk.save()
+                    sort_order += 1
 
             if self.is_spellcaster():
                 for circle in range(1, 6):
-                    self.spellskills_set.create(item_name="Circle " + str(circle) + " Spell Group").save()
+                    self.spellskills_set.create(name="Circle " + str(circle) + " Spell Group").save()
+                    sk = self.skills_set.create(name="Circle " + str(circle) + " Spell Group",
+                                                skill_type=aif.SPELL)
+                    sk.save()
                     if aif.ILLUSIONIST in self.char_class:
-                        self.spellskills_set.create(item_name="Circle " + str(circle) + " Affinity").save()
+                        self.spellskills_set.create(name="Circle " + str(circle) + " Affinity").save()
+                        sk = self.skills_set.create(name="Circle " + str(circle) + " Affinity",
+                                                    skill_type=aif.SPELL)
+                        sk.save()
                 for cls in [aif.BARD, aif.DRUID, aif.MAGICIAN, aif.WITCH]:
                     if cls in self.char_class:
                         for spell in SpellsList.objects.filter(category=cls):
@@ -274,23 +287,35 @@ class Character(models.Model):
 
         weapons_types = {aif.SLASHING_GRP: "S", aif.PIERCING_GRP: "P", aif.BLUDGEONING_GRP: "B", 
                             aif.CLEAVING_GRP: "C", aif.THROWING_GRP: "-", aif.BOW_GRP: "-"}
+        sort_order = 0
         for weapon in weapons_types:
-            w = self.weapons_set.create(item_name=weapon)
+            w = self.weapons_set.create(name=weapon)
             w.description = weapon
+            w.sort_order = sort_order
             w.size = "-"
             w.type = weapons_types[weapon]
             w.load = "-"
             w.save()
+            sk = self.skills_set.create(name=weapon, skill_type=aif.WEAPON)
+            sk.sort_order = sort_order
+            sk.save()
+            sort_order += 1
 
         armor_types = {aif.LIGHT_GRP: "L", aif.MEDIUM_GRP: "M", aif.HEAVY_GRP: "H", aif.HELMET_GRP: "-",
                         aif.UNARMED_GRP: "U", aif.SHIELD_GRP: "S"}
+        sort_order = 0
         for armor in armor_types:
-            a = self.armor_set.create(item_name=armor)
+            a = self.armor_set.create(name=armor)
             a.description = armor
+            a.sort_order = sort_order
             a.type = armor_types[armor]
             a.load = "-"
             a.save()
-            
+            sk = self.skills_set.create(name=armor, skill_type=aif.ARMOR)
+            sk.sort_order = sort_order
+            sk.save()
+            sort_order += 1
+
         self.adjust()
         self.save()
 
@@ -448,6 +473,8 @@ class Character(models.Model):
                 break
         level_by_four = round(self.level / 4)
         self.actions_base = 1 + level_by_four
+        if aif.PALADIN in self.char_class:
+            self.honor_points_base = self.level + 1
 
         # update save roll stat bonuses
         self.withstand_modifiers = int(self.str_modifiers) + fatigue_penalty
@@ -503,14 +530,28 @@ class Character(models.Model):
         mastered_skills = 0
 
         # calculate racial skill order values from rank
+        for skill in self.skills_set.all():
+            skill.adjusted = skill.rank + skill.buff
+            skill.order = int(skill.adjusted / 4)
+            skill.save()
+            if skill.name == 'Toughness':
+                if self.armor_set.filter(name='Toughness').count() == 0:
+                    a = self.armor_set.create(name='Toughness', rank=skill.rank, adjusted=skill.adjusted)
+                    a.description = a.name
+                    a.load = "-"
+                    a.save()
+            if skill.mastered:
+                mastered_skills += 1
+
+        # calculate racial skill order values from rank
         for skill in self.racialskills_set.all():
             skill.adjusted = skill.rank + skill.buff
             skill.order = int(skill.adjusted / 4)
             skill.save()
-            if skill.item_name == 'Toughness':
-                if self.armor_set.filter(item_name='Toughness').count() == 0:
-                    a = self.armor_set.create(item_name='Toughness', rank=skill.rank, adjusted=skill.adjusted)
-                    a.description = a.item_name
+            if skill.name == 'Toughness':
+                if self.armor_set.filter(name='Toughness').count() == 0:
+                    a = self.armor_set.create(name='Toughness', rank=skill.rank, adjusted=skill.adjusted)
+                    a.description = a.name
                     a.load = "-"
                     a.save()
             if skill.mastered:
@@ -560,7 +601,7 @@ class Character(models.Model):
         self.weapons_total_load = d0
         for weapon in self.weapons_set.all():
             weapon.order = int(weapon.rank / 4)
-            if aif.GROUP in weapon.item_name:
+            if aif.GROUP in weapon.name:
                 spbc[weapon.type] = weapon.order
             self.weapons_total_load += Character.load_to_num(weapon.load)
             if weapon.mastered:
@@ -571,7 +612,7 @@ class Character(models.Model):
         for weapon in self.weapons_set.all():
             weapon.to_hit_adjusted = ""
             weapon.damage_adjusted = ""
-            if aif.GROUP in weapon.item_name or weapon.size == '-':
+            if aif.GROUP in weapon.name or weapon.size == '-':
                 weapon.save()
                 continue
             weapon.melee_adjusted = ""
@@ -623,19 +664,19 @@ class Character(models.Model):
             if isinstance(armor.rank, int):
                 armor.order = int(armor.rank / 4)
                 ordered = True
-                if aif.GROUP in armor.item_name:
+                if aif.GROUP in armor.name:
                     defense_adj += armor.order
 
             spbc_adjusted = {aif.SLASHING: armor.slashing, aif.PIERCING: armor.piercing,
                              aif.BLUDGEONING: armor.bludgeoning, aif.CLEAVING: armor.cleaving}
-            if aif.GROUP not in armor.item_name and not armor.load == "-":
+            if aif.GROUP not in armor.name and not armor.load == "-":
                 if ordered:
                     spbc_adjusted = {aif.SLASHING: int(armor.slashing), aif.PIERCING: int(armor.piercing),
                                      aif.BLUDGEONING: int(armor.bludgeoning), aif.CLEAVING: int(armor.cleaving)}
                     for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
                         spbc_adjusted[spbc] += armor.order
                         t_spbc = total_spbc[spbc].split("/")
-                        if "helm" in armor.item_name.lower():
+                        if "helm" in armor.name.lower():
                             t_spbc[1] = int(t_spbc[1]) + int(spbc_adjusted[spbc])
                         else:
                             t_spbc[0] = int(t_spbc[0]) + int(spbc_adjusted[spbc])
@@ -720,12 +761,12 @@ class Character(models.Model):
         self.save()
 
     def add_container(self, name):
-        c = self.container_set.create(item_name=name)
+        c = self.container_set.create(name=name)
         self.save()
         c.save()
 
     def add_equipment(self, container, name, quantity, load, durability, in_container=False, worn=False):
-        c = self.container_set.get(item_name=container)
+        c = self.container_set.get(name=container)
         e = c.equipment_set.create(description=name)
         c.save()
         e.quantity = quantity
@@ -819,9 +860,41 @@ class Character(models.Model):
         return int(rank / 4)
 
 
-class ClassSkills(models.Model):
+class Spells(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    name = models.CharField(max_length=75, default="")
+    circle = models.IntegerField(default=0)
+    rank = models.IntegerField(default=0)
+    order = models.IntegerField(default=0)
+    adjusted = models.IntegerField(default=0)
+    buff = models.IntegerField(default=0)
+    vessel = models.BooleanField(default=False)
+    vessel_power = models.IntegerField(default=0)
+    mastered = models.BooleanField(default=False)
+
+    class Meta:
+        app_label = application_label
+        ordering = ['name']
+
+    @staticmethod
+    def serialize():
+        try:
+            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/spells.json"
+            JSONSerializer = serializers.get_serializer("json")
+            json_serializer = JSONSerializer()
+            json_serializer.serialize(Spells.objects.all())
+            with open(fn, "w") as out:
+                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
+        except FileNotFoundError:
+            print("file not found")
+
+
+class Skills(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    name = models.CharField(max_length=75, default="")
+    sort_order = models.IntegerField(default=0)
+    skill_type = models.CharField(max_length=10, default="")
+    skill_class = models.CharField(max_length=20, default="")
     description = models.CharField(max_length=200, default="")
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
@@ -831,7 +904,34 @@ class ClassSkills(models.Model):
 
     class Meta:
         app_label = application_label
-        ordering = ['item_name']
+        ordering = ['skill_type', 'sort_order', 'name']
+
+    @staticmethod
+    def serialize():
+        try:
+            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/class_skills.json"
+            JSONSerializer = serializers.get_serializer("json")
+            json_serializer = JSONSerializer()
+            json_serializer.serialize(ClassSkills.objects.all())
+            with open(fn, "w") as out:
+                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
+        except FileNotFoundError:
+            print("file not found")
+
+
+class ClassSkills(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    name = models.CharField(max_length=75, default="")
+    description = models.CharField(max_length=200, default="")
+    rank = models.IntegerField(default=0)
+    order = models.IntegerField(default=0)
+    buff = models.IntegerField(default=0)
+    adjusted = models.IntegerField(default=0)
+    mastered = models.BooleanField(default=False)
+
+    class Meta:
+        app_label = application_label
+        ordering = ['name']
 
     @staticmethod
     def serialize():
@@ -848,7 +948,7 @@ class ClassSkills(models.Model):
 
 class RacialSkills(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
@@ -858,7 +958,7 @@ class RacialSkills(models.Model):
 
     class Meta:
         app_label = application_label
-        ordering = ['item_name']
+        ordering = ['name']
 
     @staticmethod
     def serialize():
@@ -875,7 +975,7 @@ class RacialSkills(models.Model):
 
 class HonorSkills(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
@@ -885,7 +985,7 @@ class HonorSkills(models.Model):
 
     class Meta:
         app_label = application_label
-        ordering = ['item_name']
+        ordering = ['name']
 
     @staticmethod
     def serialize():
@@ -902,7 +1002,7 @@ class HonorSkills(models.Model):
 
 class SpellSkills(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
@@ -912,7 +1012,7 @@ class SpellSkills(models.Model):
 
     class Meta:
         app_label = application_label
-        ordering = ['item_name']
+        ordering = ['name']
 
     @staticmethod
     def serialize():
@@ -927,38 +1027,11 @@ class SpellSkills(models.Model):
             print("file not found")
 
 
-class Spells(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=75, default="")
-    circle = models.IntegerField(default=0)
-    rank = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
-    vessel = models.BooleanField(default=False)
-    vessel_power = models.IntegerField(default=0)
-    mastered = models.BooleanField(default=False)
-
-    class Meta:
-        app_label = application_label
-        ordering = ['name']
-        
-    @staticmethod
-    def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/spells.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(Spells.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-        
 class Weapons(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    skill_pk = models.IntegerField(default=0)
+    weapon_pk = models.IntegerField(default=0)
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     size = models.CharField(max_length=5, default="")
     type = models.CharField(max_length=5, default="")
@@ -987,8 +1060,7 @@ class Weapons(models.Model):
     def serialize():
         try:
             fn = os.path.dirname(os.path.realpath(__file__)) + "/data/weapons.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Weapons.objects.all())
             with open(fn, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
@@ -998,7 +1070,8 @@ class Weapons(models.Model):
 
 class Armor(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    skill = models.IntegerField(default=0)
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     type = models.CharField(max_length=5, default="")
     durability = models.CharField(max_length=5, default="")
@@ -1036,7 +1109,7 @@ class Armor(models.Model):
 
 class Container(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=75, default="")
+    name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     max_load_capacity = models.DecimalField(max_digits=5, decimal_places=1, default=0)
     current_load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
@@ -1142,4 +1215,4 @@ class CharacterForm(ModelForm):
 class ClassSkillsForm(ModelForm):
     class Meta:
         model = ClassSkills
-        fields = ['item_name', 'rank', 'mastered']
+        fields = ['name', 'rank', 'mastered']

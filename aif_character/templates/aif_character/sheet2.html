@@ -1,34 +1,5 @@
-<style>
-    .sheet2 {
-        font-size: 10pt;
-        font-family: Arial;
-        width: 9.5in;
-        height: 11in;
-        /* margin: 0.25in; */
-        margin: 0;
-        padding: 0;
-    }
-
-    .valign_b { vertical-align: bottom; }
-
-    #width_02 { width: 2%; }
-    #width_03 { width: 3%; }
-    #width_05 { width: 5%; }
-    #width_07 { width: 7%; }
-    #width_15 { width: 15%; }
-    #width_18 { width: 18%; }
-    #width_235 { width: 23.5%; }
-    #width_30 { width: 30%; }
-    #width_32 { width: 32%; }
-    #width_40 { width: 40%; }
-    #width_49 { width: 49%; }
-    #width_65 { width: 65%; }
-    #width_75 { width: 75%; }
-    #width_100 { width: 100%; }
-
-</style>
 <div>
-	<div class="sheet2">
+	<div class="sheet">
 		<form action="{% url 'save' character.name %}" method="post">
 			{% csrf_token %}
 			<!-- Name, Race & Class -->
@@ -44,142 +15,27 @@
 				<tr>
 					<!-- Attributes -->
 					<td id="width_18" class="valign_t">
-						<table id="width_100">
-							<tr>
-								<td id="width_32">Gender</td>
-								<td id="width_03">&nbsp;</td>
-								<td id="width_65" class="bottom">
-									{% if flag == "sheet" %}
-										{{character.gender}}
-									{% else %}
-										<input type="text" name="gender" value="{{character.gender}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td>Age</td>
-								<td>&nbsp;</td>
-								<td class="bottom">
-									{% if flag == "sheet" %}
-										{{character.age}}
-									{% else %}
-										<input type="text" name="age" value="{{character.age}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td>Height</td>
-								<td>&nbsp;</td>
-								<td class="bottom">
-									{% if flag == "sheet" %}
-										{{character.height}}
-									{% else %}
-										<input type="text" name="height" value="{{character.height}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td>Weight</td>
-								<td>&nbsp;</td>
-								<td class="bottom">
-									{% if flag == "sheet" %}
-										{{character.weight}}
-									{% else %}
-										<input type="text" name="weight" value="{{character.weight}}">
-									{% endif %}
-								</td>
-							</tr>
-						</table>
+						{% include "aif_character/attr_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Movement -->
 					<td id="width_18" class="valign_t">
-						<table id="width_100" align="left">
-							<tr>
-								<td id="width_65" class="halign_r">Walking (feet)</td>
-								<td id="width_03">&nbsp;</td>
-								<td id="width_32" class="bottom_c">{{character.walking_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Running (feet)</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.running_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Swimming (feet)</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.swimming_adjusted}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/movement_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Encumbrance -->
 					<td id="width_18" class="valign_t">
-						<table id="width_100" align="left">
-							<tr>
-								<td id="width_65" class="halign_r">Encumbrance</td>
-								<td id="width_03">&nbsp;</td>
-								<td id="width_32" class="bottom_c">{{character.encumbrance}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Total Load</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.total_load}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Modifiers</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.modifiers}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Burdened</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.burdened}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/encumbrance_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Searches -->
+					<td id="width_18" class="valign_t">
+						{% include "aif_character/searches_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Experience -->
 					<td id="width_18" class="valign_t">
-						<table id="width_100" align="right">
-							<tr>
-								<td id="width_65" class="halign_r">Underground<br/>Search</td>
-								<td id="width_03">&nbsp;</td>
-								<td id="width_32" class="bottom_c valign_b">{{character.underground_search_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Outside<br/>Search</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c valign_b">{{character.outside_search_adjusted}}</td>
-							</tr>
-						</table>
-					</td>
-					<td id="width_02">&nbsp;</td>
-					<!-- Saves -->
-					<td id="width_18" class="valign_t">
-						<table id="width_100" align="right">
-							<tr>
-								<td id="width_65" class="halign_r">Level</td>
-								<td id="width_03">&nbsp;</td>
-								<td id="width_32" class="bottom_c">{{character.level}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Experience</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">
-									{% if flag == "sheet" %}
-										{{character.experience}}
-									{% else %}
-										<input type="text" name="experience" value="{{character.experience}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Next Level</td>
-								<td>&nbsp;</td>
-								<td class="bottom_c">{{character.next_level}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/experience_table.html" %}
 					</td>
 				</tr>
 			</table>
@@ -188,195 +44,28 @@
 			<table id="width_100">
 				<tr>
 					<!-- Ability Scores -->
-					<td id="width_235" class="valign_t">
-						<table id="width_100">
-							<tr>
-								<td colspan="3" class="header">Ability Scores</td>
-							</tr>
-							<tr>
-								<td id="width_40"></td>
-								<td id="width_30"></td>
-								<td id="width_30" class="halign_c">Mods</td>
-							</tr>
-							<tr>
-								<td>STR:</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.str_base}}
-									{% else %}
-										<input type="text" name="str_base" value="{{character.str_base}}">
-									{% endif %}
-								</td>
-								<td class="all_c">{{character.str_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>DEX:</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.dex_base}}
-									{% else %}
-										<input type="text" name="dex_base" value="{{character.dex_base}}">
-									{% endif %}
-								</td>
-								<td class="all_c">{{character.dex_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>INT:</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.int_base}}
-									{% else %}
-										<input type="text" name="int_base" value="{{character.int_base}}">
-									{% endif %}
-								</td>
-								<td class="all_c">{{character.int_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>HLTH:</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.health_base}}
-									{% else %}
-										<input type="text" name="health_base" value="{{character.health_base}}">
-									{% endif %}
-								</td>
-								<td class="all_c">{{character.health_modifiers}}</td>
-							</tr>
-						</table>
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/stats_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Saves -->
-					<td id="width_235" class="valign_t">
-						<table id="width_100" align="center">
-							<tr>
-								<td colspan="2" class="header">Saves</td>
-							</tr>
-							<tr>
-								<td colspan="2">&nbsp;</td>
-							</tr>
-							<tr>
-								<td class="all_r">Withstand</td>
-								<td id="width_30" class="all_c">{{character.withstand_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Dodge</td>
-								<td class="all_c">{{character.dodge_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Resist</td>
-								<td class="all_c">{{character.resist_adjusted}}</td>
-							</tr>
-							<!-- need some sort of conditional here -->
-							{% load define_showhp %}
-							{% if 'Paladin' in character.char_class %}
-								{% define True as showhp %}
-							{% else %}
-								{% define False as showhp %}
-							{% endif %}
-							<tr>
-								{% if character.is_spellcaster %}
-									<td class="all_r">Spell Points</td>
-									<td class="all_c">{{character.spell_points_base}}</td>
-								{% elif 'Bard' in character.char_class %}
-									<td class="all_r">Rhythm Points</td>
-									<td class="all_c">{{character.rhythm_points_base}}</td>
-								{% elif 'Illusionist' in character.char_class %}
-									<td class="all_r">Spell Cards</td>
-									<td class="all_c">{{character.spell_cards_base}}</td>
-								{% elif showhp %}
-									<td class="all_r">Honor Points</td>
-									<td class="all_c">{{character.honor_points_base}}</td>
-									{% define False as showhp %}
-								{% else %}
-									<td colspan="2">&nbsp;</td>
-								{% endif %}
-							</tr>
-							<tr>
-								{% if showhp %}
-									<td class="all_r">Honor Points</td>
-									<td class="all_c">{{character.honor_points_base}}</td>
-								{% else %}
-									<td colspan="2">&nbsp;</td>
-								{% endif %}
-							</tr>
-						</table>
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/saves_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Combat Factors -->
-					<td id="width_235" class="valign_t">
-						<table id="width_100" align="center">
-							<tr>
-								<td colspan="2" class="header">Combat Factors</td>
-							</tr>
-							<tr>
-								<td colspan="2">&nbsp;</td>
-							</tr>
-							<tr>
-								<td class="all_r">Knockdown</td>
-								<td id="width_30" class="all_c">
-									{% if flag == "sheet" %}
-										{{character.knockdown_adjusted}}
-									{% else %}
-										<input type="text" name="knockdown_adjusted" value="{{character.knockdown_adjusted}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td class="all_r">Defense</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.defense_adjusted}}
-									{% else %}
-										<input type="text" name="defense_adjusted" value="{{character.defense_adjusted}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td class="all_r">Stun</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.stun_adjusted}}
-									{% else %}
-										<input type="text" name="stun_adjusted" value="{{character.stun_adjusted}}">
-									{% endif %}
-								</td>
-							</tr>
-							<tr>
-								<td class="all_r">Endurance</td>
-								<td class="all_c">
-									{% if flag == "sheet" %}
-										{{character.endurance_adjusted}}
-									{% else %}
-										<input type="text" name="endurance_adjusted" value="{{character.endurance_adjusted}}">
-									{% endif %}
-								</td>
-							</tr>
-						</table>
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/cf_factors_table.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Bonuses -->
-					<td id="width_235" class="valign_t">
-						<table id="width_100" align="right">
-							<tr>
-								<td colspan="2" class="header">Bonuses</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td id="width_30" class="halign_c">Mods</td>
-							</tr>
-							<tr>
-								<td class="all_r">To Damange</td>
-								<td id="width_15" class="all_c">{{character.damage_mods_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">To Hit</td>
-								<td class="all_c">{{character.to_hit_mods_adjusted}}</td>
-							</tr>
-							<tr>
-								<td class="all_r"># of Actions</td>
-								<td class="all_c">{{character.actions_adjusted}}</td>
-							</tr>
-						</table>
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/bonuses_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Money -->
+					<td id="width_15" class="valign_t">
+						{% include "aif_character/money_table_2.html" %}
 					</td>
 				</tr>
 			</table>
@@ -385,7 +74,7 @@
 			<table id="width_100">
 				<!-- Row One -->
 				<tr>
-					<td id="width_235" rowspan="5" class="valign_t">
+					<td id="width_32" class="valign_t">
 						<!-- Skills -->
 						<table id="width_100">
 							<tr>
@@ -393,73 +82,143 @@
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.classskills_set.all %}
+							{% for skill in character.skills_set.all %}
+								{% if skill.skill_type == 'Class' %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
-										<strong>{{skill.item_name}}</strong>
+										<strong>{{skill.name}}</strong>
 									{% else %}
-										{{skill.item_name}}
+										{{skill.name}}
 									{% endif %}
 									</td>
 									<td class="all_c">
 										{% if flag == "sheet" %}
 											{{skill.rank}}
 										{% else %}
-											<input type="text" name="{{skill.item_name}}_rank" value="{{skill.rank}}">
+											<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
 										{% endif %}
 									</td>
 									<td class="all_c">{{skill.order}}</td>
 								</tr>
+								{% endif %}
 							{% endfor %}
 							<tr>
 								<td class="header">Racial Skills</td>
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.racialskills_set.all %}
+							{% for skill in character.skills_set.all %}
+								{% if skill.skill_type == 'Racial' %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
-										<strong>{{skill.item_name}}</strong>
+										<strong>{{skill.name}}</strong>
 									{% else %}
-										{{skill.item_name}}
+										{{skill.name}}
 									{% endif %}
 									</td>
 									<td class="all_c">
 										{% if flag == "sheet" %}
 											{{skill.rank}}
 										{% else %}
-											<input type="text" name="{{skill.item_name}}_rank" id="width_1" value="{{skill.rank}}">
+											<input type="text" name="{{skill.name}}_rank" id="width_1" value="{{skill.rank}}">
 										{% endif %}
 									</td>
 									<td class="all_c" id="width_1">{{skill.order}}</td>
 								</tr>
+								{% endif %}
 							{% endfor %}
+						</table>
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_32" class="valign_t">
+						<!-- Skills -->
+						<table id="width_100">
+							<tr>
+								<td class="header">Weapons Skills</td>
+								<td id="width_15" class="header_c">Rk</td>
+								<td id="width_15" class="header_c">Or</td>
+							</tr>
+							{% for skill in character.skills_set.all %}
+								{% if skill.skill_type == 'Weapon' %}
+								<tr>
+									<td class="all_pl">
+									{% if skill.mastered %}
+										<strong>{{skill.name}}</strong>
+									{% else %}
+										{{skill.name}}
+									{% endif %}
+									</td>
+									<td class="all_c">
+										{% if flag == "sheet" %}
+											{{skill.rank}}
+										{% else %}
+											<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
+										{% endif %}
+									</td>
+									<td class="all_c">{{skill.order}}</td>
+								</tr>
+								{% endif %}
+							{% endfor %}
+							<tr>
+								<td class="header">Armor Skills</td>
+								<td id="width_15" class="header_c">Rk</td>
+								<td id="width_15" class="header_c">Or</td>
+							</tr>
+							{% for skill in character.skills_set.all %}
+								{% if skill.skill_type == 'Armor' %}
+								<tr>
+									<td class="all_pl">
+									{% if skill.mastered %}
+										<strong>{{skill.name}}</strong>
+									{% else %}
+										{{skill.name}}
+									{% endif %}
+									</td>
+									<td class="all_c">
+										{% if flag == "sheet" %}
+											{{skill.rank}}
+										{% else %}
+											<input type="text" name="{{skill.name}}_rank" id="width_1" value="{{skill.rank}}">
+										{% endif %}
+									</td>
+									<td class="all_c" id="width_1">{{skill.order}}</td>
+								</tr>
+								{% endif %}
+							{% endfor %}
+						</table>
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_32" class="valign_t">
+						<!-- Skills -->
+						<table id="width_100">
 							{% if 'Paladin' in character.char_class %}
 								<tr>
 									<td class="header">Honor Skills</td>
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.honorskills_set.all %}
+								{% for skill in character.skills_set.all %}
+									{% if skill.skill_type == 'Honor' %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
-											<strong>{{skill.item_name}}</strong>
+											<strong>{{skill.name}}</strong>
 										{% else %}
-											{{skill.item_name}}
+											{{skill.name}}
 										{% endif %}
 										</td>
 										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{skill.rank}}
 											{% else %}
-												<input type="text" name="{{skill.item_name}}_rank" value="{{skill.rank}}">
+												<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{skill.order}}</td>
 									</tr>
+									{% endif %}
 								{% endfor %}
 							{% endif %}
 							{% if character.is_spellcaster %}
@@ -468,322 +227,66 @@
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.spellskills_set.all %}
+								{% for skill in character.skills_set.all %}
+									{% if skill.skill_type == 'Spell' %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
-											<strong>{{skill.item_name}}</strong>
+											<strong>{{skill.name}}</strong>
 										{% else %}
-											{{skill.item_name}}
+											{{skill.name}}
 										{% endif %}
 										</td>
 										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{skill.rank}}
 											{% else %}
-												<input type="text" name="{{skill.item_name}}_rank" value="{{skill.rank}}">
+												<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{skill.order}}</td>
 									</tr>
+									{% endif %}
 								{% endfor %}
 							{% endif %}
 						</table>
 					</td>
-					<td id="width_02">&nbsp;</td>
-					<td id="width_75" class="valign_t">
+				</tr>
+				</tr>
+			</table>
+			<!-- Row Two -->
+			<br/>
+			<table id="width_100">
+				<tr>
+					<td id="width_49" class="valign_t">
 						<!-- Weapons -->
-						<table id="width_100">
-							<tr>
-								<td></td>
-								<td id="width_05"></td>
-								<td id="width_05"></td>
-								<td id="width_05"></td>
-								<td id="width_07"></td>
-								<td id="width_07"></td>
-								<td id="width_07"></td>
-								<td id="width_05"></td>
-								<td id="width_05"></td>
-								<td colspan="2" class="all_c">Dice and Adj</td>
-							</tr>
-							<tr>
-								<td class="header">Weapons List</td>
-								<td class="halign_c">Size</td>
-								<td class="halign_c">Type</td>
-								<td class="halign_c">Dam</td>
-								<td class="halign_c">Range</td>
-								<td class="halign_c">Dur</td>
-								<td class="halign_c">Load</td>
-								<td class="halign_c">Rk</td>
-								<td class="halign_c">Or</td>
-								<td id="width_07" class="all_c">To Hit</td>
-								<td id="width_07" class="all_c">Dam</td>
-							</tr>
-							{% for weapon in character.weapons_set.all %}
-								<tr>
-									<td class="all_pl">
-									{% if weapon.mastered %}
-										<strong>{{weapon.description}}</strong>
-									{% else %}
-										{{weapon.description}}
-									{% endif %}
-									</td>
-									{% if flag == "sheet" or "Group" in weapon.item_name or weapon.size == "-" %}
-										<td class="all_c">{{weapon.size}}</td>
-										<td class="all_c">{{weapon.type}}</td>
-										<td class="all_c">{{weapon.damage}}</td>
-										<td class="all_c">{{weapon.range}}</td>
-										<td class="all_c">{{weapon.durability}}</td>
-										<td class="all_c">{{weapon.load}}</td>
-									{% else %}
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_size" value="{{weapon.size}}">
-										</td>
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_type" value="{{weapon.type}}">
-										</td>
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_damage" value="{{weapon.damage}}">
-										</td>
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_range" value="{{weapon.range}}">
-										</td>
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_durability" value="{{weapon.durability}}">
-										</td>
-										<td class="all_c">
-											<input type="text" name="{{weapon.item_name}}_load" value="{{weapon.load}}">
-										</td>
-									{% endif %}
-									<td class="all_c">
-										{% if flag == "sheet" %}
-											{{weapon.rank}}
-										{% else %}
-											<input type="text" name="{{weapon.item_name}}_rank" value="{{weapon.rank}}">
-										{% endif %}
-									</td>
-									<td class="all_c">{{weapon.order}}</td>
-									<td class="all_c">{{weapon.to_hit}}</td>
-									<td class="all_c">{{weapon.damage}}</td>
-								</tr>
-							{% endfor %}
-							<tr>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td colspan="3" class="halign_rpl">Total Weapon Load</td>
-								<td class="all_c">{{character.weapons_total_load}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/weapons_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_49" class="valign_t">
+						<!-- Armor -->
+						{% include "aif_character/armor_table_2.html" %}
 					</td>
 				</tr>
-				<!-- Row Two -->
 				<tr>
-					<td id="width_02">&nbsp;</td>
-					<td id="width_75" class="valign_t">
+					<td>&nbsp;</td>
 				</tr>
+			</table>
+			<br/>
+			<table id="width_100">
 				<!-- Row Three -->
-				<tr>
-					<td id="width_02">&nbsp;</td>
-					<td id="width_75" class="valign_t">
-						<table id="width_100">
-							<tr>
-								<td class="valign_t" >
-									<!-- Armor -->
-									<table id="width_100">
-										<tr>
-											<td class="header">Armor List</td>
-											<td id="width_05" class="halign_c">Type</td>
-											<td id="width_05" class="halign_c">Dur</td>
-											<td id="width_05" class="halign_c">S</td>
-											<td id="width_05" class="halign_c">P</td>
-											<td id="width_05" class="halign_c">B</td>
-											<td id="width_05" class="halign_c">C</td>
-											<td id="width_07" class="halign_c">Load</td>
-											<td id="width_05" class="halign_c">Rk</td>
-											<td id="width_05" class="halign_c">Or</td>
-										</tr>
-										<!-- {{table.armor}} -->
-										{% for armor in character.armor_set.all %}
-											<tr>
-												{% load define_group %}
-												{% if "Group" in armor.item_name or armor.load == "-" %}
-													{% define True as group %}
-												{% else %}
-													{% define False as group %}
-												{% endif %}
-												{% load define_toughness %}
-												{% if "Toughness" in armor.item_name %}
-													{% define True as toughness %}
-												{% else %}
-													{% define False as toughness %}
-												{% endif %}
-												{% load define_protection %}
-												{% if "Protection Spell" in armor.item_name %}
-													{% define True as protection %}
-												{% else %}
-													{% define False as protection %}
-												{% endif %}
-												<td class="all_pl">
-												{% if armor.mastered %}
-													<strong>{{armor.description}}</strong>
-												{% else %}
-													{{armor.description}}
-												{% endif %}
-												</td>
-												{% if flag == "sheet" or group or toughness or protection %}
-													<td class="all_c">{{armor.type}}</td>
-												{% else %}
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_type" value="{{armor.type}}">
-													</td>
-												{% endif %}
-												{% if flag == "sheet" or group or toughness %}
-													<td class="all_c">{{armor.durability}}</td>
-												{% else %}
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_durability" value="{{armor.durability}}">
-													</td>
-												{% endif %}
-												{% if flag == "sheet" or group or protection %}
-													<td class="all_c">{{armor.slashing}}</td>
-													<td class="all_c">{{armor.piercing}}</td>
-													<td class="all_c">{{armor.bludgeoning}}</td>
-													<td class="all_c">{{armor.cleaving}}</td>
-												{% else %}
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_slashing" value="{{armor.slashing}}">
-													</td>
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_piercing" value="{{armor.piercing}}">
-													</td>
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_bludgeoning" value="{{armor.bludgeoning}}">
-													</td>
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_cleaving" value="{{armor.cleaving}}">
-													</td>
-												{% endif %}
-												{% if flag == "sheet" or group or toughness or protection %}
-													<td class="all_c">{{armor.load}}</td>
-												{% else %}
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_load" value="{{armor.load}}">
-													</td>
-												{% endif %}
-												{% if flag == "sheet" or toughness or protection %}
-													<td class="all_c">{{armor.rank}}</td>
-												{% else %}
-													<td class="all_c">
-														<input type="text" name="{{armor.item_name}}_rank" value="{{armor.rank}}">
-													</td>
-												{% endif %}
-												<td class="all_c">{{armor.order}}</td>
-											</tr>
-										{% endfor %}
-										<tr>
-											<td>&nbsp;</td>
-											<td>&nbsp;</td>
-											<td>&nbsp;</td>
-											<td colspan="4" class="halign_rpl">Total Armor Load</td>
-											<td class="all_pl">{{character.armor_total_load}}</td>
-										</tr>
-									</table>
-								</td>
-								<td id="width_02">&nbsp;</td>
-								<td id="width_15" class="valign_t">
-									<!-- Money -->
-									<table id="width_100">
-										<tr>
-											<td></td>
-											<td id="width_40" class="header">Money</td>
-											<td id="width_40" class="header">Load</td>
-										</tr>
-										<tr>
-											<td class="all_c">&nbsp;GP&nbsp;</td>
-											<td class="all_c">
-												{% if flag == "sheet" %}
-													{{character.gold_amount}}
-												{% else %}
-													<input type="text" name="gold_amount" value="{{character.gold_amount}}">
-												{% endif %}
-											</td>
-											<td class="all_c">{{character.gold_load}}</td>
-										</tr>
-										<tr>
-											<td class="all_c">SP</td>
-											<td class="all_c">
-												{% if flag == "sheet" %}
-													{{character.silver_amount}}
-												{% else %}
-													<input type="text" name="silver_amount" value="{{character.silver_amount}}">
-												{% endif %}
-											</td>
-											<td class="all_c">{{character.silver_load}}</td>
-										</tr>
-										<tr>
-											<td class="all_c">CP</td>
-											<td class="all_c">
-												{% if flag == "sheet" %}
-													{{character.copper_amount}}
-												{% else %}
-													<input type="text" name="copper_amount" value="{{character.copper_amount}}">
-												{% endif %}
-											</td>
-											<td class="all_c">{{character.copper_load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">&nbsp;</td>
-											<td class="all_c">{{character.money.other.1}}</td>
-											<td class="all_c">{{character.money.other.1.load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">O</td>
-											<td class="all_c">{{character.money.other.2}}</td>
-											<td class="all_c">{{character.money.other.2.load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">T</td>
-											<td class="all_c">{{character.money.other.3}}</td>
-											<td class="all_c">{{character.money.other.3.load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">H</td>
-											<td class="all_c">{{character.money.other.4}}</td>
-											<td class="all_c">{{character.money.other.4.load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">E</td>
-											<td class="all_c">{{character.money.other.5}}</td>
-											<td class="all_c">{{character.money.other.5.load}}</td>
-										</tr>
-										<tr>
-											<td class="left_c">R</td>
-											<td class="all_c">{{character.money.other.6}}</td>
-											<td class="all_c">{{character.money.other.6.load}}</td>
-										</tr>
-											<td class="left_c bottom">&nbsp;</td>
-											<td class="all_c">{{character.money.other.7}}</td>
-											<td class="all_c">{{character.money.other.7.load}}</td>
-										<tr>
-											<td colspan="2" class="halign_rpl">Total Load</td>
-											<td class="all_c">{{character.money_total_load}}</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
+				<!--tr>
+					<td id="width_100" class="valign_t">
+						{ % include "aif_character/armor_table.html" %}
 					</td>
-				</tr>
+				</tr-->
 				<!-- Row Four -->
-				<tr>
-					<td id="width_02">&nbsp;</td>
-					<td id="width_75" class="valign_t">
-				</tr>
+				<!--tr>
+					<td>&nbsp;</td>
+				</tr-->
 				<!-- Row Five -->
 				<tr>
-					<td id="width_02">&nbsp;</td>
-					<td id="width_75" class="valign_t">
+					<td id="width_100" class="valign_t">
 						<table id="width_100">
 							{% for container in character.container_set.all %}
 								{% if not forloop.counter|divisibleby:2 %}<tr>{% endif %}
@@ -791,7 +294,7 @@
 										<!-- Equipment Left -->
 										<table id="width_100">
 											<tr>
-												<td class="header">{{container.item_name}}</td>
+												<td class="header">{{container.name}}</td>
 												<td id="width_1" class="halign_c">Qty</td>
 												<td id="width_1" class="halign_c">Load</td>
 												<td id="width_1" class="halign_c">Adj</td>

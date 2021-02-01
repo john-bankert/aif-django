@@ -8,6 +8,7 @@ HALF_ELF = "Half Elf"
 YAWP = "Yawp"
 FAERIE_FLARE = "Faerie Flare"
 
+
 # Classes
 BARD = "Bard"
 DRUID = "Druid"
@@ -57,6 +58,11 @@ CLASS = "Class"
 NOTES = "Notes"
 MALE = "Male"
 FEMALE = "Female"
+ARMOR = "Armor"
+WEAPON = "Weapon"
+SPELL = "Spell"
+HONOR = "Honor"
+RACIAL = "Racial"
 
 # Character Attribute
 GENDER = "Gender"

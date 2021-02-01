@@ -8,4 +8,6 @@
     --dropdown-bg-color: #f9f9f9;
     --dropdown-hover-color: #ddd;
     --menubar-bg-color: white;
+    --font-name: Arial, Helvetica, sans-serif; /*Times New Roman;*/
+    --font-size: 10pt;
 }

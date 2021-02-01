@@ -198,19 +198,19 @@
 							<!-- {{table.armor}} -->
 							{% load define_group %}
 							{% for armor in character.armor_set.all %}
-								{% if "Group" in armor.item_name %}
+								{% if "Group" in armor.name %}
 									{% define True as group %}
 								{% else %}
 									{% define False as group %}
 								{% endif %}
 								{% if not group %}
 								<tr>
-									<td class="all_pl">{{armor.item_name}}</td>
-									<td class="all_pl">{{armor.type}}</td>
-									<td class="all_pl">{{armor.slashing}}</td>
-									<td class="all_pl">{{armor.piercing}}</td>
-									<td class="all_pl">{{armor.bludgeoning}}</td>
-									<td class="all_pl">{{armor.cleaving}}</td>
+									<td class="all_pl">{{armor.description}}</td>
+									<td class="all_c">{{armor.type}}</td>
+									<td class="all_c">{{armor.slashing}}</td>
+									<td class="all_c">{{armor.piercing}}</td>
+									<td class="all_c">{{armor.bludgeoning}}</td>
+									<td class="all_c">{{armor.cleaving}}</td>
 								</tr>
 								{% endif %}
 							{% endfor %}
@@ -238,19 +238,19 @@
 							</tr>
 							{% load define_group %}
 							{% for weapon in character.weapons_set.all %}
-								{% if "Group" in weapon.item_name %}
+								{% if "Group" in weapon.name %}
 									{% define True as group %}
 								{% else %}
 									{% define False as group %}
 								{% endif %}
 								{% if not group %}
 								<tr>
-									<td class="all_pl">{{weapon.item_name}}</td>
-									<td class="all_pl">{{weapon.size}}</td>
-									<td class="all_pl">{{weapon.type}}</td>
-									<td class="all_pl">{{weapon.range}}</td>
-									<td class="all_pl">{{weapon.melee_adjusted}}</td>
-									<td class="all_pl">{{weapon.missile_adjusted}}</td>
+									<td class="all_pl">{{weapon.description}}</td>
+									<td class="all_c">{{weapon.size}}</td>
+									<td class="all_c">{{weapon.type}}</td>
+									<td class="all_c">{{weapon.range}}</td>
+									<td class="all_c">{{weapon.melee_adjusted}}</td>
+									<td class="all_c">{{weapon.missile_adjusted}}</td>
 								</tr>
 								{% endif %}
 							{% endfor %}

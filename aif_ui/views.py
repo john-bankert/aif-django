@@ -41,6 +41,11 @@ def character(request, char_name):
     if request.user.is_authenticated:
         fc = Character.objects.filter(player=request.user.username, open=True)
         context['fc'] = fc
+    # c = context['character']
+    # if c:
+    #    if c.skills_set.all():
+    #        for s in c.skills_set.all():
+    #            print(s.skill_type, s.name,  s.sort_order)
     return render(request, 'aif_ui/index.html', context)
 
 
