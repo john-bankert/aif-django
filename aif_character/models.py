@@ -1,11 +1,11 @@
-import importlib
 import os
 import json
-import decimal
-from django.core import serializers
 import random
+import decimal
+import importlib
 from django.db import models
 from django.forms import ModelForm
+from django.core import serializers
 from aif import constants as aif
 from aif_campaign import functions as fn
 from aif_playerstome import races, classes, spells
@@ -13,6 +13,17 @@ from aif_playerstome.models import Spells as SpellsList
 from aif_playerstome.models import Weapons as WeaponsCatalog
 
 application_label = 'aif_character'
+
+
+def serialize_object(path, data_object):
+    try:
+        filename = os.path.dirname(os.path.realpath(__file__)) + path
+        json_serializer = serializers.get_serializer("json")()
+        json_serializer.serialize(data_object.objects.all())
+        with open(filename, "w") as out:
+            out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
+    except FileNotFoundError:
+        print("file not found")
 
 
 class Character(models.Model):
@@ -32,13 +43,13 @@ class Character(models.Model):
     # movement_buff = models.IntegerField(default=0)
     walking_base = models.IntegerField(default=0)
     walking_buff = models.IntegerField(default=0)
-    walking_adjusted = models.IntegerField(default=0)
+    walking_display = models.IntegerField(default=0)
     running_base = models.IntegerField(default=0)
     running_buff = models.IntegerField(default=0)
-    running_adjusted = models.IntegerField(default=0)
+    running_display = models.IntegerField(default=0)
     swimming_base = models.IntegerField(default=0)
     swimming_buff = models.IntegerField(default=0)
-    swimming_adjusted = models.IntegerField(default=0)
+    swimming_display = models.IntegerField(default=0)
 
     encumbrance = models.IntegerField(default=0)
     total_load = models.DecimalField(max_digits=7, decimal_places=2, default=0.0)
@@ -54,22 +65,22 @@ class Character(models.Model):
 
     str_base = models.IntegerField(default=0)
     str_buff = models.IntegerField(default=0)
-    str_adjusted = models.IntegerField(default=0)
+    str_display = models.IntegerField(default=0)
     str_modifiers = models.CharField(max_length=10, default="")
 
     dex_base = models.IntegerField(default=0)
     dex_buff = models.IntegerField(default=0)
-    dex_adjusted = models.IntegerField(default=0)
+    dex_display = models.IntegerField(default=0)
     dex_modifiers = models.CharField(max_length=10, default="")
 
     int_base = models.IntegerField(default=0)
     int_buff = models.IntegerField(default=0)
-    int_adjusted = models.IntegerField(default=0)
+    int_display = models.IntegerField(default=0)
     int_modifiers = models.CharField(max_length=10, default="")
 
     health_base = models.IntegerField(default=0)
     health_buff = models.IntegerField(default=0)
-    health_adjusted = models.IntegerField(default=0)
+    health_display = models.IntegerField(default=0)
     health_modifiers = models.CharField(max_length=10, default="")
     health_current = models.IntegerField(default=0)
 
@@ -87,70 +98,70 @@ class Character(models.Model):
     knockdown_base = models.IntegerField(default=0)
     knockdown_buff = models.IntegerField(default=0)
     knockdown_cf_points = models.IntegerField(default=0)
-    knockdown_adjusted = models.IntegerField(default=0)
+    knockdown_display = models.IntegerField(default=0)
 
     defense_base = models.IntegerField(default=0)
     defense_buff = models.IntegerField(default=0)
     defense_cf_points = models.IntegerField(default=0)
-    defense_adjusted = models.IntegerField(default=0)
+    defense_display = models.IntegerField(default=0)
 
     stun_base = models.IntegerField(default=0)
     stun_buff = models.IntegerField(default=0)
     stun_cf_points = models.IntegerField(default=0)
-    stun_adjusted = models.IntegerField(default=0)
+    stun_display = models.IntegerField(default=0)
     stun_current = models.IntegerField(default=0)
 
     endurance_base = models.IntegerField(default=0)
     endurance_cf_points = models.IntegerField(default=0)
     endurance_buff = models.IntegerField(default=0)
-    endurance_adjusted = models.IntegerField(default=0)
+    endurance_display = models.IntegerField(default=0)
 
     fatigue = models.IntegerField(default=0)
     extra_fatigue = models.IntegerField(default=0)
 
     withstand_dice = models.IntegerField(default=3)
     withstand_modifiers = models.CharField(max_length=10)
-    withstand_adjusted = models.CharField(max_length=10)
+    withstand_display = models.CharField(max_length=10)
 
     dodge_dice = models.IntegerField(default=3)
     dodge_modifiers = models.CharField(max_length=10)
-    dodge_adjusted = models.CharField(max_length=10)
+    dodge_display = models.CharField(max_length=10)
 
     resist_dice = models.IntegerField(default=3)
     resist_modifiers = models.CharField(max_length=10)
-    resist_adjusted = models.CharField(max_length=10)
+    resist_display = models.CharField(max_length=10)
 
     damage_dice_base = models.IntegerField(default=0)
     damage_dice_buff = models.IntegerField(default=0)
-    damage_dice_adjusted = models.CharField(max_length=15)
+    damage_dice_display = models.CharField(max_length=15)
 
     damage_mods_base = models.IntegerField(default=0)
     damage_mods_buff = models.IntegerField(default=0)
-    damage_mods_adjusted = models.CharField(max_length=15)
+    damage_mods_display = models.CharField(max_length=15)
 
-    damage_adjusted = models.CharField(max_length=15)
+    damage_display = models.CharField(max_length=15)
 
     to_hit_dice_base = models.IntegerField(default=0)
     to_hit_dice_buff = models.IntegerField(default=0)
-    to_hit_dice_adjusted = models.CharField(max_length=15)
+    to_hit_dice_display = models.CharField(max_length=15)
 
     to_hit_mods_base = models.IntegerField(default=0)
     to_hit_mods_buff = models.IntegerField(default=0)
-    to_hit_mods_adjusted = models.CharField(max_length=15)
+    to_hit_mods_display = models.CharField(max_length=15)
 
-    to_hit_adjusted = models.CharField(max_length=15)
+    to_hit_display = models.CharField(max_length=15)
 
     actions_base = models.IntegerField(default=1)
     actions_buff = models.IntegerField(default=0)
-    actions_adjusted = models.CharField(max_length=15)
+    actions_display = models.CharField(max_length=15)
 
     outside_search_dice = models.IntegerField(default=3)
     outside_search_modifiers = models.IntegerField(default=0)
-    outside_search_adjusted = models.CharField(max_length=15)
+    outside_search_display = models.CharField(max_length=15)
 
     underground_search_dice = models.IntegerField(default=3)
     underground_search_modifiers = models.IntegerField(default=0)
-    underground_search_adjusted = models.CharField(max_length=15)
+    underground_search_display = models.CharField(max_length=15)
 
     spbc_buff = models.IntegerField(default=0)
 
@@ -428,37 +439,37 @@ class Character(models.Model):
         # Buff stats, get new buffed stat bonuses
         move_mods = 0
         # strength
-        self.str_adjusted = self.str_base + self.str_buff
-        asm = Character.ability_score_mod(self.str_adjusted)
+        self.str_display = self.str_base + self.str_buff
+        asm = Character.ability_score_mod(self.str_display)
         self.str_modifiers = ("+" if asm > 0 else "") + str(asm)
         move_mods += asm
 
         # dexterity
-        self.dex_adjusted = self.dex_base + self.dex_buff
-        asm = Character.ability_score_mod(self.dex_adjusted)
+        self.dex_display = self.dex_base + self.dex_buff
+        asm = Character.ability_score_mod(self.dex_display)
         self.dex_modifiers = ("+" if asm > 0 else "") + str(asm)
         move_mods += asm
 
         # intelligence
-        self.int_adjusted = self.int_base + self.int_buff
-        asm = Character.ability_score_mod(self.int_adjusted)
+        self.int_display = self.int_base + self.int_buff
+        asm = Character.ability_score_mod(self.int_display)
         self.int_modifiers = ("+" if asm > 0 else "") + str(asm)
         move_mods += asm
 
         # health
-        self.health_adjusted = self.health_base + self.health_buff
+        self.health_display = self.health_base + self.health_buff
         self.health_modifiers = "-"
 
         # adjust movement based on buffed stats
-        self.walking_adjusted = self.walking_base + self.walking_buff + move_mods + fatigue_penalty
+        self.walking_display = self.walking_base + self.walking_buff + move_mods + fatigue_penalty
 
         # check for movement buff - right now only from speed,
         if self.movement != "":
             if "*" in self.movement:
-                self.walking_adjusted = self.walking_adjusted * int(self.movement[1:])
+                self.walking_display = self.walking_display * int(self.movement[1:])
         # running & swimming from walking
-        self.running_adjusted = self.walking_adjusted * 2
-        self.swimming_adjusted = round(self.walking_adjusted / 2)
+        self.running_display = self.walking_display * 2
+        self.swimming_display = round(self.walking_display / 2)
 
         # auto set level, next level, actions and save dice
         xp_dict = Character.generate_xp_dict()
@@ -484,41 +495,41 @@ class Character(models.Model):
         self.resist_modifiers = int(self.int_modifiers) + fatigue_penalty
         self.resist_modifiers = ("+" if self.resist_modifiers > 0 else "") + str(self.resist_modifiers)
 
-        self.withstand_adjusted = str(self.withstand_dice + level_by_four) + "d6" + \
+        self.withstand_display = str(self.withstand_dice + level_by_four) + "d6" + \
             (self.withstand_modifiers if not self.withstand_modifiers == "0" else "")
-        self.dodge_adjusted = str(self.dodge_dice + level_by_four) + "d6" + \
+        self.dodge_display = str(self.dodge_dice + level_by_four) + "d6" + \
             (self.dodge_modifiers if not self.dodge_modifiers == "0" else "")
-        self.resist_adjusted = str(self.resist_dice + level_by_four) + "d6" + \
+        self.resist_display = str(self.resist_dice + level_by_four) + "d6" + \
             (self.resist_modifiers if not self.resist_modifiers == "0" else "")
 
         # update combat factor base value on buffed stats
-        self.knockdown_base = round(self.str_adjusted / 2)
-        self.stun_base = round(self.int_adjusted / 2)
-        self.defense_base = round((self.str_adjusted + self.dex_adjusted + self.int_adjusted) / 3)
+        self.knockdown_base = round(self.str_display / 2)
+        self.stun_base = round(self.int_display / 2)
+        self.defense_base = round((self.str_display + self.dex_display + self.int_display) / 3)
 
         # add in combat factor adjustments from leveling
-        self.knockdown_adjusted = self.knockdown_base + self.knockdown_cf_points + self.knockdown_buff
-        self.stun_adjusted = self.stun_base + self.stun_cf_points + self.stun_buff
-        self.defense_adjusted = self.defense_base + self.defense_cf_points + self.defense_buff
-        self.endurance_adjusted = self.endurance_base + self.endurance_cf_points + self.endurance_buff
+        self.knockdown_display = self.knockdown_base + self.knockdown_cf_points + self.knockdown_buff
+        self.stun_display = self.stun_base + self.stun_cf_points + self.stun_buff
+        self.defense_display = self.defense_base + self.defense_cf_points + self.defense_buff
+        self.endurance_display = self.endurance_base + self.endurance_cf_points + self.endurance_buff
 
         # update to hit/damage modifier display values
         # This should include dice bonuses from things like onslaught spell. Needs to be fixed.
         self.to_hit_mods_base = int(self.dex_modifiers)
-        self.to_hit_mods_adjusted = self.to_hit_mods_base
+        self.to_hit_mods_display = self.to_hit_mods_base
         self.damage_mods_base = int(self.str_modifiers)
-        self.damage_mods_adjusted = self.damage_mods_base
+        self.damage_mods_display = self.damage_mods_base
         self.to_hit_mods_buff += fatigue_penalty
         # check on this
         # self.damage_mods_buff += fatigue_penalty
 
         # include action modifiers from things like speed spell
-        self.actions_adjusted = str(self.actions_base + self.actions_buff)
+        self.actions_display = str(self.actions_base + self.actions_buff)
 
         # set search roll display strings
-        self.outside_search_adjusted = str(self.outside_search_dice) + "d6" + \
+        self.outside_search_display = str(self.outside_search_dice) + "d6" + \
             Character.dice_mod_string(self.outside_search_modifiers + fatigue_penalty)
-        self.underground_search_adjusted = str(self.underground_search_dice) + "d6" + \
+        self.underground_search_display = str(self.underground_search_dice) + "d6" + \
             Character.dice_mod_string(self.underground_search_modifiers + fatigue_penalty)
 
         # get racial skill descriptions. Refactor so it's not constantly being called.
@@ -531,12 +542,12 @@ class Character(models.Model):
 
         # calculate racial skill order values from rank
         for skill in self.skills_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.name == 'Toughness':
                 if self.armor_set.filter(name='Toughness').count() == 0:
-                    a = self.armor_set.create(name='Toughness', rank=skill.rank, adjusted=skill.adjusted)
+                    a = self.armor_set.create(name='Toughness', rank=skill.rank, display=skill.display)
                     a.description = a.name
                     a.load = "-"
                     a.save()
@@ -545,12 +556,12 @@ class Character(models.Model):
 
         # calculate racial skill order values from rank
         for skill in self.racialskills_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.name == 'Toughness':
                 if self.armor_set.filter(name='Toughness').count() == 0:
-                    a = self.armor_set.create(name='Toughness', rank=skill.rank, adjusted=skill.adjusted)
+                    a = self.armor_set.create(name='Toughness', rank=skill.rank, display=skill.display)
                     a.description = a.name
                     a.load = "-"
                     a.save()
@@ -559,32 +570,32 @@ class Character(models.Model):
 
         # calculate class skill order values from rank
         for skill in self.classskills_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.mastered:
                 mastered_skills += 1
 
         # calculate honor skill order values from rank
         for skill in self.honorskills_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.mastered:
                 mastered_skills += 1
 
         # calculate spell skill order values from rank
         for skill in self.spellskills_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.mastered:
                 mastered_skills += 1
 
         # calculate spell order values from rank
         for skill in self.spells_set.all():
-            skill.adjusted = skill.rank + skill.buff
-            skill.order = int(skill.adjusted / 4)
+            skill.display = skill.rank + skill.buff
+            skill.order = int(skill.display / 4)
             skill.save()
             if skill.mastered:
                 mastered_skills += 1
@@ -610,30 +621,30 @@ class Character(models.Model):
 
         # calculate weapon to hit/damage dice rolls with buffs applied.
         for weapon in self.weapons_set.all():
-            weapon.to_hit_adjusted = ""
-            weapon.damage_adjusted = ""
+            weapon.to_hit_display = ""
+            weapon.damage_display = ""
             if aif.GROUP in weapon.name or weapon.size == '-':
                 weapon.save()
                 continue
-            weapon.melee_adjusted = ""
-            weapon.missile_adjusted = ""
+            weapon.melee_display = ""
+            weapon.missile_display = ""
 
             # factor in modifiers for melee and missile to hit
             thmodstr = ""
 
             to_hit_mods = self.to_hit_mods_base + self.to_hit_mods_buff
             if weapon.is_melee:
-                weapon.melee_adjusted = Character.dice_mod_string(weapon.melee_modifier + to_hit_mods)
-                thmodstr = weapon.melee_adjusted
+                weapon.melee_display = Character.dice_mod_string(weapon.melee_modifier + to_hit_mods)
+                thmodstr = weapon.melee_display
             if weapon.is_missile:
-                weapon.missile_adjusted = Character.dice_mod_string(weapon.missile_modifier + to_hit_mods)
+                weapon.missile_display = Character.dice_mod_string(weapon.missile_modifier + to_hit_mods)
                 thmodstr += "" if thmodstr == "" else "/"
-                thmodstr += weapon.missile_adjusted
+                thmodstr += weapon.missile_display
 
             # calculate to hit dice - base + any buffs.
             nd = self.to_hit_dice_base + self.to_hit_dice_buff
 
-            weapon.to_hit_adjusted = str(nd + weapon.order) + "d6" + thmodstr
+            weapon.to_hit_display = str(nd + weapon.order) + "d6" + thmodstr
             dmg = weapon.damage.split("d6")
             dmg[0] = int(dmg[0]) + spbc[weapon.type] + self.damage_dice_buff
             if len(dmg) == 1:
@@ -641,15 +652,15 @@ class Character(models.Model):
             if dmg[1] == '':
                 dmg[1] = 0
             dmg[1] = int(dmg[1]) + int(self.str_modifiers if not self.str_modifiers == "" else "0")
-            weapon.damage_adjusted = str(dmg[0]) + "d6" + Character.dice_mod_string(dmg[1])
+            weapon.damage_display = str(dmg[0]) + "d6" + Character.dice_mod_string(dmg[1])
             if weapon.is_melee:
                 d6 = str(nd + weapon.order + dmg[0]) + "d6"
-                ms = dmg[1] + (0 if weapon.melee_adjusted == "" else int(weapon.melee_adjusted))
-                weapon.melee_adjusted = d6 + Character.dice_mod_string(ms)
+                ms = dmg[1] + (0 if weapon.melee_display == "" else int(weapon.melee_display))
+                weapon.melee_display = d6 + Character.dice_mod_string(ms)
             if weapon.is_missile:
                 d6 = str(nd + weapon.order + dmg[0]) + "d6"
-                ms = dmg[1] + (0 if weapon.missile_adjusted == "" else int(weapon.missile_adjusted))
-                weapon.missile_adjusted = d6 + Character.dice_mod_string(ms)
+                ms = dmg[1] + (0 if weapon.missile_display == "" else int(weapon.missile_display))
+                weapon.missile_display = d6 + Character.dice_mod_string(ms)
             weapon.save()
 
         # calculate armor order values, total armor load
@@ -667,26 +678,26 @@ class Character(models.Model):
                 if aif.GROUP in armor.name:
                     defense_adj += armor.order
 
-            spbc_adjusted = {aif.SLASHING: armor.slashing, aif.PIERCING: armor.piercing,
+            spbc_display = {aif.SLASHING: armor.slashing, aif.PIERCING: armor.piercing,
                              aif.BLUDGEONING: armor.bludgeoning, aif.CLEAVING: armor.cleaving}
             if aif.GROUP not in armor.name and not armor.load == "-":
                 if ordered:
-                    spbc_adjusted = {aif.SLASHING: int(armor.slashing), aif.PIERCING: int(armor.piercing),
+                    spbc_display = {aif.SLASHING: int(armor.slashing), aif.PIERCING: int(armor.piercing),
                                      aif.BLUDGEONING: int(armor.bludgeoning), aif.CLEAVING: int(armor.cleaving)}
                     for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
-                        spbc_adjusted[spbc] += armor.order
+                        spbc_display[spbc] += armor.order
                         t_spbc = total_spbc[spbc].split("/")
                         if "helm" in armor.name.lower():
-                            t_spbc[1] = int(t_spbc[1]) + int(spbc_adjusted[spbc])
+                            t_spbc[1] = int(t_spbc[1]) + int(spbc_display[spbc])
                         else:
-                            t_spbc[0] = int(t_spbc[0]) + int(spbc_adjusted[spbc])
-                            t_spbc[1] = int(t_spbc[1]) + int(spbc_adjusted[spbc])
+                            t_spbc[0] = int(t_spbc[0]) + int(spbc_display[spbc])
+                            t_spbc[1] = int(t_spbc[1]) + int(spbc_display[spbc])
                         total_spbc[spbc] = str(t_spbc[0]) + "/" + str(t_spbc[1])
             self.armor_total_load += Character.load_to_num(armor.load)
-            armor.slashing_adjusted = spbc_adjusted[aif.SLASHING]
-            armor.piercing_adjusted = spbc_adjusted[aif.PIERCING]
-            armor.bludgeoning_adjusted = spbc_adjusted[aif.BLUDGEONING]
-            armor.cleaving_adjusted = spbc_adjusted[aif.CLEAVING]
+            armor.slashing_display = spbc_display[aif.SLASHING]
+            armor.piercing_display = spbc_display[aif.PIERCING]
+            armor.bludgeoning_display = spbc_display[aif.BLUDGEONING]
+            armor.cleaving_display = spbc_display[aif.CLEAVING]
             if armor.mastered:
                 mastered_skills += 1
             armor.save()
@@ -701,7 +712,7 @@ class Character(models.Model):
         self.total_bludgeoning_protection = total_spbc[aif.BLUDGEONING]
         self.total_cleaving_protection = total_spbc[aif.CLEAVING]
 
-        self.defense_adjusted += defense_adj
+        self.defense_display += defense_adj
 
         self.mastered_count = mastered_skills
         '''
@@ -780,15 +791,7 @@ class Character(models.Model):
 
     @staticmethod
     def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/character.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(Character.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object("data/character.json", Character)
 
     @staticmethod
     def load_to_num(load):
@@ -850,9 +853,6 @@ class Character(models.Model):
             xp_list.append(_last - 1)
             xp_dict[level + 1] = xp_list
             xp_list = [_last]
-            # if _debug:
-            #    print(str(level + 1) + ": " + str(xp_dict[level + 1][0]) + " - " + str(xp_dict[level + 1][-1]) +
-            #          " : " + str(steps) + " steps,  multiple = " + str(multiple))
         return xp_dict
 
     @staticmethod
@@ -866,7 +866,7 @@ class Spells(models.Model):
     circle = models.IntegerField(default=0)
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
     vessel = models.BooleanField(default=False)
     vessel_power = models.IntegerField(default=0)
@@ -879,11 +879,10 @@ class Spells(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/spells.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/spells.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Spells.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -899,7 +898,7 @@ class Skills(models.Model):
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -909,11 +908,10 @@ class Skills(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/class_skills.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/class_skills.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(ClassSkills.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -926,7 +924,7 @@ class ClassSkills(models.Model):
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -953,7 +951,7 @@ class RacialSkills(models.Model):
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -980,7 +978,7 @@ class HonorSkills(models.Model):
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -1007,7 +1005,7 @@ class SpellSkills(models.Model):
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -1040,18 +1038,18 @@ class Weapons(models.Model):
     durability = models.CharField(max_length=5, default="")
     load = models.CharField(max_length=5, default="")
     rank = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
-    to_hit_adjusted = models.CharField(max_length=15, default="")
-    damage_adjusted = models.CharField(max_length=15, default="")
+    to_hit_display = models.CharField(max_length=15, default="")
+    damage_display = models.CharField(max_length=15, default="")
     is_melee = models.BooleanField(default=False)
     melee_modifier = models.IntegerField(default=0)
-    melee_adjusted = models.CharField(max_length=15, default="")
+    melee_display = models.CharField(max_length=15, default="")
     is_missile = models.BooleanField(default=False)
     missile_modifier = models.IntegerField(default=0)
-    missile_adjusted = models.CharField(max_length=15, default="")
+    missile_display = models.CharField(max_length=15, default="")
 
     class Meta:
         app_label = application_label
@@ -1059,10 +1057,10 @@ class Weapons(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/weapons.json"
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/weapons.json"
             json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Weapons.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1076,17 +1074,17 @@ class Armor(models.Model):
     type = models.CharField(max_length=5, default="")
     durability = models.CharField(max_length=5, default="")
     slashing = models.CharField(max_length=5, default="")
-    slashing_adjusted = models.CharField(max_length=5, default="")
+    slashing_display = models.CharField(max_length=5, default="")
     piercing = models.CharField(max_length=5, default="")
-    piercing_adjusted = models.CharField(max_length=5, default="")
+    piercing_display = models.CharField(max_length=5, default="")
     bludgeoning = models.CharField(max_length=5, default="")
-    bludgeoning_adjusted = models.CharField(max_length=5, default="")
+    bludgeoning_display = models.CharField(max_length=5, default="")
     cleaving = models.CharField(max_length=5, default="")
-    cleaving_adjusted = models.CharField(max_length=5, default="")
+    cleaving_display = models.CharField(max_length=5, default="")
     load = models.CharField(max_length=5, default="")
     carried = models.CharField(max_length=5, default="")
     rank = models.IntegerField(default=0)
-    adjusted = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
@@ -1097,11 +1095,10 @@ class Armor(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/armor.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/armor.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Armor.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1120,11 +1117,10 @@ class Container(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/container.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/container.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Container.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1134,7 +1130,7 @@ class Equipment(models.Model):
     container = models.ForeignKey(Container, on_delete=models.CASCADE)
     description = models.CharField(max_length=200, default="")
     durability = models.CharField(max_length=5, default="")
-    adjusted = models.CharField(max_length=5, default="")
+    display = models.CharField(max_length=5, default="")
     load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
     quantity = models.IntegerField(default=0)
     worn = models.BooleanField(default=False)
@@ -1147,11 +1143,10 @@ class Equipment(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/equipment.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/equipment.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Equipment.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1167,11 +1162,10 @@ class Tips(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/tips.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/tips.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Tips.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1194,11 +1188,10 @@ class Buffs(models.Model):
     @staticmethod
     def serialize():
         try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/buffs.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
+            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/buffs.json"
+            json_serializer = serializers.get_serializer("json")()
             json_serializer.serialize(Buffs.objects.all())
-            with open(fn, "w") as out:
+            with open(filename, "w") as out:
                 out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
         except FileNotFoundError:
             print("file not found")
@@ -1208,8 +1201,8 @@ class CharacterForm(ModelForm):
     class Meta:
         model = Character
         fields = ['name', 'race', 'gender', 'age', 'weight', 'height', 'experience',
-                  'str_base', 'dex_base', 'int_base', 'health_base', 'knockdown_adjusted',
-                  'defense_adjusted', 'stun_adjusted', 'endurance_adjusted']
+                  'str_base', 'dex_base', 'int_base', 'health_base', 'knockdown_display',
+                  'defense_display', 'stun_display', 'endurance_display']
 
 
 class ClassSkillsForm(ModelForm):

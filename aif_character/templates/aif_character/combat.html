@@ -57,17 +57,17 @@
 							</tr>
 							<tr>
 								<td class="all_r">Withstand</td>
-								<td class="all_c">{{character.withstand_adjusted}}</td>
+								<td class="all_c">{{character.withstand_display}}</td>
 								<td class="all_c">{{character.withstand_modifiers}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Dodge</td>
-								<td class="all_c">{{character.dodge_adjusted}}</td>
+								<td class="all_c">{{character.dodge_display}}</td>
 								<td class="all_c">{{character.dodge_modifiers}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Resist</td>
-								<td class="all_c">{{character.resist_adjusted}}</td>
+								<td class="all_c">{{character.resist_display}}</td>
 								<td class="all_c">{{character.resist_modifiers}}</td>
 							</tr>
 							<!-- need some sort of conditional here -->
@@ -124,22 +124,22 @@
 							<tr>
 								<td class="all_r">Knockdown</td>
 								<td class="all_c">{{character.knockdown_base}}</td>
-								<td class="all_c">{{character.knockdown_adjusted}}</td>
+								<td class="all_c">{{character.knockdown_display}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Defense</td>
 								<td class="all_c">{{character.defense_base}}</td>
-								<td class="all_c">{{character.defense_adjusted}}</td>
+								<td class="all_c">{{character.defense_display}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Stun</td>
 								<td class="all_c">{{character.stun_base}}</td>
-								<td class="all_c">{{character.stun_adjusted}}</td>
+								<td class="all_c">{{character.stun_display}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Endurance</td>
 								<td class="all_c">{{character.endurance_base}}</td>
-								<td class="all_c">{{character.endurance_adjusted}}</td>
+								<td class="all_c">{{character.endurance_display}}</td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
@@ -161,19 +161,19 @@
 								<td class="halign_r">Walking</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.walking_base}}</td>
-								<td class="all_c">{{character.walking_adjusted}}</td>
+								<td class="all_c">{{character.walking_display}}</td>
 							</tr>
 							<tr>
 								<td class="halign_r">Running</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.running_base}}</td>
-								<td class="all_c">{{character.running_adjusted}}</td>
+								<td class="all_c">{{character.running_display}}</td>
 							</tr>
 							<tr>
 								<td class="halign_r">Swimming</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.swimming_base}}</td>
-								<td class="all_c">{{character.swimming_adjusted}}</td>
+								<td class="all_c">{{character.swimming_display}}</td>
 							</tr>
 						</table>
 					</td>
@@ -249,8 +249,8 @@
 									<td class="all_c">{{weapon.size}}</td>
 									<td class="all_c">{{weapon.type}}</td>
 									<td class="all_c">{{weapon.range}}</td>
-									<td class="all_c">{{weapon.melee_adjusted}}</td>
-									<td class="all_c">{{weapon.missile_adjusted}}</td>
+									<td class="all_c">{{weapon.melee_display}}</td>
+									<td class="all_c">{{weapon.missile_display}}</td>
 								</tr>
 								{% endif %}
 							{% endfor %}
@@ -291,7 +291,7 @@
 							<button style="width: 30px;">-</button>
 							<label style="display: inline-block; width: 100px; text-align: right" for="health">HLTH</label>
 							<input style="width: 50px; text-align: center" type="text" name="health" maxlength="10" id="health" value="{{character.health_current}}">
-							<input style="width: 50px; text-align: center" type="text" name="max_health" maxlength="10" id="max_health" value="{{character.health_adjusted}}">
+							<input style="width: 50px; text-align: center" type="text" name="max_health" maxlength="10" id="max_health" value="{{character.health_display}}">
 						</div>
 					</td>
 				</tr>
@@ -302,7 +302,7 @@
 							<button style="width: 30px;">-</button>
 							<label style="display: inline-block; width: 100px; text-align: right" for="health">Fatigue</label>
 							<input style="width: 50px; text-align: center" type="text" type="text" name="fatigue" maxlength="10" id="fatigue" value="{{character.fatigue}}">
-							<input style="width: 50px; text-align: center" type="text" type="text" name="max_fatigue" maxlength="10" id="max_fatigue" value="{{character.endurance_adjusted}}">
+							<input style="width: 50px; text-align: center" type="text" type="text" name="max_fatigue" maxlength="10" id="max_fatigue" value="{{character.endurance_display}}">
 						</div>
 					</td>
 				</tr>
@@ -313,7 +313,7 @@
 							<button style="width: 30px;">-</button>
 							<label style="display: inline-block; width: 100px; text-align: right" for="health">Stun</label>
 							<input style="width: 50px; text-align: center" type="text" type="text" name="stun" maxlength="10" id="stun" value="{{character.stun_current}}">
-							<input style="width: 50px; text-align: center" type="text" type="text" name="max_stun" maxlength="10" id="max_stun" value="{{character.stun_adjusted}}">
+							<input style="width: 50px; text-align: center" type="text" type="text" name="max_stun" maxlength="10" id="max_stun" value="{{character.stun_display}}">
 						</div>
 					</td>
 				</tr>

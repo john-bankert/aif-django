@@ -107,19 +107,19 @@
 								<td class="halign_r">Walking</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.walking_base}}</td>
-								<td class="all_c">{{character.walking_adjusted}}</td>
+								<td class="all_c">{{character.walking_display}}</td>
 							</tr>
 							<tr>
 								<td class="halign_r">Running</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.running_base}}</td>
-								<td class="all_c">{{character.running_adjusted}}</td>
+								<td class="all_c">{{character.running_display}}</td>
 							</tr>
 							<tr>
 								<td class="halign_r">Swimming</td>
 								<td>&nbsp;</td>
 								<td class="all_c">{{character.swimming_base}}</td>
-								<td class="all_c">{{character.swimming_adjusted}}</td>
+								<td class="all_c">{{character.swimming_display}}</td>
 							</tr>
 						</table>
 					</td>
@@ -259,17 +259,17 @@
 							</tr>
 							<tr>
 								<td class="all_r">Withstand</td>
-								<td class="all_c">{{character.withstand_adjusted}}</td>
+								<td class="all_c">{{character.withstand_display}}</td>
 								<td class="all_c">{{character.withstand_modifiers}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Dodge</td>
-								<td class="all_c">{{character.dodge_adjusted}}</td>
+								<td class="all_c">{{character.dodge_display}}</td>
 								<td class="all_c">{{character.dodge_modifiers}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">Resist</td>
-								<td class="all_c">{{character.resist_adjusted}}</td>
+								<td class="all_c">{{character.resist_display}}</td>
 								<td class="all_c">{{character.resist_modifiers}}</td>
 							</tr>
 							<!-- need some sort of conditional here -->
@@ -328,9 +328,9 @@
 								<td class="all_c">{{character.knockdown_base}}</td>
 								<td class="all_c">
 									{% if flag == "sheet" %}
-										{{character.knockdown_adjusted}}
+										{{character.knockdown_display}}
 									{% else %}
-										<input type="text" name="knockdown_adjusted" id="width_3" value="{{character.knockdown_adjusted}}">
+										<input type="text" name="knockdown_display" id="width_3" value="{{character.knockdown_display}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -339,9 +339,9 @@
 								<td class="all_c">{{character.defense_base}}</td>
 								<td class="all_c">
 									{% if flag == "sheet" %}
-										{{character.defense_adjusted}}
+										{{character.defense_display}}
 									{% else %}
-										<input type="text" name="defense_adjusted" id="width_3" value="{{character.defense_adjusted}}">
+										<input type="text" name="defense_display" id="width_3" value="{{character.defense_display}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -350,9 +350,9 @@
 								<td class="all_c">{{character.stun_base}}</td>
 								<td class="all_c">
 									{% if flag == "sheet" %}
-										{{character.stun_adjusted}}
+										{{character.stun_display}}
 									{% else %}
-										<input type="text" name="stun_adjusted" id="width_3" value="{{character.stun_adjusted}}">
+										<input type="text" name="stun_display" id="width_3" value="{{character.stun_display}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -361,9 +361,9 @@
 								<td class="all_c">{{character.endurance_base}}</td>
 								<td class="all_c">
 									{% if flag == "sheet" %}
-										{{character.endurance_adjusted}}
+										{{character.endurance_display}}
 									{% else %}
-										<input type="text" name="endurance_adjusted" id="width_3" value="{{character.endurance_adjusted}}">
+										<input type="text" name="endurance_display" id="width_3" value="{{character.endurance_display}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -388,17 +388,17 @@
 							<tr>
 								<td id="width_6" class="all_r">To Damange</td>
 								<td class="all_c">{{character.damage_mods_base}}</td>
-								<td class="all_c">{{character.damage_mods_adjusted}}</td>
+								<td class="all_c">{{character.damage_mods_display}}</td>
 							</tr>
 							<tr>
 								<td class="all_r">To Hit</td>
 								<td class="all_c">{{character.to_hit_mods_base}}</td>
-								<td class="all_c">{{character.to_hit_mods_adjusted}}</td>
+								<td class="all_c">{{character.to_hit_mods_display}}</td>
 							</tr>
 							<tr>
 								<td class="all_r"># of Actions</td>
 								<td class="all_c">{{character.actions_base}}</td>
-								<td class="all_c">{{character.actions_adjusted}}</td>
+								<td class="all_c">{{character.actions_display}}</td>
 							</tr>
 							<tr>
 								<td></td>
@@ -407,8 +407,8 @@
 							</tr>
 							<tr>
 								<td class="all_r">Search Dice</td>
-								<td class="all_c">{{character.underground_search_adjusted}}</td>
-								<td class="all_c">{{character.outside_search_adjusted}}</td>
+								<td class="all_c">{{character.underground_search_display}}</td>
+								<td class="all_c">{{character.outside_search_display}}</td>
 							</tr>
 						</table>
 					</td>
@@ -830,7 +830,7 @@
 													<td class="all_pl">{{equipment.description}}</td>
 													<td class="all_c">{{equipment.quantity}}</td>
 													<td class="all_c">{{equipment.load}}</td>
-													<td class="all_c">{{equipment.adjusted}}</td>
+													<td class="all_c">{{equipment.display}}</td>
 													<td class="all_c">{{equipment.durability}}</td>
 												</tr>
 											{% endfor %}
