@@ -1,6 +1,4 @@
 <div class="navbar">
-    <!--button class="navbar_button" onclick="doesNothing('Button One')">Button One</button-->
-    <!--button class="navbar_button" onclick="doesNothing('Button Two')">Button Two</button-->
 	{% if request.user.is_authenticated %}
 		{% if fc.count > 0 %}
 			<select name="char_to_open" id="open_char" class="navbar_select" onchange="showCharacter()">

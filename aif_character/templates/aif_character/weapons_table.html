@@ -1,5 +1,5 @@
 <table id="width_100">
-    <tr>
+    <!--tr>
         <td></td>
         <td id="width_05"></td>
         <td id="width_05"></td>
@@ -8,17 +8,17 @@
         <td id="width_07"></td>
         <td id="width_07"></td>
         <td colspan="2" class="all_c">Dice and Adj</td>
-    </tr>
+    </tr-->
     <tr>
         <td class="header">Weapons List</td>
-        <td class="halign_c">Size</td>
-        <td class="halign_c">Type</td>
-        <td class="halign_c">Dam</td>
-        <td class="halign_c">Range</td>
-        <td class="halign_c">Dur</td>
-        <td class="halign_c">Load</td>
-        <td id="width_10" class="all_c">To Hit</td>
-        <td id="width_10" class="all_c">Dam</td>
+        <td id="width_05" class="halign_c">Size</td>
+        <td id="width_05" class="halign_c">Type</td>
+        <td id="width_10" class="halign_c">Dam</td>
+        <td id="width_07" class="halign_c">Range</td>
+        <td id="width_07" class="halign_c">Dur</td>
+        <td id="width_07" class="halign_c">Load</td>
+        <!--td id="width_10" class="all_c">To Hit</td>
+        <td id="width_10" class="all_c">Dam</td-->
     </tr>
     {% for weapon in character.weapons_set.all %}
         {% if not 'Group' in weapon.name %}
@@ -51,8 +51,8 @@
                     <input type="text" name="{{weapon.name}}_load" value="{{weapon.load}}">
                 </td>
             {% endif %}
-            <td class="all_c">{{weapon.to_hit}}</td>
-            <td class="all_c">{{weapon.damage}}</td>
+            <!--td class="all_c">{{weapon.to_hit}}</td>
+            <td class="all_c">{{weapon.damage}}</td-->
         </tr>
         {% endif %}
     {% endfor %}
