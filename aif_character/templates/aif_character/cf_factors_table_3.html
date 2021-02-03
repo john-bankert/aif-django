@@ -1,0 +1,54 @@
+<table id="width_100" align="center">
+    <tr>
+        <td colspan="3" class="header pl_05">Combat Factors</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td id="width_30" class="halign_c">Base</td>
+        <td id="width_30" class="halign_c">CFP</td>
+    </tr>
+    <tr>
+        <td class="all_r">Knockdown</td>
+        <td class="all_c">{{character.knockdown_base}}</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.knockdown_cf_points}}
+            {% else %}
+                <input type="text" name="knockdown_cf_points" value="{{character.knockdown_cf_points}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Defense</td>
+        <td class="all_c">{{character.defense_base}}</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.defense_cf_points}}
+            {% else %}
+                <input type="text" name="defense_cf_points" value="{{character.defense_cf_points}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Stun</td>
+        <td class="all_c">{{character.stun_base}}</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.stun_cf_points}}
+            {% else %}
+                <input type="text" name="stun_cf_points" value="{{character.stun_cf_points}}">
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td class="all_r">Endurance</td>
+        <td class="all_c">{{character.endurance_base}}</td>
+        <td class="all_c">
+            {% if flag == "sheet" %}
+                {{character.endurance_cf_points}}
+            {% else %}
+                <input type="text" name="endurance_cf_points" value="{{character.endurance_cf_points}}">
+            {% endif %}
+        </td>
+    </tr>
+</table>

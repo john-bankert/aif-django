@@ -1,7 +1,12 @@
 <table id="width_100" align="right">
     <tr>
-        <td id="width_65" class="halign_r">Experience</td>
+        <td id="width_65" class="halign_r">Level</td>
         <td id="width_03">&nbsp;</td>
+        <td id="width_32" class="bottom_c">{{character.level}}</td>
+    </tr>
+    <tr>
+        <td class="halign_r">Experience</td>
+        <td>&nbsp;</td>
         <td class="bottom_c">
             {% if flag == "sheet" %}
                 {{character.experience}}
@@ -9,11 +14,6 @@
                 <input type="text" name="experience" value="{{character.experience}}">
             {% endif %}
         </td>
-    </tr>
-    <tr>
-        <td class="halign_r">Current</td>
-        <td>&nbsp;</td>
-        <td id="width_32" class="bottom_c"></td>
     </tr>
     <tr>
         <td class="halign_r">Next Level</td>

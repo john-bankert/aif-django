@@ -5,9 +5,17 @@ from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from aif_character.models import Character, CharacterForm
 from aif_ui.models import Themes
 
+idx = 'index'
+
 
 def index(request):
-    context = {'flag': 'index', 'themes': Themes.objects.filter(name)}
+    idx = 'index'
+    print('index, idx = ', idx)
+    context = {'flag': 'index'}
+    # t = Themes.objects.all()
+    # for t in Themes.objects.all():
+    #    _themes.append(t.name)
+    # context['themes'] = t
     if not request.user.is_authenticated:
         if request.method == "POST":
             username = request.POST['username']
@@ -22,6 +30,28 @@ def index(request):
     return render(request, 'aif_ui/index.html', context)
 
 
+def index2(request):
+    idx = 'index2'
+    print('index2, idx = ', idx)
+    context = {'flag': 'index'}
+    # t = Themes.objects.all()
+    # for t in Themes.objects.all():
+    #    _themes.append(t.name)
+    # context['themes'] = t
+    if not request.user.is_authenticated:
+        if request.method == "POST":
+            username = request.POST['username']
+            password = request.POST['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+    if request.user.is_authenticated:
+        fc = Character.objects.filter(player=request.user.username, open=True)
+        context['fc'] = fc
+    print(context)
+    return render(request, 'aif_ui/index2.html', context)
+    
+
 def logouts(request):
     logout(request)
     # context = {'flag': 'index'}
@@ -34,10 +64,12 @@ def logouts(request):
 def menu(request, option):
     context = {'flag': 'index'}
     print("option = " + option)
-    return render(request, 'aif_ui/index.html', context)
+    return render(request, 'aif_ui/' + idx + '.html', context)
 
 
 def character(request, char_name):
+    idx = 'index2'
+    print('idx = ', idx)
     context = {'flag': 'sheet', 'character': get_object_or_404(Character, name=char_name)}
     if request.user.is_authenticated:
         fc = Character.objects.filter(player=request.user.username, open=True)
@@ -47,7 +79,7 @@ def character(request, char_name):
     #    if c.skills_set.all():
     #        for s in c.skills_set.all():
     #            print(s.skill_type, s.name,  s.sort_order)
-    return render(request, 'aif_ui/index.html', context)
+    return render(request, 'aif_ui/' + idx + '.html', context)
 
 
 def edit(request, char_name):

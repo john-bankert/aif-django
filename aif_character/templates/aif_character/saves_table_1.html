@@ -1,21 +1,26 @@
 <table id="width_100" align="center">
     <tr>
-        <td colspan="2" class="header">Saves</td>
+        <td colspan="3" class="header pl_05">Saves</td>
     </tr>
     <tr>
-        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td id="width_30" class="halign_c">Dice</td>
+        <td id="width_30" class="halign_c">Mods</td>
     </tr>
     <tr>
         <td class="all_r">Withstand</td>
-        <td id="width_30" class="all_c">{{character.withstand_display}}</td>
+        <td class="all_c">{{character.withstand_display}}</td>
+        <td class="all_c">{{character.withstand_modifiers}}</td>
     </tr>
     <tr>
         <td class="all_r">Dodge</td>
         <td class="all_c">{{character.dodge_display}}</td>
+        <td class="all_c">{{character.dodge_modifiers}}</td>
     </tr>
     <tr>
         <td class="all_r">Resist</td>
         <td class="all_c">{{character.resist_display}}</td>
+        <td class="all_c">{{character.resist_modifiers}}</td>
     </tr>
     <!-- need some sort of conditional here -->
     {% load define_showhp %}
@@ -26,28 +31,33 @@
     {% endif %}
     <tr>
         {% if 'Bard' in character.char_class %}
-            <td class="all_r">Rhythm Points</td>
+            <td class="all_r">Rhythm Pts</td>
             <td class="all_c">{{character.rhythm_points_base}}</td>
+            <td class="all_c">&nbsp;</td>
         {% elif 'Illusionist' in character.char_class %}
             <td class="all_r">Spell Cards</td>
             <td class="all_c">{{character.spell_cards_base}}</td>
+            <td class="all_c">&nbsp;</td>
         {% elif character.is_spellcaster %}
-            <td class="all_r">Spell Points</td>
+            <td class="all_r">Spell Pts</td>
             <td class="all_c">{{character.spell_points_base}}</td>
+            <td class="all_c">&nbsp;</td>
         {% elif showhp %}
-            <td class="all_r">Honor Points</td>
+            <td class="all_r">Honor Pts</td>
             <td class="all_c">{{character.honor_points_base}}</td>
+            <td class="all_c">&nbsp;</td>
             {% define False as showhp %}
         {% else %}
-            <td colspan="2">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
         {% endif %}
     </tr>
     <tr>
         {% if showhp %}
-            <td class="all_r">Honor Points</td>
+            <td class="all_r">Honor Pts</td>
             <td class="all_c">{{character.honor_points_base}}</td>
+            <td class="all_c">&nbsp;</td>
         {% else %}
-            <td colspan="2">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
         {% endif %}
     </tr>
 </table>

@@ -212,7 +212,8 @@ input:focus {
 
 .inline { display: inline-block; }
 .header { border: 1.0px solid black; font-size: 105%; background-color: #cccccc;}
-.header_c { border: 1.0px solid black; font-size: 105%; background-color: #cccccc; text-align: center; }
+.pl_05 { padding-left: 5px; }
+.ha_c { text-align: center; }
 
 .left_c { border-left: 1.0px solid black; text-align: center; }
 
@@ -221,12 +222,14 @@ input:focus {
 #width_05 { width: 5%; }
 #width_07 { width: 7%; }
 #width_10 { width: 10%; }
+#width_12 { width: 12%; }
 #width_15 { width: 15%; }
 #width_18 { width: 18%; }
 #width_1925 { width: 19.25%; }
 #width_235 { width: 23.5%; }
 #width_30 { width: 30%; }
 #width_32 { width: 32%; }
+#width_35 { width: 35%; }
 #width_39 { width: 39%; }
 #width_40 { width: 40%; }
 #width_49 { width: 49%; }

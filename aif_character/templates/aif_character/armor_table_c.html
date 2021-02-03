@@ -1,0 +1,37 @@
+<table id="width_100">
+	<tr>
+		<td class="header pl_05">Armor List</td>
+		<td id="width_12" class="all_c">Type</td>
+		<td id="width_05" class="all_c">S</td>
+		<td id="width_05" class="all_c">P</td>
+		<td id="width_05" class="all_c">B</td>
+		<td id="width_05" class="all_c">C</td>
+	</tr>
+	<!-- {{table.armor}} -->
+	{% load define_group %}
+	{% for armor in character.armor_set.all %}
+		{% if "Group" in armor.name %}
+			{% define True as group %}
+		{% else %}
+			{% define False as group %}
+		{% endif %}
+		{% if not group %}
+		<tr>
+			<td class="all_pl">{{armor.description}}</td>
+			<td class="all_c">{{armor.type}}</td>
+			<td class="all_c">{{armor.slashing}}</td>
+			<td class="all_c">{{armor.piercing}}</td>
+			<td class="all_c">{{armor.bludgeoning}}</td>
+			<td class="all_c">{{armor.cleaving}}</td>
+		</tr>
+		{% endif %}
+	{% endfor %}
+	<tr>
+		<td class="all_pl">Total SPBC</td>
+		<td class="all_c">-</td>
+		<td class="all_c">{{armor.total_slashing_protection}}</td>
+		<td class="all_c">{{armor.total_piercing_protection}}</td>
+		<td class="all_c">{{armor.total_bludgeoning_protection}}</td>
+		<td class="all_c">{{armor.total_cleaving_protection}}</td>
+	</tr>
+</table>

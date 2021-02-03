@@ -1,0 +1,159 @@
+<div>
+	<div class="sheet">
+		<form action="{% url 'save' character.name %}" method="post">
+			{% csrf_token %}
+			<!-- Name, Race & Class -->
+			<!--table id="width_100">
+				<tr>
+					<td class="hdr_2">
+						{{character.name}}:&nbsp{{character.race}}&nbsp{{character.char_class}}
+					</td>
+				</tr>
+			</table>
+			<br/-->
+			<table id="width_100">
+				<tr>
+					<!-- Attributes -->
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/attr_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Movement -->
+					<td style="width: 21.75%" class="valign_t">
+						{% include "aif_character/movement_table_1.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Encumbrance -->
+					<td id="width_18" class="valign_t">
+						{% include "aif_character/encumbrance_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Searches -->
+					<td id="width_18" class="valign_t">
+						{% include "aif_character/searches_table_2.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Experience -->
+					<td id="width_15" class="valign_t">
+						{% include "aif_character/experience_table_2.html" %}
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<!-- Ability Scores, Saves, Combat Factors and Bonuses -->
+			<table id="width_100">
+				<tr>
+					<!-- Ability Scores -->
+					<td id="width_1925" class="valign_t">
+						{% include "aif_character/stats_table.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Saves -->
+					<td style="width: 21.75%" class="valign_t">
+						{% include "aif_character/saves_table_1.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Combat Factors -->
+					<td id="width_18" class="valign_t">
+						{% include "aif_character/cf_factors_table_3.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Bonuses -->
+					<td id="width_18" class="valign_t">
+						{% include "aif_character/bonuses_table_3.html" %}
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<!-- Money -->
+					<td id="width_15" class="valign_t">
+						{% include "aif_character/money_table_2.html" %}
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<!-- Skills, Weapons, Armor and Equipment -->
+			<table id="width_100">
+				<!-- Row One -->
+				<tr>
+					<td id="width_235" rowspan="5" class="valign_t">
+						<!-- Skills -->
+						<table id="width_100">
+							<tr>
+								<td class="header pl_05">Class Skills</td>
+								<td id="width_12" class="header ha_c">Rk</td>
+								<td id="width_12" class="header ha_c">Or</td>
+							</tr>
+							{% for skill in character.get_class_skills %}
+								{% include "aif_character/skills_table.html" %}
+							{% endfor %}
+							<tr>
+								<td class="header pl_05">Racial Skills</td>
+								<td id="width_12" class="header ha_c">Rk</td>
+								<td id="width_12" class="header ha_c">Or</td>
+							</tr>
+							{% for skill in character.get_racial_skills %}
+								{% include "aif_character/skills_table.html" %}
+							{% endfor %}
+							{% if 'Paladin' in character.char_class %}
+								<tr>
+									<td class="header pl_05">Honor Skills</td>
+									<td id="width_12" class="header ha_c">Rk</td>
+									<td id="width_12" class="header ha_c">Or</td>
+								</tr>
+								{% for skill in character.get_honor_skills %}
+									{% include "aif_character/skills_table.html" %}
+								{% endfor %}
+							{% endif %}
+							{% if character.is_spellcaster %}
+								<tr>
+									<td class="header pl_05">Spell Skills</td>
+									<td id="width_12" class="header ha_c">Rk</td>
+									<td id="width_12" class="header ha_c">Or</td>
+								</tr>
+								{% for skill in character.get_spell_skills %}
+									{% include "aif_character/skills_table.html" %}
+								{% endfor %}
+							{% endif %}
+						</table>
+					</td>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_75" class="valign_t">
+						<!-- Weapons -->
+						{% include "aif_character/weapons_table_1.html" %}
+					</td>
+				</tr>
+				<!-- Row Two -->
+				<tr>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_75" class="valign_t">
+				</tr>
+				<!-- Row Three -->
+				<tr>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_75" class="valign_t">
+						<table id="width_100">
+							<tr>
+								<td class="valign_t" >
+									<!-- Armor -->
+									{% include "aif_character/armor_table_1.html" %}
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Row Four -->
+				<tr>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_75" class="valign_t">
+				</tr>
+				<!-- Row Five -->
+				<tr>
+					<td id="width_02">&nbsp;</td>
+					<td id="width_75" class="valign_t">
+						{% include "aif_character/equipment_table.html" %}
+					</td>
+				</tr>
+			</table>
+			{% if flag == "edit" %}<input type="submit" value="Save">{% endif %}
+		</form>
+	</div>
+</div>

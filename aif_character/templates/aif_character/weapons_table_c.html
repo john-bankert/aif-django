@@ -1,0 +1,28 @@
+<table id="width_100">
+	<tr>
+		<td class="header pl_05">Weapons List</td>
+		<td class="all_c">Size</td>
+		<td class="all_c">Type</td>
+		<td class="all_c">Range</td>
+		<td id="width_10" class="all_c">Melee</td>
+		<td id="width_10" class="all_c">Missile</td>
+	</tr>
+	{% load define_group %}
+	{% for weapon in character.weapons_set.all %}
+		{% if "Group" in weapon.name %}
+			{% define True as group %}
+		{% else %}
+			{% define False as group %}
+		{% endif %}
+		{% if not group %}
+		<tr>
+			<td class="all_pl">{{weapon.description}}</td>
+			<td class="all_c">{{weapon.size}}</td>
+			<td class="all_c">{{weapon.type}}</td>
+			<td class="all_c">{{weapon.range}}</td>
+			<td class="all_c">{{weapon.melee_display}}</td>
+			<td class="all_c">{{weapon.missile_display}}</td>
+		</tr>
+		{% endif %}
+	{% endfor %}
+</table>

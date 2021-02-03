@@ -1,0 +1,42 @@
+<table id="width_100">
+	{% for container in character.container_set.all %}
+		{% if not forloop.counter|divisibleby:2 %}<tr>{% endif %}
+			<td class="valign_t" id="width_49">
+				<!-- Equipment Left -->
+				<table id="width_100">
+					<tr>
+						<td class="header pl_05">{{container.description}}</td>
+						<td id="width_1" class="halign_c">Qty</td>
+						<td id="width_1" class="halign_c">Load</td>
+						<td id="width_1" class="halign_c">Adj</td>
+						<td id="width_1" class="halign_c">Dur</td>
+					</tr>
+					{% for equipment in container.equipment_set.all %}
+						<tr>
+							<td class="all_pl">{{equipment.description}}</td>
+							<td class="all_c">{{equipment.quantity}}</td>
+							<td class="all_c">{{equipment.load}}</td>
+							<td class="all_c">{{equipment.display}}</td>
+							<td class="all_c">{{equipment.durability}}</td>
+						</tr>
+					{% endfor %}
+					<tr>
+						<td class="halign_rpl" colspan="2">Total Load</td>
+						<td class="all_c">{{character.equipment.total.load.left}}</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		{% if not forloop.counter|divisibleby:2 %}
+			<td id="width_02">&nbsp;</td>
+		{% endif %}
+		{% if forloop.last and not forloop.counter|divisibleby:2 %}
+			<!--td id="width_02">&nbsp;</td-->
+			<td class="valign_t" id="width_49">&nbsp;</td>
+		{% endif %}
+	{% if forloop.counter|divisibleby:2 or forloop.last %}</tr>
+		{% if not forloop.last %}<tr><td><br/></td></tr>{% endif %}
+	{% endif %}
+{% endfor %}
+</table>

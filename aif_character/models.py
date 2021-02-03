@@ -6,6 +6,8 @@ import importlib
 from django.db import models
 from django.forms import ModelForm
 from django.core import serializers
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from aif import constants as aif
 from aif_campaign import functions as fn
 from aif_playerstome import races, classes, spells
@@ -295,31 +297,33 @@ class Character(models.Model):
                             aif.CLEAVING_GRP: "C", aif.THROWING_GRP: "-", aif.BOW_GRP: "-"}
         sort_order = 0
         for weapon in weapons_types:
+            sk = self.skills_set.create(name=weapon, skill_type=aif.WEAPON)
+            sk.sort_order = sort_order
+            sk.save()
             w = self.weapons_set.create(name=weapon)
+            w.skill_pk = sk.pk
             w.description = weapon
             w.sort_order = sort_order
             w.size = "-"
             w.type = weapons_types[weapon]
             w.load = "-"
             w.save()
-            sk = self.skills_set.create(name=weapon, skill_type=aif.WEAPON)
-            sk.sort_order = sort_order
-            sk.save()
             sort_order += 1
 
         armor_types = {aif.LIGHT_GRP: "L", aif.MEDIUM_GRP: "M", aif.HEAVY_GRP: "H", aif.HELMET_GRP: "-",
                         aif.UNARMED_GRP: "U", aif.SHIELD_GRP: "S"}
         sort_order = 0
         for armor in armor_types:
+            sk = self.skills_set.create(name=armor, skill_type=aif.ARMOR)
+            sk.sort_order = sort_order
+            sk.save()
             a = self.armor_set.create(name=armor)
+            a.skill_pk = sk.pk
             a.description = armor
             a.sort_order = sort_order
             a.type = armor_types[armor]
             a.load = "-"
             a.save()
-            sk = self.skills_set.create(name=armor, skill_type=aif.ARMOR)
-            sk.sort_order = sort_order
-            sk.save()
             sort_order += 1
 
         self.adjust()
@@ -377,6 +381,12 @@ class Character(models.Model):
         
     def is_spellcaster(self):
         return self.check_spell_caster(aif.spell_casters)
+
+    def uses_spellpoints(self):
+        if self.char_class == aif.BARD or self.char_class == aif.ILLUSIONIST:
+            return False
+        else:
+            return True
 
     def is_wizard(self):
         return self.check_spell_caster(aif.wizards)
@@ -579,6 +589,21 @@ class Character(models.Model):
         # for cls in self.classes:
         #    self.classes[cls].apply_skills(self)
 
+        # this should eventually go away. For now, dump the weapon skill rank from Skills into 
+        # the weapon.rank field.
+        for weapon in self.weapons_set.all():
+            if weapon.skill_pk == 0:
+                if self.skills_set.filter(skill_type=aif.WEAPON, name=weapon.name).count() > 0:
+                    ws = self.skills_set.get(skill_type=aif.WEAPON, name=weapon.name)
+                    weapon.skill_pk = ws.pk
+                    weapon.rank = ws.rank
+                    weapon.save()
+            else:
+                if self.skills_set.filter(pk=weapon.skill_pk).count() > 0:
+                    ws = self.skills_set.get(pk=weapon.skill_pk)
+                    weapon.rank = ws.rank
+                    weapon.save()
+
         # calculate weapon order values, get SPBC order values to buff damage dice, calculate total weapon load
         spbc = {}
         self.weapons_total_load = d0
@@ -641,6 +666,26 @@ class Character(models.Model):
         t_spbc = str(self.spbc_buff) + "/" + str(self.spbc_buff)
         total_spbc = {aif.SLASHING: t_spbc, aif.PIERCING: t_spbc, aif.BLUDGEONING: t_spbc, aif.CLEAVING: t_spbc}
 
+        # this should eventually go away. For now, dump the armor skill rank from Skills into 
+        # the armor.rank field.
+        '''
+        for armor in self.armor_set.all():
+            if armor.skill_pk == 0:
+                print('no pk, trying filter')
+                if self.skills_set.filter(skill_type=aif.ARMOR, name=armor.name).count() > 0:
+                    print('found skill by name, type for', armor.name)
+                    ws = self.skills_set.get(skill_type=aif.ARMOR, name=armor.name)
+                    armor.skill_pk = ws.pk
+                    armor.rank = ws.rank
+                    armor.save()
+            else:
+                if self.skills_set.filter(pk=armor.skill_pk).count() > 0:
+                    print('found skill by pk', armor.name)
+                    ws = self.skills_set.get(pk=armor.skill_pk)
+                    armor.rank = ws.rank
+                    armor.save()
+        '''
+        
         for armor in self.armor_set.all():
             armor.order = ""
             ordered = False
@@ -851,6 +896,8 @@ class Character(models.Model):
 class Armor(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
     skill = models.IntegerField(default=0)
+    skill_pk = models.IntegerField(default=0)
+    weapon_pk = models.IntegerField(default=0)
     name = models.CharField(max_length=75, default="")
     description = models.CharField(max_length=200, default="")
     type = models.CharField(max_length=5, default="")
@@ -991,6 +1038,7 @@ class Tips(models.Model):
 
 class Weapons(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    # user = models.OneToOneField(User, on_delete=models.CASCADE)
     skill_pk = models.IntegerField(default=0)
     weapon_pk = models.IntegerField(default=0)
     name = models.CharField(max_length=75, default="")
@@ -1035,3 +1083,16 @@ class SkillsForm(ModelForm):
     class Meta:
         model = Skills
         fields = ['skill_type', 'name', 'rank', 'mastered']
+        
+        
+'''
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()
+'''

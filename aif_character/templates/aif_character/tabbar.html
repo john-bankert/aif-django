@@ -1,6 +1,8 @@
 <div class="tab">
 	<button class="tablinks active" onclick="openTab(event, 'Sheet')">Sheet</button>
-	<button class="tablinks" onclick="openTab(event, 'Sheet2')">Sheet2</button>
+	<button class="tablinks" onclick="openTab(event, 'Sheet2')">Sheet 2</button>
+	<button class="tablinks" onclick="openTab(event, 'Sheet3')">Sheet 3</button>
+	<button class="tablinks" onclick="openTab(event, 'Sheet4')">Sheet 4</button>
 	{% if character.is_spellcaster %}
 		<button class="tablinks" onclick="openTab(event, 'Spells')">Spells</button>
 	{% endif %}
@@ -9,11 +11,19 @@
 </div>
 
 <div id="Sheet" class="tabcontent active" style="display:block">
-	{% include "aif_character/sheet1.html" %}
+	{% include "aif_character/sheet_1.html" %}
 </div>
 
 <div id="Sheet2" class="tabcontent">
-	{% include "aif_character/sheet2.html" %}
+	{% include "aif_character/sheet_2.html" %}
+</div>
+
+<div id="Sheet3" class="tabcontent">
+	{% include "aif_character/sheet_3.html" %}
+</div>
+
+<div id="Sheet4" class="tabcontent">
+	{% include "aif_character/sheet_4.html" %}
 </div>
 
 <div id="Spells" class="tabcontent">

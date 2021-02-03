@@ -8,167 +8,22 @@
 				<tr>
 					<!-- Ability Scores -->
 					<td id="width_235" class="valign_t" align="left">
-						<table id="width_100">
-							<tr>
-								<td colspan="3" class="header">Ability Scores</td>
-							</tr>
-							<tr>
-								<td id="width_40"></td>
-								<td id="width_30"></td>
-								<td id="width_30" class="halign_c">Mods</td>
-							</tr>
-							<tr>
-								<td>STR:</td>
-								<td class="all_c">{{character.str_display}}</td>
-								<td class="all_c">{{character.str_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>DEX:</td>
-								<td class="all_c">{{character.dex_display}}</td>
-								<td class="all_c">{{character.dex_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>INT:</td>
-								<td class="all_c">{{character.int_display}}</td>
-								<td class="all_c">{{character.int_modifiers}}</td>
-							</tr>
-							<tr>
-								<td>HLTH:</td>
-								<td class="all_c">{{character.health_display}}</td>
-								<td class="all_c">{{character.health_modifiers}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/stats_table_c.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Saves -->
 					<td id="width_235" class="valign_t" align="center">
-						<table align="center">
-							<tr>
-								<td colspan="3" class="header">Saves</td>
-							</tr>
-							<tr>
-								<td>&nbsp;</td>
-								<td id="width_30" class="halign_c">Dice</td>
-								<td id="width_30" class="halign_c">Mods</td>
-							</tr>
-							<tr>
-								<td class="all_r">Withstand</td>
-								<td class="all_c">{{character.withstand_display}}</td>
-								<td class="all_c">{{character.withstand_modifiers}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Dodge</td>
-								<td class="all_c">{{character.dodge_display}}</td>
-								<td class="all_c">{{character.dodge_modifiers}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Resist</td>
-								<td class="all_c">{{character.resist_display}}</td>
-								<td class="all_c">{{character.resist_modifiers}}</td>
-							</tr>
-							<!-- need some sort of conditional here -->
-							{% load define_showhp %}
-							{% if 'Paladin' in character.char_class %}
-								{% define True as showhp %}
-							{% else %}
-								{% define False as showhp %}
-							{% endif %}
-							<tr>
-								{% if character.is_spellcaster %}
-									<td class="all_r">Spell Points</td>
-									<td class="all_c">{{character.spell_points_base}}</td>
-									<td class="all_c"></td>
-								{% elif 'Bard' in character.char_class %}
-									<td class="all_r">Rhythm Points</td>
-									<td class="all_c">{{character.rhythm_points_base}}</td>
-									<td class="all_c"></td>
-								{% elif 'Illusionist' in character.char_class %}
-									<td class="all_r">Spell Cards</td>
-									<td class="all_c">{{character.spell_cards_base}}</td>
-									<td class="all_c"></td>
-								{% elif showhp %}
-									<td class="all_r">Honor Points</td>
-									<td class="all_c">{{character.honor_points_base}}</td>
-									<td class="all_c"></td>
-									{% define False as showhp %}
-								{% else %}
-									<td>&nbsp;</td>
-								{% endif %}
-							</tr>
-							<tr>
-								{% if showhp %}
-									<td class="all_r">Honor Points</td>
-									<td class="all_c">{{character.honor_points_base}}</td>
-									<td class="all_c"></td>
-								{% else %}
-									<td>&nbsp;</td>
-								{% endif %}
-							</tr>
-						</table>
+						{% include "aif_character/saves_table_1.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Combat Factors -->
 					<td id="width_235" class="valign_t" align="center">
-						<table align="center">
-							<tr>
-								<td colspan="3" class="header">Combat Factors</td>
-							</tr>
-							<tr>
-								<td>&nbsp;</td>
-								<td id="width_30" class="halign_c">&nbsp;</td>
-								<td id="width_30" class="halign_c">Adj</td>
-							</tr>
-							<tr>
-								<td class="all_r">Knockdown</td>
-								<td class="all_c">{{character.knockdown_base}}</td>
-								<td class="all_c">{{character.knockdown_display}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Defense</td>
-								<td class="all_c">{{character.defense_base}}</td>
-								<td class="all_c">{{character.defense_display}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Stun</td>
-								<td class="all_c">{{character.stun_base}}</td>
-								<td class="all_c">{{character.stun_display}}</td>
-							</tr>
-							<tr>
-								<td class="all_r">Endurance</td>
-								<td class="all_c">{{character.endurance_base}}</td>
-								<td class="all_c">{{character.endurance_display}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/cf_factors_table_1.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<!-- Movement -->
 					<td id="width_235" class="valign_t" align="right">
-						<table>
-							<tr>
-								<td id="width_40" class="halign_r">Movement</td>
-								<td id="width_02">&nbsp;</td>
-								<td id="width_29" class="halign_c">Base</td>
-								<td id="width_29" class="halign_c">Adj</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Walking</td>
-								<td>&nbsp;</td>
-								<td class="all_c">{{character.walking_base}}</td>
-								<td class="all_c">{{character.walking_display}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Running</td>
-								<td>&nbsp;</td>
-								<td class="all_c">{{character.running_base}}</td>
-								<td class="all_c">{{character.running_display}}</td>
-							</tr>
-							<tr>
-								<td class="halign_r">Swimming</td>
-								<td>&nbsp;</td>
-								<td class="all_c">{{character.swimming_base}}</td>
-								<td class="all_c">{{character.swimming_display}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/movement_table_1.html" %}
 					</td>
 				</tr>
 			</table>
@@ -179,75 +34,12 @@
 				<tr>
 					<td class="valign_t" >
 						<!-- Armor -->
-						<table id="width_100">
-							<tr>
-								<td class="header">Armor List</td>
-								<td id="width_12" class="all_c">Type</td>
-								<td id="width_05" class="all_c">S</td>
-								<td id="width_05" class="all_c">P</td>
-								<td id="width_05" class="all_c">B</td>
-								<td id="width_05" class="all_c">C</td>
-							</tr>
-							<!-- {{table.armor}} -->
-							{% load define_group %}
-							{% for armor in character.armor_set.all %}
-								{% if "Group" in armor.name %}
-									{% define True as group %}
-								{% else %}
-									{% define False as group %}
-								{% endif %}
-								{% if not group %}
-								<tr>
-									<td class="all_pl">{{armor.description}}</td>
-									<td class="all_c">{{armor.type}}</td>
-									<td class="all_c">{{armor.slashing}}</td>
-									<td class="all_c">{{armor.piercing}}</td>
-									<td class="all_c">{{armor.bludgeoning}}</td>
-									<td class="all_c">{{armor.cleaving}}</td>
-								</tr>
-								{% endif %}
-							{% endfor %}
-							<tr>
-								<td class="all_pl">Total SPBC</td>
-								<td class="all_c">-</td>
-								<td class="all_c">{{armor.total_slashing_protection}}</td>
-								<td class="all_c">{{armor.total_piercing_protection}}</td>
-								<td class="all_c">{{armor.total_bludgeoning_protection}}</td>
-								<td class="all_c">{{armor.total_cleaving_protection}}</td>
-							</tr>
-						</table>
+						{% include "aif_character/armor_table_c.html" %}
 					</td>
 					<td id="width_02">&nbsp;</td>
 					<td class="valign_t" >
 						<!-- Weapons -->
-						<table id="width_100">
-							<tr>
-								<td class="header">Weapons List</td>
-								<td class="all_c">Size</td>
-								<td class="all_c">Type</td>
-								<td class="all_c">Range</td>
-								<td id="width_10" class="all_c">Melee</td>
-								<td id="width_10" class="all_c">Missile</td>
-							</tr>
-							{% load define_group %}
-							{% for weapon in character.weapons_set.all %}
-								{% if "Group" in weapon.name %}
-									{% define True as group %}
-								{% else %}
-									{% define False as group %}
-								{% endif %}
-								{% if not group %}
-								<tr>
-									<td class="all_pl">{{weapon.description}}</td>
-									<td class="all_c">{{weapon.size}}</td>
-									<td class="all_c">{{weapon.type}}</td>
-									<td class="all_c">{{weapon.range}}</td>
-									<td class="all_c">{{weapon.melee_display}}</td>
-									<td class="all_c">{{weapon.missile_display}}</td>
-								</tr>
-								{% endif %}
-							{% endfor %}
-						</table>
+						{% include "aif_character/weapons_table_c.html" %}
 					</td>
 				</tr>
 			</table>
@@ -255,21 +47,28 @@
 			<br/>
 			<table id="width_100">
 				<tr>
-					<td class="valign_t" id="width_18">
+					<!--td class="valign_t" id="width_18">
 						<button>New Combat</button>
 					</td>
+							<td id="width_2">&nbsp;</td>
 					<td class="valign_t" id="width_18">
 						<button>End Combat</button>
 					</td>
+							<td id="width_2">&nbsp;</td>
 					<td class="valign_t" id="width_18">
 						<button>Add Buff</button>
+					</td-->
+					<td id="width_40" class="valign_t">
+						<button id="width_30">New Combat</button>
+						<button id="width_30">End Combat</button>
+						<button id="width_30">Add Buff</button>
 					</td>
-					<td></td>
-					<td class="valign_t" align="right">
+					<td>&nbsp;</td>
+					<td id="width_30" class="valign_t" align="right">
 						<div>
 							<button style="width: 10%;">+</button>
-							<label style="display: inline-block; width: 20%; text-align: center" for="round">Round</label>
-							<input style="width: 10%; text-align: center" type="text" name="round" maxlength="10" id="round">
+							<label style="width: 20%; display: inline-block; text-align: center" for="round">Round</label>
+							<input style="width: 20%; text-align: center" type="text" name="round" maxlength="10" id="round">
 						</div>
 					</td>
 				</tr>
@@ -282,7 +81,7 @@
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline" for="health">HLTH</label>
+							<label id="width_35" class="halign_r inline" for="health">HLTH</label>
 							<input id="width_10" class="halign_c" type="text" name="health" maxlength="10" id="health" value="{{character.health_current}}">
 							<input id="width_10" class="halign_c" type="text" name="max_health" maxlength="10" id="max_health" value="{{character.health_display}}">
 						</div>
@@ -294,7 +93,7 @@
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline"  for="health">Fatigue</label>
+							<label id="width_35" class="halign_r inline"  for="health">Fatigue</label>
 							<input id="width_10" class="halign_c" type="text" name="fatigue" maxlength="10" id="fatigue" value="{{character.fatigue}}">
 							<input id="width_10" class="halign_c" type="text" name="max_fatigue" maxlength="10" id="max_fatigue" value="{{character.endurance_display}}">
 						</div>
@@ -306,20 +105,20 @@
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline"  for="health">Stun</label>
+							<label id="width_35" class="halign_r inline"  for="health">Stun</label>
 							<input id="width_10" class="halign_c" type="text" name="stun" maxlength="10" id="stun" value="{{character.stun_current}}">
 							<input id="width_10" class="halign_c" type="text" name="max_stun" maxlength="10" id="max_stun" value="{{character.stun_display}}">
 						</div>
 					</td>
 					<td>&nbsp;</td>
 				</tr>
-				{% if character.is_spellcaster and not 'Bard' in character.char_class and not 'Illusionist' in character.char_class %}
+				{% if character.uses_spellpoints %}
 				<tr>
 					<td class="valign_t">
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline"  for="health">Spell Points</label>
+							<label id="width_35" class="halign_r inline"  for="health">Spell Points</label>
 							<input id="width_10" class="halign_c" type="text" name="spell_pts" maxlength="10" id="spell_pts" value="{{character.spell_points_current}}">
 							<input id="width_10" class="halign_c" type="text" name="max_spell_pts" maxlength="10" id="max_spell_pts" value="{{character.spell_points_base}}">
 						</div>
@@ -333,7 +132,7 @@
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline"  for="health">Rhythm Points</label>
+							<label id="width_35" class="halign_r inline"  for="health">Rhythm Points</label>
 							<input id="width_10" class="halign_c" type="text" name="rhythm_pts" maxlength="10" id="rhythm_pts" value="{{character.rhythm_points_base}}">
 							<input id="width_10" class="halign_c" type="text" name="max_rhythm_pts" maxlength="10" id="max_rhythm_pts" value="{{character.rhythm_points_base}}">
 						</div>
@@ -347,7 +146,7 @@
 						<div>
 							<button id="width_10">+</button>
 							<button id="width_10">-</button>
-							<label id="width_30" class="halign_r inline"  for="health">Honor Points</label>
+							<label id="width_35" class="halign_r inline"  for="health">Honor Points</label>
 							<input id="width_10" class="halign_c" type="text" name="honor_pts" maxlength="10" id="honor_pts" value="{{character.honor_points_base}}">
 							<input id="width_10" class="halign_c" type="text" name="max_honor_pts" maxlength="10" id="max_honor_pts" value="{{character.honor_points_base}}">
 						</div>
