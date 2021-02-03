@@ -17,6 +17,8 @@ https://docs.djangoproject.com/en/3.1/ref/forms/widgets/
 https://stackoverflow.com/questions/7302889/textfield-missing-in-django-forms
 https://www.codingforentrepreneurs.com/blog/html-template-to-pdf-in-django
 https://stackoverflow.com/questions/1377446/render-html-to-pdf-in-django-site
+https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone
+https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-javascript-in-django
 
 ######################################
 
@@ -24,6 +26,8 @@ https://stackoverflow.com/questions/1377446/render-html-to-pdf-in-django-site
 
  can crossbows use different quarrel types: eg small cb use medium quarrel, large cb use small or medium quarrel, etc
  crossbow skill - is using medium translatable to large or small, for example?
+ illusionist - # cards per circle is 1 + affinity rank? or just affinity rank. Couldn't find it explicitly
+               stated in rules.
 
 ######################################
 
@@ -32,15 +36,17 @@ https://stackoverflow.com/questions/1377446/render-html-to-pdf-in-django-site
                             - when adding to character, ammo needs to go into equipment
                               not weapons list
  Separate out weapons/armor skills tracking (rank, order) from actual weapons/armor lists
- Sorting of query sets where appropriate
+ normalize field names: eg item_name/name, adjusted -> display, etc.
  Sorting index to allow for custom sorting of anything list based?
+ Sorting of query sets where appropriate
+ refactor table names Armor, Equipment, etc in either Character or PlayersTome so they're not identical
+ duplicate container names allowed?
  Preference should include: base font, base font size, and colors.
  class based views/forms
- consider refactoring various skills tables into one table with skill type field
  Formulas of some sort for buffs, etc.
- normalize field names: eg item_name/name, adjusted -> display, etc.
- *** Express all widths as percentages if possible!
-
+ multiclass of bard/priest or similar correctly showing spell/rhythm/etc
+ Something may be missing in the linking between certain things. Not 100% sure just yet
+ select option light blue color change if possible. UL,LI instead of select?
  TODO - HIGH
  new combat/close combat need to do something to adjust buff round start/end across multiple combats
  Speed debuff on expiration

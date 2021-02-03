@@ -5,17 +5,13 @@ from django.core.exceptions import ObjectDoesNotExist
 
 class Command(BaseCommand):
 
-
     def add_arguments(self, parser):
         pass
         
     def handle(self, *args, **options):
-        self.add_users()
-
-    def add_users(self):
-        self.add_user('John', 'jbankert@gmail.com', 'k72CD@&rsa49PKF', 'John', 'Bankert')
+        self.add_user('john', 'jbankert@gmail.com', 'k72CD@&rsa49PKF', 'John', 'Bankert')
         self.add_user('demo', 'demo@aif.magichelmet.xyz', '1qaz2wsx!QAZ@WSX', 'Demo', 'User')
-        self.add_user('Gamemaster', 'gamemaster@aif.magichelmet.xyz', '1234qwer!@#$QWER', 'Game', 'Masater')
+        self.add_user('gamemaster', 'gamemaster@aif.magichelmet.xyz', '1234qwer!@#$QWER', 'Game', 'Masater')
         # new_group, created = Group.objects.get_or_create(name='game_master')
         # proj_add_perm = Permission.objects.get(name='Can add users to party')
         # new_group.permissions.add(proj_add_perm)
@@ -24,13 +20,17 @@ class Command(BaseCommand):
         # new_group.permissions.add(permission)
         # new_group, created = Group.objects.get_or_create(name='aif_admin')
 
-    def add_user(self, userName, email, password, firstName, lastName,):
-        if User.objects.filter(username=userName).count() == 0:
-            user = User.objects.create_user(userName, email, password)
-            user.first_name = firstName
-            user.last_name = lastName
+    def add_user(self, user_name, email, password, first_name, last_name,):
+        if User.objects.filter(username=user_name).count() == 0:
+            user = User.objects.create_user(user_name, email, password)
+            user.first_name = first_name
+            user.last_name = last_name
+            if user_name == 'john':
+                user.profile.current_theme = 'green'
+            elif user_name == 'demo':
+                user.profile.current_theme = 'blue'
+            user.profile.save()
             user.save()
-            self.stdout.write("added user " + userName)
+            self.stdout.write("added user " + user_name)
         else:
-            self.stdout.write("user " + userName + " already exists")
-
+            self.stdout.write("user " + user_name + " already exists")

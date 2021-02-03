@@ -82,8 +82,7 @@
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.skills_set.all %}
-								{% if skill.skill_type == 'Class' %}
+							{% for skill in character.get_class_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -101,15 +100,13 @@
 									</td>
 									<td class="all_c">{{skill.order}}</td>
 								</tr>
-								{% endif %}
 							{% endfor %}
 							<tr>
 								<td class="header">Racial Skills</td>
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.skills_set.all %}
-								{% if skill.skill_type == 'Racial' %}
+							{% for skill in character.get_racial_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -127,7 +124,6 @@
 									</td>
 									<td class="all_c" id="width_1">{{skill.order}}</td>
 								</tr>
-								{% endif %}
 							{% endfor %}
 						</table>
 					</td>
@@ -140,8 +136,7 @@
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.skills_set.all %}
-								{% if skill.skill_type == 'Weapon' %}
+							{% for skill in character.get_weapon_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -159,15 +154,13 @@
 									</td>
 									<td class="all_c">{{skill.order}}</td>
 								</tr>
-								{% endif %}
 							{% endfor %}
 							<tr>
 								<td class="header">Armor Skills</td>
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.skills_set.all %}
-								{% if skill.skill_type == 'Armor' %}
+							{% for skill in character.get_armor_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -185,7 +178,6 @@
 									</td>
 									<td class="all_c" id="width_1">{{skill.order}}</td>
 								</tr>
-								{% endif %}
 							{% endfor %}
 						</table>
 					</td>
@@ -199,8 +191,7 @@
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.skills_set.all %}
-									{% if skill.skill_type == 'Honor' %}
+								{% for skill in character.get_honor_skills %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
@@ -218,7 +209,6 @@
 										</td>
 										<td class="all_c">{{skill.order}}</td>
 									</tr>
-									{% endif %}
 								{% endfor %}
 							{% endif %}
 							{% if character.is_spellcaster %}
@@ -227,8 +217,7 @@
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.skills_set.all %}
-									{% if skill.skill_type == 'Spell' %}
+								{% for skill in character.get_spell_skills %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
@@ -246,7 +235,6 @@
 										</td>
 										<td class="all_c">{{skill.order}}</td>
 									</tr>
-									{% endif %}
 								{% endfor %}
 							{% endif %}
 						</table>
@@ -294,7 +282,7 @@
 										<!-- Equipment Left -->
 										<table id="width_100">
 											<tr>
-												<td class="header">{{container.name}}</td>
+												<td class="header">{{container.description}}</td>
 												<td id="width_1" class="halign_c">Qty</td>
 												<td id="width_1" class="halign_c">Load</td>
 												<td id="width_1" class="halign_c">Adj</td>

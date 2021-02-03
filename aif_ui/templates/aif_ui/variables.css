@@ -1,4 +1,6 @@
 :root {
+    --font-name: Arial, Helvetica, sans-serif; /*Times New Roman;*/
+    --font-size: 10pt;
     --navbar-bg-color: black;
     --navbar-fg-color: white;
     --navbar-button-fg-color: black;
@@ -8,6 +10,11 @@
     --dropdown-bg-color: #f9f9f9;
     --dropdown-hover-color: #ddd;
     --menubar-bg-color: white;
-    --font-name: Arial, Helvetica, sans-serif; /*Times New Roman;*/
-    --font-size: 10pt;
+    --tabbar-bg-color: white;
+    --tabbar-fg-color: black;
+    --tabbar-border-color: black;
+    --tabbar-bg-hover-color: grey;
+    --tabbar-fg-hover-color: white;
+    --tabbar-bg-active-color: black;
+    --tabbar-fg-active-color: white;
 }

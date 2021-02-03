@@ -1,0 +1,41 @@
+:root {
+{% if request.user.is_authenticated %}
+    --font-name: {{user.profile.font_family}};
+    --font-size: {{user.profile.font_size}};
+    --navbar-bg-color: {{user.profile.navbar_bg_color}};
+    --navbar-fg-color: {{user.profile.navbar_fg_color}};
+    --navbar-button-bg-color: {{user.profile.navbar_button_bg_color}};
+    --navbar-button-fg-color: {{user.profile.navbar_button_fg_color}};
+    --navbar-button-border-color: {{user.profile.navbar_button_border_color}};
+    --dropdown-fg-color: {{user.profile.dropdown_fg_color}};
+    --dropdown-bg-color: {{user.profile.dropdown_bg_color}};
+    --dropdown-hover-color: {{user.profile.dropdown_hover_color}};
+    --menubar-bg-color: {{user.profile.menubar_bg_color}};
+    --tabbar-bg-color: {{user.profile.tabbar_bg_color}};
+    --tabbar-fg-color: {{user.profile.tabbar_fg_color}};
+    --tabbar-border-color: {{user.profile.tabbar_border_color}};
+    --tabbar-hover-bg-color: {{user.profile.tabbar_hover_bg_color}};
+    --tabbar-hover-fg-color: {{user.profile.tabbar_hover_fg_color}};
+    --tabbar-active-bg-color: {{user.profile.tabbar_active_bg_color}};
+    --tabbar-active-fg-color: {{user.profile.tabbar_active_fg_color}};
+{% else %}
+    --font-name: Arial, Helvetica, sans-serif; /*Times New Roman;*/
+    --font-size: 10pt;
+    --navbar-bg-color: black;
+    --navbar-fg-color: white;
+    --navbar-button-fg-color: black;
+    --navbar-button-border-color: white;
+    --navbar-button-bg-color: #e7e7e7;
+    --dropdown-fg-color: black;
+    --dropdown-bg-color: #f9f9f9;
+    --dropdown-hover-color: #ddd;
+    --menubar-bg-color: white;
+    --tabbar-bg-color: white;
+    --tabbar-fg-color: black;
+    --tabbar-border-color: black;
+    --tabbar-bg-hover-color: grey;
+    --tabbar-fg-hover-color: white;
+    --tabbar-bg-active-color: black;
+    --tabbar-fg-active-color: white;
+{% endif %}
+}

@@ -3,7 +3,7 @@
 		<!--form action="{% url 'save' character.name %}" method="post"-->
 			{% csrf_token %}
 			{% if character.is_spellcaster and not 'Bard' in character.char_class and not 'Illusionist' in character.char_class %}
-			<table id="width_g">
+			<table id="width_100">
 				<!-- row One -->
 				<tr>
 					<!-- Circle 1 -->
@@ -12,8 +12,8 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 1</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
 								{% if spell.circle == 1 %}
@@ -25,14 +25,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -45,8 +45,8 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 2</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
 								{% if spell.circle == 2 %}
@@ -58,14 +58,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -78,8 +78,8 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 3</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
 								{% if spell.circle == 3 %}
@@ -91,14 +91,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -116,8 +116,8 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 4</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
 								{% if spell.circle == 4 %}
@@ -129,14 +129,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -149,11 +149,11 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 5</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
-								{% if spell.circle == 5 %}
+								{% if spell.circle == 4 %}
 									<tr>
 										<td class="all_pl">
 										{% if spell.mastered %}
@@ -162,14 +162,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -182,11 +182,11 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Circle 6</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
-								{% if spell.circle == 6 %}
+								{% if spell.circle == 4 %}
 									<tr>
 										<td class="all_pl">
 										{% if spell.mastered %}
@@ -195,14 +195,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -226,11 +226,11 @@
 						<table id="width_g">
 							<tr>
 								<td class="header">Spell</td>
-								<td class="header_c" id="width_1">Rk</td>
-								<td class="header_c" id="width_1">Or</td>
+								<td class="header_c" id="width_05">Rk</td>
+								<td class="header_c" id="width_05">Or</td>
 							</tr>
 							{% for spell in character.spells_set.all %}
-								{% if spell.circle == 0 %}
+								{% if spell.circle == 4 %}
 									<tr>
 										<td class="all_pl">
 										{% if spell.mastered %}
@@ -239,14 +239,14 @@
 											{{spell.name}}
 										{% endif %}
 										</td>
-										<td class="all_c" id="width_1">
+										<td class="all_c">
 											{% if flag == "sheet" %}
 												{{spell.rank}}
 											{% else %}
 												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
-										<td class="all_c" id="width_1">{{spell.order}}</td>
+										<td class="all_c">{{spell.order}}</td>
 									</tr>
 								{% endif %}
 							{% endfor %}
@@ -260,10 +260,10 @@
 			{% endif %}
 
 			{% if 'Illusionist' in character.char_class %}
-			<table id="width_g">
+			<table id="width_100">
 				<!-- row One -->
 				<tr>
-					<td id="width_e">
+					<td id="width_235">
 						<h2>Spell Card Layout TBD</h2>
 					</td>
 				</tr>

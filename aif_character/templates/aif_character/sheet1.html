@@ -105,7 +105,7 @@
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.classskills_set.all %}
+							{% for skill in character.get_class_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -129,7 +129,7 @@
 								<td id="width_15" class="header_c">Rk</td>
 								<td id="width_15" class="header_c">Or</td>
 							</tr>
-							{% for skill in character.racialskills_set.all %}
+							{% for skill in character.get_racial_skills %}
 								<tr>
 									<td class="all_pl">
 									{% if skill.mastered %}
@@ -154,7 +154,7 @@
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.honorskills_set.all %}
+								{% for skill in character.get_honor_skills %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
@@ -180,7 +180,7 @@
 									<td id="width_15" class="header_c">Rk</td>
 									<td id="width_15" class="header_c">Or</td>
 								</tr>
-								{% for skill in character.spellskills_set.all %}
+								{% for skill in character.get_spell_skills %}
 									<tr>
 										<td class="all_pl">
 										{% if skill.mastered %}
@@ -503,7 +503,7 @@
 										<!-- Equipment Left -->
 										<table id="width_100">
 											<tr>
-												<td class="header">{{container.name}}</td>
+												<td class="header">{{container.description}}</td>
 												<td id="width_1" class="halign_c">Qty</td>
 												<td id="width_1" class="halign_c">Load</td>
 												<td id="width_1" class="halign_c">Adj</td>

@@ -1,1 +1,230 @@
-[]
+[
+    {
+        "model": "aif_character.container",
+        "pk": 1,
+        "fields": {
+            "character": 1,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 2,
+        "fields": {
+            "character": 1,
+            "equipment_pk": 1,
+            "name": "Backpack",
+            "description": "Backpack",
+            "max_load_capacity": "16.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 3,
+        "fields": {
+            "character": 1,
+            "equipment_pk": 29,
+            "name": "Small Belt Pouch",
+            "description": "Small Belt Pouch",
+            "max_load_capacity": "4.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 4,
+        "fields": {
+            "character": 2,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 5,
+        "fields": {
+            "character": 2,
+            "equipment_pk": 1,
+            "name": "Backpack",
+            "description": "Backpack",
+            "max_load_capacity": "16.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 6,
+        "fields": {
+            "character": 2,
+            "equipment_pk": 29,
+            "name": "Small Belt Pouch",
+            "description": "Small Belt Pouch",
+            "max_load_capacity": "4.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 7,
+        "fields": {
+            "character": 3,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 8,
+        "fields": {
+            "character": 3,
+            "equipment_pk": 1,
+            "name": "Backpack",
+            "description": "Backpack",
+            "max_load_capacity": "16.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 9,
+        "fields": {
+            "character": 3,
+            "equipment_pk": 29,
+            "name": "Small Belt Pouch",
+            "description": "Small Belt Pouch",
+            "max_load_capacity": "4.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 10,
+        "fields": {
+            "character": 15,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 11,
+        "fields": {
+            "character": 15,
+            "equipment_pk": 1,
+            "name": "Backpack",
+            "description": "Backpack",
+            "max_load_capacity": "16.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 12,
+        "fields": {
+            "character": 15,
+            "equipment_pk": 29,
+            "name": "Small Belt Pouch",
+            "description": "Small Belt Pouch",
+            "max_load_capacity": "4.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 13,
+        "fields": {
+            "character": 16,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 14,
+        "fields": {
+            "character": 16,
+            "equipment_pk": 29,
+            "name": "Small Belt Pouch",
+            "description": "Small Belt Pouch",
+            "max_load_capacity": "4.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 15,
+        "fields": {
+            "character": 17,
+            "equipment_pk": 0,
+            "name": "Worn",
+            "description": "Worn",
+            "max_load_capacity": "0.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 16,
+        "fields": {
+            "character": 17,
+            "equipment_pk": 1,
+            "name": "Backpack",
+            "description": "Backpack +4 Valiant Aura",
+            "max_load_capacity": "16.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 17,
+        "fields": {
+            "character": 17,
+            "equipment_pk": 0,
+            "name": "Bolt Case 1",
+            "description": "Bolt Case 1",
+            "max_load_capacity": "1.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 18,
+        "fields": {
+            "character": 17,
+            "equipment_pk": 0,
+            "name": "Bolt Case 2",
+            "description": "Bolt Case 2",
+            "max_load_capacity": "1.0",
+            "current_load": "0.0"
+        }
+    },
+    {
+        "model": "aif_character.container",
+        "pk": 19,
+        "fields": {
+            "character": 17,
+            "equipment_pk": 0,
+            "name": "Storage Locker",
+            "description": "Storage Locker",
+            "max_load_capacity": "20.0",
+            "current_load": "0.0"
+        }
+    }
+]

@@ -30,17 +30,17 @@
         {% define False as showhp %}
     {% endif %}
     <tr>
-        {% if character.is_spellcaster %}
-            <td class="all_r">Spell Points</td>
-            <td class="all_c">{{character.spell_points_base}}</td>
-            <td class="all_c">&nbsp;</td>
-        {% elif 'Bard' in character.char_class %}
+        {% if 'Bard' in character.char_class %}
             <td class="all_r">Rhythm Points</td>
             <td class="all_c">{{character.rhythm_points_base}}</td>
             <td class="all_c">&nbsp;</td>
         {% elif 'Illusionist' in character.char_class %}
             <td class="all_r">Spell Cards</td>
             <td class="all_c">{{character.spell_cards_base}}</td>
+            <td class="all_c">&nbsp;</td>
+        {% elif character.is_spellcaster %}
+            <td class="all_r">Spell Points</td>
+            <td class="all_c">{{character.spell_points_base}}</td>
             <td class="all_c">&nbsp;</td>
         {% elif showhp %}
             <td class="all_r">Honor Points</td>

@@ -1,1 +1,662 @@
-[]
+[
+    {
+        "model": "aif_character.equipment",
+        "pk": 34,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "1 week Rations",
+            "durability": "-",
+            "display": "",
+            "load": "2.0",
+            "quantity": 2,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 3,
+        "fields": {
+            "container": 2,
+            "equipment_pk": 0,
+            "description": "50ft Rope",
+            "durability": "40",
+            "display": "",
+            "load": "4.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 7,
+        "fields": {
+            "container": 5,
+            "equipment_pk": 0,
+            "description": "50ft Rope",
+            "durability": "40",
+            "display": "",
+            "load": "4.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 11,
+        "fields": {
+            "container": 8,
+            "equipment_pk": 0,
+            "description": "50ft Rope",
+            "durability": "40",
+            "display": "",
+            "load": "4.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 19,
+        "fields": {
+            "container": 11,
+            "equipment_pk": 0,
+            "description": "50ft Rope",
+            "durability": "40",
+            "display": "",
+            "load": "4.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 35,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "Bedroll",
+            "durability": "50",
+            "display": "",
+            "load": "3.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 13,
+        "fields": {
+            "container": 10,
+            "equipment_pk": 0,
+            "description": "Belt",
+            "durability": "60",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 21,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Belt",
+            "durability": "60",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 28,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Belt",
+            "durability": "60",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 15,
+        "fields": {
+            "container": 10,
+            "equipment_pk": 0,
+            "description": "Boots",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 23,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Boots",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 30,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Boots",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 4,
+        "fields": {
+            "container": 3,
+            "equipment_pk": 0,
+            "description": "Bottle of Ink",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 8,
+        "fields": {
+            "container": 6,
+            "equipment_pk": 0,
+            "description": "Bottle of Ink",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 12,
+        "fields": {
+            "container": 9,
+            "equipment_pk": 0,
+            "description": "Bottle of Ink",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 20,
+        "fields": {
+            "container": 12,
+            "equipment_pk": 0,
+            "description": "Bottle of Ink",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 17,
+        "fields": {
+            "container": 10,
+            "equipment_pk": 0,
+            "description": "Cloak",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 25,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Cloak",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 32,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Cloak",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 38,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "Crafting Kit",
+            "durability": "30",
+            "display": "",
+            "load": "2.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 43,
+        "fields": {
+            "container": 19,
+            "equipment_pk": 0,
+            "description": "Crafting Kit",
+            "durability": "30",
+            "display": "",
+            "load": "2.0",
+            "quantity": 4,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 44,
+        "fields": {
+            "container": 19,
+            "equipment_pk": 0,
+            "description": "Enchanting Kit",
+            "durability": "30",
+            "display": "",
+            "load": "2.0",
+            "quantity": 4,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 2,
+        "fields": {
+            "container": 2,
+            "equipment_pk": 0,
+            "description": "Flask of Oil",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 6,
+        "fields": {
+            "container": 5,
+            "equipment_pk": 0,
+            "description": "Flask of Oil",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 10,
+        "fields": {
+            "container": 8,
+            "equipment_pk": 0,
+            "description": "Flask of Oil",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 18,
+        "fields": {
+            "container": 11,
+            "equipment_pk": 0,
+            "description": "Flask of Oil",
+            "durability": "10",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 36,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "Flint & Tinder",
+            "durability": "40",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 16,
+        "fields": {
+            "container": 10,
+            "equipment_pk": 0,
+            "description": "Gloves",
+            "durability": "40",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 24,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Gloves",
+            "durability": "40",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 31,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Gloves",
+            "durability": "40",
+            "display": "",
+            "load": "10.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 37,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "Magic Light Stick",
+            "durability": "-",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 42,
+        "fields": {
+            "container": 19,
+            "equipment_pk": 0,
+            "description": "Maul +3",
+            "durability": "180",
+            "display": "",
+            "load": "7.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 40,
+        "fields": {
+            "container": 17,
+            "equipment_pk": 0,
+            "description": "Medium Quarrel",
+            "durability": "30",
+            "display": "",
+            "load": "10.0",
+            "quantity": 10,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 41,
+        "fields": {
+            "container": 18,
+            "equipment_pk": 0,
+            "description": "Medium Quarrel",
+            "durability": "30",
+            "display": "",
+            "load": "10.0",
+            "quantity": 7,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 1,
+        "fields": {
+            "container": 1,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 5,
+        "fields": {
+            "container": 4,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 9,
+        "fields": {
+            "container": 7,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 14,
+        "fields": {
+            "container": 10,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 22,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 29,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Pants",
+            "durability": "40",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 39,
+        "fields": {
+            "container": 16,
+            "equipment_pk": 0,
+            "description": "Salve of Regeneration",
+            "durability": "-",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 27,
+        "fields": {
+            "container": 14,
+            "equipment_pk": 0,
+            "description": "Spell Cards",
+            "durability": "-",
+            "display": "",
+            "load": "10.0",
+            "quantity": 9,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 26,
+        "fields": {
+            "container": 13,
+            "equipment_pk": 0,
+            "description": "Waterskin",
+            "durability": "30",
+            "display": "",
+            "load": "2.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 33,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Waterskin",
+            "durability": "30",
+            "display": "",
+            "load": "2.0",
+            "quantity": 1,
+            "worn": false,
+            "in_container": true
+        }
+    }
+]

@@ -11,13 +11,15 @@ from aif_campaign import functions as fn
 from aif_playerstome import races, classes, spells
 from aif_playerstome.models import Spells as SpellsList
 from aif_playerstome.models import Weapons as WeaponsCatalog
+from aif_playerstome.models import Equipment as EquipmentCatalog
 
 application_label = 'aif_character'
 
 
-def serialize_object(path, data_object):
+def serialize_object(_file, path, data_object):
     try:
-        filename = os.path.dirname(os.path.realpath(__file__)) + path
+        filename = os.path.dirname(os.path.realpath(_file)) + path
+        print(filename)
         json_serializer = serializers.get_serializer("json")()
         json_serializer.serialize(data_object.objects.all())
         with open(filename, "w") as out:
@@ -213,8 +215,6 @@ class Character(models.Model):
             self.save()
 
             for skill in _race.racial_skills:
-                rs = self.racialskills_set.create(name=skill)
-                rs.save()
                 sk = self.skills_set.create(name=skill, skill_type=aif.RACIAL)
                 sk.save()
 
@@ -231,8 +231,6 @@ class Character(models.Model):
             class_skills = sorted(class_skills)
 
             for skill in class_skills:
-                cs = self.classskills_set.create(name=skill)
-                cs.save()
                 sk = self.skills_set.create(name=skill, skill_type=aif.CLASS)
                 sk.save()
 
@@ -241,20 +239,16 @@ class Character(models.Model):
                 self.honor_points_current = self.honor_points_base
                 sort_order = 0
                 for skill in _classes[aif.PALADIN].honor_skills_list:
-                    hs = self.honorskills_set.create(name=skill)
-                    hs.save()
                     sk = self.skills_set.create(name=skill, skill_type=aif.HONOR, sort_order=sort_order)
                     sk.save()
                     sort_order += 1
 
             if self.is_spellcaster():
                 for circle in range(1, 6):
-                    self.spellskills_set.create(name="Circle " + str(circle) + " Spell Group").save()
                     sk = self.skills_set.create(name="Circle " + str(circle) + " Spell Group",
                                                 skill_type=aif.SPELL)
                     sk.save()
                     if aif.ILLUSIONIST in self.char_class:
-                        self.spellskills_set.create(name="Circle " + str(circle) + " Affinity").save()
                         sk = self.skills_set.create(name="Circle " + str(circle) + " Affinity",
                                                     skill_type=aif.SPELL)
                         sk.save()
@@ -283,6 +277,7 @@ class Character(models.Model):
         self.dex_base = _dex
         self.int_base = _int
         self.health_base = _hlth
+        self.health_current = self.health_base
 
         self.encumbrance = self.str_base * 2
         self.burdened = self.str_base
@@ -344,13 +339,28 @@ class Character(models.Model):
         rd6 = cl_race.racial_d6[random.randint(0, len(cl_race.racial_d6) - 1)]
         dice = {aif.STR: 3, aif.INT: 3, aif.DEX: 3, aif.HLTH: 3}
         dice[rd6] += 1
-        _str = fn.roll_dice(dice[aif.STR])
-        _dex = fn.roll_dice(dice[aif.DEX])
-        _int = fn.roll_dice(dice[aif.INT])
-        _health = fn.roll_dice(dice[aif.HLTH])
+        _str = fn.roll_dice(dice[aif.STR], (False if rd6 == aif.STR else True))
+        _dex = fn.roll_dice(dice[aif.DEX], (False if rd6 == aif.DEX else True))
+        _int = fn.roll_dice(dice[aif.INT], (False if rd6 == aif.INT else True))
+        _health = fn.roll_dice(dice[aif.HLTH], (False if rd6 == aif.HLTH else True))
         _gender = "Male" if random.randint(0, 1) == 0 else "Female"
 
         self.new(_name, _race, _gender, _class, _str, _dex, _int, _health)
+        if self.is_spellcaster():
+            if self.char_class == aif.BARD:
+                self.rhythm_points_base = fn.roll_dice(1)
+                self.rhythm_points_current = self.rhythm_points_base
+            elif self.char_class == aif.ILLUSIONIST:
+                self.spell_cards_base = fn.roll_dice(1)
+            else:
+                self.spell_points_base = fn.roll_dice(1)
+                self.spell_points_current = self.spell_points_base
+                if aif.BARD in self.char_class:
+                    self.rhythm_points_base = fn.roll_dice(1)
+                    self.rhythm_points_current = self.rhythm_points_base
+                if aif.ILLUSIONIST in self.char_class:
+                    self.spell_cards_base = fn.roll_dice(1)
+
         self.random_attributes()
         self.save()
 
@@ -358,11 +368,11 @@ class Character(models.Model):
         _race = getattr(importlib.import_module("aif_playerstome.races"), self.race.replace(" ", ""))()
         hw = _race.attributes[self.gender].split(",")
         self.age = self.variance(_race.attributes[aif.AGE])
-        self.height = self.format_height(self.variance(int(hw[0])))
+        inches = self.variance(int(hw[0]))
+        feet = int(inches / 12)
+        self.height = str(feet) + "' " + str(inches - (feet * 12)) + "\""
         self.weight = self.variance(int(hw[1]))
-
-        self.silver_amount = random.randint(1, 20)
-        self.copper_amount = random.randint(1, 20)
+        self.silver_amount = fn.roll_dice(3) * 10
         self.save()
         
     def is_spellcaster(self):
@@ -375,7 +385,7 @@ class Character(models.Model):
         return self.check_spell_caster(aif.priests)
 
     def check_spell_caster(self, _list):
-        if not "/" in self.char_class:
+        if "/" not in self.char_class:
             return self.char_class in _list
         else:
             for cls in self.char_class.split("/"):
@@ -554,44 +564,6 @@ class Character(models.Model):
             if skill.mastered:
                 mastered_skills += 1
 
-        # calculate racial skill order values from rank
-        for skill in self.racialskills_set.all():
-            skill.display = skill.rank + skill.buff
-            skill.order = int(skill.display / 4)
-            skill.save()
-            if skill.name == 'Toughness':
-                if self.armor_set.filter(name='Toughness').count() == 0:
-                    a = self.armor_set.create(name='Toughness', rank=skill.rank, display=skill.display)
-                    a.description = a.name
-                    a.load = "-"
-                    a.save()
-            if skill.mastered:
-                mastered_skills += 1
-
-        # calculate class skill order values from rank
-        for skill in self.classskills_set.all():
-            skill.display = skill.rank + skill.buff
-            skill.order = int(skill.display / 4)
-            skill.save()
-            if skill.mastered:
-                mastered_skills += 1
-
-        # calculate honor skill order values from rank
-        for skill in self.honorskills_set.all():
-            skill.display = skill.rank + skill.buff
-            skill.order = int(skill.display / 4)
-            skill.save()
-            if skill.mastered:
-                mastered_skills += 1
-
-        # calculate spell skill order values from rank
-        for skill in self.spellskills_set.all():
-            skill.display = skill.rank + skill.buff
-            skill.order = int(skill.display / 4)
-            skill.save()
-            if skill.mastered:
-                mastered_skills += 1
-
         # calculate spell order values from rank
         for skill in self.spells_set.all():
             skill.display = skill.rank + skill.buff
@@ -762,6 +734,24 @@ class Character(models.Model):
         self.total_load = self.armor_total_load + self.money_total_load + self.weapons_total_load
         self.save()
 
+    def get_class_skills(self):
+        return self.skills_set.filter(skill_type=aif.CLASS)
+
+    def get_racial_skills(self):
+        return self.skills_set.filter(skill_type=aif.RACIAL)
+
+    def get_spell_skills(self):
+        return self.skills_set.filter(skill_type=aif.SPELL)
+
+    def get_honor_skills(self):
+        return self.skills_set.filter(skill_type=aif.HONOR)
+
+    def get_weapon_skills(self):
+        return self.skills_set.filter(skill_type=aif.WEAPON)
+
+    def get_armor_skills(self):
+        return self.skills_set.filter(skill_type=aif.ARMOR)
+
     def add_buff(self, name, start, end, buff):
         b = self.buffs_set.create(name=name)
         self.save()
@@ -771,9 +761,17 @@ class Character(models.Model):
         b.save()
         self.save()
 
-    def add_container(self, name):
+    def add_container(self, name, description="", capacity=0):
         c = self.container_set.create(name=name)
+        c.description = description if description != "" else name
+        c.max_load_capacity = capacity if capacity > 0 else 0
         self.save()
+        c.save()
+
+        if EquipmentCatalog.objects.filter(name=name).count() > 0:
+            eq = EquipmentCatalog.objects.get(name=name)
+            c.equipment_pk = eq.pk
+            c.max_load_capacity = eq.capacity
         c.save()
 
     def add_equipment(self, container, name, quantity, load, durability, in_container=False, worn=False):
@@ -791,7 +789,7 @@ class Character(models.Model):
 
     @staticmethod
     def serialize():
-        serialize_object("data/character.json", Character)
+        serialize_object(__file__, "/data/character.json", Character)
 
     @staticmethod
     def load_to_num(load):
@@ -813,12 +811,6 @@ class Character(models.Model):
         ten_pct = round(number_in / 10)
         var = random.randint((-1 * ten_pct), ten_pct)
         return number_in + var
-
-    @staticmethod
-    def format_height(number_in):
-        feet = int(number_in / 12)
-        inches = number_in - (feet * 12)
-        return str(feet) + "' " + str(inches) + "\""
 
     @staticmethod
     def ability_score_mod(ability):
@@ -855,37 +847,91 @@ class Character(models.Model):
             xp_list = [_last]
         return xp_dict
 
-    @staticmethod
-    def order(rank):
-        return int(rank / 4)
 
-
-class Spells(models.Model):
+class Armor(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    skill = models.IntegerField(default=0)
     name = models.CharField(max_length=75, default="")
-    circle = models.IntegerField(default=0)
+    description = models.CharField(max_length=200, default="")
+    type = models.CharField(max_length=5, default="")
+    durability = models.CharField(max_length=5, default="")
+    slashing = models.CharField(max_length=5, default="")
+    slashing_display = models.CharField(max_length=5, default="")
+    piercing = models.CharField(max_length=5, default="")
+    piercing_display = models.CharField(max_length=5, default="")
+    bludgeoning = models.CharField(max_length=5, default="")
+    bludgeoning_display = models.CharField(max_length=5, default="")
+    cleaving = models.CharField(max_length=5, default="")
+    cleaving_display = models.CharField(max_length=5, default="")
+    load = models.CharField(max_length=5, default="")
+    carried = models.CharField(max_length=5, default="")
     rank = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
     display = models.IntegerField(default=0)
     buff = models.IntegerField(default=0)
-    vessel = models.BooleanField(default=False)
-    vessel_power = models.IntegerField(default=0)
+    order = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
         app_label = application_label
-        ordering = ['name']
 
     @staticmethod
     def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/spells.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Spells.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object(__file__, "/data/armor.json", Armor)
+
+
+class Buffs(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    start_round = models.IntegerField(default=0)
+    end_round = models.IntegerField(default=0)
+    buff = models.CharField(max_length=200)
+
+    # {aif.METHOD: method, aif.START: start, aif.DURATION: duration, aif.BASE + aif.DURATION: duration,
+    #        aif.EFFECTS: effects, aif.DESC: desc[:-2], aif.RANK: rank,
+    #        aif.DATE: char[aif.DATE], aif.TIME: char[aif.TIME]}
+
+    class Meta:
+        app_label = application_label
+
+    @staticmethod
+    def serialize():
+        serialize_object(__file__, "/data/buffs.json", Buffs)
+
+
+class Container(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    equipment_pk = models.IntegerField(default=0)
+    name = models.CharField(max_length=75, default="")
+    description = models.CharField(max_length=200, default="")
+    max_load_capacity = models.DecimalField(max_digits=5, decimal_places=1, default=0)
+    current_load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
+
+    class Meta:
+        app_label = application_label
+
+    @staticmethod
+    def serialize():
+        serialize_object(__file__, "/data/container.json", Container)
+
+
+class Equipment(models.Model):
+    container = models.ForeignKey(Container, on_delete=models.CASCADE)
+    equipment_pk = models.IntegerField(default=0)
+    description = models.CharField(max_length=200, default="")
+    durability = models.CharField(max_length=5, default="")
+    display = models.CharField(max_length=5, default="")
+    load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
+    quantity = models.IntegerField(default=0)
+    worn = models.BooleanField(default=False)
+    in_container = models.BooleanField(default=False)
+
+    class Meta:
+        app_label = application_label
+        ordering = ['description']
+
+    @staticmethod
+    def serialize():
+        serialize_object(__file__, "/data/equipment.json", Equipment)
 
 
 class Skills(models.Model):
@@ -907,24 +953,19 @@ class Skills(models.Model):
 
     @staticmethod
     def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/class_skills.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(ClassSkills.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object(__file__, "/data/skills.json", Skills)
 
 
-class ClassSkills(models.Model):
+class Spells(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
     name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
+    circle = models.IntegerField(default=0)
     rank = models.IntegerField(default=0)
     order = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
     display = models.IntegerField(default=0)
+    buff = models.IntegerField(default=0)
+    vessel = models.BooleanField(default=False)
+    vessel_power = models.IntegerField(default=0)
     mastered = models.BooleanField(default=False)
 
     class Meta:
@@ -933,96 +974,19 @@ class ClassSkills(models.Model):
 
     @staticmethod
     def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/class_skills.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(ClassSkills.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object(__file__, "/data/spells.json", Spells)
 
 
-class RacialSkills(models.Model):
+class Tips(models.Model):
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
-    rank = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
-    display = models.IntegerField(default=0)
-    mastered = models.BooleanField(default=False)
+    tip = models.TextField()
 
     class Meta:
         app_label = application_label
-        ordering = ['name']
 
     @staticmethod
     def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/racial_skills.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(RacialSkills.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class HonorSkills(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
-    rank = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
-    display = models.IntegerField(default=0)
-    mastered = models.BooleanField(default=False)
-
-    class Meta:
-        app_label = application_label
-        ordering = ['name']
-
-    @staticmethod
-    def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/honor_skills.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(HonorSkills.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class SpellSkills(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
-    rank = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
-    display = models.IntegerField(default=0)
-    mastered = models.BooleanField(default=False)
-
-    class Meta:
-        app_label = application_label
-        ordering = ['name']
-
-    @staticmethod
-    def serialize():
-        try:
-            fn = os.path.dirname(os.path.realpath(__file__)) + "/data/spell_skills.json"
-            JSONSerializer = serializers.get_serializer("json")
-            json_serializer = JSONSerializer()
-            json_serializer.serialize(SpellSkills.objects.all())
-            with open(fn, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object(__file__, "/data/tips.json", Tips)
 
 
 class Weapons(models.Model):
@@ -1056,145 +1020,7 @@ class Weapons(models.Model):
 
     @staticmethod
     def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/weapons.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Weapons.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class Armor(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    skill = models.IntegerField(default=0)
-    name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
-    type = models.CharField(max_length=5, default="")
-    durability = models.CharField(max_length=5, default="")
-    slashing = models.CharField(max_length=5, default="")
-    slashing_display = models.CharField(max_length=5, default="")
-    piercing = models.CharField(max_length=5, default="")
-    piercing_display = models.CharField(max_length=5, default="")
-    bludgeoning = models.CharField(max_length=5, default="")
-    bludgeoning_display = models.CharField(max_length=5, default="")
-    cleaving = models.CharField(max_length=5, default="")
-    cleaving_display = models.CharField(max_length=5, default="")
-    load = models.CharField(max_length=5, default="")
-    carried = models.CharField(max_length=5, default="")
-    rank = models.IntegerField(default=0)
-    display = models.IntegerField(default=0)
-    buff = models.IntegerField(default=0)
-    order = models.IntegerField(default=0)
-    mastered = models.BooleanField(default=False)
-
-    class Meta:
-        app_label = application_label
-
-    @staticmethod
-    def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/armor.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Armor.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class Container(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=75, default="")
-    description = models.CharField(max_length=200, default="")
-    max_load_capacity = models.DecimalField(max_digits=5, decimal_places=1, default=0)
-    current_load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
-
-    class Meta:
-        app_label = application_label
-
-    @staticmethod
-    def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/container.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Container.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class Equipment(models.Model):
-    container = models.ForeignKey(Container, on_delete=models.CASCADE)
-    description = models.CharField(max_length=200, default="")
-    durability = models.CharField(max_length=5, default="")
-    display = models.CharField(max_length=5, default="")
-    load = models.DecimalField(max_digits=5, decimal_places=1, default=0)
-    quantity = models.IntegerField(default=0)
-    worn = models.BooleanField(default=False)
-    in_container = models.BooleanField(default=False)
-
-    class Meta:
-        app_label = application_label
-        ordering = ['description']
-
-    @staticmethod
-    def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/equipment.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Equipment.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class Tips(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    tip = models.TextField()
-
-    class Meta:
-        app_label = application_label
-
-    @staticmethod
-    def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/tips.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Tips.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
-
-
-class Buffs(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-    start_round = models.IntegerField(default=0)
-    end_round = models.IntegerField(default=0)
-    buff = models.CharField(max_length=200)
-
-    # {aif.METHOD: method, aif.START: start, aif.DURATION: duration, aif.BASE + aif.DURATION: duration,
-    #        aif.EFFECTS: effects, aif.DESC: desc[:-2], aif.RANK: rank,
-    #        aif.DATE: char[aif.DATE], aif.TIME: char[aif.TIME]}
-
-    class Meta:
-        app_label = application_label
-
-    @staticmethod
-    def serialize():
-        try:
-            filename = os.path.dirname(os.path.realpath(__file__)) + "/data/buffs.json"
-            json_serializer = serializers.get_serializer("json")()
-            json_serializer.serialize(Buffs.objects.all())
-            with open(filename, "w") as out:
-                out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-        except FileNotFoundError:
-            print("file not found")
+        serialize_object(__file__, "/data/weapons.json", Weapons)
 
 
 class CharacterForm(ModelForm):
@@ -1205,7 +1031,7 @@ class CharacterForm(ModelForm):
                   'defense_display', 'stun_display', 'endurance_display']
 
 
-class ClassSkillsForm(ModelForm):
+class SkillsForm(ModelForm):
     class Meta:
-        model = ClassSkills
-        fields = ['name', 'rank', 'mastered']
+        model = Skills
+        fields = ['skill_type', 'name', 'rank', 'mastered']

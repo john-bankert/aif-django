@@ -1,1 +1,167 @@
-[]
+[
+    {
+        "model": "aif_character.buffs",
+        "pk": 1,
+        "fields": {
+            "character": 1,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 2,
+        "fields": {
+            "character": 2,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 3,
+        "fields": {
+            "character": 3,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 4,
+        "fields": {
+            "character": 4,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 5,
+        "fields": {
+            "character": 5,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 6,
+        "fields": {
+            "character": 6,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 7,
+        "fields": {
+            "character": 7,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 8,
+        "fields": {
+            "character": 8,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 9,
+        "fields": {
+            "character": 9,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 10,
+        "fields": {
+            "character": 10,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 11,
+        "fields": {
+            "character": 11,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 12,
+        "fields": {
+            "character": 12,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 13,
+        "fields": {
+            "character": 13,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 14,
+        "fields": {
+            "character": 14,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    },
+    {
+        "model": "aif_character.buffs",
+        "pk": 15,
+        "fields": {
+            "character": 15,
+            "name": "Boon",
+            "start_round": 1,
+            "end_round": 5,
+            "buff": "+1 to hit"
+        }
+    }
+]

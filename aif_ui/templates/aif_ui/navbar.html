@@ -5,22 +5,22 @@
 			{% load define_selected %}
 			{% for c in fc %}
 				{% if character.name == c.name %}
-					{% define 'selected="selected"' as selected %}
+					<option value="{{c.name}}" selected>{{c.name}} ({{c.char_class}})</option>
 				{% else %}
-					{% define '' as selected %}
+					<option value="{{c.name}}">{{c.name}} ({{c.char_class}})</option>
 				{% endif %}
-				<option value="{{c.name}}" {{selected}}>{{c.name}} ({{c.char_class}})</option>
 			{% endfor %}
 			</select>
 			{% if flag != 'index' %}
 				<button class="navbar_button" onclick="doesNothing('Edit')">Edit</button>
-				<button class="navbar_button" onclick="doesNothing('Close')">Close</button>
+				<button class="navbar_button" onclick="showThemePopup()">Themes</button>
 				<!--button class="navbar_button" onclick="doesNothing('Save')">Save</button-->
 			{% endif %}	
 		{% endif %}	
 	{% endif %}
     {% include "aif_ui/user_menu.html" %}
     {% include "aif_ui/character_menu.html" %}
+    {% include "aif_ui/theme_modal.html" %}
 	<script>
 		function showCharacter() {
 			var x = document.getElementById("open_char").value;
