@@ -8,8 +8,8 @@ class Command(BaseCommand):
         pass
 
     def handle(self, *args, **options):
-        # for char in Character.objects.all():
-        for char in Character.objects.filter(name='Torburn'):
+        # for char in Character.objects.filter(name='Torburn'):
+        for char in Character.objects.all():
             self.stdout.write("Adjusting Character " + char.name)
             char.adjust()
             char.save()
