@@ -1,4 +1,5 @@
-'''
+"""
+
 https://help.dreamhost.com/hc/en-us/articles/360002341572-Creating-a-Django-project
 https://developer.mozilla.org/en-US/docs/Web/CSS/--*
 https://blog.jim-nielsen.com/2019/generating-shades-of-color-using-css-variables/
@@ -24,17 +25,13 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
 
  questions for Matt:
 
- can crossbows use different quarrel types: eg small cb use medium quarrel, large cb use small or medium quarrel, etc
- crossbow skill - is using medium translatable to large or small, for example?
- illusionist - # cards per circle is 1 + affinity rank? or just affinity rank. Couldn't find it explicitly
-               stated in rules.
-
 ######################################
 
  Conversion Tasks
- Armor, Equipement, Weapons - need to preserver indenting and sorting from PDF tables
+ Armor, Equipment, Weapons - need to preserver indenting and sorting from PDF tables
                             - when adding to character, ammo needs to go into equipment
                               not weapons list
+ crossbows - quarrels/bolts will be normalized into one item, and damage will be determined by the crossbow size
  Separate out weapons/armor skills tracking (rank, order) from actual weapons/armor lists
  normalize field names: eg item_name/name, adjusted -> display, etc.
  Sorting index to allow for custom sorting of anything list based?
@@ -47,6 +44,8 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
  multiclass of bard/priest or similar correctly showing spell/rhythm/etc
  Something may be missing in the linking between certain things. Not 100% sure just yet
  select option light blue color change if possible. UL,LI instead of select?
+ scrapping to combat tab
+
  TODO - HIGH
  new combat/close combat need to do something to adjust buff round start/end across multiple combats
  Speed debuff on expiration
@@ -59,7 +58,7 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
  TODO - MEDIUM
  print/generate PDF
  equipment buff list
- XP Change - check to see if new level, bump up level and do other things such as 
+ XP Change - check to see if new level, bump up level and do other things such as
              reminder about skill points, rank up mastered skills, skill up, etc.
  Skill Mastery - in weapons, need some method to deal with stuff like Pike +2, Yawp +4
                  should track by Pike, or multiple entries for same weapon with diff props
@@ -86,6 +85,6 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
  label popup needs to adjust for scroll position, etc.
 
 ######################################
- 
-'''
+
+"""
 

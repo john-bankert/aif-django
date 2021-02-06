@@ -29,9 +29,15 @@ class Themes(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    last_character = models.CharField(max_length=75, default="")
+    current_theme = models.CharField(max_length=10, default="black")
+
+
+class Session(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    current_tab = models.CharField(max_length=10, default="Sheet")
     font_family = models.CharField(max_length=75, default="Arial, Helvetica, Sans Serif")
     font_size = models.CharField(max_length=10, default="10pt")
-    current_theme = models.CharField(max_length=10, default="black")
     navbar_bg_color = models.CharField(max_length=25, default="black")
     navbar_fg_color = models.CharField(max_length=25, default="white")
     navbar_button_fg_color = models.CharField(max_length=25, default="black")
@@ -59,3 +65,14 @@ def create_user_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
+
+
+@receiver(post_save, sender=User)
+def create_user_session(sender, instance, created, **kwargs):
+    if created:
+        Session.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_user_session(sender, instance, **kwargs):
+    instance.session.save()
