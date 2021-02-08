@@ -1,15 +1,14 @@
 <div class="dropdown">
-	{% if request.user.is_authenticated %}
+{% if request.user.is_authenticated %}
     <div class="menu_icon menu_div" onclick="show_character_menu()">
-	{% else %}
+{% else %}
     <div class="menu_icon menu_div">
-	{% endif %}
+{% endif %}
         <div class="menu_icon bar" style="margin-bottom: 6px;"></div>
         <div class="menu_icon bar" style="margin-bottom: 6px;"></div>
         <div class="menu_icon bar"></div>
     </div>
     <div class="dropdown_content" id="character_menu">
-        <!--a href="{% url 'menu' 'create_demo_data' %}">Create Demo Data</a-->
         <a href="javascript:doesNothing('Open Character')">Open Character</a>
         <a href="javascript:doesNothing('Close Character')">Close Character</a>
         <a href="javascript:doesNothing('Delete Character')">Delete Character</a>

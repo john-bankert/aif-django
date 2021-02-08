@@ -44,7 +44,7 @@ window.onclick = function(event) {
 
 function XshowCharacter() {
 	var x = document.getElementById("open_char").value;
-	var y = "{% url 'character' 'Value' %}".replace("Value", x)
+	var y = "{% url '/character' 'Value' %}".replace("Value", x)
 	window.location.href=y;
 }
 

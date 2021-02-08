@@ -1,6 +1,6 @@
 <div>
 	<div class="sheet">
-		<!--form action="{% url 'save' character.name %}" method="post"-->
+		<!--form action="{ % url 'save' character.name % }" method="post"-->
 			{% csrf_token %}
 			{% if character.is_spellcaster and not 'Bard' in character.char_class and not 'Illusionist' in character.char_class %}
 			<table id="width_100">

@@ -1,6 +1,7 @@
 <div>
 	<div class="sheet">
-		<form action="{% url 'save' character.name %}" method="post">
+		<!-- form action="{ % url 'save' character.name % }" method="post"-->
+		<form method="post">
 			{% csrf_token %}
 			<!-- Name, Race & Class -->
 			<!--table id="width_100">
