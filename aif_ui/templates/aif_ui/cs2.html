@@ -1,0 +1,13 @@
+{% if request.user.is_authenticated %}
+	{% if fc.count > 0 %}
+		<select name="char_to_open" id="open_char" class="navbar_select" onchange="showCharacter()">
+		{% for c in fc %}
+			{% if character.name == c.name %}
+				<option value="{{c.name}}" selected>{{c.name}} ({{c.char_class}})</option>
+			{% else %}
+				<option value="{{c.name}}">{{c.name}} ({{c.char_class}})</option>
+			{% endif %}
+		{% endfor %}
+		</select>
+	{% endif %}
+{% endif %}

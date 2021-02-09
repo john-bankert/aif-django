@@ -13,14 +13,6 @@ body {
 table { border-collapse: collapse; }
 tr { height: auto; }
 
-/*
-input {
-    background-color: #00ff00;
-    border: 1.0px;
-    padding: 0;
-}
-*/
-
 input, button, select {
     font-family: inherit;
 }
@@ -28,6 +20,14 @@ input, button, select {
 input:focus {
     outline: none;
 }
+
+/*
+input {
+    background-color: #00ff00;
+    border: 1.0px;
+    padding: 0;
+}
+*/
 
 /* navbar related stuff */
 .navbar {
@@ -42,28 +42,24 @@ input:focus {
 }
 
 .navbar_button {
-    border: solid; /* Remove borders */
-    color: var(--navbar-button-fg-color);
-    border-color: var(--navbar-button-border-color);
-    background-color: var(--navbar-button-bg-color);
-    margin-top: 7px;
-    margin-left: 14px;
-    width: 100px;
-    height: 30px;
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
     border-radius: 5px;
+    width: 100px;
 }
 
 .navbar_select {
-    border: solid; /* Remove borders */
-    color: var(--navbar-button-fg-color);
-    border-color: var(--navbar-button-border-color);
-    background-color: var(--navbar-button-bg-color);
-    margin-top: 7px;
-    margin-left: 14px;
     width: 200px;
+}
+
+.navbar_button, .navbar_select {
+    color: var(--navbar-button-fg-color);
+    background-color: var(--navbar-button-bg-color);
+    border: solid; 
+    border-color: var(--navbar-button-border-color);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
     height: 30px;
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    cursor: pointer; 
 }
 
 /* character menu portion of navbar */

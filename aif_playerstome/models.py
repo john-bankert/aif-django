@@ -219,7 +219,7 @@ class Skills(models.Model):
             print("file not found")
 
     @staticmethod
-    def add_to_character(character, name, type, rank, mastered=False):
+    def add_to_character(character, name, type, rank, mastered=False, buff=0):
         if character.skills_set.filter(name=name, skill_type=type).count() > 0:
             sk = character.skills_set.get(name=name, skill_type=type)
         else:
@@ -232,6 +232,7 @@ class Skills(models.Model):
             character.save()
         sk.rank = rank
         sk.mastered = mastered
+        sk.buff=buff
         sk.save()
         character.save()
 

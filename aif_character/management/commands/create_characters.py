@@ -230,15 +230,15 @@ class Command(BaseCommand):
         Skills.add_to_character(char, 'Scrapping', 'Class', 5)
         Skills.add_to_character(char, 'Stalwart Stance', 'Class', 5)
         Skills.add_to_character(char, 'Stamina', 'Class', 5)
-        Skills.add_to_character(char, 'Valiant Aura', 'Class', 5)
+        Skills.add_to_character(char, 'Valiant Aura', 'Class', 5, False, 4)
         Skills.add_to_character(char, 'Weaponsmith', 'Class', 7)
         Skills.add_to_character(char, 'Direction Sense', 'Racial', 3)
         Skills.add_to_character(char, 'Dwarven History', 'Racial', 5)
         Skills.add_to_character(char, 'Infravision', 'Racial', 2)
         Skills.add_to_character(char, 'Mountaineering', 'Racial', 5)
         Skills.add_to_character(char, 'Stone Speak', 'Racial', 2)
-        Skills.add_to_character(char, 'Toughness', 'Racial', 9, True)
-        Skills.add_to_character(char, 'Yawp', 'Racial', 9, True)
+        Skills.add_to_character(char, 'Toughness', 'Racial', 9, True, 5)
+        Skills.add_to_character(char, 'Yawp', 'Racial', 9, True, 4)
         Skills.add_to_character(char, 'Increase Strength', 'Honor', 6)
         Skills.add_to_character(char, 'Increase Dexterity', 'Honor', 6)
         Skills.add_to_character(char, 'Increase Intelligence', 'Honor', 2)
@@ -277,6 +277,7 @@ class Command(BaseCommand):
         w.size = 'M'
         w.load = '3'
         w.range = '135'
+        w.is_missile = True
         w.durability = '30'
         w.save()
         Armor.add_to_character(char, 'armor', 'Plate mail', 'Plate Mail +1/2/1/1')

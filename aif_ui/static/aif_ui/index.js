@@ -42,10 +42,29 @@ window.onclick = function(event) {
 	}
 }
 
-function XshowCharacter() {
+function showCharacter() {
 	var x = document.getElementById("open_char").value;
-	var y = "{% url '/character' 'Value' %}".replace("Value", x)
+	//var y = "{% url '/character' 'Value' %}".replace("Value", x)
+	var y = "/character/Value".replace("Value", x)
 	window.location.href=y;
+}
+
+function openTab(evt, tab_name) {
+	var i, tabcontent, tablinks;
+
+	
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+
+	document.getElementById(tab_name).style.display = "block";
+	evt.currentTarget.className += " active";
 }
 
 /* window.onclick = function(event) {
