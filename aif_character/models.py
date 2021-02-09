@@ -733,56 +733,56 @@ class Character(models.Model):
 
         '''
         # calculate armor order values, total armor load
-                self[aif.ASP + aif.TOTAL_LOAD] = 0
-                defense_adj = 0
-                for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
-                    self[aif.ASP + aif.TOTAL + spbc] = str(self[aif.SPBC_BUFF]) + "/" + str(self[aif.SPBC_BUFF])
+        self[aif.ASP + aif.TOTAL_LOAD] = 0
+        defense_adj = 0
+        for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
+            self[aif.ASP + aif.TOTAL + spbc] = str(self[aif.SPBC_BUFF]) + "/" + str(self[aif.SPBC_BUFF])
 
-                for armor in self[aif.ARMOR_LIST]:
-                    self[aif.ASP + armor][aif.ORDER] = ""
-                    ordered = False
-                    if isinstance(self[aif.ASP + armor][aif.RANK], int):
-                        self[aif.ASP + armor][aif.ORDER] = int(self[aif.ASP + armor][aif.RANK] / 4)
-                        ordered = True
-                        if aif.GROUP in armor:
-                            defense_adj += self[aif.ASP + armor][aif.ORDER]
+        for armor in self[aif.ARMOR_LIST]:
+            self[aif.ASP + armor][aif.ORDER] = ""
+            ordered = False
+            if isinstance(self[aif.ASP + armor][aif.RANK], int):
+                self[aif.ASP + armor][aif.ORDER] = int(self[aif.ASP + armor][aif.RANK] / 4)
+                ordered = True
+                if aif.GROUP in armor:
+                    defense_adj += self[aif.ASP + armor][aif.ORDER]
 
-                    for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
-                        self[aif.ASP + armor][spbc + aif.ADJ] = self[aif.ASP + armor][spbc]
-                        if aif.GROUP not in armor and not self[aif.ASP + armor][aif.LOAD] == "-":
-                            if ordered:
-                                self[aif.ASP + armor][spbc + aif.ADJ] += self[aif.ASP + armor][aif.ORDER]
-                            t_spbc = self[aif.ASP + aif.TOTAL + spbc].split("/")
-                            if "helm" in armor.lower():
-                                t_spbc[1] = int(t_spbc[1]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
-                            else:
-                                t_spbc[0] = int(t_spbc[0]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
-                                t_spbc[1] = int(t_spbc[1]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
-                            self[aif.ASP + aif.TOTAL + spbc] = str(t_spbc[0]) + "/" + str(t_spbc[1])
-                    if not isinstance(self[aif.ASP + armor][aif.LOAD], str):
-                        if self[aif.ASP + armor][aif.LOAD] > 0:
-                            self[aif.ASP + aif.TOTAL_LOAD] += self[aif.ASP + armor][aif.LOAD]
-                    if self[aif.ASP + armor][aif.MASTERED]:
-                        mastered_skills += 1
-
-                for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
+            for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
+                self[aif.ASP + armor][spbc + aif.ADJ] = self[aif.ASP + armor][spbc]
+                if aif.GROUP not in armor and not self[aif.ASP + armor][aif.LOAD] == "-":
+                    if ordered:
+                        self[aif.ASP + armor][spbc + aif.ADJ] += self[aif.ASP + armor][aif.ORDER]
                     t_spbc = self[aif.ASP + aif.TOTAL + spbc].split("/")
-                    if int(t_spbc[0]) == int(t_spbc[1]):
-                        self[aif.ASP + aif.TOTAL + spbc] = t_spbc[0]
+                    if "helm" in armor.lower():
+                        t_spbc[1] = int(t_spbc[1]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
+                    else:
+                        t_spbc[0] = int(t_spbc[0]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
+                        t_spbc[1] = int(t_spbc[1]) + int(self[aif.ASP + armor][spbc + aif.ADJ])
+                    self[aif.ASP + aif.TOTAL + spbc] = str(t_spbc[0]) + "/" + str(t_spbc[1])
+            if not isinstance(self[aif.ASP + armor][aif.LOAD], str):
+                if self[aif.ASP + armor][aif.LOAD] > 0:
+                    self[aif.ASP + aif.TOTAL_LOAD] += self[aif.ASP + armor][aif.LOAD]
+            if self[aif.ASP + armor][aif.MASTERED]:
+                mastered_skills += 1
 
-                self[aif.DEFENSE][aif.ADJ] += defense_adj
+        for spbc in [aif.SLASHING, aif.PIERCING, aif.BLUDGEONING, aif.CLEAVING]:
+            t_spbc = self[aif.ASP + aif.TOTAL + spbc].split("/")
+            if int(t_spbc[0]) == int(t_spbc[1]):
+                self[aif.ASP + aif.TOTAL + spbc] = t_spbc[0]
 
-                self[aif.MASTERED] = mastered_skills
+        self[aif.DEFENSE][aif.ADJ] += defense_adj
 
-                nd = self[aif.TO_HIT + aif.DICE][aif.BUFF]
-                dice_str = str(nd) + "d6" if nd > 0 else ""
-                self[aif.TO_HIT + aif.ADJ] = dice_str + \
-                    Fn.dice_mod_string(self[aif.TO_HIT + aif.MODIFIERS][aif.BASE] + self[aif.TO_HIT + aif.MODIFIERS][aif.BUFF])
+        self[aif.MASTERED] = mastered_skills
 
-                nd = self[aif.DAMAGE + aif.DICE][aif.BUFF]
-                dice_str = str(nd) + "d6" if nd > 0 else ""
-                self[aif.DAMAGE + aif.ADJ] = dice_str + \
-                    Fn.dice_mod_string(self[aif.DAMAGE + aif.MODIFIERS][aif.BASE] + self[aif.DAMAGE + aif.MODIFIERS][aif.BUFF])
+        nd = self[aif.TO_HIT + aif.DICE][aif.BUFF]
+        dice_str = str(nd) + "d6" if nd > 0 else ""
+        self[aif.TO_HIT + aif.ADJ] = dice_str + \
+            Fn.dice_mod_string(self[aif.TO_HIT + aif.MODIFIERS][aif.BASE] + self[aif.TO_HIT + aif.MODIFIERS][aif.BUFF])
+
+        nd = self[aif.DAMAGE + aif.DICE][aif.BUFF]
+        dice_str = str(nd) + "d6" if nd > 0 else ""
+        self[aif.DAMAGE + aif.ADJ] = dice_str + \
+            Fn.dice_mod_string(self[aif.DAMAGE + aif.MODIFIERS][aif.BASE] + self[aif.DAMAGE + aif.MODIFIERS][aif.BUFF])
 
 
         '''
