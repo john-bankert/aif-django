@@ -209,7 +209,7 @@ class Command(BaseCommand):
         char.age = 42
         char.height = "4' 1\""
         char.weight = "140 lb"
-        char.experience = 536
+        char.experience = 600
         char.gold_amount = 575
         char.silver_amount = 55
         char.copper_amount = 20
