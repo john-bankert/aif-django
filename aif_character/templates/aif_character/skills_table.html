@@ -8,7 +8,7 @@
 	</td>
 	<td class="all_c">
 		{% if flag == "sheet" %}
-			{{skill.rank}}
+			{{skill.display}}
 		{% else %}
 			<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
 		{% endif %}
