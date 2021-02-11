@@ -1,0 +1,325 @@
+<?xml version="1.0" ?>
+<django-objects version="1.0">
+   <object model="aif_playerstome.armorcatalog" pk="1">
+      <field name="key" type="CharField">Banded_mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Banded mail</field>
+      <field name="cost" type="CharField">150sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">3</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">5</field>
+      <field name="carried" type="CharField">10</field>
+      <field name="durability" type="CharField">225</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="2">
+      <field name="key" type="CharField">Chain_mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Chain mail</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">3</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">5</field>
+      <field name="carried" type="CharField">10</field>
+      <field name="durability" type="CharField">255</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="3">
+      <field name="key" type="CharField">Full_plate_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Full plate</field>
+      <field name="cost" type="CharField">1000sp</field>
+      <field name="type" type="CharField">H</field>
+      <field name="slashing" type="CharField">6</field>
+      <field name="piercing" type="CharField">5</field>
+      <field name="bludgeoning" type="CharField">6</field>
+      <field name="cleaving" type="CharField">5</field>
+      <field name="load" type="CharField">10</field>
+      <field name="carried" type="CharField">20</field>
+      <field name="durability" type="CharField">400</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="4">
+      <field name="key" type="CharField">Leather_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Leather</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">2</field>
+      <field name="load" type="CharField">3</field>
+      <field name="carried" type="CharField">6</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="5">
+      <field name="key" type="CharField">Padded_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Padded</field>
+      <field name="cost" type="CharField">15sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">3</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">2</field>
+      <field name="carried" type="CharField">4</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="6">
+      <field name="key" type="CharField">Plate_mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Plate mail</field>
+      <field name="cost" type="CharField">650sp</field>
+      <field name="type" type="CharField">H</field>
+      <field name="slashing" type="CharField">5</field>
+      <field name="piercing" type="CharField">4</field>
+      <field name="bludgeoning" type="CharField">5</field>
+      <field name="cleaving" type="CharField">4</field>
+      <field name="load" type="CharField">8</field>
+      <field name="carried" type="CharField">16</field>
+      <field name="durability" type="CharField">345</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="7">
+      <field name="key" type="CharField">Scale_mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Scale mail</field>
+      <field name="cost" type="CharField">200sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">4</field>
+      <field name="piercing" type="CharField">3</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">7</field>
+      <field name="carried" type="CharField">14</field>
+      <field name="durability" type="CharField">210</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="8">
+      <field name="key" type="CharField">Splint_mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Splint mail</field>
+      <field name="cost" type="CharField">215sp</field>
+      <field name="type" type="CharField">H</field>
+      <field name="slashing" type="CharField">4</field>
+      <field name="piercing" type="CharField">2</field>
+      <field name="bludgeoning" type="CharField">4</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">6</field>
+      <field name="carried" type="CharField">12</field>
+      <field name="durability" type="CharField">300</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="9">
+      <field name="key" type="CharField">Studded_Leather_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Studded Leather</field>
+      <field name="cost" type="CharField">30sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">2</field>
+      <field name="load" type="CharField">4</field>
+      <field name="carried" type="CharField">8</field>
+      <field name="durability" type="CharField">165</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="10">
+      <field name="key" type="CharField">Wool_Robe_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Wool Robe</field>
+      <field name="cost" type="CharField">10sp</field>
+      <field name="type" type="CharField">-</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="11">
+      <field name="key" type="CharField">Buckler_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Buckler</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="12">
+      <field name="key" type="CharField">Small_Metal_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Small Metal</field>
+      <field name="cost" type="CharField">6sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="13">
+      <field name="key" type="CharField">Medium_Metal_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Medium Metal</field>
+      <field name="cost" type="CharField">14sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">2</field>
+      <field name="carried" type="CharField">4</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="14">
+      <field name="key" type="CharField">Large_Metal_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Large Metal</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="type" type="CharField">H</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">3</field>
+      <field name="carried" type="CharField">6</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="15">
+      <field name="key" type="CharField">Small_Wooden_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Small Wooden</field>
+      <field name="cost" type="CharField">4sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="16">
+      <field name="key" type="CharField">Medium_Wooden_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Medium Wooden</field>
+      <field name="cost" type="CharField">8sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">2</field>
+      <field name="carried" type="CharField">4</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="17">
+      <field name="key" type="CharField">Large_Wooden_shield</field>
+      <field name="category" type="CharField">shield</field>
+      <field name="name" type="CharField">Large Wooden</field>
+      <field name="cost" type="CharField">12sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">3</field>
+      <field name="carried" type="CharField">6</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="18">
+      <field name="key" type="CharField">Wizard_Hat_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Wizard Hat</field>
+      <field name="cost" type="CharField">1sp</field>
+      <field name="type" type="CharField">-</field>
+      <field name="slashing" type="CharField">0</field>
+      <field name="piercing" type="CharField">0</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">1</field>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="19">
+      <field name="key" type="CharField">Cap_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Cap</field>
+      <field name="cost" type="CharField">4sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="20">
+      <field name="key" type="CharField">Leather_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Leather</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="type" type="CharField">L</field>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">1</field>
+      <field name="carried" type="CharField">2</field>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="21">
+      <field name="key" type="CharField">Open-faced_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Open-faced</field>
+      <field name="cost" type="CharField">22sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">2</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">2</field>
+      <field name="load" type="CharField">2</field>
+      <field name="carried" type="CharField">4</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="22">
+      <field name="key" type="CharField">Mail_coif_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Mail coif</field>
+      <field name="cost" type="CharField">18sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="load" type="CharField">2</field>
+      <field name="carried" type="CharField">4</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.armorcatalog" pk="23">
+      <field name="key" type="CharField">Great_helm_helmet</field>
+      <field name="category" type="CharField">helmet</field>
+      <field name="name" type="CharField">Great helm</field>
+      <field name="cost" type="CharField">60sp</field>
+      <field name="type" type="CharField">H</field>
+      <field name="slashing" type="CharField">3</field>
+      <field name="piercing" type="CharField">3</field>
+      <field name="bludgeoning" type="CharField">3</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">3</field>
+      <field name="carried" type="CharField">6</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+</django-objects>

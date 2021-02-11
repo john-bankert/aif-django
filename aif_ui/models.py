@@ -1,7 +1,9 @@
 from django.db import models
+from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from aif import data_serializer
 
 
 class Themes(models.Model):
@@ -26,11 +28,54 @@ class Themes(models.Model):
     tabbar_active_bg_color = models.CharField(max_length=25, default="black")
     tabbar_active_fg_color = models.CharField(max_length=25, default="white")
 
+    @staticmethod
+    def add_to_user(request):
+        theme = Themes.objects.get(name=request.POST['theme_selected'])
+        request.user.session.font_family = theme.font_family
+        request.user.session.font_size = theme.font_size
+        request.user.session.navbar_bg_color = theme.navbar_bg_color
+        request.user.session.navbar_fg_color = theme.navbar_fg_color
+        request.user.session.navbar_button_bg_color = theme.navbar_button_bg_color
+        request.user.session.navbar_button_fg_color = theme.navbar_button_fg_color
+        request.user.session.navbar_button_border_color = theme.navbar_button_border_color
+        request.user.session.dropdown_bg_color = theme.dropdown_bg_color
+        request.user.session.dropdown_fg_color = theme.dropdown_fg_color
+        request.user.session.dropdown_hover_color = theme.dropdown_hover_color
+        request.user.session.menubar_bg_color = theme.menubar_bg_color
+        request.user.session.tabbar_bg_color = theme.tabbar_bg_color
+        request.user.session.tabbar_fg_color = theme.tabbar_fg_color
+        request.user.session.tabbar_border_color = theme.tabbar_border_color
+        request.user.session.tabbar_hover_bg_color = theme.tabbar_hover_bg_color
+        request.user.session.tabbar_hover_fg_color = theme.tabbar_hover_fg_color
+        request.user.session.tabbar_active_bg_color = theme.tabbar_active_bg_color
+        request.user.session.tabbar_active_fg_color = theme.tabbar_active_fg_color
+        request.user.session.save()
+        request.user.profile.current_theme = theme.name
+        request.user.profile.save()
+
+    @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/themes", Themes)
+
+    @staticmethod
+    def serialize():
+        data_serializer.serialize_object(__file__, "/data/themes", Themes)
+
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     last_character = models.CharField(max_length=75, default="")
     current_theme = models.CharField(max_length=10, default="black")
+
+    @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/user", User)
+        data_serializer.deserialize_object(__file__, "/data/profile", Profile)
+
+    @staticmethod
+    def serialize():
+        data_serializer.serialize_object(__file__, "/data/user", User)
+        data_serializer.serialize_object(__file__, "/data/profile", Profile)
 
 
 class Session(models.Model):
@@ -54,6 +99,14 @@ class Session(models.Model):
     tabbar_hover_fg_color = models.CharField(max_length=25, default="white")
     tabbar_active_bg_color = models.CharField(max_length=25, default="black")
     tabbar_active_fg_color = models.CharField(max_length=25, default="white")
+
+    @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/session", Session)
+
+    @staticmethod
+    def serialize():
+        data_serializer.serialize_object(__file__, "/data/session", Session)
 
 
 @receiver(post_save, sender=User)

@@ -1,0 +1,416 @@
+[
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 1,
+        "fields": {
+            "key": "Banded_mail_armor",
+            "category": "armor",
+            "name": "Banded mail",
+            "cost": "150sp",
+            "type": "M",
+            "slashing": "2",
+            "piercing": "3",
+            "bludgeoning": "2",
+            "cleaving": "3",
+            "load": "5",
+            "carried": "10",
+            "durability": "225"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 2,
+        "fields": {
+            "key": "Chain_mail_armor",
+            "category": "armor",
+            "name": "Chain mail",
+            "cost": "100sp",
+            "type": "M",
+            "slashing": "3",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "3",
+            "load": "5",
+            "carried": "10",
+            "durability": "255"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 3,
+        "fields": {
+            "key": "Full_plate_armor",
+            "category": "armor",
+            "name": "Full plate",
+            "cost": "1000sp",
+            "type": "H",
+            "slashing": "6",
+            "piercing": "5",
+            "bludgeoning": "6",
+            "cleaving": "5",
+            "load": "10",
+            "carried": "20",
+            "durability": "400"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 4,
+        "fields": {
+            "key": "Leather_armor",
+            "category": "armor",
+            "name": "Leather",
+            "cost": "20sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "2",
+            "load": "3",
+            "carried": "6",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 5,
+        "fields": {
+            "key": "Padded_armor",
+            "category": "armor",
+            "name": "Padded",
+            "cost": "15sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "3",
+            "cleaving": "1",
+            "load": "2",
+            "carried": "4",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 6,
+        "fields": {
+            "key": "Plate_mail_armor",
+            "category": "armor",
+            "name": "Plate mail",
+            "cost": "650sp",
+            "type": "H",
+            "slashing": "5",
+            "piercing": "4",
+            "bludgeoning": "5",
+            "cleaving": "4",
+            "load": "8",
+            "carried": "16",
+            "durability": "345"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 7,
+        "fields": {
+            "key": "Scale_mail_armor",
+            "category": "armor",
+            "name": "Scale mail",
+            "cost": "200sp",
+            "type": "M",
+            "slashing": "4",
+            "piercing": "3",
+            "bludgeoning": "2",
+            "cleaving": "3",
+            "load": "7",
+            "carried": "14",
+            "durability": "210"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 8,
+        "fields": {
+            "key": "Splint_mail_armor",
+            "category": "armor",
+            "name": "Splint mail",
+            "cost": "215sp",
+            "type": "H",
+            "slashing": "4",
+            "piercing": "2",
+            "bludgeoning": "4",
+            "cleaving": "3",
+            "load": "6",
+            "carried": "12",
+            "durability": "300"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 9,
+        "fields": {
+            "key": "Studded_Leather_armor",
+            "category": "armor",
+            "name": "Studded Leather",
+            "cost": "30sp",
+            "type": "L",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "2",
+            "load": "4",
+            "carried": "8",
+            "durability": "165"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 10,
+        "fields": {
+            "key": "Wool_Robe_armor",
+            "category": "armor",
+            "name": "Wool Robe",
+            "cost": "10sp",
+            "type": "-",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 11,
+        "fields": {
+            "key": "Buckler_shield",
+            "category": "shield",
+            "name": "Buckler",
+            "cost": "2sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 12,
+        "fields": {
+            "key": "Small_Metal_shield",
+            "category": "shield",
+            "name": "Small Metal",
+            "cost": "6sp",
+            "type": "L",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 13,
+        "fields": {
+            "key": "Medium_Metal_shield",
+            "category": "shield",
+            "name": "Medium Metal",
+            "cost": "14sp",
+            "type": "M",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "1",
+            "load": "2",
+            "carried": "4",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 14,
+        "fields": {
+            "key": "Large_Metal_shield",
+            "category": "shield",
+            "name": "Large Metal",
+            "cost": "20sp",
+            "type": "H",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "1",
+            "load": "3",
+            "carried": "6",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 15,
+        "fields": {
+            "key": "Small_Wooden_shield",
+            "category": "shield",
+            "name": "Small Wooden",
+            "cost": "4sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "40"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 16,
+        "fields": {
+            "key": "Medium_Wooden_shield",
+            "category": "shield",
+            "name": "Medium Wooden",
+            "cost": "8sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "2",
+            "carried": "4",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 17,
+        "fields": {
+            "key": "Large_Wooden_shield",
+            "category": "shield",
+            "name": "Large Wooden",
+            "cost": "12sp",
+            "type": "M",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "3",
+            "carried": "6",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 18,
+        "fields": {
+            "key": "Wizard_Hat_helmet",
+            "category": "helmet",
+            "name": "Wizard Hat",
+            "cost": "1sp",
+            "type": "-",
+            "slashing": "0",
+            "piercing": "0",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "1",
+            "durability": "20"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 19,
+        "fields": {
+            "key": "Cap_helmet",
+            "category": "helmet",
+            "name": "Cap",
+            "cost": "4sp",
+            "type": "L",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "2",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 20,
+        "fields": {
+            "key": "Leather_helmet",
+            "category": "helmet",
+            "name": "Leather",
+            "cost": "2sp",
+            "type": "L",
+            "slashing": "1",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "1",
+            "carried": "2",
+            "durability": "40"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 21,
+        "fields": {
+            "key": "Open-faced_helmet",
+            "category": "helmet",
+            "name": "Open-faced",
+            "cost": "22sp",
+            "type": "M",
+            "slashing": "2",
+            "piercing": "2",
+            "bludgeoning": "2",
+            "cleaving": "2",
+            "load": "2",
+            "carried": "4",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 22,
+        "fields": {
+            "key": "Mail_coif_helmet",
+            "category": "helmet",
+            "name": "Mail coif",
+            "cost": "18sp",
+            "type": "M",
+            "slashing": "2",
+            "piercing": "1",
+            "bludgeoning": "1",
+            "cleaving": "1",
+            "load": "2",
+            "carried": "4",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.armorcatalog",
+        "pk": 23,
+        "fields": {
+            "key": "Great_helm_helmet",
+            "category": "helmet",
+            "name": "Great helm",
+            "cost": "60sp",
+            "type": "H",
+            "slashing": "3",
+            "piercing": "3",
+            "bludgeoning": "3",
+            "cleaving": "3",
+            "load": "3",
+            "carried": "6",
+            "durability": "120"
+        }
+    }
+]

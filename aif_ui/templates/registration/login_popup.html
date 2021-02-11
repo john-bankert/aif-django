@@ -1,11 +1,12 @@
-<div id="modal_popup" class="modal">
+<div id="login_popup" class="modal">
 	<div class="modal_content">
 		<div class="modal_header">
-			<span class="close" onclick="closeLogin()">&times;</span>
+			<span class="close" onclick="closePopup('login_popup')">&times;</span>
 			<h3>Login</h3>
 		</div>
 		<div class="modal_body">
-			<form action="{% url 'index' %}" method="post" id="login-form">
+			<!--form action="{% url 'index' %}" method="post" id="login-form"-->
+			<form method="post" id="login-form">
 				{% csrf_token %}
 				<div class="form_row">
 					<label class="required" for="id_username">Username:</label>
@@ -15,7 +16,8 @@
 					<label class="required" for="id_password">Password:</label> <input type="password" name="password" autocomplete="current-password" required id="id_password">
 				</div>
 				<div class="submit_row center">
-					<button onclick="window.location.href='{% url 'login' %}'">Log In</button>
+					<input type="submit" value="Log In">
+					<!--button onclick="window.location.href='{% url 'login' %}'">Log In</button-->
 				</div>
 			</form>
 		</div>

@@ -8,7 +8,7 @@ class Command(BaseCommand):
         pass
         
     def handle(self, *args, **options):
-        Armor.exportData()
-        Equipment.exportData()
-        Weapons.exportData()
-        Spells.exportData()
+        Armor.export_csv()
+        Equipment.export_csv()
+        Weapons.export_csv()
+        Spells.export_csv()

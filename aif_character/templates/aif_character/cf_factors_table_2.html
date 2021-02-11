@@ -8,7 +8,7 @@
     <tr>
         <td class="all_r">Knockdown</td>
         <td id="width_30" class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.knockdown_display}}
             {% else %}
                 <input type="text" name="knockdown_display" value="{{character.knockdown_display}}">
@@ -18,7 +18,7 @@
     <tr>
         <td class="all_r">Defense</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.defense_display}}
             {% else %}
                 <input type="text" name="defense_display" value="{{character.defense_display}}">
@@ -28,7 +28,7 @@
     <tr>
         <td class="all_r">Stun</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.stun_display}}
             {% else %}
                 <input type="text" name="stun_display" value="{{character.stun_display}}">
@@ -38,7 +38,7 @@
     <tr>
         <td class="all_r">Endurance</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.endurance_display}}
             {% else %}
                 <input type="text" name="endurance_display" value="{{character.endurance_display}}">

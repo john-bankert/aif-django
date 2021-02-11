@@ -1,0 +1,848 @@
+<?xml version="1.0" ?>
+<django-objects version="1.0">
+   <object model="aif_playerstome.equipmentcatalog" pk="1">
+      <field name="key" type="CharField">Backpack_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Backpack</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="load" type="CharField">6</field>
+      <field name="capacity" type="CharField">16</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">90</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="2">
+      <field name="key" type="CharField">Bandoleer_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Bandoleer</field>
+      <field name="cost" type="CharField">8sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="3">
+      <field name="key" type="CharField">Bedroll_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Bedroll</field>
+      <field name="cost" type="CharField">4sp</field>
+      <field name="load" type="CharField">3</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">50</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="4">
+      <field name="key" type="CharField">Belt_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Belt</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="5">
+      <field name="key" type="CharField">Blanket_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Blanket</field>
+      <field name="cost" type="CharField">12cp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="6">
+      <field name="key" type="CharField">Bolt_Case_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Bolt Case</field>
+      <field name="cost" type="CharField">15cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField">1</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="7">
+      <field name="key" type="CharField">Leather_Book_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Leather Book</field>
+      <field name="cost" type="CharField">10sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">150</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="8">
+      <field name="key" type="CharField">Boots_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Boots</field>
+      <field name="cost" type="CharField">3sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="9">
+      <field name="key" type="CharField">Bow_string_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Bow string</field>
+      <field name="cost" type="CharField">5sp</field>
+      <field name="load" type="CharField">15/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="10">
+      <field name="key" type="CharField">Small_Chest_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Small Chest</field>
+      <field name="cost" type="CharField">10sp</field>
+      <field name="load" type="CharField">15</field>
+      <field name="capacity" type="CharField">20</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="11">
+      <field name="key" type="CharField">Medium_Chest_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Medium Chest</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="load" type="CharField">20</field>
+      <field name="capacity" type="CharField">30</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">180</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="12">
+      <field name="key" type="CharField">Large_Chest_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Large Chest</field>
+      <field name="cost" type="CharField">30sp</field>
+      <field name="load" type="CharField">25</field>
+      <field name="capacity" type="CharField">40</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">240</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="13">
+      <field name="key" type="CharField">Cloak_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Cloak</field>
+      <field name="cost" type="CharField">8cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="14">
+      <field name="key" type="CharField">Flask_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Flask</field>
+      <field name="cost" type="CharField">2cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="15">
+      <field name="key" type="CharField">Flint_&amp;_Tinder_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Flint &amp; Tinder</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="16">
+      <field name="key" type="CharField">Gloves_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Gloves</field>
+      <field name="cost" type="CharField">8cp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="17">
+      <field name="key" type="CharField">Hat_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Hat</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">5/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="18">
+      <field name="key" type="CharField">Holy_Symbol_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Holy Symbol</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="19">
+      <field name="key" type="CharField">Holy_Water_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Holy Water</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="20">
+      <field name="key" type="CharField">Horse_Tackle_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Horse Tackle</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="load" type="CharField">20</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">200</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="21">
+      <field name="key" type="CharField">Bottle_of_Ink_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Bottle of Ink</field>
+      <field name="cost" type="CharField">9sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="22">
+      <field name="key" type="CharField">Iron_Spike_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Iron Spike</field>
+      <field name="cost" type="CharField">6cp</field>
+      <field name="load" type="CharField">5/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">90</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="23">
+      <field name="key" type="CharField">Lantern_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Lantern</field>
+      <field name="cost" type="CharField">8sp</field>
+      <field name="load" type="CharField">3</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="24">
+      <field name="key" type="CharField">Mallet_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Mallet</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="25">
+      <field name="key" type="CharField">Small_Mirror_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Small Mirror</field>
+      <field name="cost" type="CharField">8sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="26">
+      <field name="key" type="CharField">Flask_of_Oil_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Flask of Oil</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="27">
+      <field name="key" type="CharField">Pants_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Pants</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="28">
+      <field name="key" type="CharField">Paper_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Paper</field>
+      <field name="cost" type="CharField">2cp</field>
+      <field name="load" type="CharField">20/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">6</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="29">
+      <field name="key" type="CharField">Small_Belt_Pouch_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Small Belt Pouch</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField">4</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="30">
+      <field name="key" type="CharField">Large_Belt_Pouch_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Large Belt Pouch</field>
+      <field name="cost" type="CharField">1sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField">6</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="31">
+      <field name="key" type="CharField">Pry_Bar_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Pry Bar</field>
+      <field name="cost" type="CharField">3cp</field>
+      <field name="load" type="CharField">3</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">150</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="32">
+      <field name="key" type="CharField">Quill_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Quill</field>
+      <field name="cost" type="CharField">1sp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="33">
+      <field name="key" type="CharField">Quiver_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Quiver</field>
+      <field name="cost" type="CharField">8cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="34">
+      <field name="key" type="CharField">50ft_Rope_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">50ft Rope</field>
+      <field name="cost" type="CharField">1sp</field>
+      <field name="load" type="CharField">4</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="35">
+      <field name="key" type="CharField">Small_Sack_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Small Sack</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField">8</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="36">
+      <field name="key" type="CharField">Large_Sack_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Large Sack</field>
+      <field name="cost" type="CharField">3cp</field>
+      <field name="load" type="CharField">3</field>
+      <field name="capacity" type="CharField">10</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="37">
+      <field name="key" type="CharField">Scabbard_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Scabbard</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="38">
+      <field name="key" type="CharField">Scroll_Case_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Scroll Case</field>
+      <field name="cost" type="CharField">12cp</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="39">
+      <field name="key" type="CharField">Torch_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Torch</field>
+      <field name="cost" type="CharField">2ip</field>
+      <field name="load" type="CharField">5/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="40">
+      <field name="key" type="CharField">Tunic_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Tunic</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="41">
+      <field name="key" type="CharField">Waterskin_miscellaneous</field>
+      <field name="category" type="CharField">miscellaneous</field>
+      <field name="name" type="CharField">Waterskin</field>
+      <field name="cost" type="CharField">7cp</field>
+      <field name="load" type="CharField">2/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="42">
+      <field name="key" type="CharField">Crafting_Kit_tools</field>
+      <field name="category" type="CharField">tools</field>
+      <field name="name" type="CharField">Crafting Kit</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="43">
+      <field name="key" type="CharField">Enchanting_Kit_tools</field>
+      <field name="category" type="CharField">tools</field>
+      <field name="name" type="CharField">Enchanting Kit</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="44">
+      <field name="key" type="CharField">Repair_Kit_tools</field>
+      <field name="category" type="CharField">tools</field>
+      <field name="name" type="CharField">Repair Kit</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="load" type="CharField">3</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="45">
+      <field name="key" type="CharField">Rogue's_Tools_tools</field>
+      <field name="category" type="CharField">tools</field>
+      <field name="name" type="CharField">Rogue's Tools</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="load" type="CharField">1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="46">
+      <field name="key" type="CharField">1_day_Rations_food</field>
+      <field name="category" type="CharField">food</field>
+      <field name="name" type="CharField">1 day Rations</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="load" type="CharField">3/1</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="47">
+      <field name="key" type="CharField">1_week_Rations_food</field>
+      <field name="category" type="CharField">food</field>
+      <field name="name" type="CharField">1 week Rations</field>
+      <field name="cost" type="CharField">10sp</field>
+      <field name="load" type="CharField">2</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="48">
+      <field name="key" type="CharField">Light_war_horse_barding</field>
+      <field name="category" type="CharField">war_horse_barding</field>
+      <field name="name" type="CharField">Light</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="load" type="CharField">10</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="49">
+      <field name="key" type="CharField">Medium_war_horse_barding</field>
+      <field name="category" type="CharField">war_horse_barding</field>
+      <field name="name" type="CharField">Medium</field>
+      <field name="cost" type="CharField">200sp</field>
+      <field name="load" type="CharField">15</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">4</field>
+      <field name="piercing" type="CharField">3</field>
+      <field name="bludgeoning" type="CharField">4</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="durability" type="CharField">225</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="50">
+      <field name="key" type="CharField">Heavy_war_horse_barding</field>
+      <field name="category" type="CharField">war_horse_barding</field>
+      <field name="name" type="CharField">Heavy</field>
+      <field name="cost" type="CharField">300sp</field>
+      <field name="load" type="CharField">20</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">5</field>
+      <field name="piercing" type="CharField">4</field>
+      <field name="bludgeoning" type="CharField">5</field>
+      <field name="cleaving" type="CharField">4</field>
+      <field name="durability" type="CharField">300</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="51">
+      <field name="key" type="CharField">Light_war_dog_barding</field>
+      <field name="category" type="CharField">war_dog_barding</field>
+      <field name="name" type="CharField">Light</field>
+      <field name="cost" type="CharField">75sp</field>
+      <field name="load" type="CharField">5</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">1</field>
+      <field name="piercing" type="CharField">0</field>
+      <field name="bludgeoning" type="CharField">1</field>
+      <field name="cleaving" type="CharField">0</field>
+      <field name="durability" type="CharField">50</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="52">
+      <field name="key" type="CharField">Medium_war_dog_barding</field>
+      <field name="category" type="CharField">war_dog_barding</field>
+      <field name="name" type="CharField">Medium</field>
+      <field name="cost" type="CharField">150sp</field>
+      <field name="load" type="CharField">10</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">1</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">1</field>
+      <field name="durability" type="CharField">175</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="53">
+      <field name="key" type="CharField">Heavy_war_dog_barding</field>
+      <field name="category" type="CharField">war_dog_barding</field>
+      <field name="name" type="CharField">Heavy</field>
+      <field name="cost" type="CharField">250sp</field>
+      <field name="load" type="CharField">15</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField">3</field>
+      <field name="piercing" type="CharField">2</field>
+      <field name="bludgeoning" type="CharField">3</field>
+      <field name="cleaving" type="CharField">2</field>
+      <field name="durability" type="CharField">250</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="54">
+      <field name="key" type="CharField">Bull_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Bull</field>
+      <field name="cost" type="CharField">120sp</field>
+      <field name="load" type="CharField">190</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="55">
+      <field name="key" type="CharField">Cow_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Cow</field>
+      <field name="cost" type="CharField">80sp</field>
+      <field name="load" type="CharField">120</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="56">
+      <field name="key" type="CharField">Hunting_Dog_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Hunting Dog</field>
+      <field name="cost" type="CharField">38sp</field>
+      <field name="load" type="CharField">5</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="57">
+      <field name="key" type="CharField">War_Dog_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">War Dog</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="load" type="CharField">15</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="58">
+      <field name="key" type="CharField">Donkey_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Donkey</field>
+      <field name="cost" type="CharField">100sp</field>
+      <field name="load" type="CharField">150</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="59">
+      <field name="key" type="CharField">Draft_Horse_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Draft Horse</field>
+      <field name="cost" type="CharField">120sp</field>
+      <field name="load" type="CharField">165</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="60">
+      <field name="key" type="CharField">Riding_Horse_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">Riding Horse</field>
+      <field name="cost" type="CharField">250sp</field>
+      <field name="load" type="CharField">75</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="61">
+      <field name="key" type="CharField">War_Horse_animals</field>
+      <field name="category" type="CharField">animals</field>
+      <field name="name" type="CharField">War Horse</field>
+      <field name="cost" type="CharField">600sp</field>
+      <field name="load" type="CharField">130</field>
+      <field name="capacity" type="CharField"/>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="62">
+      <field name="key" type="CharField">Cart_vehicle</field>
+      <field name="category" type="CharField">vehicle</field>
+      <field name="name" type="CharField">Cart</field>
+      <field name="cost" type="CharField">150sp</field>
+      <field name="load" type="CharField">80</field>
+      <field name="capacity" type="CharField">180</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">200</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="63">
+      <field name="key" type="CharField">Raft_vehicle</field>
+      <field name="category" type="CharField">vehicle</field>
+      <field name="name" type="CharField">Raft</field>
+      <field name="cost" type="CharField">280sp</field>
+      <field name="load" type="CharField">70</field>
+      <field name="capacity" type="CharField">120</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">150</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="64">
+      <field name="key" type="CharField">Rowboat_vehicle</field>
+      <field name="category" type="CharField">vehicle</field>
+      <field name="name" type="CharField">Rowboat</field>
+      <field name="cost" type="CharField">400sp</field>
+      <field name="load" type="CharField">90</field>
+      <field name="capacity" type="CharField">180</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">300</field>
+   </object>
+   <object model="aif_playerstome.equipmentcatalog" pk="65">
+      <field name="key" type="CharField">Wagon_vehicle</field>
+      <field name="category" type="CharField">vehicle</field>
+      <field name="name" type="CharField">Wagon</field>
+      <field name="cost" type="CharField">450sp</field>
+      <field name="load" type="CharField">150</field>
+      <field name="capacity" type="CharField">550</field>
+      <field name="slashing" type="CharField"/>
+      <field name="piercing" type="CharField"/>
+      <field name="bludgeoning" type="CharField"/>
+      <field name="cleaving" type="CharField"/>
+      <field name="durability" type="CharField">400</field>
+   </object>
+</django-objects>

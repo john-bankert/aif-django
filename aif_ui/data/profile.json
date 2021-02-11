@@ -1,0 +1,38 @@
+[
+    {
+        "model": "aif_ui.profile",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "last_character": "",
+            "current_theme": "black"
+        }
+    },
+    {
+        "model": "aif_ui.profile",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "last_character": "",
+            "current_theme": "green"
+        }
+    },
+    {
+        "model": "aif_ui.profile",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "last_character": "",
+            "current_theme": "blue"
+        }
+    },
+    {
+        "model": "aif_ui.profile",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "last_character": "",
+            "current_theme": "black"
+        }
+    }
+]

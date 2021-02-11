@@ -26,25 +26,24 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
  questions for Matt:
 
 ######################################
-
  Conversion Tasks
  Armor, Equipment, Weapons - need to preserver indenting and sorting from PDF tables
                             - when adding to character, ammo needs to go into equipment
                               not weapons list
- crossbows - quarrels/bolts will be normalized into one item, and damage will be determined by the crossbow size
  Separate out weapons/armor skills tracking (rank, order) from actual weapons/armor lists
- normalize field names: eg item_name/name, adjusted -> display, etc.
+ class based views/forms
  Sorting index to allow for custom sorting of anything list based?
  Sorting of query sets where appropriate
- refactor table names Armor, Equipment, etc in either Character or PlayersTome so they're not identical
+ finish implementation of themes.
  duplicate container names allowed?
- Preference should include: base font, base font size, and colors.
- class based views/forms
  Formulas of some sort for buffs, etc.
+ crossbows - quarrels/bolts will be normalized into one item, and damage will be determined by the crossbow size
  multiclass of bard/priest or similar correctly showing spell/rhythm/etc
  Something may be missing in the linking between certain things. Not 100% sure just yet
  select option light blue color change if possible. UL,LI instead of select?
  scrapping to combat tab
+ changed adjusted to display globally as that made the most sense. At some point review to see if there
+    were any instances of adjusted that should have stayed adjusted
 
  TODO - HIGH
  new combat/close combat need to do something to adjust buff round start/end across multiple combats

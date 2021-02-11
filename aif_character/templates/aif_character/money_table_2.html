@@ -7,7 +7,7 @@
     <tr>
         <td class="all_c">&nbsp;GP&nbsp;</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.gold_amount}}
             {% else %}
                 <input type="text" name="gold_amount" value="{{character.gold_amount}}">
@@ -18,7 +18,7 @@
     <tr>
         <td class="all_c">SP</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.silver_amount}}
             {% else %}
                 <input type="text" name="silver_amount" value="{{character.silver_amount}}">
@@ -29,7 +29,7 @@
     <tr>
         <td class="all_c">CP</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.copper_amount}}
             {% else %}
                 <input type="text" name="copper_amount" value="{{character.copper_amount}}">

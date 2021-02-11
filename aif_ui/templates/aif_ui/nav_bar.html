@@ -1,9 +1,9 @@
 <div class="navbar">
 	<div class="inline margins dropdown" style="width:44px;"> <!-- character menu -->
-		{% include "aif_ui/cm2.html" %}
+		{% include "aif_ui/character_menu.html" %}
 	</div>
 	<div class="inline margins valign_t" style="width:214px;"> <!-- character selection drop down -->
-		{% include "aif_ui/cs2.html" %}
+		{% include "aif_ui/character_select.html" %}
 	</div>
 	<div class="inline margins valign_t" style="width:114px;"> <!-- navbar buttons -->
 		{% if flag != 'index' %}
@@ -11,11 +11,11 @@
 		{% endif %}
 	</div>
 	<div class="inline hdr_2 valign_t" style="margin-left: 14px; margin-top: 5px;"> <!-- character name, race, class -->
-		{% if flag == 'sheet' %}
+		{% if flag == 'character' %}
 			{{character.name}}:&nbsp{{character.race}}&nbsp{{character.char_class}}
 		{% endif %}
 	</div>
-	<div class="inline dropdown float_right" style="width:214px"> <!-- user menu -->
+	<div class="inline float_right" style="width:214px"> <!-- user menu -->
 		{% include "aif_ui/user_menu.html" %}
 	</div>
 </div>

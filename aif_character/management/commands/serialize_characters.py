@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
-from aif_character.models import  Character, ClassSkills, RacialSkills, HonorSkills, SpellSkills, Spells, Weapons, Armor, Container, Equipment, Tips, Buffs
+from aif_character.models import Character, Armor, Buffs, Container, Equipment, Skills, Spells, Tips, Weapons
 
 
 class Command(BaseCommand):
@@ -9,14 +9,11 @@ class Command(BaseCommand):
         
     def handle(self, *args, **options):
         Character.serialize()
-        ClassSkills.serialize()
-        RacialSkills.serialize()
-        HonorSkills.serialize()
-        SpellSkills.serialize()
-        Spells.serialize()
-        Weapons.serialize()
         Armor.serialize()
+        Buffs.serialize()
         Container.serialize()
         Equipment.serialize()
+        Skills.serialize()
+        Spells.serialize()
         Tips.serialize()
-        Buffs.serialize()
+        Weapons.serialize()

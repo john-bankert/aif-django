@@ -24,7 +24,7 @@
         {% if not 'Group' in weapon.name %}
         <tr>
             <td class="all_pl">{{weapon.description}}</td>
-            {% if flag == "sheet" or weapon.size == "-" %}
+            {% if flag == "character" or weapon.size == "-" %}
                 <td class="all_c">{{weapon.size}}</td>
                 <td class="all_c">{{weapon.type}}</td>
                 <td class="all_c">{{weapon.damage}}</td>

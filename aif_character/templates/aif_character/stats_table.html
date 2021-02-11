@@ -10,7 +10,7 @@
     <tr>
         <td>STR:</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.str_base}}
             {% else %}
                 <input type="text" name="str_base" value="{{character.str_base}}">
@@ -21,7 +21,7 @@
     <tr>
         <td>DEX:</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.dex_base}}
             {% else %}
                 <input type="text" name="dex_base" value="{{character.dex_base}}">
@@ -32,7 +32,7 @@
     <tr>
         <td>INT:</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.int_base}}
             {% else %}
                 <input type="text" name="int_base" value="{{character.int_base}}">
@@ -43,7 +43,7 @@
     <tr>
         <td>HLTH:</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.health_base}}
             {% else %}
                 <input type="text" name="health_base" value="{{character.health_base}}">

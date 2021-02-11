@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<django-objects version="1.0">
+   <object model="aif_playerstome.armorcatalog" pk="24">
+      <field name="key" type="CharField">Banded_Scale_Mail_armor</field>
+      <field name="category" type="CharField">armor</field>
+      <field name="name" type="CharField">Banded Scale Mail</field>
+      <!--field name="cost" type="CharField">150sp</field>
+      <field name="type" type="CharField">M</field>
+      <field name="slashing" type="CharField">2</field>
+      <field name="piercing" type="CharField">3</field>
+      <field name="bludgeoning" type="CharField">2</field>
+      <field name="cleaving" type="CharField">3</field>
+      <field name="load" type="CharField">5</field>
+      <field name="carried" type="CharField">10</field>
+      <field name="durability" type="CharField">225</field-->
+   </object>
+</django-objects>

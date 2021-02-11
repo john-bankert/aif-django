@@ -1,0 +1,74 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$hMTC7lgdWgvN$IBHApGCwMpYuamnBx2nVsnzz2BNut+fea0FJphnMiWg=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-02-11T15:57:12.428Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$g8fBhy9n5Lo7$X3pDp7FEcU3QLSNA8V2V9IuzU+uxA6Q20jfLyzFZeSc=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "john",
+            "first_name": "John",
+            "last_name": "Bankert",
+            "email": "jbankert@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-02-11T15:57:14.021Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$mo8IL5rdCGcd$cYEbwkSIHIGH9ObQx46BnqLGBrePBlcUdGB1tfCobpQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "demo",
+            "first_name": "Demo",
+            "last_name": "User",
+            "email": "demo@aif.magichelmet.xyz",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-02-11T15:57:14.333Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$WkQmluDNtMpj$oYskwK9INRZePxsFEtXTes03TydJSHHvhrKFihgeods=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "gamemaster",
+            "first_name": "Game",
+            "last_name": "Masater",
+            "email": "gamemaster@aif.magichelmet.xyz",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-02-11T15:57:14.646Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

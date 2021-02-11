@@ -1,0 +1,831 @@
+<?xml version="1.0" ?>
+<django-objects version="1.0">
+   <object model="aif_playerstome.weaponscatalog" pk="1">
+      <field name="key" type="CharField">Axe_Hand/Throwing_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Axe Hand/Throwing</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="2">
+      <field name="key" type="CharField">Small_Club_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Small Club</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="3">
+      <field name="key" type="CharField">Dagger_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Dagger</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)/2</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="4">
+      <field name="key" type="CharField">Dart_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Dart</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="5">
+      <field name="key" type="CharField">Fist_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Fist</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">-</field>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="6">
+      <field name="key" type="CharField">Foot_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Foot</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">-</field>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="7">
+      <field name="key" type="CharField">Knife_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Knife</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="8">
+      <field name="key" type="CharField">Short_Sword_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">Short Sword</field>
+      <field name="cost" type="CharField">12sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6+2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="9">
+      <field name="key" type="CharField">War_Hammer_S</field>
+      <field name="category" type="CharField">S</field>
+      <field name="name" type="CharField">War Hammer</field>
+      <field name="cost" type="CharField">3sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="10">
+      <field name="key" type="CharField">Battle_Axe_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Battle Axe</field>
+      <field name="cost" type="CharField">12sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">160</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="11">
+      <field name="key" type="CharField">Battle_Hammer_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Battle Hammer</field>
+      <field name="cost" type="CharField">10sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">160</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="12">
+      <field name="key" type="CharField">Broad_Sword_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Broad Sword</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">2d6+1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">180</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="13">
+      <field name="key" type="CharField">Medium_Club_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Medium Club</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6-2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="14">
+      <field name="key" type="CharField">Flail_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Flail</field>
+      <field name="cost" type="CharField">15sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="15">
+      <field name="key" type="CharField">Javelin_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Javelin</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6-2</field>
+      <field name="range" type="CharField">(s)*2</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="16">
+      <field name="key" type="CharField">Light_Lance_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Light Lance</field>
+      <field name="cost" type="CharField">18sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6+1</field>
+      <field name="range" type="CharField">(s)/2</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="17">
+      <field name="key" type="CharField">Long_Sword_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Long Sword</field>
+      <field name="cost" type="CharField">30sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">160</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="18">
+      <field name="key" type="CharField">Mace_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Mace</field>
+      <field name="cost" type="CharField">14sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">140</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="19">
+      <field name="key" type="CharField">Morningstar_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Morningstar</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6+1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="20">
+      <field name="key" type="CharField">Normal_Spear_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Normal Spear</field>
+      <field name="cost" type="CharField">3sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="21">
+      <field name="key" type="CharField">Pickaxe_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Pickaxe</field>
+      <field name="cost" type="CharField">19sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="22">
+      <field name="key" type="CharField">Quarter_Staff_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Quarter Staff</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="23">
+      <field name="key" type="CharField">Rapier_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Rapier</field>
+      <field name="cost" type="CharField">28sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">75</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="24">
+      <field name="key" type="CharField">Sabre_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Sabre</field>
+      <field name="cost" type="CharField">18sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">2d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">130</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="25">
+      <field name="key" type="CharField">Scimitar_M</field>
+      <field name="category" type="CharField">M</field>
+      <field name="name" type="CharField">Scimitar</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">2d6-1</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="26">
+      <field name="key" type="CharField">Bastard_Sword_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Bastard Sword</field>
+      <field name="cost" type="CharField">65sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">5</field>
+      <field name="durability" type="CharField">200</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="27">
+      <field name="key" type="CharField">One-handed_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">One-handed</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">-</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">-</field>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="28">
+      <field name="key" type="CharField">Two-handed(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Two-handed(a)</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">-</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">-</field>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="29">
+      <field name="key" type="CharField">Great_Spear(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Great Spear(a)</field>
+      <field name="cost" type="CharField">8sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6-2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="30">
+      <field name="key" type="CharField">Medium_Lance_(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Medium Lance (a)</field>
+      <field name="cost" type="CharField">25sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">5</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="31">
+      <field name="key" type="CharField">Heavy_Lance_(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Heavy Lance (a)</field>
+      <field name="cost" type="CharField">40sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">6</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="32">
+      <field name="key" type="CharField">Maul_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Maul</field>
+      <field name="cost" type="CharField">35sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">7</field>
+      <field name="durability" type="CharField">180</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="33">
+      <field name="key" type="CharField">Polearm(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Polearm(a)</field>
+      <field name="cost" type="CharField"/>
+      <field name="size" type="CharField"/>
+      <field name="type" type="CharField"/>
+      <field name="damage" type="CharField"/>
+      <field name="range" type="CharField"/>
+      <field name="load" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="34">
+      <field name="key" type="CharField">Bardiche_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Bardiche</field>
+      <field name="cost" type="CharField">27sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">3d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">5</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="35">
+      <field name="key" type="CharField">Glaive_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Glaive</field>
+      <field name="cost" type="CharField">26sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">3d6-2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="36">
+      <field name="key" type="CharField">Halberd_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Halberd</field>
+      <field name="cost" type="CharField">40sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">5</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="37">
+      <field name="key" type="CharField">Pike_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Pike</field>
+      <field name="cost" type="CharField">12sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6-2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="38">
+      <field name="key" type="CharField">Ranseur_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Ranseur</field>
+      <field name="cost" type="CharField">16sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">60</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="39">
+      <field name="key" type="CharField">Spetum_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Spetum</field>
+      <field name="cost" type="CharField">35sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="40">
+      <field name="key" type="CharField">Voulge_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Voulge</field>
+      <field name="cost" type="CharField">15sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">3d6-2</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="41">
+      <field name="key" type="CharField">Ironshod_Staff_(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Ironshod Staff (a)</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">3d6-1</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">140</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="42">
+      <field name="key" type="CharField">Trident(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Trident(a)</field>
+      <field name="cost" type="CharField">20sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6-1</field>
+      <field name="range" type="CharField">(s)/2</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">140</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="43">
+      <field name="key" type="CharField">Two-Handed_Axe(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Two-Handed Axe(a)</field>
+      <field name="cost" type="CharField">60sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">5</field>
+      <field name="durability" type="CharField">170</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="44">
+      <field name="key" type="CharField">Two-Handed_Sword(a)_L</field>
+      <field name="category" type="CharField">L</field>
+      <field name="name" type="CharField">Two-Handed Sword(a)</field>
+      <field name="cost" type="CharField">80sp</field>
+      <field name="size" type="CharField">L</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">6</field>
+      <field name="durability" type="CharField">240</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="45">
+      <field name="key" type="CharField">Axe_Hand/Throwing_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Axe Hand/Throwing</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">C</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="46">
+      <field name="key" type="CharField">Bow(a)_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Bow(a)</field>
+      <field name="cost" type="CharField"/>
+      <field name="size" type="CharField"/>
+      <field name="type" type="CharField"/>
+      <field name="damage" type="CharField"/>
+      <field name="range" type="CharField"/>
+      <field name="load" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="47">
+      <field name="key" type="CharField">Long(c)_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Long(c)</field>
+      <field name="cost" type="CharField">70sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="48">
+      <field name="key" type="CharField">Blunt_Arrows_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Blunt Arrows</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">80</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="49">
+      <field name="key" type="CharField">Flight_Arrow_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Flight Arrow</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">75</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="50">
+      <field name="key" type="CharField">Frog_Crotch_Arrow_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Frog Crotch Arrow</field>
+      <field name="cost" type="CharField">1cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">105</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">10</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="51">
+      <field name="key" type="CharField">Short_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Short</field>
+      <field name="cost" type="CharField">35sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="52">
+      <field name="key" type="CharField">Small_Club_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Small Club</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="53">
+      <field name="key" type="CharField">Crossbow(a)_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Crossbow(a)</field>
+      <field name="cost" type="CharField"/>
+      <field name="size" type="CharField"/>
+      <field name="type" type="CharField"/>
+      <field name="damage" type="CharField"/>
+      <field name="range" type="CharField"/>
+      <field name="load" type="CharField"/>
+      <field name="durability" type="CharField"/>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="54">
+      <field name="key" type="CharField">Light_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Light</field>
+      <field name="cost" type="CharField">75sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="55">
+      <field name="key" type="CharField">Light_Quarrel_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Light Quarrel</field>
+      <field name="cost" type="CharField">2cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">120</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="56">
+      <field name="key" type="CharField">Medium_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Medium</field>
+      <field name="cost" type="CharField">90sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">140</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="57">
+      <field name="key" type="CharField">Medium_Quarrel_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Medium Quarrel</field>
+      <field name="cost" type="CharField">2cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">135</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="58">
+      <field name="key" type="CharField">Heavy(b)_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Heavy(b)</field>
+      <field name="cost" type="CharField">110sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">4</field>
+      <field name="durability" type="CharField">160</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="59">
+      <field name="key" type="CharField">Heavy_Quarrel_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Heavy Quarrel</field>
+      <field name="cost" type="CharField">3cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">3d6</field>
+      <field name="range" type="CharField">150</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">30</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="60">
+      <field name="key" type="CharField">Dagger_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Dagger</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)/2</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="61">
+      <field name="key" type="CharField">Dart_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Dart</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="62">
+      <field name="key" type="CharField">Knife_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Knife</field>
+      <field name="cost" type="CharField">5cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">S</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">1</field>
+      <field name="durability" type="CharField">80</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="63">
+      <field name="key" type="CharField">Mace_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Mace</field>
+      <field name="cost" type="CharField">14sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">3</field>
+      <field name="durability" type="CharField">140</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="64">
+      <field name="key" type="CharField">Normal_Spear_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Normal Spear</field>
+      <field name="cost" type="CharField">3sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">100</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="65">
+      <field name="key" type="CharField">Javelin_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Javelin</field>
+      <field name="cost" type="CharField">2sp</field>
+      <field name="size" type="CharField">M</field>
+      <field name="type" type="CharField">P</field>
+      <field name="damage" type="CharField">2d6-2</field>
+      <field name="range" type="CharField">(s)*2</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">40</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="66">
+      <field name="key" type="CharField">Sling(a)_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Sling(a)</field>
+      <field name="cost" type="CharField">2cp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">-</field>
+      <field name="damage" type="CharField">-</field>
+      <field name="range" type="CharField">-</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="67">
+      <field name="key" type="CharField">Bullet_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Bullet</field>
+      <field name="cost" type="CharField">2ip</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">105</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">20</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="68">
+      <field name="key" type="CharField">Stone_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">Stone</field>
+      <field name="cost" type="CharField">-</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6</field>
+      <field name="range" type="CharField">75</field>
+      <field name="load" type="CharField">10/1</field>
+      <field name="durability" type="CharField">-</field>
+   </object>
+   <object model="aif_playerstome.weaponscatalog" pk="69">
+      <field name="key" type="CharField">War_Hammer_T</field>
+      <field name="category" type="CharField">T</field>
+      <field name="name" type="CharField">War Hammer</field>
+      <field name="cost" type="CharField">3sp</field>
+      <field name="size" type="CharField">S</field>
+      <field name="type" type="CharField">B</field>
+      <field name="damage" type="CharField">1d6+1</field>
+      <field name="range" type="CharField">(s)</field>
+      <field name="load" type="CharField">2</field>
+      <field name="durability" type="CharField">120</field>
+   </object>
+</django-objects>

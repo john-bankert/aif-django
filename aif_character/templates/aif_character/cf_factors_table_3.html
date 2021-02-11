@@ -11,7 +11,7 @@
         <td class="all_r">Knockdown</td>
         <td class="all_c">{{character.knockdown_base}}</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.knockdown_cf_points}}
             {% else %}
                 <input type="text" name="knockdown_cf_points" value="{{character.knockdown_cf_points}}">
@@ -22,7 +22,7 @@
         <td class="all_r">Defense</td>
         <td class="all_c">{{character.defense_base}}</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.defense_cf_points}}
             {% else %}
                 <input type="text" name="defense_cf_points" value="{{character.defense_cf_points}}">
@@ -33,7 +33,7 @@
         <td class="all_r">Stun</td>
         <td class="all_c">{{character.stun_base}}</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.stun_cf_points}}
             {% else %}
                 <input type="text" name="stun_cf_points" value="{{character.stun_cf_points}}">
@@ -44,7 +44,7 @@
         <td class="all_r">Endurance</td>
         <td class="all_c">{{character.endurance_base}}</td>
         <td class="all_c">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.endurance_cf_points}}
             {% else %}
                 <input type="text" name="endurance_cf_points" value="{{character.endurance_cf_points}}">

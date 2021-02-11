@@ -25,7 +25,7 @@
 				{{weapon.description}}
 			{% endif %}
 			</td>
-			{% if flag == "sheet" or "Group" in weapon.name or weapon.size == "-" %}
+			{% if flag == "character" or "Group" in weapon.name or weapon.size == "-" %}
 				<td class="all_c">{{weapon.size}}</td>
 				<td class="all_c">{{weapon.type}}</td>
 				<td class="all_c">{{weapon.damage}}</td>
@@ -53,7 +53,7 @@
 				</td>
 			{% endif %}
 			<td class="all_c">
-				{% if flag == "sheet" %}
+				{% if flag == "character" %}
 					{{weapon.rank}}
 				{% else %}
 					<input type="text" name="{{weapon.name}}_rank" value="{{weapon.rank}}">

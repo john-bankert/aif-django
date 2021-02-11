@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
-from aif_playerstome.models import Armor, Equipment, Weapons, Spells
+from aif_playerstome.models import ArmorCatalog, EquipmentCatalog, SpellsList, WeaponsCatalog
 
 
 class Command(BaseCommand):
@@ -8,7 +8,7 @@ class Command(BaseCommand):
         pass
         
     def handle(self, *args, **options):
-        Armor.importData()
-        Equipment.importData()
-        Weapons.importData()
-        Spells.importData()
+        ArmorCatalog.import_csv()
+        EquipmentCatalog.import_csv()
+        SpellsList.import_csv()
+        WeaponsCatalog.import_csv()

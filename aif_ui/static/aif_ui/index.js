@@ -1,25 +1,19 @@
 /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-function show_character_menu() {
-	document.getElementById("character_menu").classList.toggle("show");
+function show_menu(menu_name) {
+	document.getElementById(menu_name).classList.toggle("show");
 }
-
-/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-function show_user_menu() {
-	document.getElementById("user_menu").classList.toggle("show");
-}
-
 
 /* popup a dialog for things that aren't implemented yet */
 function doesNothing(msg) {
 	alert(msg + " doesn't do anything yet");
 }
 
-function showLogin() {
-	document.getElementById("modal_popup").style.display = "block";
+function showPopup(popup_name) {
+	document.getElementById(popup_name).style.display = "block";
 }
 
-function closeLogin() {
-	document.getElementById("modal_popup").style.display = "none";
+function closePopup(popup_name) {
+	document.getElementById(popup_name).style.display = "none";
 }
 
 /* Close the dropdown if the user clicks outside of it */
@@ -52,7 +46,6 @@ function showCharacter() {
 function openTab(evt, tab_name) {
 	var i, tabcontent, tablinks;
 
-	
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";

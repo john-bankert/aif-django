@@ -1,0 +1,1106 @@
+[
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 1,
+        "fields": {
+            "key": "Axe_Hand/Throwing_S",
+            "category": "S",
+            "name": "Axe Hand/Throwing",
+            "cost": "2sp",
+            "size": "S",
+            "type": "C",
+            "damage": "1d6+1",
+            "range": "(s)",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 2,
+        "fields": {
+            "key": "Small_Club_S",
+            "category": "S",
+            "name": "Small Club",
+            "cost": "-",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "1",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 3,
+        "fields": {
+            "key": "Dagger_S",
+            "category": "S",
+            "name": "Dagger",
+            "cost": "2sp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6",
+            "range": "(s)/2",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 4,
+        "fields": {
+            "key": "Dart_S",
+            "category": "S",
+            "name": "Dart",
+            "cost": "5cp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "10/1",
+            "durability": "20"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 5,
+        "fields": {
+            "key": "Fist_S",
+            "category": "S",
+            "name": "Fist",
+            "cost": "-",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6",
+            "range": "-",
+            "load": "-",
+            "durability": "-"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 6,
+        "fields": {
+            "key": "Foot_S",
+            "category": "S",
+            "name": "Foot",
+            "cost": "-",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6+1",
+            "range": "-",
+            "load": "-",
+            "durability": "-"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 7,
+        "fields": {
+            "key": "Knife_S",
+            "category": "S",
+            "name": "Knife",
+            "cost": "5cp",
+            "size": "S",
+            "type": "S",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 8,
+        "fields": {
+            "key": "Short_Sword_S",
+            "category": "S",
+            "name": "Short Sword",
+            "cost": "12sp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6+2",
+            "range": "-",
+            "load": "2",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 9,
+        "fields": {
+            "key": "War_Hammer_S",
+            "category": "S",
+            "name": "War Hammer",
+            "cost": "3sp",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6+1",
+            "range": "(s)",
+            "load": "2",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 10,
+        "fields": {
+            "key": "Battle_Axe_M",
+            "category": "M",
+            "name": "Battle Axe",
+            "cost": "12sp",
+            "size": "M",
+            "type": "C",
+            "damage": "2d6",
+            "range": "-",
+            "load": "3",
+            "durability": "160"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 11,
+        "fields": {
+            "key": "Battle_Hammer_M",
+            "category": "M",
+            "name": "Battle Hammer",
+            "cost": "10sp",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6",
+            "range": "-",
+            "load": "4",
+            "durability": "160"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 12,
+        "fields": {
+            "key": "Broad_Sword_M",
+            "category": "M",
+            "name": "Broad Sword",
+            "cost": "20sp",
+            "size": "M",
+            "type": "C",
+            "damage": "2d6+1",
+            "range": "-",
+            "load": "4",
+            "durability": "180"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 13,
+        "fields": {
+            "key": "Medium_Club_M",
+            "category": "M",
+            "name": "Medium Club",
+            "cost": "-",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6-2",
+            "range": "-",
+            "load": "2",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 14,
+        "fields": {
+            "key": "Flail_M",
+            "category": "M",
+            "name": "Flail",
+            "cost": "15sp",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6-1",
+            "range": "-",
+            "load": "2",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 15,
+        "fields": {
+            "key": "Javelin_M",
+            "category": "M",
+            "name": "Javelin",
+            "cost": "2sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6-2",
+            "range": "(s)*2",
+            "load": "2",
+            "durability": "40"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 16,
+        "fields": {
+            "key": "Light_Lance_M",
+            "category": "M",
+            "name": "Light Lance",
+            "cost": "18sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6+1",
+            "range": "(s)/2",
+            "load": "4",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 17,
+        "fields": {
+            "key": "Long_Sword_M",
+            "category": "M",
+            "name": "Long Sword",
+            "cost": "30sp",
+            "size": "M",
+            "type": "S",
+            "damage": "2d6",
+            "range": "-",
+            "load": "3",
+            "durability": "160"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 18,
+        "fields": {
+            "key": "Mace_M",
+            "category": "M",
+            "name": "Mace",
+            "cost": "14sp",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6",
+            "range": "(s)",
+            "load": "3",
+            "durability": "140"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 19,
+        "fields": {
+            "key": "Morningstar_M",
+            "category": "M",
+            "name": "Morningstar",
+            "cost": "20sp",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6+1",
+            "range": "-",
+            "load": "4",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 20,
+        "fields": {
+            "key": "Normal_Spear_M",
+            "category": "M",
+            "name": "Normal Spear",
+            "cost": "3sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6",
+            "range": "(s)",
+            "load": "2",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 21,
+        "fields": {
+            "key": "Pickaxe_M",
+            "category": "M",
+            "name": "Pickaxe",
+            "cost": "19sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6",
+            "range": "-",
+            "load": "4",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 22,
+        "fields": {
+            "key": "Quarter_Staff_M",
+            "category": "M",
+            "name": "Quarter Staff",
+            "cost": "-",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6-1",
+            "range": "-",
+            "load": "2",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 23,
+        "fields": {
+            "key": "Rapier_M",
+            "category": "M",
+            "name": "Rapier",
+            "cost": "28sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6",
+            "range": "-",
+            "load": "1",
+            "durability": "75"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 24,
+        "fields": {
+            "key": "Sabre_M",
+            "category": "M",
+            "name": "Sabre",
+            "cost": "18sp",
+            "size": "M",
+            "type": "C",
+            "damage": "2d6-1",
+            "range": "-",
+            "load": "3",
+            "durability": "130"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 25,
+        "fields": {
+            "key": "Scimitar_M",
+            "category": "M",
+            "name": "Scimitar",
+            "cost": "25sp",
+            "size": "M",
+            "type": "S",
+            "damage": "2d6-1",
+            "range": "(s)",
+            "load": "2",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 26,
+        "fields": {
+            "key": "Bastard_Sword_L",
+            "category": "L",
+            "name": "Bastard Sword",
+            "cost": "65sp",
+            "size": "L",
+            "type": "S",
+            "damage": "-",
+            "range": "-",
+            "load": "5",
+            "durability": "200"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 27,
+        "fields": {
+            "key": "One-handed_L",
+            "category": "L",
+            "name": "One-handed",
+            "cost": "-",
+            "size": "-",
+            "type": "-",
+            "damage": "2d6",
+            "range": "-",
+            "load": "-",
+            "durability": "-"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 28,
+        "fields": {
+            "key": "Two-handed(a)_L",
+            "category": "L",
+            "name": "Two-handed(a)",
+            "cost": "-",
+            "size": "-",
+            "type": "-",
+            "damage": "3d6",
+            "range": "-",
+            "load": "-",
+            "durability": "-"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 29,
+        "fields": {
+            "key": "Great_Spear(a)_L",
+            "category": "L",
+            "name": "Great Spear(a)",
+            "cost": "8sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6-2",
+            "range": "-",
+            "load": "4",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 30,
+        "fields": {
+            "key": "Medium_Lance_(a)_L",
+            "category": "L",
+            "name": "Medium Lance (a)",
+            "cost": "25sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6-1",
+            "range": "-",
+            "load": "5",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 31,
+        "fields": {
+            "key": "Heavy_Lance_(a)_L",
+            "category": "L",
+            "name": "Heavy Lance (a)",
+            "cost": "40sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6",
+            "range": "-",
+            "load": "6",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 32,
+        "fields": {
+            "key": "Maul_L",
+            "category": "L",
+            "name": "Maul",
+            "cost": "35sp",
+            "size": "L",
+            "type": "B",
+            "damage": "3d6",
+            "range": "-",
+            "load": "7",
+            "durability": "180"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 33,
+        "fields": {
+            "key": "Polearm(a)_L",
+            "category": "L",
+            "name": "Polearm(a)",
+            "cost": "",
+            "size": "",
+            "type": "",
+            "damage": "",
+            "range": "",
+            "load": "",
+            "durability": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 34,
+        "fields": {
+            "key": "Bardiche_L",
+            "category": "L",
+            "name": "Bardiche",
+            "cost": "27sp",
+            "size": "L",
+            "type": "C",
+            "damage": "3d6-1",
+            "range": "-",
+            "load": "5",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 35,
+        "fields": {
+            "key": "Glaive_L",
+            "category": "L",
+            "name": "Glaive",
+            "cost": "26sp",
+            "size": "L",
+            "type": "S",
+            "damage": "3d6-2",
+            "range": "-",
+            "load": "4",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 36,
+        "fields": {
+            "key": "Halberd_L",
+            "category": "L",
+            "name": "Halberd",
+            "cost": "40sp",
+            "size": "L",
+            "type": "C",
+            "damage": "3d6",
+            "range": "-",
+            "load": "5",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 37,
+        "fields": {
+            "key": "Pike_L",
+            "category": "L",
+            "name": "Pike",
+            "cost": "12sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6-2",
+            "range": "-",
+            "load": "3",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 38,
+        "fields": {
+            "key": "Ranseur_L",
+            "category": "L",
+            "name": "Ranseur",
+            "cost": "16sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6-1",
+            "range": "-",
+            "load": "4",
+            "durability": "60"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 39,
+        "fields": {
+            "key": "Spetum_L",
+            "category": "L",
+            "name": "Spetum",
+            "cost": "35sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6",
+            "range": "-",
+            "load": "4",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 40,
+        "fields": {
+            "key": "Voulge_L",
+            "category": "L",
+            "name": "Voulge",
+            "cost": "15sp",
+            "size": "L",
+            "type": "S",
+            "damage": "3d6-2",
+            "range": "-",
+            "load": "4",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 41,
+        "fields": {
+            "key": "Ironshod_Staff_(a)_L",
+            "category": "L",
+            "name": "Ironshod Staff (a)",
+            "cost": "20sp",
+            "size": "L",
+            "type": "B",
+            "damage": "3d6-1",
+            "range": "-",
+            "load": "4",
+            "durability": "140"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 42,
+        "fields": {
+            "key": "Trident(a)_L",
+            "category": "L",
+            "name": "Trident(a)",
+            "cost": "20sp",
+            "size": "L",
+            "type": "P",
+            "damage": "3d6-1",
+            "range": "(s)/2",
+            "load": "3",
+            "durability": "140"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 43,
+        "fields": {
+            "key": "Two-Handed_Axe(a)_L",
+            "category": "L",
+            "name": "Two-Handed Axe(a)",
+            "cost": "60sp",
+            "size": "L",
+            "type": "C",
+            "damage": "3d6",
+            "range": "-",
+            "load": "5",
+            "durability": "170"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 44,
+        "fields": {
+            "key": "Two-Handed_Sword(a)_L",
+            "category": "L",
+            "name": "Two-Handed Sword(a)",
+            "cost": "80sp",
+            "size": "L",
+            "type": "C",
+            "damage": "3d6",
+            "range": "-",
+            "load": "6",
+            "durability": "240"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 45,
+        "fields": {
+            "key": "Axe_Hand/Throwing_T",
+            "category": "T",
+            "name": "Axe Hand/Throwing",
+            "cost": "2sp",
+            "size": "S",
+            "type": "C",
+            "damage": "1d6+1",
+            "range": "(s)",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 46,
+        "fields": {
+            "key": "Bow(a)_T",
+            "category": "T",
+            "name": "Bow(a)",
+            "cost": "",
+            "size": "",
+            "type": "",
+            "damage": "",
+            "range": "",
+            "load": "",
+            "durability": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 47,
+        "fields": {
+            "key": "Long(c)_T",
+            "category": "T",
+            "name": "Long(c)",
+            "cost": "70sp",
+            "size": "M",
+            "type": "-",
+            "damage": "1d6",
+            "range": "-",
+            "load": "3",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 48,
+        "fields": {
+            "key": "Blunt_Arrows_T",
+            "category": "T",
+            "name": "Blunt Arrows",
+            "cost": "1cp",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6",
+            "range": "80",
+            "load": "10/1",
+            "durability": "10"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 49,
+        "fields": {
+            "key": "Flight_Arrow_T",
+            "category": "T",
+            "name": "Flight Arrow",
+            "cost": "1cp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6",
+            "range": "75",
+            "load": "10/1",
+            "durability": "10"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 50,
+        "fields": {
+            "key": "Frog_Crotch_Arrow_T",
+            "category": "T",
+            "name": "Frog Crotch Arrow",
+            "cost": "1cp",
+            "size": "S",
+            "type": "S",
+            "damage": "1d6",
+            "range": "105",
+            "load": "10/1",
+            "durability": "10"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 51,
+        "fields": {
+            "key": "Short_T",
+            "category": "T",
+            "name": "Short",
+            "cost": "35sp",
+            "size": "S",
+            "type": "-",
+            "damage": "-",
+            "range": "-",
+            "load": "2",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 52,
+        "fields": {
+            "key": "Small_Club_T",
+            "category": "T",
+            "name": "Small Club",
+            "cost": "-",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "1",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 53,
+        "fields": {
+            "key": "Crossbow(a)_T",
+            "category": "T",
+            "name": "Crossbow(a)",
+            "cost": "",
+            "size": "",
+            "type": "",
+            "damage": "",
+            "range": "",
+            "load": "",
+            "durability": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 54,
+        "fields": {
+            "key": "Light_T",
+            "category": "T",
+            "name": "Light",
+            "cost": "75sp",
+            "size": "S",
+            "type": "-",
+            "damage": "-",
+            "range": "-",
+            "load": "2",
+            "durability": "120"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 55,
+        "fields": {
+            "key": "Light_Quarrel_T",
+            "category": "T",
+            "name": "Light Quarrel",
+            "cost": "2cp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6+1",
+            "range": "120",
+            "load": "10/1",
+            "durability": "30"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 56,
+        "fields": {
+            "key": "Medium_T",
+            "category": "T",
+            "name": "Medium",
+            "cost": "90sp",
+            "size": "M",
+            "type": "-",
+            "damage": "-",
+            "range": "-",
+            "load": "3",
+            "durability": "140"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 57,
+        "fields": {
+            "key": "Medium_Quarrel_T",
+            "category": "T",
+            "name": "Medium Quarrel",
+            "cost": "2cp",
+            "size": "S",
+            "type": "P",
+            "damage": "2d6",
+            "range": "135",
+            "load": "10/1",
+            "durability": "30"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 58,
+        "fields": {
+            "key": "Heavy(b)_T",
+            "category": "T",
+            "name": "Heavy(b)",
+            "cost": "110sp",
+            "size": "M",
+            "type": "-",
+            "damage": "-",
+            "range": "-",
+            "load": "4",
+            "durability": "160"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 59,
+        "fields": {
+            "key": "Heavy_Quarrel_T",
+            "category": "T",
+            "name": "Heavy Quarrel",
+            "cost": "3cp",
+            "size": "S",
+            "type": "P",
+            "damage": "3d6",
+            "range": "150",
+            "load": "10/1",
+            "durability": "30"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 60,
+        "fields": {
+            "key": "Dagger_T",
+            "category": "T",
+            "name": "Dagger",
+            "cost": "2sp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6",
+            "range": "(s)/2",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 61,
+        "fields": {
+            "key": "Dart_T",
+            "category": "T",
+            "name": "Dart",
+            "cost": "5cp",
+            "size": "S",
+            "type": "P",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "10/1",
+            "durability": "20"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 62,
+        "fields": {
+            "key": "Knife_T",
+            "category": "T",
+            "name": "Knife",
+            "cost": "5cp",
+            "size": "S",
+            "type": "S",
+            "damage": "1d6",
+            "range": "(s)",
+            "load": "1",
+            "durability": "80"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 63,
+        "fields": {
+            "key": "Mace_T",
+            "category": "T",
+            "name": "Mace",
+            "cost": "14sp",
+            "size": "M",
+            "type": "B",
+            "damage": "2d6",
+            "range": "(s)",
+            "load": "3",
+            "durability": "140"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 64,
+        "fields": {
+            "key": "Normal_Spear_T",
+            "category": "T",
+            "name": "Normal Spear",
+            "cost": "3sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6",
+            "range": "(s)",
+            "load": "2",
+            "durability": "100"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 65,
+        "fields": {
+            "key": "Javelin_T",
+            "category": "T",
+            "name": "Javelin",
+            "cost": "2sp",
+            "size": "M",
+            "type": "P",
+            "damage": "2d6-2",
+            "range": "(s)*2",
+            "load": "2",
+            "durability": "40"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 66,
+        "fields": {
+            "key": "Sling(a)_T",
+            "category": "T",
+            "name": "Sling(a)",
+            "cost": "2cp",
+            "size": "S",
+            "type": "-",
+            "damage": "-",
+            "range": "-",
+            "load": "10/1",
+            "durability": "20"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 67,
+        "fields": {
+            "key": "Bullet_T",
+            "category": "T",
+            "name": "Bullet",
+            "cost": "2ip",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6+1",
+            "range": "105",
+            "load": "10/1",
+            "durability": "20"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 68,
+        "fields": {
+            "key": "Stone_T",
+            "category": "T",
+            "name": "Stone",
+            "cost": "-",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6",
+            "range": "75",
+            "load": "10/1",
+            "durability": "-"
+        }
+    },
+    {
+        "model": "aif_playerstome.weaponscatalog",
+        "pk": 69,
+        "fields": {
+            "key": "War_Hammer_T",
+            "category": "T",
+            "name": "War Hammer",
+            "cost": "3sp",
+            "size": "S",
+            "type": "B",
+            "damage": "1d6+1",
+            "range": "(s)",
+            "load": "2",
+            "durability": "120"
+        }
+    }
+]

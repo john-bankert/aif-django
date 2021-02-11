@@ -5,6 +5,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 25,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -32,6 +34,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 26,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -59,6 +63,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 27,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -86,6 +92,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 28,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -113,6 +121,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 29,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -140,6 +150,8 @@
         "fields": {
             "character": 1,
             "skill": 0,
+            "skill_pk": 30,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -167,6 +179,8 @@
         "fields": {
             "character": 1,
             "skill": 32,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Leather",
             "description": "Leather Helmet",
             "type": "L",
@@ -194,6 +208,8 @@
         "fields": {
             "character": 1,
             "skill": 33,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Buckler",
             "description": "Buckler",
             "type": "L",
@@ -221,6 +237,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 59,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -248,6 +266,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 60,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -275,6 +295,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 61,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -302,6 +324,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 62,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -329,6 +353,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 63,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -356,6 +382,8 @@
         "fields": {
             "character": 2,
             "skill": 0,
+            "skill_pk": 64,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -383,6 +411,8 @@
         "fields": {
             "character": 2,
             "skill": 66,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wool Robe",
             "description": "Wool Robe",
             "type": "-",
@@ -410,6 +440,8 @@
         "fields": {
             "character": 2,
             "skill": 67,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wizard Hat",
             "description": "Wizard Hat",
             "type": "-",
@@ -437,6 +469,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 91,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -464,6 +498,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 92,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -491,6 +527,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 93,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -518,6 +556,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 94,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -545,6 +585,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 95,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -572,6 +614,8 @@
         "fields": {
             "character": 3,
             "skill": 0,
+            "skill_pk": 96,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -599,6 +643,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 122,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -626,6 +672,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 123,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -653,6 +701,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 124,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -680,6 +730,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 125,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -707,6 +759,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 126,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -734,6 +788,8 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 127,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -761,18 +817,20 @@
         "fields": {
             "character": 4,
             "skill": 0,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Toughness",
             "description": "Toughness",
             "type": "",
             "durability": "",
-            "slashing": "",
-            "slashing_display": "",
-            "piercing": "",
-            "piercing_display": "",
-            "bludgeoning": "",
-            "bludgeoning_display": "",
-            "cleaving": "",
-            "cleaving_display": "",
+            "slashing": "0",
+            "slashing_display": "0",
+            "piercing": "0",
+            "piercing_display": "0",
+            "bludgeoning": "0",
+            "bludgeoning_display": "0",
+            "cleaving": "0",
+            "cleaving_display": "0",
             "load": "-",
             "carried": "",
             "rank": 0,
@@ -788,6 +846,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 161,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -815,6 +875,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 162,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -842,6 +904,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 163,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -869,6 +933,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 164,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -896,6 +962,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 165,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -923,6 +991,8 @@
         "fields": {
             "character": 5,
             "skill": 0,
+            "skill_pk": 166,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -950,6 +1020,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 200,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -977,6 +1049,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 201,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1004,6 +1078,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 202,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1031,6 +1107,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 203,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1058,6 +1136,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 204,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1085,6 +1165,8 @@
         "fields": {
             "character": 6,
             "skill": 0,
+            "skill_pk": 205,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1112,6 +1194,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 238,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -1139,6 +1223,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 239,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1166,6 +1252,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 240,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1193,6 +1281,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 241,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1220,6 +1310,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 242,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1247,6 +1339,8 @@
         "fields": {
             "character": 7,
             "skill": 0,
+            "skill_pk": 243,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1274,6 +1368,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 288,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -1301,6 +1397,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 289,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1328,6 +1426,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 290,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1355,6 +1455,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 291,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1382,6 +1484,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 292,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1409,6 +1513,8 @@
         "fields": {
             "character": 8,
             "skill": 0,
+            "skill_pk": 293,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1436,6 +1542,8 @@
         "fields": {
             "character": 8,
             "skill": 295,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Full plate",
             "description": "Full Plate",
             "type": "H",
@@ -1463,6 +1571,8 @@
         "fields": {
             "character": 8,
             "skill": 296,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Buckler",
             "description": "Buckler",
             "type": "L",
@@ -1490,6 +1600,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 329,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -1517,6 +1629,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 330,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1544,6 +1658,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 331,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1571,6 +1687,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 332,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1598,6 +1716,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 333,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1625,6 +1745,8 @@
         "fields": {
             "character": 9,
             "skill": 0,
+            "skill_pk": 334,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1652,6 +1774,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 362,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -1679,6 +1803,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 363,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1706,6 +1832,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 364,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1733,6 +1861,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 365,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1760,6 +1890,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 366,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1787,6 +1919,8 @@
         "fields": {
             "character": 10,
             "skill": 0,
+            "skill_pk": 367,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1814,6 +1948,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 394,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -1841,6 +1977,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 395,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -1868,6 +2006,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 396,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -1895,6 +2035,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 397,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -1922,6 +2064,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 398,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -1949,6 +2093,8 @@
         "fields": {
             "character": 11,
             "skill": 0,
+            "skill_pk": 399,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -1976,6 +2122,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 425,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2003,6 +2151,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 426,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2030,6 +2180,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 427,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -2057,6 +2209,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 428,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -2084,6 +2238,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 429,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -2111,6 +2267,8 @@
         "fields": {
             "character": 12,
             "skill": 0,
+            "skill_pk": 430,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -2138,6 +2296,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 455,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2165,6 +2325,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 456,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2192,6 +2354,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 457,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -2219,6 +2383,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 458,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -2246,6 +2412,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 459,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -2273,6 +2441,8 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 460,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -2300,18 +2470,20 @@
         "fields": {
             "character": 13,
             "skill": 0,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Toughness",
             "description": "Toughness",
             "type": "",
             "durability": "",
-            "slashing": "",
-            "slashing_display": "",
-            "piercing": "",
-            "piercing_display": "",
-            "bludgeoning": "",
-            "bludgeoning_display": "",
-            "cleaving": "",
-            "cleaving_display": "",
+            "slashing": "0",
+            "slashing_display": "0",
+            "piercing": "0",
+            "piercing_display": "0",
+            "bludgeoning": "0",
+            "bludgeoning_display": "0",
+            "cleaving": "0",
+            "cleaving_display": "0",
             "load": "-",
             "carried": "",
             "rank": 0,
@@ -2327,6 +2499,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 485,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2354,6 +2528,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 486,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2381,6 +2557,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 487,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -2408,6 +2586,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 488,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -2435,6 +2615,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 489,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -2462,6 +2644,8 @@
         "fields": {
             "character": 14,
             "skill": 0,
+            "skill_pk": 490,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -2489,6 +2673,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 526,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2516,6 +2702,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 527,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2543,6 +2731,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 528,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -2570,6 +2760,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 529,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -2597,6 +2789,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 530,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -2624,6 +2818,8 @@
         "fields": {
             "character": 15,
             "skill": 0,
+            "skill_pk": 531,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -2651,6 +2847,8 @@
         "fields": {
             "character": 15,
             "skill": 533,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wool Robe",
             "description": "Wool Robe",
             "type": "-",
@@ -2678,6 +2876,8 @@
         "fields": {
             "character": 15,
             "skill": 534,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wizard Hat",
             "description": "Wizard Hat",
             "type": "-",
@@ -2705,6 +2905,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 568,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2732,6 +2934,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 569,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2759,6 +2963,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 570,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -2786,6 +2992,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 571,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -2813,6 +3021,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 572,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -2840,6 +3050,8 @@
         "fields": {
             "character": 16,
             "skill": 0,
+            "skill_pk": 573,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -2867,6 +3079,8 @@
         "fields": {
             "character": 16,
             "skill": 575,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wool Robe",
             "description": "Wool Robe",
             "type": "-",
@@ -2894,6 +3108,8 @@
         "fields": {
             "character": 16,
             "skill": 577,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Wizard Hat",
             "description": "Wizard Hat",
             "type": "-",
@@ -2921,6 +3137,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 621,
+            "weapon_pk": 0,
             "name": "Light Armor Group",
             "description": "Light Armor Group",
             "type": "L",
@@ -2948,6 +3166,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 622,
+            "weapon_pk": 0,
             "name": "Medium Armor Group",
             "description": "Medium Armor Group",
             "type": "M",
@@ -2975,6 +3195,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 623,
+            "weapon_pk": 0,
             "name": "Heavy Armor Group",
             "description": "Heavy Armor Group",
             "type": "H",
@@ -3002,6 +3224,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 624,
+            "weapon_pk": 0,
             "name": "Helmet Group",
             "description": "Helmet Group",
             "type": "-",
@@ -3029,6 +3253,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 625,
+            "weapon_pk": 0,
             "name": "Unarmed Group",
             "description": "Unarmed Group",
             "type": "U",
@@ -3056,6 +3282,8 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 626,
+            "weapon_pk": 0,
             "name": "Shield Group",
             "description": "Shield Group",
             "type": "S",
@@ -3083,18 +3311,20 @@
         "fields": {
             "character": 17,
             "skill": 0,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Toughness",
             "description": "Toughness",
             "type": "",
             "durability": "",
-            "slashing": "",
-            "slashing_display": "",
-            "piercing": "",
-            "piercing_display": "",
-            "bludgeoning": "",
-            "bludgeoning_display": "",
-            "cleaving": "",
-            "cleaving_display": "",
+            "slashing": "3",
+            "slashing_display": "3",
+            "piercing": "3",
+            "piercing_display": "3",
+            "bludgeoning": "3",
+            "bludgeoning_display": "3",
+            "cleaving": "3",
+            "cleaving_display": "3",
             "load": "-",
             "carried": "",
             "rank": 0,
@@ -3110,6 +3340,8 @@
         "fields": {
             "character": 17,
             "skill": 633,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Plate mail",
             "description": "Plate Mail +1/2/1/1",
             "type": "H",
@@ -3137,6 +3369,8 @@
         "fields": {
             "character": 17,
             "skill": 632,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Open-faced",
             "description": "Open Faced Helmet",
             "type": "M",
@@ -3164,6 +3398,8 @@
         "fields": {
             "character": 17,
             "skill": 634,
+            "skill_pk": 0,
+            "weapon_pk": 0,
             "name": "Buckler",
             "description": "Buckler",
             "type": "L",

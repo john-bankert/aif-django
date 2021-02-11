@@ -54,8 +54,8 @@ class Command(BaseCommand):
         t = Themes.objects.create(name='orange')
         t.navbar_bg_color = 'darkorange'
         t.navbar_fg_color = 'white'
-        t.menubar_bg_color = 'coral'
-        t.tabbar_hover_bg_color = 'coral'
+        t.menubar_bg_color = 'gold'
+        t.tabbar_hover_bg_color = 'gold'
         t.tabbar_hover_fg_color = 'black'
         t.tabbar_active_bg_color = 'darkorange'
         t.tabbar_active_fg_color = 'white'

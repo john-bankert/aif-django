@@ -1,6 +1,5 @@
-<div class="dropdown">
 {% if request.user.is_authenticated %}
-    <div class="menu_icon menu_div" onclick="show_character_menu()">
+    <div class="menu_icon menu_div" onclick="show_menu('character_menu')">
 {% else %}
     <div class="menu_icon menu_div">
 {% endif %}
@@ -18,8 +17,5 @@
         <hr/>
         <a href="javascript:doesNothing('Rename Character')">Rename Character</a>
         <a href="javascript:doesNothing('Multiclass')">Multiclass</a>
-        <a href="javascript:doesNothing('Character -&gt; JSON')">Character -&gt; JSON</a>
-        <a href="javascript:doesNothing('JSON -&gt; Character')">JSON -&gt; Character</a>
         <a href="javascript:doesNothing('Character -&gt; PDF')">Character -&gt; PDF</a>
     </div>
-</div>

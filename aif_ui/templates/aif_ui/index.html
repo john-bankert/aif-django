@@ -8,14 +8,15 @@
 		{% include "aif_ui/header.html" %}
 	</head>
 	<body>
-		{% include "aif_ui/nb2.html" %}
+		{% include "aif_ui/nav_bar.html" %}
 		<div id='main'>
-			{% if flag == 'sheet' %}
-				{% include "aif_character/tabbar.html" %}
+			{% if flag == 'character' %}
+				{% include "aif_character/tab_bar.html" %}
 			{% else %}
 				<img class="center" src="{% static 'aif_ui/aif-splash.png' %}">
 			{% endif %}
 		</div>
-		{% include "registration/login_modal.html" %}
+		{% include "registration/login_popup.html" %}
+		{% include "aif_ui/theme_popup.html" %}
 	</body>
 </html>

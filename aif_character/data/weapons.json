@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 19,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -34,7 +34,7 @@
         "pk": 2,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 20,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -64,7 +64,7 @@
         "pk": 3,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 21,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -94,7 +94,7 @@
         "pk": 4,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 22,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -124,7 +124,7 @@
         "pk": 5,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 23,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -154,7 +154,7 @@
         "pk": 6,
         "fields": {
             "character": 1,
-            "skill_pk": 0,
+            "skill_pk": 24,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -214,7 +214,7 @@
         "pk": 8,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 53,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -244,7 +244,7 @@
         "pk": 9,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 54,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -274,7 +274,7 @@
         "pk": 10,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 55,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -304,7 +304,7 @@
         "pk": 11,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 56,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -334,7 +334,7 @@
         "pk": 12,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 57,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -364,7 +364,7 @@
         "pk": 13,
         "fields": {
             "character": 2,
-            "skill_pk": 0,
+            "skill_pk": 58,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -424,7 +424,7 @@
         "pk": 15,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 85,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -454,7 +454,7 @@
         "pk": 16,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 86,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -484,7 +484,7 @@
         "pk": 17,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 87,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -514,7 +514,7 @@
         "pk": 18,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 88,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -544,7 +544,7 @@
         "pk": 19,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 89,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -574,7 +574,7 @@
         "pk": 20,
         "fields": {
             "character": 3,
-            "skill_pk": 0,
+            "skill_pk": 90,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -604,7 +604,7 @@
         "pk": 21,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 116,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -634,7 +634,7 @@
         "pk": 22,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 117,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -664,7 +664,7 @@
         "pk": 23,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 118,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -694,7 +694,7 @@
         "pk": 24,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 119,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -724,7 +724,7 @@
         "pk": 25,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 120,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -754,7 +754,7 @@
         "pk": 26,
         "fields": {
             "character": 4,
-            "skill_pk": 0,
+            "skill_pk": 121,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -784,7 +784,7 @@
         "pk": 27,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 155,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -814,7 +814,7 @@
         "pk": 28,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 156,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -844,7 +844,7 @@
         "pk": 29,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 157,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -874,7 +874,7 @@
         "pk": 30,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 158,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -904,7 +904,7 @@
         "pk": 31,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 159,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -934,7 +934,7 @@
         "pk": 32,
         "fields": {
             "character": 5,
-            "skill_pk": 0,
+            "skill_pk": 160,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -964,7 +964,7 @@
         "pk": 33,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 194,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -994,7 +994,7 @@
         "pk": 34,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 195,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1024,7 +1024,7 @@
         "pk": 35,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 196,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1054,7 +1054,7 @@
         "pk": 36,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 197,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -1084,7 +1084,7 @@
         "pk": 37,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 198,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -1114,7 +1114,7 @@
         "pk": 38,
         "fields": {
             "character": 6,
-            "skill_pk": 0,
+            "skill_pk": 199,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -1144,7 +1144,7 @@
         "pk": 39,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 232,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -1174,7 +1174,7 @@
         "pk": 40,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 233,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1204,7 +1204,7 @@
         "pk": 41,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 234,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1234,7 +1234,7 @@
         "pk": 42,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 235,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -1264,7 +1264,7 @@
         "pk": 43,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 236,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -1294,7 +1294,7 @@
         "pk": 44,
         "fields": {
             "character": 7,
-            "skill_pk": 0,
+            "skill_pk": 237,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -1324,7 +1324,7 @@
         "pk": 45,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 282,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -1354,7 +1354,7 @@
         "pk": 46,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 283,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1384,7 +1384,7 @@
         "pk": 47,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 284,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1414,7 +1414,7 @@
         "pk": 48,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 285,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -1444,7 +1444,7 @@
         "pk": 49,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 286,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -1474,7 +1474,7 @@
         "pk": 50,
         "fields": {
             "character": 8,
-            "skill_pk": 0,
+            "skill_pk": 287,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -1534,7 +1534,7 @@
         "pk": 52,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 323,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -1564,7 +1564,7 @@
         "pk": 53,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 324,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1594,7 +1594,7 @@
         "pk": 54,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 325,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1624,7 +1624,7 @@
         "pk": 55,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 326,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -1654,7 +1654,7 @@
         "pk": 56,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 327,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -1684,7 +1684,7 @@
         "pk": 57,
         "fields": {
             "character": 9,
-            "skill_pk": 0,
+            "skill_pk": 328,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -1714,7 +1714,7 @@
         "pk": 58,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 356,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -1744,7 +1744,7 @@
         "pk": 59,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 357,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1774,7 +1774,7 @@
         "pk": 60,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 358,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1804,7 +1804,7 @@
         "pk": 61,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 359,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -1834,7 +1834,7 @@
         "pk": 62,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 360,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -1864,7 +1864,7 @@
         "pk": 63,
         "fields": {
             "character": 10,
-            "skill_pk": 0,
+            "skill_pk": 361,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -1894,7 +1894,7 @@
         "pk": 64,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 388,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -1924,7 +1924,7 @@
         "pk": 65,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 389,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -1954,7 +1954,7 @@
         "pk": 66,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 390,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -1984,7 +1984,7 @@
         "pk": 67,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 391,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2014,7 +2014,7 @@
         "pk": 68,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 392,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2044,7 +2044,7 @@
         "pk": 69,
         "fields": {
             "character": 11,
-            "skill_pk": 0,
+            "skill_pk": 393,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -2074,7 +2074,7 @@
         "pk": 70,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 419,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -2104,7 +2104,7 @@
         "pk": 71,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 420,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -2134,7 +2134,7 @@
         "pk": 72,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 421,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -2164,7 +2164,7 @@
         "pk": 73,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 422,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2194,7 +2194,7 @@
         "pk": 74,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 423,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2224,7 +2224,7 @@
         "pk": 75,
         "fields": {
             "character": 12,
-            "skill_pk": 0,
+            "skill_pk": 424,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -2254,7 +2254,7 @@
         "pk": 76,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 449,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -2284,7 +2284,7 @@
         "pk": 77,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 450,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -2314,7 +2314,7 @@
         "pk": 78,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 451,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -2344,7 +2344,7 @@
         "pk": 79,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 452,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2374,7 +2374,7 @@
         "pk": 80,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 453,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2404,7 +2404,7 @@
         "pk": 81,
         "fields": {
             "character": 13,
-            "skill_pk": 0,
+            "skill_pk": 454,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -2434,7 +2434,7 @@
         "pk": 82,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 479,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -2464,7 +2464,7 @@
         "pk": 83,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 480,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -2494,7 +2494,7 @@
         "pk": 84,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 481,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -2524,7 +2524,7 @@
         "pk": 85,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 482,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2554,7 +2554,7 @@
         "pk": 86,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 483,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2584,7 +2584,7 @@
         "pk": 87,
         "fields": {
             "character": 14,
-            "skill_pk": 0,
+            "skill_pk": 484,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -2614,7 +2614,7 @@
         "pk": 88,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 520,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -2644,7 +2644,7 @@
         "pk": 89,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 521,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -2674,7 +2674,7 @@
         "pk": 90,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 522,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -2704,7 +2704,7 @@
         "pk": 91,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 523,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2734,7 +2734,7 @@
         "pk": 92,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 524,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2764,7 +2764,7 @@
         "pk": 93,
         "fields": {
             "character": 15,
-            "skill_pk": 0,
+            "skill_pk": 525,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -2824,7 +2824,7 @@
         "pk": 95,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 562,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -2854,7 +2854,7 @@
         "pk": 96,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 563,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -2884,7 +2884,7 @@
         "pk": 97,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 564,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -2914,7 +2914,7 @@
         "pk": 98,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 565,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -2944,7 +2944,7 @@
         "pk": 99,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 566,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -2974,7 +2974,7 @@
         "pk": 100,
         "fields": {
             "character": 16,
-            "skill_pk": 0,
+            "skill_pk": 567,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -3034,7 +3034,7 @@
         "pk": 102,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 615,
             "weapon_pk": 0,
             "name": "Slashing Group",
             "description": "Slashing Group",
@@ -3044,7 +3044,7 @@
             "range": "",
             "durability": "",
             "load": "-",
-            "rank": 0,
+            "rank": 2,
             "display": 0,
             "buff": 0,
             "order": 0,
@@ -3064,7 +3064,7 @@
         "pk": 103,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 616,
             "weapon_pk": 0,
             "name": "Piercing Group",
             "description": "Piercing Group",
@@ -3074,10 +3074,10 @@
             "range": "",
             "durability": "",
             "load": "-",
-            "rank": 0,
+            "rank": 8,
             "display": 0,
             "buff": 0,
-            "order": 0,
+            "order": 2,
             "mastered": false,
             "to_hit_display": "",
             "damage_display": "",
@@ -3094,7 +3094,7 @@
         "pk": 104,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 617,
             "weapon_pk": 0,
             "name": "Bludgeoning Group",
             "description": "Bludgeoning Group",
@@ -3104,10 +3104,10 @@
             "range": "",
             "durability": "",
             "load": "-",
-            "rank": 0,
+            "rank": 6,
             "display": 0,
             "buff": 0,
-            "order": 0,
+            "order": 1,
             "mastered": false,
             "to_hit_display": "",
             "damage_display": "",
@@ -3124,7 +3124,7 @@
         "pk": 105,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 618,
             "weapon_pk": 0,
             "name": "Cleaving Group",
             "description": "Cleaving Group",
@@ -3134,7 +3134,7 @@
             "range": "",
             "durability": "",
             "load": "-",
-            "rank": 0,
+            "rank": 2,
             "display": 0,
             "buff": 0,
             "order": 0,
@@ -3154,7 +3154,7 @@
         "pk": 106,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 619,
             "weapon_pk": 0,
             "name": "Throwing Group",
             "description": "Throwing Group",
@@ -3184,7 +3184,7 @@
         "pk": 107,
         "fields": {
             "character": 17,
-            "skill_pk": 0,
+            "skill_pk": 620,
             "weapon_pk": 0,
             "name": "Bow Group",
             "description": "Bow Group",
@@ -3194,10 +3194,10 @@
             "range": "",
             "durability": "",
             "load": "-",
-            "rank": 0,
+            "rank": 5,
             "display": 0,
             "buff": 0,
-            "order": 0,
+            "order": 1,
             "mastered": false,
             "to_hit_display": "",
             "damage_display": "",
@@ -3224,16 +3224,16 @@
             "range": "-",
             "durability": "80",
             "load": "3",
-            "rank": 0,
+            "rank": 8,
             "display": 0,
             "buff": 0,
-            "order": 0,
+            "order": 2,
             "mastered": false,
-            "to_hit_display": "3d6+2",
-            "damage_display": "3d6+1",
+            "to_hit_display": "5d6+2",
+            "damage_display": "5d6+1",
             "is_melee": true,
             "melee_modifier": 0,
-            "melee_display": "6d6+3",
+            "melee_display": "10d6+3",
             "is_missile": false,
             "missile_modifier": 0,
             "missile_display": ""
@@ -3254,19 +3254,19 @@
             "range": "135",
             "durability": "30",
             "load": "3",
-            "rank": 0,
+            "rank": 8,
             "display": 0,
             "buff": 0,
-            "order": 0,
+            "order": 2,
             "mastered": false,
-            "to_hit_display": "3d6",
-            "damage_display": "2d6+3",
+            "to_hit_display": "5d6+2",
+            "damage_display": "4d6+3",
             "is_melee": false,
             "melee_modifier": 0,
             "melee_display": "",
-            "is_missile": false,
+            "is_missile": true,
             "missile_modifier": 0,
-            "missile_display": ""
+            "missile_display": "9d6+5"
         }
     }
 ]

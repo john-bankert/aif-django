@@ -1,0 +1,5714 @@
+[
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 1,
+        "fields": {
+            "key": "Priest_1_Boon",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Boon",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 2,
+        "fields": {
+            "key": "Priest_1_Darkness",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Darkness",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 3,
+        "fields": {
+            "key": "Priest_1_Descry_Magic",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Descry Magic",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 4,
+        "fields": {
+            "key": "Priest_1_Feast",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Feast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 5,
+        "fields": {
+            "key": "Priest_1_Haven",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Haven",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 6,
+        "fields": {
+            "key": "Priest_1_Heal_Wounds",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Heal Wounds",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 7,
+        "fields": {
+            "key": "Priest_1_Ice_Spike",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Ice Spike",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 8,
+        "fields": {
+            "key": "Priest_1_Know_Intention",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Know Intention",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 9,
+        "fields": {
+            "key": "Priest_1_Light",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Light",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 10,
+        "fields": {
+            "key": "Priest_1_Mystic_Hammer",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Mystic Hammer",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 11,
+        "fields": {
+            "key": "Priest_1_Push",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Push",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 12,
+        "fields": {
+            "key": "Priest_1_Solitude",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Solitude",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 13,
+        "fields": {
+            "key": "Priest_1_Stop",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Stop",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 14,
+        "fields": {
+            "key": "Priest_1_Talk",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Talk",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 15,
+        "fields": {
+            "key": "Priest_1_Thermal_Pillar",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Thermal Pillar",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 16,
+        "fields": {
+            "key": "Priest_1_Wind_Burn",
+            "category": "Priest",
+            "circle": "1",
+            "name": "Wind Burn",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 17,
+        "fields": {
+            "key": "Priest_2_Calm",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Calm",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 18,
+        "fields": {
+            "key": "Priest_2_Cure",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Cure",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 19,
+        "fields": {
+            "key": "Priest_2_Descry_Lie",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Descry Lie",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 20,
+        "fields": {
+            "key": "Priest_2_Descry_Traps",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Descry Traps",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 21,
+        "fields": {
+            "key": "Priest_2_Goo",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Goo",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 22,
+        "fields": {
+            "key": "Priest_2_Inventory",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Inventory",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 23,
+        "fields": {
+            "key": "Priest_2_Laden",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Laden",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 24,
+        "fields": {
+            "key": "Priest_2_Lift_Curse",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Lift Curse",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 25,
+        "fields": {
+            "key": "Priest_2_Mystic_Mace",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Mystic Mace",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 26,
+        "fields": {
+            "key": "Priest_2_Mystic_Shield",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Mystic Shield",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 27,
+        "fields": {
+            "key": "Priest_2_Neutralize",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Neutralize",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 28,
+        "fields": {
+            "key": "Priest_2_Release",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Release",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 29,
+        "fields": {
+            "key": "Priest_2_Retribution",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Retribution",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 30,
+        "fields": {
+            "key": "Priest_2_Summon_Animal",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Summon Animal",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 31,
+        "fields": {
+            "key": "Priest_2_Tremor",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Tremor",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 32,
+        "fields": {
+            "key": "Priest_2_Wall_of_Wood",
+            "category": "Priest",
+            "circle": "2",
+            "name": "Wall of Wood",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 33,
+        "fields": {
+            "key": "Priest_3_Assistance",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Assistance",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 34,
+        "fields": {
+            "key": "Priest_3_Blizzard",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Blizzard",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 35,
+        "fields": {
+            "key": "Priest_3_Concussion",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Concussion",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 36,
+        "fields": {
+            "key": "Priest_3_Disrupt",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Disrupt",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 37,
+        "fields": {
+            "key": "Priest_3_Elemental_Ward",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Elemental Ward",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 38,
+        "fields": {
+            "key": "Priest_3_Galvanize_Spirit",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Galvanize Spirit",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 39,
+        "fields": {
+            "key": "Priest_3_Holy_Rain",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Holy Rain",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 40,
+        "fields": {
+            "key": "Priest_3_Magic_Ward",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Magic Ward",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 41,
+        "fields": {
+            "key": "Priest_3_Mass_Mend",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Mass Mend",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 42,
+        "fields": {
+            "key": "Priest_3_Mystic_Sling",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Mystic Sling",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 43,
+        "fields": {
+            "key": "Priest_3_Purify",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Purify",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 44,
+        "fields": {
+            "key": "Priest_3_Retaliation",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Retaliation",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 45,
+        "fields": {
+            "key": "Priest_3_Terror",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Terror",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 46,
+        "fields": {
+            "key": "Priest_3_Wall_of_Barbs",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Wall of Barbs",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 47,
+        "fields": {
+            "key": "Priest_3_Watershock",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Watershock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 48,
+        "fields": {
+            "key": "Priest_3_Wings",
+            "category": "Priest",
+            "circle": "3",
+            "name": "Wings",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 49,
+        "fields": {
+            "key": "Priest_4_Beacon",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Beacon",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 50,
+        "fields": {
+            "key": "Priest_4_Bola_Swarm",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Bola Swarm",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 51,
+        "fields": {
+            "key": "Priest_4_of_Warding",
+            "category": "Priest",
+            "circle": "4",
+            "name": "of Warding",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 52,
+        "fields": {
+            "key": "Priest_4_Curse",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Curse",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 53,
+        "fields": {
+            "key": "Priest_4_Delusion",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Delusion",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 54,
+        "fields": {
+            "key": "Priest_4_Elemental_Disruption",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Elemental Disruption",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 55,
+        "fields": {
+            "key": "Priest_4_Elemental_Spray",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Elemental Spray",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 56,
+        "fields": {
+            "key": "Priest_4_Healer",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Healer",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 57,
+        "fields": {
+            "key": "Priest_4_Melt_Rock",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Melt Rock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 58,
+        "fields": {
+            "key": "Priest_4_Move_Water",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Move Water",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 59,
+        "fields": {
+            "key": "Priest_4_Pillar_of_Force",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Pillar of Force",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 60,
+        "fields": {
+            "key": "Priest_4_Sanctify",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Sanctify",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 61,
+        "fields": {
+            "key": "Priest_4_Truth",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Truth",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 62,
+        "fields": {
+            "key": "Priest_4_Wall_of_Winds",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Wall of Winds",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 63,
+        "fields": {
+            "key": "Priest_4_Warding_Mark",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Warding Mark",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 64,
+        "fields": {
+            "key": "Priest_4_Withstand_Poison",
+            "category": "Priest",
+            "circle": "4",
+            "name": "Withstand Poison",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 65,
+        "fields": {
+            "key": "Priest_5_Bodyguard",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Bodyguard",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 66,
+        "fields": {
+            "key": "Priest_5_Compass",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Compass",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 67,
+        "fields": {
+            "key": "Priest_5_Create_Lightning",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Create Lightning",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 68,
+        "fields": {
+            "key": "Priest_5_Descry_Souls",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Descry Souls",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 69,
+        "fields": {
+            "key": "Priest_5_Faith",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Faith",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 70,
+        "fields": {
+            "key": "Priest_5_Holy_Ground",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Holy Ground",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 71,
+        "fields": {
+            "key": "Priest_5_Holy_Word",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Holy Word",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 72,
+        "fields": {
+            "key": "Priest_5_Hush",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Hush",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 73,
+        "fields": {
+            "key": "Priest_5_Missile_Cube",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Missile Cube",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 74,
+        "fields": {
+            "key": "Priest_5_Mystic_Maul",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Mystic Maul",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 75,
+        "fields": {
+            "key": "Priest_5_Overgrowth",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Overgrowth",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 76,
+        "fields": {
+            "key": "Priest_5_Plague",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Plague",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 77,
+        "fields": {
+            "key": "Priest_5_Silver_Grenade",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Silver Grenade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 78,
+        "fields": {
+            "key": "Priest_5_Stone_Death",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Stone Death",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 79,
+        "fields": {
+            "key": "Priest_5_Vision",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Vision",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 80,
+        "fields": {
+            "key": "Priest_5_Wall_of_Shards",
+            "category": "Priest",
+            "circle": "5",
+            "name": "Wall of Shards",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 81,
+        "fields": {
+            "key": "Priest_6_Annihilate",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Annihilate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 82,
+        "fields": {
+            "key": "Priest_6_Astral_Projection",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Astral Projection",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 83,
+        "fields": {
+            "key": "Priest_6_Banish",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Banish",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 84,
+        "fields": {
+            "key": "Priest_6_Earthquake",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Earthquake",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 85,
+        "fields": {
+            "key": "Priest_6_Elemental_Pillar",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Elemental Pillar",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 86,
+        "fields": {
+            "key": "Priest_6_Flood",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Flood",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 87,
+        "fields": {
+            "key": "Priest_6_Miss",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Miss",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 88,
+        "fields": {
+            "key": "Priest_6_Mystic_Smite",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Mystic Smite",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 89,
+        "fields": {
+            "key": "Priest_6_Netherspeak",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Netherspeak",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 90,
+        "fields": {
+            "key": "Priest_6_Protector",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Protector",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 91,
+        "fields": {
+            "key": "Priest_6_Regenerate",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Regenerate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 92,
+        "fields": {
+            "key": "Priest_6_Restore_Life",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Restore Life",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 93,
+        "fields": {
+            "key": "Priest_6_Shadow_of_Death",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Shadow of Death",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 94,
+        "fields": {
+            "key": "Priest_6_Shrine",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Shrine",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 95,
+        "fields": {
+            "key": "Priest_6_Travel",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Travel",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 96,
+        "fields": {
+            "key": "Priest_6_Wrath",
+            "category": "Priest",
+            "circle": "6",
+            "name": "Wrath",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 97,
+        "fields": {
+            "key": "Wizard_1_Crushing_Strike",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Crushing Strike",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 98,
+        "fields": {
+            "key": "Wizard_1_Darkness",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Darkness",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 99,
+        "fields": {
+            "key": "Wizard_1_Descry_Magic",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Descry Magic",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 100,
+        "fields": {
+            "key": "Wizard_1_Eagle_Sight",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Eagle Sight",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 101,
+        "fields": {
+            "key": "Wizard_1_Flame",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Flame",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 102,
+        "fields": {
+            "key": "Wizard_1_Force_Dagger",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Force Dagger",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 103,
+        "fields": {
+            "key": "Wizard_1_Frog",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Frog",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 104,
+        "fields": {
+            "key": "Wizard_1_Illusion",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Illusion",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 105,
+        "fields": {
+            "key": "Wizard_1_Light",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Light",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 106,
+        "fields": {
+            "key": "Wizard_1_Mouse",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Mouse",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 107,
+        "fields": {
+            "key": "Wizard_1_Open",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Open",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 108,
+        "fields": {
+            "key": "Wizard_1_Protection",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Protection",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 109,
+        "fields": {
+            "key": "Wizard_1_Sand_Blast",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Sand Blast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 110,
+        "fields": {
+            "key": "Wizard_1_Shock_Wave",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Shock Wave",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 111,
+        "fields": {
+            "key": "Wizard_1_Slumber",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Slumber",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 112,
+        "fields": {
+            "key": "Wizard_1_Yell",
+            "category": "Wizard",
+            "circle": "1",
+            "name": "Yell",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 113,
+        "fields": {
+            "key": "Wizard_2_Force_Dart",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Force Dart",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 114,
+        "fields": {
+            "key": "Wizard_2_Force_Staff",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Force Staff",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 115,
+        "fields": {
+            "key": "Wizard_2_Invigorate",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Invigorate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 116,
+        "fields": {
+            "key": "Wizard_2_Languages",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Languages",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 117,
+        "fields": {
+            "key": "Wizard_2_Levitate",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Levitate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 118,
+        "fields": {
+            "key": "Wizard_2_Lock",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Lock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 119,
+        "fields": {
+            "key": "Wizard_2_Magnetize",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Magnetize",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 120,
+        "fields": {
+            "key": "Wizard_2_Night_Vision",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Night Vision",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 121,
+        "fields": {
+            "key": "Wizard_2_Observer",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Observer",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 122,
+        "fields": {
+            "key": "Wizard_2_Resize",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Resize",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 123,
+        "fields": {
+            "key": "Wizard_2_Roller",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Roller",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 124,
+        "fields": {
+            "key": "Wizard_2_Sight",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Sight",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 125,
+        "fields": {
+            "key": "Wizard_2_Speed",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Speed",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 126,
+        "fields": {
+            "key": "Wizard_2_Veil",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Veil",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 127,
+        "fields": {
+            "key": "Wizard_2_Water_Breathing",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Water Breathing",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 128,
+        "fields": {
+            "key": "Wizard_2_Whisper",
+            "category": "Wizard",
+            "circle": "2",
+            "name": "Whisper",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 129,
+        "fields": {
+            "key": "Wizard_3_Carrier",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Carrier",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 130,
+        "fields": {
+            "key": "Wizard_3_Cloak",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Cloak",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 131,
+        "fields": {
+            "key": "Wizard_3_Cocoon",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Cocoon",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 132,
+        "fields": {
+            "key": "Wizard_3_Displace_Image",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Displace Image",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 133,
+        "fields": {
+            "key": "Wizard_3_Elemental_Bolt",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Elemental Bolt",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 134,
+        "fields": {
+            "key": "Wizard_3_Flight",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Flight",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 135,
+        "fields": {
+            "key": "Wizard_3_Glass",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Glass",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 136,
+        "fields": {
+            "key": "Wizard_3_Hidden_Passage",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Hidden Passage",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 137,
+        "fields": {
+            "key": "Wizard_3_Magic_Space",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Magic Space",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 138,
+        "fields": {
+            "key": "Wizard_3_Mist",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Mist",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 139,
+        "fields": {
+            "key": "Wizard_3_Second_Bane",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Second Bane",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 140,
+        "fields": {
+            "key": "Wizard_3_Tentacle",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Tentacle",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 141,
+        "fields": {
+            "key": "Wizard_3_Timber_Shards",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Timber Shards",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 142,
+        "fields": {
+            "key": "Wizard_3_Toxin",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Toxin",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 143,
+        "fields": {
+            "key": "Wizard_3_Wall_of_Stone",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Wall of Stone",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 144,
+        "fields": {
+            "key": "Wizard_3_Weaken",
+            "category": "Wizard",
+            "circle": "3",
+            "name": "Weaken",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 145,
+        "fields": {
+            "key": "Wizard_4_Berserk",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Berserk",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 146,
+        "fields": {
+            "key": "Wizard_4_Catch",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Catch",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 147,
+        "fields": {
+            "key": "Wizard_4_Climb",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Climb",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 148,
+        "fields": {
+            "key": "Wizard_4_Clumsy",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Clumsy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 149,
+        "fields": {
+            "key": "Wizard_4_Elemental_Sphere",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Elemental Sphere",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 150,
+        "fields": {
+            "key": "Wizard_4_Grace",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Grace",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 151,
+        "fields": {
+            "key": "Wizard_4_Magic_Protection",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Magic Protection",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 152,
+        "fields": {
+            "key": "Wizard_4_Mind_Read",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Mind Read",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 153,
+        "fields": {
+            "key": "Wizard_4_Propel",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Propel",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 154,
+        "fields": {
+            "key": "Wizard_4_Suffocate",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Suffocate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 155,
+        "fields": {
+            "key": "Wizard_4_Tornado",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Tornado",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 156,
+        "fields": {
+            "key": "Wizard_4_Toxic_Sphere",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Toxic Sphere",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 157,
+        "fields": {
+            "key": "Wizard_4_Transmute_Being",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Transmute Being",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 158,
+        "fields": {
+            "key": "Wizard_4_Trap",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Trap",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 159,
+        "fields": {
+            "key": "Wizard_4_Undo",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Undo",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 160,
+        "fields": {
+            "key": "Wizard_4_Wall_of_Ice",
+            "category": "Wizard",
+            "circle": "4",
+            "name": "Wall of Ice",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 161,
+        "fields": {
+            "key": "Wizard_5_Bounce",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Bounce",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 162,
+        "fields": {
+            "key": "Wizard_5_Bouncing_Ball",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Bouncing Ball",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 163,
+        "fields": {
+            "key": "Wizard_5_Crystal_Ball",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Crystal Ball",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 164,
+        "fields": {
+            "key": "Wizard_5_Disintegrate",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Disintegrate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 165,
+        "fields": {
+            "key": "Wizard_5_Dust_Storm",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Dust Storm",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 166,
+        "fields": {
+            "key": "Wizard_5_Energy_of_Life",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Energy of Life",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 167,
+        "fields": {
+            "key": "Wizard_5_Exhaust",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Exhaust",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 168,
+        "fields": {
+            "key": "Wizard_5_Flaming_Cloud",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Flaming Cloud",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 169,
+        "fields": {
+            "key": "Wizard_5_Flaming_Star",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Flaming Star",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 170,
+        "fields": {
+            "key": "Wizard_5_Force_Militia",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Force Militia",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 171,
+        "fields": {
+            "key": "Wizard_5_Magic_Sphere",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Magic Sphere",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 172,
+        "fields": {
+            "key": "Wizard_5_Mind_Shield",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Mind Shield",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 173,
+        "fields": {
+            "key": "Wizard_5_Summon",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Summon",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 174,
+        "fields": {
+            "key": "Wizard_5_Switch",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Switch",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 175,
+        "fields": {
+            "key": "Wizard_5_Wall_of_Fire",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Wall of Fire",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 176,
+        "fields": {
+            "key": "Wizard_5_Wind",
+            "category": "Wizard",
+            "circle": "5",
+            "name": "Wind",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 177,
+        "fields": {
+            "key": "Wizard_6_Avalanche",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Avalanche",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 178,
+        "fields": {
+            "key": "Wizard_6_Back_Draft",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Back Draft",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 179,
+        "fields": {
+            "key": "Wizard_6_Change_Shape",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Change Shape",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 180,
+        "fields": {
+            "key": "Wizard_6_Charm",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Charm",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 181,
+        "fields": {
+            "key": "Wizard_6_Duplicate",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Duplicate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 182,
+        "fields": {
+            "key": "Wizard_6_Elemental_Protection",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Elemental Protection",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 183,
+        "fields": {
+            "key": "Wizard_6_Elicit_Elemental",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Elicit Elemental",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 184,
+        "fields": {
+            "key": "Wizard_6_Fortification",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Fortification",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 185,
+        "fields": {
+            "key": "Wizard_6_Magic_Book",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Magic Book",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 186,
+        "fields": {
+            "key": "Wizard_6_Negate",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Negate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 187,
+        "fields": {
+            "key": "Wizard_6_Sacrifice",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Sacrifice",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 188,
+        "fields": {
+            "key": "Wizard_6_Sealing",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Sealing",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 189,
+        "fields": {
+            "key": "Wizard_6_Steal",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Steal",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 190,
+        "fields": {
+            "key": "Wizard_6_Teleport",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Teleport",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 191,
+        "fields": {
+            "key": "Wizard_6_Walk",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Walk",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 192,
+        "fields": {
+            "key": "Wizard_6_Woe",
+            "category": "Wizard",
+            "circle": "6",
+            "name": "Woe",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 193,
+        "fields": {
+            "key": "Druid_1_Elemental_Essence",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Elemental Essence",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 194,
+        "fields": {
+            "key": "Druid_1_Dusk",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Dusk",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 195,
+        "fields": {
+            "key": "Druid_1_Gift_of_the_Equinox",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Gift of the Equinox",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 196,
+        "fields": {
+            "key": "Druid_1_Living_Daylights",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Living Daylights",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 197,
+        "fields": {
+            "key": "Druid_1_Plant_Food",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Plant Food",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 198,
+        "fields": {
+            "key": "Druid_1_Snowblind",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Snowblind",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 199,
+        "fields": {
+            "key": "Druid_1_Speak_Animal",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Speak Animal",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 200,
+        "fields": {
+            "key": "Druid_1_Spirit_of_the_Beast",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Spirit of the Beast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 201,
+        "fields": {
+            "key": "Druid_1_Thorn_Spike",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Thorn Spike",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 202,
+        "fields": {
+            "key": "Druid_1_Trail",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Trail",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 203,
+        "fields": {
+            "key": "Druid_1_Vines",
+            "category": "Druid",
+            "circle": "1",
+            "name": "Vines",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 204,
+        "fields": {
+            "key": "Druid_2_Animal_Hide",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Animal Hide",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 205,
+        "fields": {
+            "key": "Druid_2_Claws",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Claws",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 206,
+        "fields": {
+            "key": "Druid_2_Cobra_Spit",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Cobra Spit",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 207,
+        "fields": {
+            "key": "Druid_2_Engergize",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Engergize",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 208,
+        "fields": {
+            "key": "Druid_2_Fangs",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Fangs",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 209,
+        "fields": {
+            "key": "Druid_2_Gift_of_the_Eclipse",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Gift of the Eclipse",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 210,
+        "fields": {
+            "key": "Druid_2_Healing_Mark",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Healing Mark",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 211,
+        "fields": {
+            "key": "Druid_2_Mana",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Mana",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 212,
+        "fields": {
+            "key": "Druid_2_Squall",
+            "category": "Druid",
+            "circle": "2",
+            "name": "Squall",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 213,
+        "fields": {
+            "key": "Druid_2_SwimTreedance",
+            "category": "Druid",
+            "circle": "2",
+            "name": "SwimTreedance",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 214,
+        "fields": {
+            "key": "Druid_3_Cinder_Shower",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Cinder Shower",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 215,
+        "fields": {
+            "key": "Druid_3_Dancing_Shadows",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Dancing Shadows",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 216,
+        "fields": {
+            "key": "Druid_3_Elemental_Hide",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Elemental Hide",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 217,
+        "fields": {
+            "key": "Druid_3_Foliage",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Foliage",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 218,
+        "fields": {
+            "key": "Druid_3_Gift_of_the_Solstice",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Gift of the Solstice",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 219,
+        "fields": {
+            "key": "Druid_3_Microburst",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Microburst",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 220,
+        "fields": {
+            "key": "Druid_3_Remedy",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Remedy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 221,
+        "fields": {
+            "key": "Druid_3_Senses",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Senses",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 222,
+        "fields": {
+            "key": "Druid_3_Snow_Ball",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Snow Ball",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 223,
+        "fields": {
+            "key": "Druid_3_Splinter_Blade",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Splinter Blade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 224,
+        "fields": {
+            "key": "Druid_3_Wings_of_Service",
+            "category": "Druid",
+            "circle": "3",
+            "name": "Wings of Service",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 225,
+        "fields": {
+            "key": "Druid_4_Air_Shield",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Air Shield",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 226,
+        "fields": {
+            "key": "Druid_4_Call_of_the_Wild",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Call of the Wild",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 227,
+        "fields": {
+            "key": "Druid_4_Caustic_Cloud",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Caustic Cloud",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 228,
+        "fields": {
+            "key": "Druid_4_Dehydrate",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Dehydrate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 229,
+        "fields": {
+            "key": "Druid_4_Magic_Rock",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Magic Rock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 230,
+        "fields": {
+            "key": "Druid_4_Net",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Net",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 231,
+        "fields": {
+            "key": "Druid_4_Sink_Hole",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Sink Hole",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 232,
+        "fields": {
+            "key": "Druid_4_Static_Shock",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Static Shock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 233,
+        "fields": {
+            "key": "Druid_4_Stone_Hold",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Stone Hold",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 234,
+        "fields": {
+            "key": "Druid_4_Victory_Cry_of_the_Bull_Ape",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Victory Cry of the Bull Ape",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 235,
+        "fields": {
+            "key": "Druid_4_Water_Walking",
+            "category": "Druid",
+            "circle": "4",
+            "name": "Water Walking",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 236,
+        "fields": {
+            "key": "Druid_5_Draw",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Draw",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 237,
+        "fields": {
+            "key": "Druid_5_Earth_Work",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Earth Work",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 238,
+        "fields": {
+            "key": "Druid_5_Greased_Lightning",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Greased Lightning",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 239,
+        "fields": {
+            "key": "Druid_5_Locust_Swarm",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Locust Swarm",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 240,
+        "fields": {
+            "key": "Druid_5_Plant_Haven",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Plant Haven",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 241,
+        "fields": {
+            "key": "Druid_5_Revive",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Revive",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 242,
+        "fields": {
+            "key": "Druid_5_Smelt",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Smelt",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 243,
+        "fields": {
+            "key": "Druid_5_Treant",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Treant",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 244,
+        "fields": {
+            "key": "Druid_5_Water_Spout",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Water Spout",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 245,
+        "fields": {
+            "key": "Druid_5_Wind_Jump",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Wind Jump",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 246,
+        "fields": {
+            "key": "Druid_5_Wood_Statue",
+            "category": "Druid",
+            "circle": "5",
+            "name": "Wood Statue",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 247,
+        "fields": {
+            "key": "Druid_6_Decay",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Decay",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 248,
+        "fields": {
+            "key": "Druid_6_Dry_Lightning",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Dry Lightning",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 249,
+        "fields": {
+            "key": "Druid_6_Elemental_Nature",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Elemental Nature",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 250,
+        "fields": {
+            "key": "Druid_6_Force_of_Nature",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Force of Nature",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 251,
+        "fields": {
+            "key": "Druid_6_Neutral_Zone",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Neutral Zone",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 252,
+        "fields": {
+            "key": "Druid_6_Null_Zone",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Null Zone",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 253,
+        "fields": {
+            "key": "Druid_6_Rainbow_Blast",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Rainbow Blast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 254,
+        "fields": {
+            "key": "Druid_6_Spike_Shower",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Spike Shower",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 255,
+        "fields": {
+            "key": "Druid_6_Stampede",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Stampede",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 256,
+        "fields": {
+            "key": "Druid_6_Summon_Fey",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Summon Fey",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 257,
+        "fields": {
+            "key": "Druid_6_Toxic_Shock",
+            "category": "Druid",
+            "circle": "6",
+            "name": "Toxic Shock",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 258,
+        "fields": {
+            "key": "Magician_1_Body_Armor",
+            "category": "Magician",
+            "circle": "1",
+            "name": "Body Armor",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 259,
+        "fields": {
+            "key": "Magician_1_Cantrip",
+            "category": "Magician",
+            "circle": "1",
+            "name": "Cantrip",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 260,
+        "fields": {
+            "key": "Magician_1_Detect_Magic",
+            "category": "Magician",
+            "circle": "1",
+            "name": "Detect Magic",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 261,
+        "fields": {
+            "key": "Magician_1_Illumination",
+            "category": "Magician",
+            "circle": "1",
+            "name": "Illumination",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 262,
+        "fields": {
+            "key": "Magician_1_Power_Grasp",
+            "category": "Magician",
+            "circle": "1",
+            "name": "Power Grasp",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 263,
+        "fields": {
+            "key": "Magician_2_Bend",
+            "category": "Magician",
+            "circle": "2",
+            "name": "Bend",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 264,
+        "fields": {
+            "key": "Magician_2_Levitation",
+            "category": "Magician",
+            "circle": "2",
+            "name": "Levitation",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 265,
+        "fields": {
+            "key": "Magician_2_Object_Manipulation",
+            "category": "Magician",
+            "circle": "2",
+            "name": "Object Manipulation",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 266,
+        "fields": {
+            "key": "Magician_2_Power_Lance",
+            "category": "Magician",
+            "circle": "2",
+            "name": "Power Lance",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 267,
+        "fields": {
+            "key": "Magician_2_Vanish",
+            "category": "Magician",
+            "circle": "2",
+            "name": "Vanish",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 268,
+        "fields": {
+            "key": "Magician_3_Conjure_Power_Weapon",
+            "category": "Magician",
+            "circle": "3",
+            "name": "Conjure Power Weapon",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 269,
+        "fields": {
+            "key": "Magician_3_Equilibrium",
+            "category": "Magician",
+            "circle": "3",
+            "name": "Equilibrium",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 270,
+        "fields": {
+            "key": "Magician_3_Fly",
+            "category": "Magician",
+            "circle": "3",
+            "name": "Fly",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 271,
+        "fields": {
+            "key": "Magician_3_Read_Impressions",
+            "category": "Magician",
+            "circle": "3",
+            "name": "Read Impressions",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 272,
+        "fields": {
+            "key": "Magician_3_Size_Alteration",
+            "category": "Magician",
+            "circle": "3",
+            "name": "Size Alteration",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 273,
+        "fields": {
+            "key": "Magician_4_Amphibian_Nature",
+            "category": "Magician",
+            "circle": "4",
+            "name": "Amphibian Nature",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 274,
+        "fields": {
+            "key": "Magician_4_Shove",
+            "category": "Magician",
+            "circle": "4",
+            "name": "Shove",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 275,
+        "fields": {
+            "key": "Magician_4_Telekinesis",
+            "category": "Magician",
+            "circle": "4",
+            "name": "Telekinesis",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 276,
+        "fields": {
+            "key": "Magician_4_Telepathy",
+            "category": "Magician",
+            "circle": "4",
+            "name": "Telepathy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 277,
+        "fields": {
+            "key": "Magician_4_Thought_Shield",
+            "category": "Magician",
+            "circle": "4",
+            "name": "Thought Shield",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 278,
+        "fields": {
+            "key": "Magician_5_Animal_Telepathy",
+            "category": "Magician",
+            "circle": "5",
+            "name": "Animal Telepathy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 279,
+        "fields": {
+            "key": "Magician_5_Detect_Life",
+            "category": "Magician",
+            "circle": "5",
+            "name": "Detect Life",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 280,
+        "fields": {
+            "key": "Magician_5_Dissipate_Energy",
+            "category": "Magician",
+            "circle": "5",
+            "name": "Dissipate Energy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 281,
+        "fields": {
+            "key": "Magician_5_Hypnosis",
+            "category": "Magician",
+            "circle": "5",
+            "name": "Hypnosis",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 282,
+        "fields": {
+            "key": "Magician_5_Obliviate",
+            "category": "Magician",
+            "circle": "5",
+            "name": "Obliviate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 283,
+        "fields": {
+            "key": "Magician_6_Dominate_Mind",
+            "category": "Magician",
+            "circle": "6",
+            "name": "Dominate Mind",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 284,
+        "fields": {
+            "key": "Magician_6_Madness",
+            "category": "Magician",
+            "circle": "6",
+            "name": "Madness",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 285,
+        "fields": {
+            "key": "Magician_6_Resistance",
+            "category": "Magician",
+            "circle": "6",
+            "name": "Resistance",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 286,
+        "fields": {
+            "key": "Magician_6_Stop_Time",
+            "category": "Magician",
+            "circle": "6",
+            "name": "Stop Time",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 287,
+        "fields": {
+            "key": "Magician_6_Transport",
+            "category": "Magician",
+            "circle": "6",
+            "name": "Transport",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 288,
+        "fields": {
+            "key": "Witch_1_Elemental_Strike",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Elemental Strike",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 289,
+        "fields": {
+            "key": "Witch_1_Knowledge",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Knowledge",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 290,
+        "fields": {
+            "key": "Witch_1_Onslaught",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Onslaught",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 291,
+        "fields": {
+            "key": "Witch_1_Shadow_Bones",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Shadow Bones",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 292,
+        "fields": {
+            "key": "Witch_1_Shadow_Mend",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Shadow Mend",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 293,
+        "fields": {
+            "key": "Witch_1_Target",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Target",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 294,
+        "fields": {
+            "key": "Witch_1_Vex",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Vex",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 295,
+        "fields": {
+            "key": "Witch_1_Void_Cloak",
+            "category": "Witch",
+            "circle": "1",
+            "name": "Void Cloak",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 296,
+        "fields": {
+            "key": "Witch_2_Affliction",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Affliction",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 297,
+        "fields": {
+            "key": "Witch_2_Blood_Blade",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Blood Blade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 298,
+        "fields": {
+            "key": "Witch_2_Elemental_Blast",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Elemental Blast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 299,
+        "fields": {
+            "key": "Witch_2_Holes",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Holes",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 300,
+        "fields": {
+            "key": "Witch_2_Shadow_Denizens",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Shadow Denizens",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 301,
+        "fields": {
+            "key": "Witch_2_Shine",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Shine",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 302,
+        "fields": {
+            "key": "Witch_2_Stretch",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Stretch",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 303,
+        "fields": {
+            "key": "Witch_2_Uncover",
+            "category": "Witch",
+            "circle": "2",
+            "name": "Uncover",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 304,
+        "fields": {
+            "key": "Witch_3_Elemental_Blade",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Elemental Blade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 305,
+        "fields": {
+            "key": "Witch_3_Glamour",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Glamour",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 306,
+        "fields": {
+            "key": "Witch_3_Nether_Protection",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Nether Protection",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 307,
+        "fields": {
+            "key": "Witch_3_Pain",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Pain",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 308,
+        "fields": {
+            "key": "Witch_3_Shadow_Fiends",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Shadow Fiends",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 309,
+        "fields": {
+            "key": "Witch_3_Shadow_Spike",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Shadow Spike",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 310,
+        "fields": {
+            "key": "Witch_3_Stench",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Stench",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 311,
+        "fields": {
+            "key": "Witch_3_Vroom",
+            "category": "Witch",
+            "circle": "3",
+            "name": "Vroom",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 312,
+        "fields": {
+            "key": "Witch_4_Cackle",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Cackle",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 313,
+        "fields": {
+            "key": "Witch_4_Convergence",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Convergence",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 314,
+        "fields": {
+            "key": "Witch_4_Fate",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Fate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 315,
+        "fields": {
+            "key": "Witch_4_Shadow_Cage",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Shadow Cage",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 316,
+        "fields": {
+            "key": "Witch_4_Shadow_Creatures",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Shadow Creatures",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 317,
+        "fields": {
+            "key": "Witch_4_Shadow_Mirror",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Shadow Mirror",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 318,
+        "fields": {
+            "key": "Witch_4_Steel_Skin",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Steel Skin",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 319,
+        "fields": {
+            "key": "Witch_4_Wall_of_Bones",
+            "category": "Witch",
+            "circle": "4",
+            "name": "Wall of Bones",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 320,
+        "fields": {
+            "key": "Witch_5_Blaze",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Blaze",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 321,
+        "fields": {
+            "key": "Witch_5_Explode",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Explode",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 322,
+        "fields": {
+            "key": "Witch_5_Flimsy",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Flimsy",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 323,
+        "fields": {
+            "key": "Witch_5_Magic_Skulls",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Magic Skulls",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 324,
+        "fields": {
+            "key": "Witch_5_Shadow_Blade",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Shadow Blade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 325,
+        "fields": {
+            "key": "Witch_5_Shadow_Revenants",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Shadow Revenants",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 326,
+        "fields": {
+            "key": "Witch_5_Spectral_Steeds",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Spectral Steeds",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 327,
+        "fields": {
+            "key": "Witch_5_Wall_of_Shade",
+            "category": "Witch",
+            "circle": "5",
+            "name": "Wall of Shade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 328,
+        "fields": {
+            "key": "Witch_6_Clouds",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Clouds",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 329,
+        "fields": {
+            "key": "Witch_6_Genocide",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Genocide",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 330,
+        "fields": {
+            "key": "Witch_6_Mojo",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Mojo",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 331,
+        "fields": {
+            "key": "Witch_6_Nightmare",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Nightmare",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 332,
+        "fields": {
+            "key": "Witch_6_Possess",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Possess",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 333,
+        "fields": {
+            "key": "Witch_6_Scrying",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Scrying",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 334,
+        "fields": {
+            "key": "Witch_6_Shadow_Things",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Shadow Things",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 335,
+        "fields": {
+            "key": "Witch_6_Simulacrum",
+            "category": "Witch",
+            "circle": "6",
+            "name": "Simulacrum",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 336,
+        "fields": {
+            "key": "Bard_0_Arcane_Blade",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Arcane Blade",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 337,
+        "fields": {
+            "key": "Bard_0_Arcane_Nimbus",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Arcane Nimbus",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 338,
+        "fields": {
+            "key": "Bard_0_Arcane_Pulse",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Arcane Pulse",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 339,
+        "fields": {
+            "key": "Bard_0_Arcane_Radiation",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Arcane Radiation",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 340,
+        "fields": {
+            "key": "Bard_0_Barrier_Nimbus",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Barrier Nimbus",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 341,
+        "fields": {
+            "key": "Bard_0_Beguile",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Beguile",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 342,
+        "fields": {
+            "key": "Bard_0_Blink",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Blink",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 343,
+        "fields": {
+            "key": "Bard_0_Consider",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Consider",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 344,
+        "fields": {
+            "key": "Bard_0_Copious_Capacity",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Copious Capacity",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 345,
+        "fields": {
+            "key": "Bard_0_Elemental_Nimbus",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Elemental Nimbus",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 346,
+        "fields": {
+            "key": "Bard_0_Extension",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Extension",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 347,
+        "fields": {
+            "key": "Bard_0_Glimmer",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Glimmer",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 348,
+        "fields": {
+            "key": "Bard_0_Incite",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Incite",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 349,
+        "fields": {
+            "key": "Bard_0_Light_Manipulation",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Light Manipulation",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 350,
+        "fields": {
+            "key": "Bard_0_Mitigate",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Mitigate",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 351,
+        "fields": {
+            "key": "Bard_0_Song_of_Grandeur",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Song of Grandeur",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 352,
+        "fields": {
+            "key": "Bard_0_Song_of_Reduction",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Song of Reduction",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 353,
+        "fields": {
+            "key": "Bard_0_Sonic_Blast",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Sonic Blast",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 354,
+        "fields": {
+            "key": "Bard_0_Sorrow",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Sorrow",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 355,
+        "fields": {
+            "key": "Bard_0_Soothe",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Soothe",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 356,
+        "fields": {
+            "key": "Bard_0_Vermin_Jig",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Vermin Jig",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "aif_playerstome.spellslist",
+        "pk": 357,
+        "fields": {
+            "key": "Bard_0_Visualization",
+            "category": "Bard",
+            "circle": "0",
+            "name": "Visualization",
+            "area": "",
+            "duration": "",
+            "range": "",
+            "saves": "",
+            "upkeep": "",
+            "description": ""
+        }
+    }
+]

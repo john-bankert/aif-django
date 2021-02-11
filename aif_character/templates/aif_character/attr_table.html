@@ -3,7 +3,7 @@
         <td id="width_32">Gender</td>
         <td id="width_03">&nbsp;</td>
         <td id="width_65" class="bottom">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.gender}}
             {% else %}
                 <input type="text" name="gender" value="{{character.gender}}">
@@ -14,7 +14,7 @@
         <td>Age</td>
         <td>&nbsp;</td>
         <td class="bottom">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.age}}
             {% else %}
                 <input type="text" name="age" value="{{character.age}}">
@@ -25,7 +25,7 @@
         <td>Height</td>
         <td>&nbsp;</td>
         <td class="bottom">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.height}}
             {% else %}
                 <input type="text" name="height" value="{{character.height}}">
@@ -36,7 +36,7 @@
         <td>Weight</td>
         <td>&nbsp;</td>
         <td class="bottom">
-            {% if flag == "sheet" %}
+            {% if flag == "character" %}
                 {{character.weight}}
             {% else %}
                 <input type="text" name="weight" value="{{character.weight}}">

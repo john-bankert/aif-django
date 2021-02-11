@@ -39,21 +39,21 @@
 				{{armor.description}}
 			{% endif %}
 			</td>
-			{% if flag == "sheet" or group or toughness or protection %}
+			{% if flag == "character" or group or toughness or protection %}
 				<td class="all_c">{{armor.type}}</td>
 			{% else %}
 				<td class="all_c">
 					<input type="text" name="{{armor.name}}_type" value="{{armor.type}}">
 				</td>
 			{% endif %}
-			{% if flag == "sheet" or group or toughness %}
+			{% if flag == "character" or group or toughness %}
 				<td class="all_c">{{armor.durability}}</td>
 			{% else %}
 				<td class="all_c">
 					<input type="text" name="{{armor.name}}_durability" value="{{armor.durability}}">
 				</td>
 			{% endif %}
-			{% if flag == "sheet" or group or protection %}
+			{% if flag == "character" or group or protection %}
 				<td class="all_c">{{armor.slashing}}</td>
 				<td class="all_c">{{armor.piercing}}</td>
 				<td class="all_c">{{armor.bludgeoning}}</td>
@@ -72,14 +72,14 @@
 					<input type="text" name="{{armor.name}}_cleaving" value="{{armor.cleaving}}">
 				</td>
 			{% endif %}
-			{% if flag == "sheet" or group or toughness or protection %}
+			{% if flag == "character" or group or toughness or protection %}
 				<td class="all_c">{{armor.load}}</td>
 			{% else %}
 				<td class="all_c">
 					<input type="text" name="{{armor.name}}_load" value="{{armor.load}}">
 				</td>
 			{% endif %}
-			{% if flag == "sheet" or toughness or protection %}
+			{% if flag == "character" or toughness or protection %}
 				<td class="all_c">{{armor.rank}}</td>
 			{% else %}
 				<td class="all_c">

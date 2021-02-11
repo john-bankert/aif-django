@@ -13,7 +13,7 @@
 								<td id="width_32">Name</td>
 								<td id="width_03">&nbsp;</td>
 								<td id="width_65" class="bottom">
-									{% if flag == "sheet" %}
+									{% if flag == "character" %}
 										{{character.name}}
 									{% else %}
 										<input type="text" name="name" value="{{character.name}}">
@@ -24,7 +24,7 @@
 								<td id="width_32">Race</td>
 								<td id="width_03">&nbsp;</td>
 								<td id="width_65" class="bottom">
-									{% if flag == "sheet" %}
+									{% if flag == "character" %}
 										{{character.race}}
 									{% else %}
 										<input type="text" name="race" value="{{character.race}}">

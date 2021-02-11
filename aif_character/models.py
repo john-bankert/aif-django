@@ -9,25 +9,12 @@ from django.core import serializers
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from aif import constants as aif
+from aif import data_serializer
 from aif_campaign import functions as fn
 from aif_playerstome import races, classes, spells
-from aif_playerstome.models import Spells as SpellsList
-from aif_playerstome.models import Weapons as WeaponsCatalog
-from aif_playerstome.models import Equipment as EquipmentCatalog
+from aif_playerstome.models import EquipmentCatalog, SpellsList, WeaponsCatalog
 
 application_label = 'aif_character'
-
-
-def serialize_object(_file, path, data_object):
-    try:
-        filename = os.path.dirname(os.path.realpath(_file)) + path
-        print(filename)
-        json_serializer = serializers.get_serializer("json")()
-        json_serializer.serialize(data_object.objects.all())
-        with open(filename, "w") as out:
-            out.write(json.dumps(json.loads(json_serializer.getvalue()), indent=4))
-    except FileNotFoundError:
-        print("file not found")
 
 
 class Character(models.Model):
@@ -675,24 +662,19 @@ class Character(models.Model):
 
         # this should eventually go away. For now, dump the armor skill rank from Skills into 
         # the armor.rank field.
-        '''
         for armor in self.armor_set.all():
             if armor.skill_pk == 0:
-                print('no pk, trying filter')
                 if self.skills_set.filter(skill_type=aif.ARMOR, name=armor.name).count() > 0:
-                    print('found skill by name, type for', armor.name)
                     ws = self.skills_set.get(skill_type=aif.ARMOR, name=armor.name)
                     armor.skill_pk = ws.pk
                     armor.rank = ws.rank
                     armor.save()
             else:
                 if self.skills_set.filter(pk=armor.skill_pk).count() > 0:
-                    print('found skill by pk', armor.name)
                     ws = self.skills_set.get(pk=armor.skill_pk)
                     armor.rank = ws.rank
                     armor.save()
-        '''
-        
+
         for armor in self.armor_set.all():
             armor.order = ""
             ordered = False
@@ -897,8 +879,12 @@ class Character(models.Model):
         self.save()
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/character", Character)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/character.json", Character)
+        data_serializer.serialize_object(__file__, "/data/character", Character)
 
     @staticmethod
     def load_to_num(load):
@@ -986,8 +972,12 @@ class Armor(models.Model):
         app_label = application_label
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/armor", Armor)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/armor.json", Armor)
+        data_serializer.serialize_object(__file__, "/data/armor", Armor)
 
 
 class Buffs(models.Model):
@@ -1005,8 +995,12 @@ class Buffs(models.Model):
         app_label = application_label
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/buffs", Buffs)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/buffs.json", Buffs)
+        data_serializer.serialize_object(__file__, "/data/buffs", Buffs)
 
 
 class Container(models.Model):
@@ -1021,8 +1015,12 @@ class Container(models.Model):
         app_label = application_label
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/container", Container)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/container.json", Container)
+        data_serializer.serialize_object(__file__, "/data/container", Container)
 
 
 class Equipment(models.Model):
@@ -1041,8 +1039,12 @@ class Equipment(models.Model):
         ordering = ['description']
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/equipment", Equipment)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/equipment.json", Equipment)
+        data_serializer.serialize_object(__file__, "/data/equipment", Equipment)
 
 
 class Skills(models.Model):
@@ -1063,8 +1065,12 @@ class Skills(models.Model):
         ordering = ['skill_type', 'sort_order', 'name']
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/skills", Skills)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/skills.json", Skills)
+        data_serializer.serialize_object(__file__, "/data/skills", Skills)
 
 
 class Spells(models.Model):
@@ -1084,8 +1090,12 @@ class Spells(models.Model):
         ordering = ['name']
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/spells", Spells)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/spells.json", Spells)
+        data_serializer.serialize_object(__file__, "/data/spells", Spells)
 
 
 class Tips(models.Model):
@@ -1096,8 +1106,12 @@ class Tips(models.Model):
         app_label = application_label
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/tips", Tips)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/tips.json", Tips)
+        data_serializer.serialize_object(__file__, "/data/tips", Tips)
 
 
 class Weapons(models.Model):
@@ -1131,8 +1145,12 @@ class Weapons(models.Model):
         app_label = application_label
 
     @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/weapons", Weapons)
+
+    @staticmethod
     def serialize():
-        serialize_object(__file__, "/data/weapons.json", Weapons)
+        data_serializer.serialize_object(__file__, "/data/weapons", Weapons)
 
 
 class CharacterForm(ModelForm):
