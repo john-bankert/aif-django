@@ -87,15 +87,6 @@ class CharacterView(TemplateView):
             Themes.add_to_user(request)
             return HttpResponseRedirect('.')
 
-    '''
-    def get(self, request, *args, **kwargs):
-        print('CharacterView get')
-        for key in request.GET:
-            print(key, request.GET[key])
-        self.request = request
-        return HttpResponseRedirect('.')
-    '''
-
     def get_context_data(self, **kwargs):
         print('CharacterView context')
         context = super().get_context_data(**kwargs)
@@ -108,52 +99,7 @@ class CharacterView(TemplateView):
         if Character.objects.filter(name=global_character_name):
             context['character'] = get_object_or_404(Character, name=global_character_name)
         context['current_theme'] = global_theme_name
-        context['sheet_id'] = 'Sheet_1'
-        context['themes'] = Themes.objects.all()
-        if self.request.user.is_authenticated:
-            context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
-        return context
-
-
-class CharacterViewEx(TemplateView):
-
-    template_name = "aif_ui/index.html"
-
-    def __init__(self):
-        self.request = None
-
-    def dispatch(self, request, *args, **kwargs):
-        print('CharacterViewEx dispatch')
-        self.request = request
-        return super().dispatch(request, *args, **kwargs)
-
-    def post(self, request, *args, **kwargs):
-        print('CharacterViewEx post')
-        if 'character_name' in request.POST:
-            global global_character_name
-            global_character_name = request.POST['character_name']
-            global global_sheet_id
-            global_sheet_id = request.POST['sheet_id']
-            # for key in request.POST:
-            #    print('request.POST[' + key + '] = ', request.POST[key])
-            # return HttpResponseRedirect('.')
-            context = {'flag': 'character', 'sheet_id': global_sheet_id, 'current_theme': global_theme_name,
-                       'themes': Themes.objects.all()}
-            if Character.objects.filter(name=global_character_name):
-                context['character'] = get_object_or_404(Character, name=global_character_name)
-            if self.request.user.is_authenticated:
-                context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
-            # return render_to_response(template_name, context)
-            return render(request, "aif_ui/index.html", context)
-
-    def get_context_data(self, **kwargs):
-        print('CharacterViewEx context')
-        context = super().get_context_data(**kwargs)
-        context['flag'] = 'character'
-        context['sheet_id'] = global_sheet_id
-        if Character.objects.filter(name=global_character_name):
-            context['character'] = get_object_or_404(Character, name=global_character_name)
-        context['current_theme'] = global_theme_name
+        # context['sheet_id'] = 'Sheet_3'
         context['themes'] = Themes.objects.all()
         if self.request.user.is_authenticated:
             context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
@@ -165,6 +111,36 @@ def logouts(request):
     return HttpResponseRedirect('/')
 
 
+# example views function for using ajax
+def load_character_sheet(request):
+    if request.method == 'POST':
+        context = { 'flag': 'character' }
+        context['sheet_id'] = request.POST['sheet_id']
+        context['current_theme'] = request.POST['current_theme']
+        context['themes'] = Themes.objects.all()
+        if Character.objects.filter(name=request.POST['character_name']):
+            context['character'] = get_object_or_404(Character, name=request.POST['character_name'])
+        if request.user.is_authenticated:
+            context['fc'] = Character.objects.filter(player=request.user.username, open=True)
+        request.user.session.current_tab = request.POST['sheet_id']
+        request.user.session.save()
+        sheet_name = 'aif_character/sheet_1.html'
+        if request.POST['sheet_id'] == 'Sheet_2':
+            sheet_name = 'aif_character/sheet_2.html'
+        elif request.POST['sheet_id'] == 'Sheet_3':
+            sheet_name = 'aif_character/sheet_3.html'
+        elif request.POST['sheet_id'] == 'Sheet_4':
+            sheet_name = 'aif_character/sheet_4.html'
+        elif request.POST['sheet_id'] == 'Spells':
+            sheet_name = 'aif_character/spells.html'
+        elif request.POST['sheet_id'] == 'Notes':
+            sheet_name = 'aif_character/notes.html'
+        elif request.POST['sheet_id'] == 'Combat':
+            sheet_name = 'aif_character/combat.html'
+        return render(request, sheet_name, context)
+    
+    
+    
 '''
 
 def character(request, char_name):
