@@ -43,22 +43,18 @@ function showCharacter() {
 	window.location.href=y;
 }
 
-function openTab(evt, tab_name) {
-	var i, tabcontent, tablinks;
-
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
+function loadCharacterSheet(evt, name, sheet, theme) {
+	var i, tab_links;
+	tab_links = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tab_links.length; i++) {
+		tab_links[i].className = tab_links[i].className.replace(" active", "");
 	}
-
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-
-	document.getElementById(tab_name).style.display = "block";
 	evt.currentTarget.className += " active";
-}
 
-/* window.onclick = function(event) {
-} */
+	$.ajax({
+		type: "POST",
+		url: '{{ '/load-character-sheet/' }}',
+		data: { csrfmiddlewaretoken: '{{ csrf_token }}', character_name: name, sheet_id: sheet, current_theme: theme },
+		success: function (data) { $('.tabcontent').html(data); }
+	});
+}
