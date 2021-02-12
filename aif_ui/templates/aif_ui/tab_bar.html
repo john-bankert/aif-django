@@ -1,0 +1,76 @@
+<!--
+function openSheet(evt, name, sheet) {
+	alert(name);
+	//evt.currentTarget.className
+}
+
+	/*var i, tabcontent, tablinks;*/
+
+	/*tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}*/
+
+	/*tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}*/
+
+	/*document.getElementById(tab_name).style.display = "block";
+	evt.currentTarget.className += " active";*/
+	$.ajax({
+		type: "POST",
+		url: '{{ '/characterex/' }}',
+		data: { csrfmiddlewaretoken: '{{ csrf_token }}', character_name: name, sheet_id: sheet },
+		success: function callback(response) { /* do nothing */ }
+	});
+	location.reload();
+	openSheet(event, {{character.name}}, 'sheet_2')
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	function openSheet(evt, name, sheet) {
+		var i, tab_links;
+		tab_links = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tab_links.length; i++) {
+			tab_links[i].className = tab_links[i].className.replace(" active", "");
+		}
+		evt.currentTarget.className += " active";
+
+		$.ajax({
+			type: "POST",
+			url: '{{ '/character-ex/' }}',
+			data: { csrfmiddlewaretoken: '{{ csrf_token }}', character_name: name, sheet_id: sheet },
+			success: function callback(response) { /* do nothing */ }
+		});
+	}
+</script>
+<div class="tab">
+	<a class="tablinks active" onclick="openSheet(event, '{{character.name}}', 'Sheet_1')">Sheet 1</a>
+	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_2')">Sheet 2</a>
+	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_3')">Sheet 3</a>
+	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_4')">Sheet 4</a>
+	{% if character.is_spellcaster %}
+		<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Spells')">Spells</a>
+	{% endif %}
+	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Notes')">Notes</a>
+	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Combat')">Combat</a>
+</div>
+
+<div class="tabcontent">
+	{% if sheet_id == 'Sheet_1' %}
+		{% include "aif_character/sheet_1.html" %}
+	{% elif sheet_id == 'Sheet_2' %}
+		{% include "aif_character/sheet_2.html" %}
+	{% elif sheet_id == 'Sheet_3' %}
+		{% include "aif_character/sheet_3.html" %}
+	{% elif sheet_id == 'Sheet_4' %}
+		{% include "aif_character/sheet_4.html" %}
+	{% elif sheet_id == 'Spells' %}
+		{% include "aif_character/spells.html" %}
+	{% elif sheet_id == 'Notes' %}
+		{% include "aif_character/notes.html" %}
+	{% elif sheet_id == 'Combat' %}
+		{% include "aif_character/combat.html" %}
+	{% endif %}
+</div>

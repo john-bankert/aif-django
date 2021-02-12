@@ -34,8 +34,9 @@ https://stackoverflow.com/questions/51106830/how-to-call-python-functions-from-j
  class based views/forms
  Sorting index to allow for custom sorting of anything list based?
  Sorting of query sets where appropriate
- finish implementation of themes.
+ finish implementation preferences - edit name, etc. Custom themes - maybe.
  duplicate container names allowed?
+ menu options need to be implemented
  Formulas of some sort for buffs, etc.
  crossbows - quarrels/bolts will be normalized into one item, and damage will be determined by the crossbow size
  multiclass of bard/priest or similar correctly showing spell/rhythm/etc

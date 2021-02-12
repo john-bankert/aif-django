@@ -145,7 +145,7 @@ input {
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tab button, .tab a {
     color: inherit;
     background-color: inherit;
     float: left;
@@ -157,21 +157,25 @@ input {
     font-size: 17px;
 }
 
+.tab a {
+    text-decoration: none;
+}
+
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button:hover, .tab a:hover {
     color: var(--tabbar-hover-fg-color);
     background-color: var(--tabbar-hover-bg-color);
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab button.active, .tab a.active {
     color: var(--tabbar-active-fg-color);
     background-color: var(--tabbar-active-bg-color);
 }
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: block;
   padding: 6px 12px;
 }
 
