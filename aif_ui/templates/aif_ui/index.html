@@ -10,8 +10,11 @@
 	<body>
 		{% include "aif_ui/nav_bar.html" %}
 		<div id='main'>
-			{% if flag == 'character' %}
+			{% if flag != 'index' %}
 				{% include "aif_ui/tab_bar.html" %}
+				<div class="tabcontent">
+					{% include sheet_url %}
+				</div>
 			{% else %}
 				<img class="center" src="{% static 'aif_ui/aif-splash.png' %}">
 			{% endif %}

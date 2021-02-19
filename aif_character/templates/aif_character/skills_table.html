@@ -10,7 +10,7 @@
 		{% if flag == "character" %}
 			{{skill.display}}
 		{% else %}
-			<input type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
+			<input class="formatted" type="text" name="{{skill.name}}_rank" value="{{skill.rank}}">
 		{% endif %}
 	</td>
 	<td class="all_c">{{skill.order}}</td>

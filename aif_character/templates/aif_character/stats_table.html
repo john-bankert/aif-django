@@ -13,7 +13,7 @@
             {% if flag == "character" %}
                 {{character.str_base}}
             {% else %}
-                <input type="text" name="str_base" value="{{character.str_base}}">
+                <input class="formatted" type="text" name="str_base" value="{{character.str_base}}">
             {% endif %}
         </td>
         <td class="all_c">{{character.str_modifiers}}</td>
@@ -24,7 +24,7 @@
             {% if flag == "character" %}
                 {{character.dex_base}}
             {% else %}
-                <input type="text" name="dex_base" value="{{character.dex_base}}">
+                <input class="formatted" type="text" name="dex_base" value="{{character.dex_base}}">
             {% endif %}
         </td>
         <td class="all_c">{{character.dex_modifiers}}</td>
@@ -35,7 +35,7 @@
             {% if flag == "character" %}
                 {{character.int_base}}
             {% else %}
-                <input type="text" name="int_base" value="{{character.int_base}}">
+                <input class="formatted" type="text" name="int_base" value="{{character.int_base}}">
             {% endif %}
         </td>
         <td class="all_c">{{character.int_modifiers}}</td>
@@ -46,7 +46,7 @@
             {% if flag == "character" %}
                 {{character.health_base}}
             {% else %}
-                <input type="text" name="health_base" value="{{character.health_base}}">
+                <input class="formatted" type="text" name="health_base" value="{{character.health_base}}">
             {% endif %}
         </td>
         <td class="all_c">{{character.health_modifiers}}</td>

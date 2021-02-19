@@ -42,11 +42,7 @@ class IndexView(TemplateView):
                 self.request = request
                 return HttpResponseRedirect('/')
         elif 'char_to_open' in request.POST:
-            print('INDEX open character POST')
-            for key in request.POST:
-                print(key, request.POST[key])
-            cvex = CharacterViewEx()
-            return cvex.post(request)  # HttpResponseRedirect('character')
+            return HttpResponseRedirect('/character/' + request.POST['char_to_open'])
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -80,10 +76,16 @@ class CharacterView(TemplateView):
             global_theme_name = request.POST['theme_selected']
             Themes.add_to_user(request)
             return HttpResponseRedirect('.')
+        elif 'char_to_open' in request.POST:
+            return HttpResponseRedirect('/character/' + request.POST['char_to_open'])
+        else:
+            return HttpResponseRedirect(".")
 
     def get_context_data(self, **kwargs):
-        print('CharacterView context')
         context = super().get_context_data(**kwargs)
+        print(context)
+        if 'flag' in context.keys():
+            print('CharacterView entering context flag =', context['flag'])
         for key in context.keys():
             print(key, context[key])
         global global_character_name
@@ -93,10 +95,12 @@ class CharacterView(TemplateView):
         if Character.objects.filter(name=global_character_name):
             context['character'] = get_object_or_404(Character, name=global_character_name)
         context['current_theme'] = global_theme_name
-        # context['sheet_id'] = 'Sheet_3'
+        context['sheet_id'] = 'Sheet_1'
+        context['sheet_url'] = 'aif_character/Sheet_1.html'
         context['themes'] = Themes.objects.all()
         if self.request.user.is_authenticated:
             context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
+        print('CharacterView leaving context flag =', context['flag'])
         return context
 
 
@@ -108,33 +112,40 @@ def logouts(request):
 # example views function for using ajax
 def load_character_sheet(request):
     if request.method == 'POST':
-        context = { 'flag': 'character' }
-        context['sheet_id'] = request.POST['sheet_id']
-        context['current_theme'] = request.POST['current_theme']
-        context['themes'] = Themes.objects.all()
+        print('load character sheet')
+        for key in request.POST:
+            print(key, request.POST[key])
+        context = {'flag': 'character', 'sheet_id': request.POST['sheet_id'],
+                   'current_theme': request.POST['current_theme'], 'themes': Themes.objects.all()}
         if Character.objects.filter(name=request.POST['character_name']):
             context['character'] = get_object_or_404(Character, name=request.POST['character_name'])
         if request.user.is_authenticated:
             context['fc'] = Character.objects.filter(player=request.user.username, open=True)
+        context['sheet_url'] = 'aif_character/' + request.POST['sheet_id'] + '.html'
         request.user.session.current_tab = request.POST['sheet_id']
         request.user.session.save()
-        sheet_name = 'aif_character/sheet_1.html'
-        if request.POST['sheet_id'] == 'Sheet_2':
-            sheet_name = 'aif_character/sheet_2.html'
-        elif request.POST['sheet_id'] == 'Sheet_3':
-            sheet_name = 'aif_character/sheet_3.html'
-        elif request.POST['sheet_id'] == 'Sheet_4':
-            sheet_name = 'aif_character/sheet_4.html'
-        elif request.POST['sheet_id'] == 'Spells':
-            sheet_name = 'aif_character/spells.html'
-        elif request.POST['sheet_id'] == 'Notes':
-            sheet_name = 'aif_character/notes.html'
-        elif request.POST['sheet_id'] == 'Combat':
-            sheet_name = 'aif_character/combat.html'
-        return render(request, sheet_name, context)
+        print(context)
+        return render(request, context['sheet_url'], context)
     
     
-    
+# example views function for using ajax
+def edit_character_sheet(request):
+    if request.method == 'POST':
+        print('edit character sheet')
+        for key in request.POST:
+            print(key, request.POST[key])
+        context = {'flag': request.POST['flag'], 'sheet_id': request.POST['sheet_id'],
+                   'current_theme': request.POST['current_theme'], 'themes': Themes.objects.all()}
+        if Character.objects.filter(name=request.POST['character_name']):
+            context['character'] = get_object_or_404(Character, name=request.POST['character_name'])
+        if request.user.is_authenticated:
+            context['fc'] = Character.objects.filter(player=request.user.username, open=True)
+        context['sheet_url'] = 'aif_character/' + request.POST['sheet_id'] + '.html'
+        request.user.session.current_tab = request.POST['sheet_id']
+        request.user.session.save()
+        return render(request, 'aif_ui/body_blow.html', context)
+
+
 '''
 
 def character(request, char_name):
@@ -226,24 +237,6 @@ def index(request):
     }
     </script>  
 
-    import os
-    import uuid
-    from django import template                                                                                                              
-    from django.conf import settings                                                                                                         
-
-    register = template.Library()                                                                                                            
-
-    @register.simple_tag(name='cache_bust')                                                                                                  
-    def cache_bust():                                                                                                                        
-
-        if settings.DEBUG:                                                                                                                   
-            version = uuid.uuid1()                                                                                                           
-        else:                                                                                                                                
-            version = os.environ.get('PROJECT_VERSION')                                                                                       
-            if version is None:                                                                                                              
-                version = '1'                                                                                                                
-
-        return '__v__={version}'.format(version=version)
 
     {% load cache_bust %}
 

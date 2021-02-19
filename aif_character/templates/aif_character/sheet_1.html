@@ -1,7 +1,7 @@
 <div>
 	<div class="sheet">
 		<!-- form action="{ % url 'save' character.name % }" method="post"-->
-		<form method="post">
+		<form method="post" id="character_form" name="character_form">
 			{% csrf_token %}
 			<table id="width_100">
 				<!-- row One -->
@@ -16,7 +16,7 @@
 									{% if flag == "character" %}
 										{{character.name}}
 									{% else %}
-										<input type="text" name="name" value="{{character.name}}">
+										<input class="formatted" type="text" name="name" value="{{character.name}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -27,7 +27,7 @@
 									{% if flag == "character" %}
 										{{character.race}}
 									{% else %}
-										<input type="text" name="race" value="{{character.race}}">
+										<input class="formatted" type="text" name="race" value="{{character.race}}">
 									{% endif %}
 								</td>
 							</tr>
@@ -182,7 +182,6 @@
 					</td>
 				</tr>
 			</table>
-			{% if flag == "edit" %}<input type="submit" value="Save">{% endif %}
 		</form>
 	</div>
 </div>

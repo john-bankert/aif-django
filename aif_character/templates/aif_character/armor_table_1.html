@@ -43,14 +43,14 @@
 				<td class="all_c">{{armor.type}}</td>
 			{% else %}
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_type" value="{{armor.type}}">
+					<input class="formatted" type="text" name="{{armor.name}}_type" value="{{armor.type}}">
 				</td>
 			{% endif %}
 			{% if flag == "character" or group or toughness %}
 				<td class="all_c">{{armor.durability}}</td>
 			{% else %}
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_durability" value="{{armor.durability}}">
+					<input class="formatted" type="text" name="{{armor.name}}_durability" value="{{armor.durability}}">
 				</td>
 			{% endif %}
 			{% if flag == "character" or group or protection %}
@@ -60,30 +60,30 @@
 				<td class="all_c">{{armor.cleaving}}</td>
 			{% else %}
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_slashing" value="{{armor.slashing}}">
+					<input class="formatted" type="text" name="{{armor.name}}_slashing" value="{{armor.slashing}}">
 				</td>
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_piercing" value="{{armor.piercing}}">
+					<input class="formatted" type="text" name="{{armor.name}}_piercing" value="{{armor.piercing}}">
 				</td>
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_bludgeoning" value="{{armor.bludgeoning}}">
+					<input class="formatted" type="text" name="{{armor.name}}_bludgeoning" value="{{armor.bludgeoning}}">
 				</td>
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_cleaving" value="{{armor.cleaving}}">
+					<input class="formatted" type="text" name="{{armor.name}}_cleaving" value="{{armor.cleaving}}">
 				</td>
 			{% endif %}
 			{% if flag == "character" or group or toughness or protection %}
 				<td class="all_c">{{armor.load}}</td>
 			{% else %}
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_load" value="{{armor.load}}">
+					<input class="formatted" type="text" name="{{armor.name}}_load" value="{{armor.load}}">
 				</td>
 			{% endif %}
 			{% if flag == "character" or toughness or protection %}
 				<td class="all_c">{{armor.rank}}</td>
 			{% else %}
 				<td class="all_c">
-					<input type="text" name="{{armor.name}}_rank" value="{{armor.rank}}">
+					<input class="formatted" type="text" name="{{armor.name}}_rank" value="{{armor.rank}}">
 				</td>
 			{% endif %}
 			<td class="all_c">{{armor.order}}</td>

@@ -1,33 +1,12 @@
-<script>
-	function openSheet(evt, name, sheet, theme) {
-		var i, tab_links;
-		tab_links = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tab_links.length; i++) {
-			tab_links[i].className = tab_links[i].className.replace(" active", "");
-		}
-		evt.currentTarget.className += " active";
-
-		$.ajax({
-			type: "POST",
-			url: '{{ '/load-character-sheet/' }}',
-			data: { csrfmiddlewaretoken: '{{ csrf_token }}', character_name: name, sheet_id: sheet, current_theme: theme },
-            success: function (data) { $('.tabcontent').html(data); }
-        });
-	}
-</script>
 <div class="tab">
-	<a class="tablinks active" onclick="openSheet(event, '{{character.name}}', 'Sheet_1', '{{current_theme}}')">Sheet 1</a>
-	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_2', '{{current_theme}}')">Sheet 2</a>
-	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_3', '{{current_theme}}')">Sheet 3</a>
-	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Sheet_4', '{{current_theme}}')">Sheet 4</a>
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{character.name}}', 'Sheet_1', '{{current_theme}}', '{{csrf_token}}')">Sheet 1</a>
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Sheet_2', '{{current_theme}}', '{{csrf_token}}')">Sheet 2</a>
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Sheet_3', '{{current_theme}}', '{{csrf_token}}')">Sheet 3</a>
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Sheet_4', '{{current_theme}}', '{{csrf_token}}')">Sheet 4</a>
 	{% if character.is_spellcaster %}
-		<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Spells', '{{current_theme}}')">Spells</a>
+		<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Spells', '{{current_theme}}', '{{csrf_token}}')">Spells</a>
 	{% endif %}
-	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Notes', '{{current_theme}}')">Notes</a>
-	<a class="tablinks" onclick="openSheet(event, '{{character.name}}', 'Combat', '{{current_theme}}')">Combat</a>
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Notes', '{{current_theme}}', '{{csrf_token}}')">Notes</a>
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{character.name}}', 'Combat', '{{current_theme}}', '{{csrf_token}}')">Combat</a>
 
-</div>
-
-<div class="tabcontent">
-	{% include "aif_character/sheet_1.html" %}
 </div>

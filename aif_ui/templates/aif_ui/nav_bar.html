@@ -5,9 +5,11 @@
 	<div class="inline margins valign_t" style="width:214px;"> <!-- character selection drop down -->
 		{% include "aif_ui/character_select.html" %}
 	</div>
-	<div class="inline margins valign_t" style="width:114px;"> <!-- navbar buttons -->
+	<div class="inline margins valign_t" style="width:114px;"> <!-- navbar onclick="doesNothing('Edit')" buttons -->
 		{% if flag != 'index' %}
-			<button style="width:100px;" class="navbar_button" onclick="doesNothing('Edit')">Edit</button>
+			<button style="width:100px;" class="navbar_button" onclick="updateCharacterSheet(event, '{{character.name}}', '{{sheet_id}}', '{{current_theme}}', '{{csrf_token}}', 'edit')">Edit</button>
+		<!-- { % elif flag == 'edit' %} -->
+			<button style="width:100px; display: none;" class="navbar_button" type="submit" form="character_form" value="Submit">Save</button>
 		{% endif %}
 	</div>
 	<div class="inline hdr_2 valign_t" style="margin-left: 14px; margin-top: 5px;"> <!-- character name, race, class -->

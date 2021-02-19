@@ -1,6 +1,6 @@
 <div>
 	<div class="sheet">
-		<!--form action="{ % url 'save' character.name % }" method="post"-->
+		<form method="post" id="character_form" name="character_form">
 			{% csrf_token %}
 			{% if character.is_spellcaster and not 'Bard' in character.char_class and not 'Illusionist' in character.char_class %}
 			<table id="width_100">
@@ -29,7 +29,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -62,7 +62,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -95,7 +95,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -132,7 +132,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -165,7 +165,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -198,7 +198,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -241,7 +241,7 @@
 											{% if flag == "character" %}
 												{{spell.rank}}
 											{% else %}
-												<input type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
+												<input class="formatted" type="text" name="{{spell.name}}_rank" value="{{spell.rank}}">
 											{% endif %}
 										</td>
 										<td class="all_c">{{spell.order}}</td>
@@ -269,6 +269,6 @@
 			<br/>
 			<br/>
 			{% endif %}
-		<!--/form-->
+		</form>
 	</div>
 </div>
