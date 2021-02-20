@@ -1,3 +1,45 @@
+:root {
+{% if request.user.is_authenticated %}
+    --font-name: {{user.session.font_family}};
+    --font-size: {{user.session.font_size}};
+    --navbar-bg-color: {{user.session.navbar_bg_color}};
+    --navbar-fg-color: {{user.session.navbar_fg_color}};
+    --navbar-button-bg-color: {{user.session.navbar_button_bg_color}};
+    --navbar-button-fg-color: {{user.session.navbar_button_fg_color}};
+    --navbar-button-border-color: {{user.session.navbar_button_border_color}};
+    --dropdown-fg-color: {{user.session.dropdown_fg_color}};
+    --dropdown-bg-color: {{user.session.dropdown_bg_color}};
+    --dropdown-hover-color: {{user.session.dropdown_hover_color}};
+    --menubar-bg-color: {{user.session.menubar_bg_color}};
+    --tabbar-bg-color: {{user.session.tabbar_bg_color}};
+    --tabbar-fg-color: {{user.session.tabbar_fg_color}};
+    --tabbar-border-color: {{user.session.tabbar_border_color}};
+    --tabbar-hover-bg-color: {{user.session.tabbar_hover_bg_color}};
+    --tabbar-hover-fg-color: {{user.session.tabbar_hover_fg_color}};
+    --tabbar-active-bg-color: {{user.session.tabbar_active_bg_color}};
+    --tabbar-active-fg-color: {{user.session.tabbar_active_fg_color}};
+{% else %}
+    --font-name: Arial, Helvetica, sans-serif; /*Times New Roman;*/
+    --font-size: 10pt;
+    --navbar-bg-color: black;
+    --navbar-fg-color: white;
+    --navbar-button-fg-color: black;
+    --navbar-button-border-color: white;
+    --navbar-button-bg-color: #e7e7e7;
+    --dropdown-fg-color: black;
+    --dropdown-bg-color: #f9f9f9;
+    --dropdown-hover-color: #ddd;
+    --menubar-bg-color: white;
+    --tabbar-bg-color: white;
+    --tabbar-fg-color: black;
+    --tabbar-border-color: black;
+    --tabbar-bg-hover-color: grey;
+    --tabbar-fg-hover-color: white;
+    --tabbar-bg-active-color: black;
+    --tabbar-fg-active-color: white;
+{% endif %}
+}
+
 /* want these to affect everything */
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -25,13 +67,46 @@ input.formatted {
     width: 100%
 }
 
-/*
-input {
-    background-color: #00ff00;
-    border: 1.0px;
-    padding: 0;
+.page {
+    page-break-after: always;
+    position: relative;
+    width: 8.5in;
+    height: 11in;
 }
-*/
+
+.page-content {
+    position: absolute;
+    width: 8.0in;
+    height: 10.5in;
+    left: 0.25in;
+    top: 0.25in;
+    bottom: 10.75in;
+    right: 8.25in;
+    background-color: #FFFF00;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#main {
+    margin-top: 50px;
+}
+
+/* .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.halign_center, .halign_c, .ha_c { text-align: center; }
+.halign_right, .halign_r { text-align: right; }
+
+.valign_bottom, .valign_b { vertical-align: bottom; }
+.valign_top, .valign_t { vertical-align: top; }
 
 /* navbar related stuff */
 .navbar {
@@ -57,13 +132,13 @@ input {
 .navbar_button, .navbar_select {
     color: var(--navbar-button-fg-color);
     background-color: var(--navbar-button-bg-color);
-    border: solid; 
+    border: solid;
     border-color: var(--navbar-button-border-color);
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
     height: 30px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /* character menu portion of navbar */
@@ -101,6 +176,7 @@ input {
     background-color: var(--dropdown-hover-color);
 }
 
+/* three bar menu icon */
 .menu_icon {
     border: none;
     outline: none;
@@ -123,21 +199,23 @@ input {
     height: 5px;
 }
 
-.show {
-    display: block;
-}
-
-/* user menu stuff */
-.float_right {
-    float: right;
-    margin-right:14px;
-}
-
+/* text button (logged in as user) */
 .text_button {
     color: inherit;
     background-color: inherit;
     margin-top: 7px;
     font-size: 16px;
+}
+
+/* show/hide elements */
+.show {
+    display: block;
+}
+
+/* floating right justify element */
+.float_right {
+    float: right;
+    margin-right:14px;
 }
 
 /* Style the tab */
@@ -181,97 +259,6 @@ input {
 .tabcontent {
   display: block;
   padding: 6px 12px;
-}
-
-/* classes and ids for character sheet stuff */
-.hdr_1 { text-align: center; vertical-align: center; font-size: 24pt; }
-.hdr_2 { vertical-align: bottom; font-size: 22pt; }
-.hdr_3 { border-bottom: 1.0px solid black; text-align: right; vertical-align: bottom; font-size: 22pt; }
-.hdr_4 { vertical-align: bottom; font-size: 22pt; }
-.hdr_5 { border-bottom: 1.0px solid black; text-align: center; }
-
-.valign_b { vertical-align: bottom; }
-.valign_t { vertical-align: top; }
-
-.sheet {
-    width: 9.5in;
-    height: 11in;
-    margin: 0;
-    padding: 0;
-}
-
-.all { border: 1.0px solid black; }
-.all_c { border: 1.0px solid black; text-align: center; }
-.all_r { border: 1.0px solid black; text-align: right; padding-right: 5px; }
-.all_pl { border: 1.0px solid black; padding-left: 5px; }
-
-.bottom { border-bottom: 1.0px solid black; }
-.bottom_c { border-bottom: 1.0px solid black; text-align: center; }
-
-.font_small { font-size: 75%; }
-
-.halign_c { text-align: center; }
-.halign_r { text-align: right; }
-.halign_rpl { text-align: right; padding-right: 5px; }
-
-.inline { display: inline-block; }
-.header { border: 1.0px solid black; font-size: 105%; background-color: #cccccc;}
-.pl_05 { padding-left: 5px; }
-.ha_c { text-align: center; }
-
-.left_c { border-left: 1.0px solid black; text-align: center; }
-
-#width_02 { width: 2%; }
-#width_03 { width: 3%; }
-#width_05 { width: 5%; }
-#width_07 { width: 7%; }
-#width_10 { width: 10%; }
-#width_12 { width: 12%; }
-#width_15 { width: 15%; }
-#width_18 { width: 18%; }
-#width_1925 { width: 19.25%; }
-#width_235 { width: 23.5%; }
-#width_30 { width: 30%; }
-#width_32 { width: 32%; }
-#width_35 { width: 35%; }
-#width_39 { width: 39%; }
-#width_40 { width: 40%; }
-#width_49 { width: 49%; }
-#width_59 { width: 59%; }
-#width_65 { width: 65%; }
-#width_75 { width: 75%; }
-#width_100 { width: 100%; }
-
-/*
-*/
-
-.page {
-    page-break-after: always;
-    position: relative;
-    width: 8.5in;
-    height: 11in;
-}
-
-.page-content {
-    position: absolute;
-    width: 8.0in;
-    height: 10.5in;
-    left: 0.25in;
-    top: 0.25in;
-    bottom: 10.75in;
-    right: 8.25in;
-    background-color: #FFFF00;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#main {
-    margin-top: 50px;
 }
 
 .modal {
@@ -368,9 +355,56 @@ input {
     text-align: center; */
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* classes and ids for character sheet stuff */
+.hdr_1 { text-align: center; vertical-align: center; font-size: 24pt; }
+.hdr_2 { vertical-align: bottom; font-size: 22pt; }
+.hdr_3 { border-bottom: 1.0px solid black; text-align: right; vertical-align: bottom; font-size: 22pt; }
+.hdr_4 { vertical-align: bottom; font-size: 22pt; }
+.hdr_5 { border-bottom: 1.0px solid black; text-align: center; }
+
+.sheet {
+    width: 9.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
 }
+
+.all { border: 1.0px solid black; }
+.all_c { border: 1.0px solid black; text-align: center; }
+.all_r { border: 1.0px solid black; text-align: right; padding-right: 5px; }
+.all_pl { border: 1.0px solid black; padding-left: 5px; }
+
+.bottom { border-bottom: 1.0px solid black; }
+.bottom_c { border-bottom: 1.0px solid black; text-align: center; }
+
+.font_small { font-size: 75%; }
+
+.halign_rpl { text-align: right; padding-right: 5px; }
+
+.inline { display: inline-block; }
+.header { border: 1.0px solid black; font-size: 105%; background-color: #cccccc;}
+.pl_05 { padding-left: 5px; }
+
+.left_c { border-left: 1.0px solid black; text-align: center; }
+
+#width_02 { width: 2%; }
+#width_03 { width: 3%; }
+#width_05 { width: 5%; }
+#width_07 { width: 7%; }
+#width_10 { width: 10%; }
+#width_12 { width: 12%; }
+#width_15 { width: 15%; }
+#width_18 { width: 18%; }
+#width_1925 { width: 19.25%; }
+#width_235 { width: 23.5%; }
+#width_30 { width: 30%; }
+#width_32 { width: 32%; }
+#width_35 { width: 35%; }
+#width_39 { width: 39%; }
+#width_40 { width: 40%; }
+#width_49 { width: 49%; }
+#width_59 { width: 59%; }
+#width_65 { width: 65%; }
+#width_75 { width: 75%; }
+#width_100 { width: 100%; }
 

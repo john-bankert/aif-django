@@ -17,18 +17,16 @@ class IndexView(TemplateView):
         self.request = None
 
     def dispatch(self, request, *args, **kwargs):
+        print('IndexView.dispatch')
         self.request = request
         return super().dispatch(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        print('IndexView.post')
         if 'theme_selected' in request.POST:  # POST from theme selector modal
-            global global_theme_name
-            global_theme_name = request.POST['theme_selected']
             Themes.add_to_user(request)
             return HttpResponseRedirect('.')
         elif 'username' in request.POST:  # POST from login modal
-            global global_character_name
-            global_character_name = ""
             user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
             if user is not None:
                 if user.is_active:
@@ -47,12 +45,20 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['flag'] = 'index'
-        context['themes'] = Themes.objects.all()
-        if Character.objects.filter(name=global_character_name):
-            context['character'] = get_object_or_404(Character, name=global_character_name)
-        context['current_theme'] = global_theme_name
+        context['sheet_id'] = 'sheet_1'
+        context['current_theme'] = 'black'
+        context['themes'] = Themes.objects.all().values('name')
         if self.request.user.is_authenticated:
-            context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
+            if self.request.user.session.character_name:
+                context['character'] = get_object_or_404(Character, name=self.request.user.session.character_name)
+            if self.request.user.session.current_theme:
+                context['current_theme'] = self.request.user.session.current_theme
+            context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)\
+                .values('name', 'char_class')
+            self.request.user.session.ui_state = context['flag']
+            self.request.user.session.sheet_id = context['sheet_id']
+            self.request.user.session.save()
+        context['sheet_url'] = 'aif_character/' + context['sheet_id'].strip() + '.html'
         return context
 
 
@@ -71,36 +77,33 @@ class CharacterView(TemplateView):
     def post(self, request, *args, **kwargs):
         print('CharacterView post')
         if 'theme_selected' in request.POST:
-            self.request = request
-            global global_theme_name
-            global_theme_name = request.POST['theme_selected']
             Themes.add_to_user(request)
             return HttpResponseRedirect('.')
         elif 'char_to_open' in request.POST:
+            self.request.user.session.character_name = request.POST['char_to_open']
+            self.request.user.session.save()
             return HttpResponseRedirect('/character/' + request.POST['char_to_open'])
         else:
             return HttpResponseRedirect(".")
 
     def get_context_data(self, **kwargs):
+        print('CharacterView get_context_data')
         context = super().get_context_data(**kwargs)
-        print(context)
-        if 'flag' in context.keys():
-            print('CharacterView entering context flag =', context['flag'])
-        for key in context.keys():
-            print(key, context[key])
-        global global_character_name
-        global_character_name = context['char_name']
         context['flag'] = 'character'
-        context['sheet_id'] = global_sheet_id
-        if Character.objects.filter(name=global_character_name):
-            context['character'] = get_object_or_404(Character, name=global_character_name)
-        context['current_theme'] = global_theme_name
-        context['sheet_id'] = 'Sheet_1'
-        context['sheet_url'] = 'aif_character/Sheet_1.html'
-        context['themes'] = Themes.objects.all()
+        context['sheet_id'] = 'sheet_1'
+        context['current_theme'] = 'black'
+        context['themes'] = Themes.objects.all().values('name')
         if self.request.user.is_authenticated:
-            context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)
-        print('CharacterView leaving context flag =', context['flag'])
+            if self.request.user.session.character_name:
+                context['character'] = get_object_or_404(Character, name=self.request.user.session.character_name)
+            if self.request.user.session.current_theme:
+                context['current_theme'] = self.request.user.session.current_theme
+            context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)\
+                .values('name', 'char_class')
+            self.request.user.session.ui_state = context['flag']
+            self.request.user.session.sheet_id = context['sheet_id']
+            self.request.user.session.save()
+        context['sheet_url'] = 'aif_character/' + context['sheet_id'].strip() + '.html'
         return context
 
 

@@ -31,6 +31,9 @@ class Themes(models.Model):
     @staticmethod
     def add_to_user(request):
         theme = Themes.objects.get(name=request.POST['theme_selected'])
+        request.user.profile.current_theme = theme.name
+        request.user.profile.save()
+        request.user.session.current_theme = theme.name
         request.user.session.font_family = theme.font_family
         request.user.session.font_size = theme.font_size
         request.user.session.navbar_bg_color = theme.navbar_bg_color
@@ -50,8 +53,6 @@ class Themes(models.Model):
         request.user.session.tabbar_active_bg_color = theme.tabbar_active_bg_color
         request.user.session.tabbar_active_fg_color = theme.tabbar_active_fg_color
         request.user.session.save()
-        request.user.profile.current_theme = theme.name
-        request.user.profile.save()
 
     @staticmethod
     def deserialize():
@@ -80,7 +81,11 @@ class Profile(models.Model):
 
 class Session(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    current_tab = models.CharField(max_length=10, default="Sheet")
+    character_name = models.CharField(max_length=75, default="")
+    ui_state = models.CharField(max_length=10, default="index")  # was flag
+    sheet_id = models.CharField(max_length=10, default="Sheet_1")
+    current_theme = models.CharField(max_length=10, default="black")
+    # theme variables
     font_family = models.CharField(max_length=75, default="Arial, Helvetica, Sans Serif")
     font_size = models.CharField(max_length=10, default="10pt")
     navbar_bg_color = models.CharField(max_length=25, default="black")

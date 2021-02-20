@@ -209,12 +209,12 @@ class Command(BaseCommand):
         char.age = 42
         char.height = "4' 1\""
         char.weight = "140 lb"
-        char.experience = 600
+        char.experience = 624
         char.gold_amount = 575
         char.silver_amount = 55
         char.copper_amount = 20
 
-        SkillsList.add_to_character(char, 'Armorer', 'Class', 7)
+        SkillsList.add_to_character(char, 'Armorer', 'Class', 8)
         SkillsList.add_to_character(char, 'Avenging Smite', 'Class', 2)
         SkillsList.add_to_character(char, 'Awareness', 'Class', 3)
         SkillsList.add_to_character(char, 'Balance', 'Class', 4)
@@ -225,8 +225,8 @@ class Command(BaseCommand):
         SkillsList.add_to_character(char, 'Melee', 'Class', 6)
         SkillsList.add_to_character(char, 'Missile', 'Class', 6)
         SkillsList.add_to_character(char, 'Mounted Battle', 'Class', 2)
-        SkillsList.add_to_character(char, 'Radiant Shield', 'Class', 2)
-        SkillsList.add_to_character(char, 'Righteous Faith', 'Class', 3)
+        SkillsList.add_to_character(char, 'Radiant Shield', 'Class', 3)
+        SkillsList.add_to_character(char, 'Righteous Faith', 'Class', 5)
         SkillsList.add_to_character(char, 'Scrapping', 'Class', 5)
         SkillsList.add_to_character(char, 'Stalwart Stance', 'Class', 5)
         SkillsList.add_to_character(char, 'Stamina', 'Class', 5)
@@ -244,7 +244,7 @@ class Command(BaseCommand):
         SkillsList.add_to_character(char, 'Increase Intelligence', 'Honor', 2)
         SkillsList.add_to_character(char, 'Increase Health', 'Honor', 2)
         SkillsList.add_to_character(char, 'Increase Knockdown', 'Honor', 2)
-        SkillsList.add_to_character(char, 'Increase Defense', 'Honor', 2)
+        SkillsList.add_to_character(char, 'Increase Defense', 'Honor', 5)
         SkillsList.add_to_character(char, 'Increase Stun', 'Honor', 2)
         SkillsList.add_to_character(char, 'Increase Endurance', 'Honor', 2)
         SkillsList.add_to_character(char, 'Recover Health', 'Honor', 6)
@@ -255,7 +255,7 @@ class Command(BaseCommand):
         SkillsList.add_to_character(char, 'Bludgeoning Group', 'Weapon', 6)
         SkillsList.add_to_character(char, 'Cleaving Group', 'Weapon', 2)
         SkillsList.add_to_character(char, 'Bow Group', 'Weapon', 5)
-        SkillsList.add_to_character(char, 'Maul', 'Weapon', 6)
+        SkillsList.add_to_character(char, 'Maul', 'Weapon', 5)
         SkillsList.add_to_character(char, 'Hand Axe', 'Weapon', 3)
         SkillsList.add_to_character(char, 'Pike', 'Weapon', 8)
         SkillsList.add_to_character(char, 'Medium Crossbow', 'Weapon', 8)
