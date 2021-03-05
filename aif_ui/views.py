@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render, HttpResponse, HttpResponseRedirect
 from django.contrib.auth import logout, login, authenticate
 from django.views.generic.base import TemplateView
-from aif_character.models import Character, CharacterForm
+from aif_character.models import Character, CharacterForm, CharacterForm2
 from aif_ui.models import Themes
 
 global_character_name = ""
@@ -70,27 +70,54 @@ class CharacterView(TemplateView):
         self.request = None
 
     def dispatch(self, request, *args, **kwargs):
-        print('CharacterView dispatch')
+        print('cv.dispatch')
         self.request = request
         return super().dispatch(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
-        print('CharacterView post')
+        print('cv.post')
         if 'theme_selected' in request.POST:
             Themes.add_to_user(request)
             return HttpResponseRedirect('.')
         elif 'char_to_open' in request.POST:
-            self.request.user.session.character_name = request.POST['char_to_open']
-            self.request.user.session.save()
+            request.user.session.character_name = request.POST['char_to_open']
+            request.user.session.sheet_id = 'Sheet_1'
+            request.user.session.save()
             return HttpResponseRedirect('/character/' + request.POST['char_to_open'])
+        elif 'save_character' in request.POST:
+            request.user.session.ui_state = 'character'
+            request.user.session.save()
+            print('saving character')
+            # for key in request.POST:
+            #    print(key, request.POST[key])
+
+            char = Character.objects.get(name=request.user.session.character_name)
+            if request.user.session.sheet_id == 'Sheet_3' or request.user.session.sheet_id == 'Sheet_4':
+                char_form = CharacterForm2(request.POST, instance=char)
+            else:
+                char_form = CharacterForm(request.POST, instance=char)
+            char_form.save()
+
+            for skill in char.skills_set.all():
+                skill.rank = int(request.POST.get(skill.name + "_rank"))
+                skill.save()
+            print("sheet id =",request.user.session.sheet_id)
+            # return HttpResponseRedirect('/character/' + request.user.session.character_name)
+            # return HttpResponseRedirect(".")
+            context = {'flag': request.user.session.ui_state, 'sheet_id': request.user.session.sheet_id,
+                       'current_theme': request.user.session.current_theme, 'themes': Themes.objects.all()}
+            if Character.objects.filter(name=request.user.session.character_name):
+                context['character'] = get_object_or_404(Character, name=request.user.session.character_name)
+            if request.user.is_authenticated:
+                context['fc'] = Character.objects.filter(player=request.user.username, open=True)
+            return render(request, 'aif_character/' + request.user.session.sheet_id + '.html', context)
         else:
             return HttpResponseRedirect(".")
 
     def get_context_data(self, **kwargs):
-        print('CharacterView get_context_data')
+        print('cv.get_context')
         context = super().get_context_data(**kwargs)
         context['flag'] = 'character'
-        context['sheet_id'] = 'sheet_1'
         context['current_theme'] = 'black'
         context['themes'] = Themes.objects.all().values('name')
         if self.request.user.is_authenticated:
@@ -101,9 +128,8 @@ class CharacterView(TemplateView):
             context['fc'] = Character.objects.filter(player=self.request.user.username, open=True)\
                 .values('name', 'char_class')
             self.request.user.session.ui_state = context['flag']
-            self.request.user.session.sheet_id = context['sheet_id']
             self.request.user.session.save()
-        context['sheet_url'] = 'aif_character/' + context['sheet_id'].strip() + '.html'
+        context['sheet_url'] = 'aif_character/' + self.request.user.session.sheet_id.strip() + '.html'
         return context
 
 
@@ -115,70 +141,43 @@ def logouts(request):
 # example views function for using ajax
 def load_character_sheet(request):
     if request.method == 'POST':
-        print('load character sheet')
-        for key in request.POST:
-            print(key, request.POST[key])
-        context = {'flag': 'character', 'sheet_id': request.POST['sheet_id'],
-                   'current_theme': request.POST['current_theme'], 'themes': Themes.objects.all()}
-        if Character.objects.filter(name=request.POST['character_name']):
-            context['character'] = get_object_or_404(Character, name=request.POST['character_name'])
+        request.user.session.sheet_id = request.POST['sheet_id']
+        request.user.session.save()
+        print('session.sheet_id', request.user.session.sheet_id)
+        print('session.character_name', request.user.session.character_name)
+        print('session.ui_state', request.user.session.ui_state)
+        print('session.current_theme', request.user.session.current_theme)
+        context = {'flag': request.user.session.ui_state, 'sheet_id': request.user.session.sheet_id,
+                   'current_theme': request.user.session.current_theme, 'themes': Themes.objects.all()}
+        if Character.objects.filter(name=request.user.session.character_name):
+            context['character'] = get_object_or_404(Character, name=request.user.session.character_name)
         if request.user.is_authenticated:
             context['fc'] = Character.objects.filter(player=request.user.username, open=True)
-        context['sheet_url'] = 'aif_character/' + request.POST['sheet_id'] + '.html'
-        request.user.session.current_tab = request.POST['sheet_id']
-        request.user.session.save()
-        print(context)
-        return render(request, context['sheet_url'], context)
+        print('sheet url', 'aif_character/' + request.user.session.sheet_id + '.html')
+        return render(request, 'aif_character/' + request.user.session.sheet_id + '.html', context)
     
     
 # example views function for using ajax
 def edit_character_sheet(request):
     if request.method == 'POST':
-        print('edit character sheet')
-        for key in request.POST:
-            print(key, request.POST[key])
-        context = {'flag': request.POST['flag'], 'sheet_id': request.POST['sheet_id'],
-                   'current_theme': request.POST['current_theme'], 'themes': Themes.objects.all()}
-        if Character.objects.filter(name=request.POST['character_name']):
-            context['character'] = get_object_or_404(Character, name=request.POST['character_name'])
+        request.user.session.ui_state = 'edit'
+        request.user.session.save()
+        print('session.sheet_id', request.user.session.sheet_id)
+        print('session.character_name', request.user.session.character_name)
+        print('session.ui_state', request.user.session.ui_state)
+        print('session.current_theme', request.user.session.current_theme)
+        context = {'flag': 'edit', 'sheet_id': request.user.session.sheet_id,
+                   'current_theme': request.user.session.current_theme, 'themes': Themes.objects.all()}
+        if Character.objects.filter(name=request.user.session.character_name):
+            context['character'] = get_object_or_404(Character, name=request.user.session.character_name)
         if request.user.is_authenticated:
             context['fc'] = Character.objects.filter(player=request.user.username, open=True)
-        context['sheet_url'] = 'aif_character/' + request.POST['sheet_id'] + '.html'
-        request.user.session.current_tab = request.POST['sheet_id']
-        request.user.session.save()
-        return render(request, 'aif_ui/body_blow.html', context)
+        context['sheet_url'] = 'aif_character/' + context['sheet_id'].strip() + '.html'
+        return render(request, context['sheet_url'], context)
 
 
 '''
 
-def character(request, char_name):
-    context = {'flag': 'sheet', 'character': get_object_or_404(Character, name=char_name)}
-    print(context)
-    if request.user.is_authenticated:
-        fc = Character.objects.filter(player=request.user.username, open=True)
-        context['fc'] = fc
-    return HttpResponseRedirect('/', [], context)
-    # return render(request, 'aif_ui/index.html', context)
-
-def save(request, char_name):
-    char = Character.objects.get(name=char_name)
-    char_form = CharacterForm(request.POST, instance=char)
-    char_form.save()
-
-    for skill in char.classskills_set.all():
-        skill.rank = int(request.POST.get(skill.name + "_rank"))
-        skill.save()
-
-    for skill in char.racialskills_set.all():
-        skill.rank = int(request.POST.get(skill.name + "_rank"))
-        skill.save()
-
-    if "Paladin" in char.char_class:
-        for skill in char.honorskills_set.all():
-            skill.rank = int(request.POST.get(skill.name + "_rank"))
-            skill.save()
-
-    context = {'flag': 'edit', 'character': char}
     return render(request, 'aif_ui/sheet.html', context)
     
 def edit(request, char_name):

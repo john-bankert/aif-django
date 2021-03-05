@@ -3,6 +3,7 @@
 		<!-- form action="{ % url 'save' character.name % }" method="post"-->
 		<form method="post" id="character_form" name="character_form">
 			{% csrf_token %}
+			<input type="hidden" name="save_character">
 			<table id="width_100">
 				<!-- row One -->
 				<tr>
@@ -12,24 +13,12 @@
 							<tr>
 								<td id="width_32">Name</td>
 								<td id="width_03">&nbsp;</td>
-								<td id="width_65" class="bottom">
-									{% if flag == "character" %}
-										{{character.name}}
-									{% else %}
-										<input class="formatted" type="text" name="name" value="{{character.name}}">
-									{% endif %}
-								</td>
+								<td id="width_65" class="bottom">{{character.name}}</td>
 							</tr>
 							<tr>
 								<td id="width_32">Race</td>
 								<td id="width_03">&nbsp;</td>
-								<td id="width_65" class="bottom">
-									{% if flag == "character" %}
-										{{character.race}}
-									{% else %}
-										<input class="formatted" type="text" name="race" value="{{character.race}}">
-									{% endif %}
-								</td>
+								<td id="width_65" class="bottom">{{character.race}}</td>
 							</tr>
 						</table>
 					</td>

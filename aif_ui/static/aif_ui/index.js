@@ -36,8 +36,7 @@ window.onclick = function(event) {
 	}
 }
 
-function loadCharacterSheet(evt, name, sheet, theme, csrf) {
-    //alert("hello");
+function loadCharacterSheet(evt, csrf, sheet) {
 	var i, tab_links;
 	tab_links = document.getElementsByClassName("tablinks");
 	for (i = 0; i < tab_links.length; i++) {
@@ -47,26 +46,30 @@ function loadCharacterSheet(evt, name, sheet, theme, csrf) {
 	$.ajax({
 		type: "POST",
 		url: '/load-character-sheet/',
-		data: { csrfmiddlewaretoken: csrf, character_name: name, sheet_id: sheet, current_theme: theme },
-		success: function (data) { $('.tabcontent').html(data); },
+		data: { csrfmiddlewaretoken: csrf, sheet_id: sheet },
+		success: function (data) { $('.tab_content').html(data); },
     });
 }
 
-function editCharacterSheet(evt, name, sheet, theme, csrf, flag) {
- 	if (flag == 'edit') {
-
- 	}
+function editCharacterSheet(evt, csrf) {
+    $('#edit_button').hide()
+    $('#save_button').show()
  	$.ajax({
 		type: "POST",
 		url: '/edit-character-sheet/',
-		data: { csrfmiddlewaretoken: csrf, character_name: name, sheet_id: sheet, current_theme: theme, flag: flag },
-		//success: function (data) { $('.tabcontent').html(data); },
-		success: function (data) {
-		    $('.tabcontent').html(data);
-		},
+		data: { csrfmiddlewaretoken: csrf},
+		success: function (data) { $('.tab_content').html(data); },
     });
 }
 
+function saveCharacterSheet(evt, csrf) {
+    $('#save_button').hide()
+    $('#edit_button').show()
+    $('character_form').submit()
+    //this.form.submit()
+}
+
+function hiThere() { alert('hi there'); }
 //$(function() {
 //    $("#edit_button").click(function() {
 //      alert( "Handler for .click() called." );

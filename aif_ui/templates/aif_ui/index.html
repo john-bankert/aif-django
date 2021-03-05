@@ -16,11 +16,13 @@
 	</head>
 	<body>
 		{% include "aif_ui/nav_bar.html" %}
-		<div id='main'>
-			{% if flag != 'index' %}
+		<div id='main' onload="hiThere()">
+			{% if request.user.is_authenticated and request.user.session.ui_state != 'index' %}
 				{% include "aif_ui/tab_bar.html" %}
-				<div class="tabcontent">
+				<div class="tab_content">
+					{% with "aif_character/"|add:request.user.session.sheet_id|add:".html" as sheet_url %}
 					{% include sheet_url %}
+					{% endwith %}
 				</div>
 			{% else %}
 				<img class="center" src="{% static 'aif_ui/aif-splash.png' %}">

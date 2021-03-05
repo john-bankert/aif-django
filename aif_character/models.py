@@ -1156,9 +1156,21 @@ class Weapons(models.Model):
 class CharacterForm(ModelForm):
     class Meta:
         model = Character
-        fields = ['name', 'race', 'gender', 'age', 'weight', 'height', 'experience',
-                  'str_base', 'dex_base', 'int_base', 'health_base', 'knockdown_display',
-                  'defense_display', 'stun_display', 'endurance_display']
+        # fields = ['name', 'race', 'gender', 'age', 'weight', 'height', 'experience',
+        fields = ['gender', 'age', 'weight', 'height', 'experience',
+                  'str_base', 'dex_base', 'int_base', 'health_base',
+                  'knockdown_display', 'defense_display', 'stun_display', 'endurance_display',
+                  'gold_amount', 'silver_amount', 'copper_amount']
+
+
+class CharacterForm2(ModelForm):
+    class Meta:
+        model = Character
+        # fields = ['name', 'race', 'gender', 'age', 'weight', 'height', 'experience',
+        fields = ['gender', 'age', 'weight', 'height', 'experience',
+                  'str_base', 'dex_base', 'int_base', 'health_base',
+                  'knockdown_cf_points', 'defense_cf_points', 'stun_cf_points', 'endurance_cf_points',
+                  'gold_amount', 'silver_amount', 'copper_amount']
 
 
 class SkillsForm(ModelForm):

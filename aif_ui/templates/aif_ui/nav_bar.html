@@ -6,13 +6,14 @@
 		{% include "aif_ui/character_select.html" %}
 	</div>
 	<div class="inline margins valign_t" style="width:114px;"> <!-- navbar onclick="doesNothing('Edit')" buttons -->
-		{% if flag != 'index' %}
-			<button style="width:100px;" class="navbar_button" onclick="updateCharacterSheet(event, '{{character.name}}', '{{sheet_id}}', '{{current_theme}}', '{{csrf_token}}', 'edit')">Edit</button>
-		<!-- { % elif flag == 'edit' %} -->
-			<button style="width:100px; display: none;" class="navbar_button" type="submit" form="character_form" value="Submit">Save</button>
+		{% if request.user.is_authenticated and request.user.session.ui_state != 'index' %}
+			<!--button style="width:100px;" class="navbar_button" onclick="editCharacterSheet(event, '{{character.name}}', '{{sheet_id}}', '{{current_theme}}', '{{csrf_token}}', 'edit')">Edit</button-->
+			<button id="edit_button" style="width:100px;" class="navbar_button" onclick="editCharacterSheet(event, '{{csrf_token}}')">Edit</button>
+			<!--button style="width:100px;" class="navbar_button" onclick="editCharacterSheet(event, '{{csrf_token}}')">Edit</button-->
+			<button id="save_button" style="width:100px; display: none;" class="navbar_button" onclick="saveCharacterSheet(event, '{{csrf_token}}')" form="character_form" value="Submit">Save</button>
 		{% endif %}
 	</div>
-	<div class="inline hdr_2 valign_t" style="margin-left: 14px; margin-top: 5px;"> <!-- character name, race, class -->
+	<div class="inline hdr_2" style="margin-left: 14px; margin-bottom: 5px;"> <!-- character name, race, class -->
 		{% if flag == 'character' %}
 			{{character.name}}:&nbsp{{character.race}}&nbsp{{character.char_class}}
 		{% endif %}
