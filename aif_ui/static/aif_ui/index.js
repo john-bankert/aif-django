@@ -42,6 +42,15 @@ function loadCharacterSheet(evt, csrf, sheet) {
 	for (i = 0; i < tab_links.length; i++) {
 		tab_links[i].className = tab_links[i].className.replace(" active", "");
 	}
+	if (sheet == 'Combat') {
+    //    $('#edit_button').hide()
+	//   document.getElementById("edit_button").disabled = true;
+	   $('#edit_button').disabled = true;
+	} else {
+	//    $('#edit_button').show()
+    //    document.getElementById("edit_button").disabled = false;
+	    $('#edit_button').disabled = false;
+	}
 	evt.currentTarget.className += " active";
 	$.ajax({
 		type: "POST",
@@ -49,6 +58,13 @@ function loadCharacterSheet(evt, csrf, sheet) {
 		data: { csrfmiddlewaretoken: csrf, sheet_id: sheet },
 		success: function (data) { $('.tab_content').html(data); },
     });
+	if (sheet == 'Combat') {
+	   document.getElementById("edit_button").disabled = true;
+	//   $('#edit_button').disabled = true;
+	} else {
+	    document.getElementById("edit_button").disabled = false;
+	//    $('#edit_button').disabled = false;
+	}
 }
 
 function editCharacterSheet(evt, csrf) {

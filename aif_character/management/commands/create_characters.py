@@ -210,11 +210,11 @@ class Command(BaseCommand):
         char.height = "4' 1\""
         char.weight = "140 lb"
         char.experience = 624
-        char.gold_amount = 575
-        char.silver_amount = 55
-        char.copper_amount = 20
+        char.gold_amount = 2
+        char.silver_amount = 64
+        char.copper_amount = 26
 
-        SkillsList.add_to_character(char, 'Armorer', 'Class', 8)
+        SkillsList.add_to_character(char, 'Armorer', 'Class', 7)
         SkillsList.add_to_character(char, 'Avenging Smite', 'Class', 2)
         SkillsList.add_to_character(char, 'Awareness', 'Class', 3)
         SkillsList.add_to_character(char, 'Balance', 'Class', 4)
@@ -269,7 +269,7 @@ class Command(BaseCommand):
         SkillsList.add_to_character(char, 'Open-faced', 'Armor', 5)
         SkillsList.add_to_character(char, 'Plate mail', 'Armor', 8)
         SkillsList.add_to_character(char, 'Buckler', 'Armor', 5)
-        WeaponsCatalog.add_to_character(char, 'Pike', 'Pike +2, Yawp +4')
+        WeaponsCatalog.add_to_character(char, 'Pike', 'Pike +2, Yawp +4, Monster Hatred vs. Ogres')
         WeaponsCatalog.add_to_character(char, 'Medium Crossbow', 'Medium Crossbow +3, Toughness + 5')
         w = char.weapons_set.get(name='Medium Crossbow')
         w.damage = "2d6"
@@ -280,7 +280,8 @@ class Command(BaseCommand):
         w.is_missile = True
         w.durability = '30'
         w.save()
-        ArmorCatalog.add_to_character(char, 'armor', 'Plate mail', 'Plate Mail +1/2/1/1')
+        ArmorCatalog.add_to_character(char, 'armor', 'Plate mail',
+                                      'Plate Mail +1/1/1/1, +2 block, +2 disarm, +1 defense')
         ArmorCatalog.add_to_character(char, 'helmet', 'Open-faced', 'Open Faced Helmet')
         ArmorCatalog.add_to_character(char, 'shield', 'Buckler')
         char.add_container('Worn')
@@ -290,6 +291,7 @@ class Command(BaseCommand):
         char.add_equipment('Worn', 'Gloves', 1, 10/1, 40, True, True)
         char.add_equipment('Worn', 'Cloak', 1, 1, 30, True, True)
         char.add_equipment('Worn', 'Waterskin', 1, 2/1, 30, True)
+        char.add_equipment('Worn', 'Blue Topaz Pendant health +13', 1, 1, 30, True)
         char.add_container('Backpack', 'Backpack +4 Valiant Aura')
         char.add_equipment('Backpack', '1 week Rations', 2, 2, '-', True)
         char.add_equipment('Backpack', 'Bedroll', 1, 3, 50, True)

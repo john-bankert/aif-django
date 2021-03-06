@@ -1,11 +1,45 @@
 <div class="tab" style="margin-bottom: 10px;">
+	{% if request.user.session.sheet_id == 'Sheet_1' %}
 	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_1')">Sheet 1</a>
-	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_2')">Sheet 2</a>
-	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_3')">Sheet 3</a>
-	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_4')">Sheet 4</a>
-	{% if character.is_spellcaster %}
-		<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Spells')">Spells</a>
+	{% else %}
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_1')">Sheet 1</a>
 	{% endif %}
+
+	{% if request.user.session.sheet_id == 'Sheet_2' %}
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_2')">Sheet 2</a>
+	{% else %}
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_2')">Sheet 2</a>
+	{% endif %}
+
+	{% if request.user.session.sheet_id == 'Sheet_3' %}
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_3')">Sheet 3</a>
+	{% else %}
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_3')">Sheet 3</a>
+	{% endif %}
+
+	{% if request.user.session.sheet_id == 'Sheet_4' %}
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_4')">Sheet 4</a>
+	{% else %}
+	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Sheet_4')">Sheet 4</a>
+	{% endif %}
+
+	{% if character.is_spellcaster %}
+		{% if request.user.session.sheet_id == 'Spells' %}
+		<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Spells')">Spells</a>
+		{% else %}
+		<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Spells')">Spells</a>
+		{% endif %}
+	{% endif %}
+
+	{% if request.user.session.sheet_id == 'Notes' %}
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Notes')">Notes</a>
+	{% else %}
 	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Notes')">Notes</a>
+	{% endif %}
+
+	{% if request.user.session.sheet_id == 'Combat' %}
+	<a class="tablinks active" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Combat')">Combat</a>
+	{% else %}
 	<a class="tablinks" onclick="loadCharacterSheet(event, '{{csrf_token}}', 'Combat')">Combat</a>
+	{% endif %}
 </div>

@@ -141,6 +141,13 @@ input.formatted {
     cursor: pointer;
 }
 
+.navbar_button:disabled,
+.navbar_button[disabled]{
+    color: var(--navbar-button-bg-color);
+    background-color: var(--navbar-button-border-color);
+    border-color: var(--navbar-button-bg-color);
+}
+
 /* character menu portion of navbar */
 .dropdown {
     color: inherit;

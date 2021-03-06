@@ -99,18 +99,21 @@ class CharacterView(TemplateView):
             char_form.save()
 
             for skill in char.skills_set.all():
-                skill.rank = int(request.POST.get(skill.name + "_rank"))
-                skill.save()
-            print("sheet id =",request.user.session.sheet_id)
+                print("skill =", skill.name)
+                try:
+                    skill.rank = int(request.POST.get(skill.name + "_rank"))
+                    skill.save()
+                except:
+                    print('could not save', skill.name)
+            return HttpResponseRedirect(".")
             # return HttpResponseRedirect('/character/' + request.user.session.character_name)
-            # return HttpResponseRedirect(".")
-            context = {'flag': request.user.session.ui_state, 'sheet_id': request.user.session.sheet_id,
-                       'current_theme': request.user.session.current_theme, 'themes': Themes.objects.all()}
-            if Character.objects.filter(name=request.user.session.character_name):
-                context['character'] = get_object_or_404(Character, name=request.user.session.character_name)
-            if request.user.is_authenticated:
-                context['fc'] = Character.objects.filter(player=request.user.username, open=True)
-            return render(request, 'aif_character/' + request.user.session.sheet_id + '.html', context)
+            # context = {'flag': request.user.session.ui_state, 'sheet_id': request.user.session.sheet_id,
+            #           'current_theme': request.user.session.current_theme, 'themes': Themes.objects.all()}
+            # if Character.objects.filter(name=request.user.session.character_name):
+            #    context['character'] = get_object_or_404(Character, name=request.user.session.character_name)
+            # if request.user.is_authenticated:
+            #    context['fc'] = Character.objects.filter(player=request.user.username, open=True)
+            # return render(request, 'aif_character/' + request.user.session.sheet_id + '.html', context)
         else:
             return HttpResponseRedirect(".")
 

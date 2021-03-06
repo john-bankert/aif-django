@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		{% include "aif_ui/nav_bar.html" %}
-		<div id='main' onload="hiThere()">
+		<div id='main'>
 			{% if request.user.is_authenticated and request.user.session.ui_state != 'index' %}
 				{% include "aif_ui/tab_bar.html" %}
 				<div class="tab_content">
