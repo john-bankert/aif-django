@@ -878,6 +878,40 @@ class Character(models.Model):
         c.save()
         self.save()
 
+    def add_static_buff(self, source_name, source_type, target_name, target_type, buff):
+
+        if source_type == 'Weapon':
+            src = self.weapons_set.filter()
+            pass
+        elif source_type == 'Armor':
+            pass
+        elif source_type == 'Equipment':
+            pass
+        else:
+            pass
+
+        character = models.ForeignKey(Character, on_delete=models.CASCADE)
+        source_type = models.CharField(max_length=10, default="")
+        source_name = models.CharField(max_length=75, default="")
+        source_pk = models.IntegerField(default=0)
+        target_type = models.CharField(max_length=10, default="")
+        target_name = models.CharField(max_length=75, default="")
+        target_pk = models.IntegerField(default=0)
+        buff = models.IntegerField(default=0)
+        display = models.IntegerField(default=0)
+        #b = self.static_buff_set.get()
+        #c = self.container_set.get(name=container)
+        #e = c.equipment_set.create(description=name)
+        #c.save()
+        #e.quantity = quantity
+        #e.load = load
+        #e.durability = durability
+        #e.in_container = in_container
+        #e.worn = worn
+        #e.save()
+        #c.save()
+        self.save()
+
     @staticmethod
     def deserialize():
         data_serializer.deserialize_object(__file__, "/data/character", Character)
@@ -1096,6 +1130,29 @@ class Spells(models.Model):
     @staticmethod
     def serialize():
         data_serializer.serialize_object(__file__, "/data/spells", Spells)
+
+
+class StaticBuffs(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    source_type = models.CharField(max_length=10, default="")
+    source_name = models.CharField(max_length=75, default="")
+    source_pk = models.IntegerField(default=0)
+    target_type = models.CharField(max_length=10, default="")
+    target_name = models.CharField(max_length=75, default="")
+    target_pk = models.IntegerField(default=0)
+    buff = models.IntegerField(default=0)
+    display = models.IntegerField(default=0)
+
+    class Meta:
+        app_label = application_label
+
+    @staticmethod
+    def deserialize():
+        data_serializer.deserialize_object(__file__, "/data/static_buffs", StaticBuffs)
+
+    @staticmethod
+    def serialize():
+        data_serializer.serialize_object(__file__, "/data/static_buffs", StaticBuffs)
 
 
 class Tips(models.Model):

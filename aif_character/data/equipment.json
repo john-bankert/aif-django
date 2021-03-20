@@ -1,7 +1,7 @@
 [
     {
         "model": "aif_character.equipment",
-        "pk": 34,
+        "pk": 35,
         "fields": {
             "container": 16,
             "equipment_pk": 0,
@@ -76,7 +76,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 35,
+        "pk": 36,
         "fields": {
             "container": 16,
             "equipment_pk": 0,
@@ -131,6 +131,21 @@
             "load": "10.0",
             "quantity": 1,
             "worn": true,
+            "in_container": true
+        }
+    },
+    {
+        "model": "aif_character.equipment",
+        "pk": 34,
+        "fields": {
+            "container": 15,
+            "equipment_pk": 0,
+            "description": "Blue Topaz Pendant health +13",
+            "durability": "30",
+            "display": "",
+            "load": "1.0",
+            "quantity": 1,
+            "worn": false,
             "in_container": true
         }
     },
@@ -286,7 +301,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 38,
+        "pk": 39,
         "fields": {
             "container": 16,
             "equipment_pk": 0,
@@ -301,7 +316,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 43,
+        "pk": 44,
         "fields": {
             "container": 19,
             "equipment_pk": 0,
@@ -316,7 +331,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 44,
+        "pk": 45,
         "fields": {
             "container": 19,
             "equipment_pk": 0,
@@ -391,7 +406,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 36,
+        "pk": 37,
         "fields": {
             "container": 16,
             "equipment_pk": 0,
@@ -451,7 +466,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 37,
+        "pk": 38,
         "fields": {
             "container": 16,
             "equipment_pk": 0,
@@ -466,7 +481,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 42,
+        "pk": 43,
         "fields": {
             "container": 19,
             "equipment_pk": 0,
@@ -481,7 +496,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 40,
+        "pk": 41,
         "fields": {
             "container": 17,
             "equipment_pk": 0,
@@ -496,7 +511,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 41,
+        "pk": 42,
         "fields": {
             "container": 18,
             "equipment_pk": 0,
@@ -601,7 +616,7 @@
     },
     {
         "model": "aif_character.equipment",
-        "pk": 39,
+        "pk": 40,
         "fields": {
             "container": 16,
             "equipment_pk": 0,

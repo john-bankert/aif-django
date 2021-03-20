@@ -3217,7 +3217,7 @@
             "skill_pk": 629,
             "weapon_pk": 37,
             "name": "Pike",
-            "description": "Pike +2, Yawp +4",
+            "description": "Pike +2, Yawp +4, Monster Hatred vs. Ogres",
             "size": "L",
             "type": "P",
             "damage": "3d6-2",

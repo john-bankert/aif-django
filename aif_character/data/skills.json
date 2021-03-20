@@ -3953,10 +3953,10 @@
             "skill_type": "Class",
             "skill_class": "",
             "description": "",
-            "rank": 2,
+            "rank": 3,
             "order": 0,
             "buff": 0,
-            "display": 2,
+            "display": 3,
             "mastered": false
         }
     },
@@ -4123,10 +4123,10 @@
             "skill_type": "Class",
             "skill_class": "",
             "description": "",
-            "rank": 3,
-            "order": 0,
+            "rank": 5,
+            "order": 1,
             "buff": 0,
-            "display": 3,
+            "display": 5,
             "mastered": false
         }
     },
@@ -5483,10 +5483,10 @@
             "skill_type": "Honor",
             "skill_class": "",
             "description": "",
-            "rank": 2,
-            "order": 0,
+            "rank": 5,
+            "order": 1,
             "buff": 0,
-            "display": 2,
+            "display": 5,
             "mastered": false
         }
     },
@@ -5866,23 +5866,6 @@
     },
     {
         "model": "aif_character.skills",
-        "pk": 368,
-        "fields": {
-            "character": 11,
-            "name": "Appraising",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
         "pk": 461,
         "fields": {
             "character": 14,
@@ -5985,6 +5968,23 @@
     },
     {
         "model": "aif_character.skills",
+        "pk": 368,
+        "fields": {
+            "character": 11,
+            "name": "Bartering",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
         "pk": 462,
         "fields": {
             "character": 14,
@@ -6005,6 +6005,40 @@
         "pk": 34,
         "fields": {
             "character": 2,
+            "name": "Camouflage",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
+        "pk": 130,
+        "fields": {
+            "character": 5,
+            "name": "Camouflage",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
+        "pk": 369,
+        "fields": {
+            "character": 11,
             "name": "Camouflage",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -6226,40 +6260,6 @@
         "pk": 35,
         "fields": {
             "character": 2,
-            "name": "Elven History",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
-        "pk": 130,
-        "fields": {
-            "character": 5,
-            "name": "Elven History",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
-        "pk": 369,
-        "fields": {
-            "character": 11,
             "name": "Elven History",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -6597,6 +6597,23 @@
     },
     {
         "model": "aif_character.skills",
+        "pk": 132,
+        "fields": {
+            "character": 5,
+            "name": "Instinct",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
         "pk": 209,
         "fields": {
             "character": 7,
@@ -6634,23 +6651,6 @@
         "pk": 338,
         "fields": {
             "character": 10,
-            "name": "Instinct",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
-        "pk": 370,
-        "fields": {
-            "character": 11,
             "name": "Instinct",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -6801,23 +6801,6 @@
     },
     {
         "model": "aif_character.skills",
-        "pk": 371,
-        "fields": {
-            "character": 11,
-            "name": "Leadership",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
         "pk": 465,
         "fields": {
             "character": 14,
@@ -6838,23 +6821,6 @@
         "pk": 6,
         "fields": {
             "character": 1,
-            "name": "Linguistics",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
-        "pk": 132,
-        "fields": {
-            "character": 5,
             "name": "Linguistics",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -6920,7 +6886,7 @@
     },
     {
         "model": "aif_character.skills",
-        "pk": 372,
+        "pk": 370,
         "fields": {
             "character": 11,
             "name": "Linguistics",
@@ -7090,6 +7056,23 @@
     },
     {
         "model": "aif_character.skills",
+        "pk": 371,
+        "fields": {
+            "character": 11,
+            "name": "Nightvision",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
         "pk": 494,
         "fields": {
             "character": 15,
@@ -7192,7 +7175,7 @@
     },
     {
         "model": "aif_character.skills",
-        "pk": 373,
+        "pk": 372,
         "fields": {
             "character": 11,
             "name": "Plant Empathy",
@@ -7294,24 +7277,7 @@
     },
     {
         "model": "aif_character.skills",
-        "pk": 134,
-        "fields": {
-            "character": 5,
-            "name": "Sense Enchantment",
-            "sort_order": 0,
-            "skill_type": "Racial",
-            "skill_class": "",
-            "description": "",
-            "rank": 0,
-            "order": 0,
-            "buff": 0,
-            "display": 0,
-            "mastered": false
-        }
-    },
-    {
-        "model": "aif_character.skills",
-        "pk": 374,
+        "pk": 373,
         "fields": {
             "character": 11,
             "name": "Sense Enchantment",
@@ -7450,6 +7416,23 @@
         "pk": 40,
         "fields": {
             "character": 2,
+            "name": "Tracking",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
+        "pk": 134,
+        "fields": {
+            "character": 5,
             "name": "Tracking",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -7688,6 +7671,23 @@
         "pk": 341,
         "fields": {
             "character": 10,
+            "name": "Wisdom",
+            "sort_order": 0,
+            "skill_type": "Racial",
+            "skill_class": "",
+            "description": "",
+            "rank": 0,
+            "order": 0,
+            "buff": 0,
+            "display": 0,
+            "mastered": false
+        }
+    },
+    {
+        "model": "aif_character.skills",
+        "pk": 374,
+        "fields": {
+            "character": 11,
             "name": "Wisdom",
             "sort_order": 0,
             "skill_type": "Racial",
@@ -10668,10 +10668,10 @@
             "skill_type": "Weapon",
             "skill_class": "",
             "description": "",
-            "rank": 6,
+            "rank": 5,
             "order": 1,
             "buff": 0,
-            "display": 6,
+            "display": 5,
             "mastered": false
         }
     },
