@@ -881,7 +881,7 @@ class Character(models.Model):
     def add_static_buff(self, source_name, source_type, target_name, target_type, buff):
 
         if source_type == 'Weapon':
-            src = self.weapons_set.filter()
+            src = self.weapons_set.filter( vbcfb)
             pass
         elif source_type == 'Armor':
             pass
@@ -899,17 +899,17 @@ class Character(models.Model):
         target_pk = models.IntegerField(default=0)
         buff = models.IntegerField(default=0)
         display = models.IntegerField(default=0)
-        #b = self.static_buff_set.get()
-        #c = self.container_set.get(name=container)
-        #e = c.equipment_set.create(description=name)
-        #c.save()
-        #e.quantity = quantity
-        #e.load = load
-        #e.durability = durability
-        #e.in_container = in_container
-        #e.worn = worn
-        #e.save()
-        #c.save()
+        # b = self.static_buff_set.get()
+        # c = self.container_set.get(name=container)
+        # e = c.equipment_set.create(description=name)
+        # c.save()
+        # e.quantity = quantity
+        # e.load = load
+        # e.durability = durability
+        # e.in_container = in_container
+        # e.worn = worn
+        # e.save()
+        # c.save()
         self.save()
 
     @staticmethod
